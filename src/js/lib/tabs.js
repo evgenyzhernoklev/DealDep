@@ -7,7 +7,15 @@ var Tabs = function(container) {
 };
 
 Tabs.prototype.init = function () {
+  this.checkActiveContent();
   this.links.on('click', this.switchContent.bind(this));
+};
+
+Tabs.prototype.checkActiveContent = function () {
+  var $active = this.links.filter('.is-active'),
+      index = this.links.index($active);
+
+  this.content.eq(index).addClass('is-active');
 };
 
 Tabs.prototype.switchContent = function (e) {
@@ -18,19 +26,16 @@ Tabs.prototype.switchContent = function (e) {
     return;
   }
 
-  // this.links.removeClass('is-active');
-  // this.content.removeClass('is-active');
-  // $target.addClass('is-active');
-  //
-  // var index = this.links.index(this.links.filter('.is-active'));
-  //
-  // this.content.eq(index).addClass('is-active');
+  this.links.removeClass('is-active');
+  this.content.removeClass('is-active');
+  $target.addClass('is-active');
+  this.checkActiveContent();
 };
 
 
 
 $(document).ready(function() {
-  // $('.tab-container').each(function() {
-  //   new Tabs(this);
-  // });
+  $('.tab-container').each(function() {
+    new Tabs(this);
+  });
 });

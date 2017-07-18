@@ -1,7 +1,7 @@
 // common
 .loginIn {
   width: 438px;
-  margin: 0 auto;
+  margin: 60px auto;
   background: $white;
   box-shadow: 0 2px 20px 0 rgba(0,77,255,0.08);
   border-radius: 5px;
@@ -17,8 +17,16 @@
 
 .loginHeader__link {
   display: inline-block;
+  margin: 0 20px;
+  padding: 0 3px;
+  height: 65px;
+  line-height: 65px;
   color: #B1B1B1;
   border-bottom: 2px solid transparent;
+
+  &:hover {
+    color: $black;
+  }
 
   &.is-active {
     color: $black;
@@ -30,5 +38,14 @@
 
 // content
 .loginContent {
-  padding: 0 40px 40px;
+  padding: 23px 40px 30px;
+}
+
+
+
+// footer
+.loginFooter {
+  padding: 23px 40px 30px;
+  text-align: center;
+  border-top: 1px solid $gray-light;
 }

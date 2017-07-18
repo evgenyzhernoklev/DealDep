@@ -9,30 +9,62 @@ html
     link rel="stylesheet" media="all" href="../css/app.css"
   body
     
-    .loginIn.tabs-container
+    .header
+      .headerTop
+        .contentIn
+          a.headerTop__logo.icon.icon--logo href="/"
+          h1.headerTop__title Авторизация
+    
+    .loginIn.tab-container
       .loginHeader
         a.loginHeader__link.tab-link.is-active href="#" Вход в систему
         a.loginHeader__link.tab-link href="#" Регистрация
       
       .loginContent
-        
-        .tab-content1
+        .tab-content
           form.form
             .form__title Вход через email
-            
             .formBlock
               label.fieldWrapper
                 span.fieldWrapper__label Ваш логин
                 input.fieldWrapper__input type="text" name="" placeholder="Введите логин"
-            
             .formBlock
               label.fieldWrapper
                 span.fieldWrapper__label Ваш пароль
                 input.fieldWrapper__input type="password" name="" placeholder="Введите пароль"
-            
-            .buttonContainer
-              button.linkButton.linkButton--blue.linkButton--icon type="submit" 
+            .buttonContainer.buttonContainer--link
+              button.buttonContainer__button.linkButton.linkButton--blue.linkButton--icon type="submit" 
                 | войти
                 span.linkButton__icon.linkButton__icon--right.icon.icon--login
-            
+              a.buttonContainer__link href="#" забыли пароль?
+        .tab-content
+          form.form
+            .form__title Регистрация через email
+            .formBlock
+              label.fieldWrapper
+                span.fieldWrapper__label Ваш email
+                input.fieldWrapper__input type="text" name="" placeholder="Введите email"
+            .formBlock
+              label.fieldWrapper
+                span.fieldWrapper__label Придумайте пароль
+                input.fieldWrapper__input type="password" name="" placeholder="Введите пароль"
+            .formBlock
+              label.fieldWrapper
+                span.fieldWrapper__label Введите пароль еще раз
+                input.fieldWrapper__input type="password" name="" placeholder="Введите пароль еще раз"
+            .buttonContainer
+              button.buttonContainer__button.linkButton.linkButton--blue type="submit" 
+                | зарегистрироваться
+      .loginFooter
+        .form
+          .form__title Вход через соцсети
+          .buttonContainer
+            a.buttonContainer__button.linkButton.linkButton--icon href="#" 
+              | войти с помощью Facebook
+              span.linkButton__icon.icon.icon--facebook
+            a.buttonContainer__button.linkButton.linkButton--icon href="#" 
+              | войти с помощью Google
+              span.linkButton__icon.icon.icon--google
+          
+          
     script src="../js/app.js"

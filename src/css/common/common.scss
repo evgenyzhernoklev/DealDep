@@ -1,4 +1,5 @@
 body {
+  padding-top: 72px;
   font-size: 14px;
   line-height: 1.5;
   font-family: $circe-regular;
@@ -57,7 +58,9 @@ a {
 }
 
 .contentIn {
+  position: relative;
   max-width: 960px;
   min-width: 320px;
+  margin: 0 auto;
   padding: 0 20px;
 }

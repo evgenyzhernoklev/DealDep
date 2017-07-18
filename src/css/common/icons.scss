@@ -8,6 +8,18 @@
 
 
 
+.icon--logo {
+  @include background-image(logo, 102px, 19px);
+}
+
 .icon--login {
   @include background-image(arrow_right_white, 13px, 9px);
+}
+
+.icon--facebook {
+  @include background-image(facebook, 9px, 15px);
+}
+
+.icon--google {
+  @include background-image(google, 13px, 13px);
 }

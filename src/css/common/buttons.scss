@@ -4,6 +4,7 @@
   width: 100%;
   height: 45px;
   font: 10px/45px $circe-bold;
+  color: $black;
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
@@ -27,12 +28,12 @@
 // icons
 .linkButton__icon {
   position: absolute;
-  left: 15px;
+  left: 20px;
   top: 50%;
   transform: translateY(-50%);
 }
 
 .linkButton__icon--right {
   left: auto;
-  right: 15px;
+  right: 20px;
 }

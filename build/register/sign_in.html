@@ -9,12 +9,22 @@
     <link href="../css/app.css" media="all" rel="stylesheet" />
   </head>
   <body>
-    <div class="loginIn tabs-container">
+    <div class="header">
+      <div class="headerTop">
+        <div class="contentIn">
+          <a class="headerTop__logo icon icon--logo" href="/"></a>
+          <h1 class="headerTop__title">
+            Авторизация
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div class="loginIn tab-container">
       <div class="loginHeader">
         <a class="loginHeader__link tab-link is-active" href="#">Вход в систему</a><a class="loginHeader__link tab-link" href="#">Регистрация</a>
       </div>
       <div class="loginContent">
-        <div class="tab-content1">
+        <div class="tab-content">
           <form class="form">
             <div class="form__title">
               Вход через email
@@ -25,10 +35,39 @@
             <div class="formBlock">
               <label class="fieldWrapper"><span class="fieldWrapper__label">Ваш пароль</span><input class="fieldWrapper__input" name="" placeholder="Введите пароль" type="password" /></label>
             </div>
-            <div class="buttonContainer">
-              <button class="linkButton linkButton--blue linkButton--icon" type="submit">войти<span class="linkButton__icon linkButton__icon--right icon icon--login"></span></button>
+            <div class="buttonContainer buttonContainer--link">
+              <button class="buttonContainer__button linkButton linkButton--blue linkButton--icon" type="submit">войти<span class="linkButton__icon linkButton__icon--right icon icon--login"></span></button><a class="buttonContainer__link" href="#">забыли пароль?</a>
             </div>
           </form>
+        </div>
+        <div class="tab-content">
+          <form class="form">
+            <div class="form__title">
+              Регистрация через email
+            </div>
+            <div class="formBlock">
+              <label class="fieldWrapper"><span class="fieldWrapper__label">Ваш email</span><input class="fieldWrapper__input" name="" placeholder="Введите email" type="text" /></label>
+            </div>
+            <div class="formBlock">
+              <label class="fieldWrapper"><span class="fieldWrapper__label">Придумайте пароль</span><input class="fieldWrapper__input" name="" placeholder="Введите пароль" type="password" /></label>
+            </div>
+            <div class="formBlock">
+              <label class="fieldWrapper"><span class="fieldWrapper__label">Введите пароль еще раз</span><input class="fieldWrapper__input" name="" placeholder="Введите пароль еще раз" type="password" /></label>
+            </div>
+            <div class="buttonContainer">
+              <button class="buttonContainer__button linkButton linkButton--blue" type="submit">зарегистрироваться</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="loginFooter">
+        <div class="form">
+          <div class="form__title">
+            Вход через соцсети
+          </div>
+          <div class="buttonContainer">
+            <a class="buttonContainer__button linkButton linkButton--icon" href="#">войти с помощью Facebook<span class="linkButton__icon icon icon--facebook"></span></a><a class="buttonContainer__button linkButton linkButton--icon" href="#">войти с помощью Google<span class="linkButton__icon icon icon--google"></span></a>
+          </div>
         </div>
       </div>
     </div>
