@@ -1,0 +1,58 @@
+.colsFlex {
+  @include flex();
+  flex-wrap: wrap;
+
+  .no-flexbox & {
+    @include clearfix();
+  }
+}
+
+.colFlex {
+  @include flex-basis(100%);
+}
+
+.colFlex--2 {
+  @include flex-basis(50%);
+
+  .no-flexbox &:nth-child(2n + 1) {
+    clear: left;
+  }
+}
+
+.colFlex--3 {
+  @include flex-basis(33.33%);
+}
+
+.colFlex--3_2 {
+  @include flex-basis(66.66%);
+}
+
+.colFlex--4 {
+  @include flex-basis(25%);
+}
+
+.colFlex--5 {
+  @include flex-basis(20%);
+}
+
+.colFlex--6 {
+  @include flex-basis(16.66%);
+}
+
+
+
+@media ($tablet) {
+  .colFlex--4 {
+    @include flex-basis(50%);
+  }
+}
+
+@media ($mobile) {
+  .colFlex--2,
+  .colFlex--3,
+  .colFlex--4,
+  .colFlex--5,
+  .colFlex--6 {
+    @include flex-basis(100%);
+  }
+}

@@ -1,0 +1,19 @@
+.tab-container {
+
+}
+
+.tab-link {
+  cursor: pointer;
+
+  &.is-active {
+    cursor: default;
+  }
+}
+
+.tab-content {
+  display: none;
+
+  &.is-active {
+    display: block;
+  }
+}

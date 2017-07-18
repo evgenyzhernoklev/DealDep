@@ -1,0 +1,38 @@
+.linkButton {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 45px;
+  font: 10px/45px $circe-bold;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid #D2D2D2;
+  border-radius: 100px;
+  transition: color $transition-normal, background-color $transition-normal, border-color $transition-normal;
+}
+
+.linkButton--blue {
+  color: $white;
+  background-color: $blue;
+  border-color: $blue;
+}
+
+.linkButton--icon {
+  padding: 0 50px;
+}
+
+
+
+// icons
+.linkButton__icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.linkButton__icon--right {
+  left: auto;
+  right: 15px;
+}

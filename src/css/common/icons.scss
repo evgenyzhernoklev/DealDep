@@ -1,0 +1,13 @@
+.iconWrapper {
+
+}
+
+.icon {
+  vertical-align: middle;
+}
+
+
+
+.icon--login {
+  @include background-image(arrow_right_white, 13px, 9px);
+}

@@ -1,0 +1,63 @@
+body {
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: $circe-regular;
+  color: $black;
+  background-color: #EFF1F5;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  transition: color $transition-normal, border-color $transition-normal, background-color $transition-normal;
+  cursor: pointer;
+}
+
+.clearfix {
+  @include clearfix();
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.forDesktop {
+  display: block;
+}
+
+.forTablet {
+  display: none;
+}
+
+.forMobile {
+  display: none;
+}
+
+@media ($tablet) {
+  .forTablet {
+    display: block;
+  }
+}
+
+@media ($mobile) {
+  .forDesktop {
+    display: none;
+  }
+
+  .forMobile {
+    display: block;
+  }
+}
+
+
+
+.titleMain {
+
+}
+
+.contentIn {
+  max-width: 960px;
+  min-width: 320px;
+  padding: 0 20px;
+}

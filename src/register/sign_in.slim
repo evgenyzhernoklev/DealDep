@@ -1,0 +1,38 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta http-equiv="X-UA-Compatible" content="IE=edge"
+    meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0"
+    title DealDep - sign in/register
+    meta name="description" content=""
+    link rel="stylesheet" media="all" href="../css/app.css"
+  body
+    
+    .loginIn.tabs-container
+      .loginHeader
+        a.loginHeader__link.tab-link.is-active href="#" Вход в систему
+        a.loginHeader__link.tab-link href="#" Регистрация
+      
+      .loginContent
+        
+        .tab-content1
+          form.form
+            .form__title Вход через email
+            
+            .formBlock
+              label.fieldWrapper
+                span.fieldWrapper__label Ваш логин
+                input.fieldWrapper__input type="text" name="" placeholder="Введите логин"
+            
+            .formBlock
+              label.fieldWrapper
+                span.fieldWrapper__label Ваш пароль
+                input.fieldWrapper__input type="password" name="" placeholder="Введите пароль"
+            
+            .buttonContainer
+              button.linkButton.linkButton--blue.linkButton--icon type="submit" 
+                | войти
+                span.linkButton__icon.linkButton__icon--right.icon.icon--login
+            
+    script src="../js/app.js"
