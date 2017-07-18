@@ -4,13 +4,16 @@
 :-moz-placeholder           {color:#A4A4A4;}/* Firefox 18- */
 :-ms-input-placeholder      {color:#A4A4A4;}
 
-form {
-  input,
-  button {
-    -moz-appearance:none;
-    -webkit-appearance: none;
-  }
+input,
+button {
+  -moz-appearance:none;
+  -webkit-appearance: none;
 }
+
+button {
+  background-color: transparent;
+}
+
 
 // autocomplete
 input:-webkit-autofill,
@@ -120,4 +123,41 @@ input::-webkit-inner-spin-button {
   font: 10px/18px $circe-bold;
   color: $blue;
   text-transform: uppercase;
+}
+
+.buttonContainer__info {
+  margin: 20px 0 0;
+  font: 12px/19px $circe-regular;
+  color: #6D6D6D;
+  text-align: center;
+}
+
+
+
+/*** persons info ***/
+.formPersonInfo {
+  position: relative;
+  margin: 23px 0 27px;
+  padding-left: 110px;
+}
+
+.formPersonInfo__avatar {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 80px;
+  border-radius: 50%;
+}
+
+.formPersonInfoAbout {
+  position: relative;
+  padding: 22px 0 0;
+  font: 12px/19px $circe-regular;
+  color: #6D6D6D;
+}
+
+.formPersonInfoAbout__social {
+  position: absolute;
+  top: 0;
+  left: 0;
 }

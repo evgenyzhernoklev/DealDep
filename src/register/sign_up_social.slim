@@ -1,0 +1,45 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta http-equiv="X-UA-Compatible" content="IE=edge"
+    meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0"
+    title DealDep - sign in/register
+    meta name="description" content=""
+    link rel="stylesheet" media="all" href="../css/app.css"
+  body
+    
+    .header
+      .headerTop
+        .contentIn
+          a.headerTop__logo.icon.icon--logo href="/"
+          h1.headerTop__title Регистрация
+    
+    .loginIn
+      .loginContent
+        form.form
+          .form__title Ваши личные данные
+          .formPersonInfo
+            img.formPersonInfo__avatar src="../img/avatars/avatar_pavel.png"
+            .formPersonInfoAbout
+              span.formPersonInfoAbout__social.icon.icon--google
+              | Мы взяли все Ваши данный из аккаунта Google+, вы можете сменить их в любой момент
+          .formBlock
+            label.fieldWrapper
+              span.fieldWrapper__label Ваша фамилия
+              input.fieldWrapper__input type="text" name="" value="Гужиков" placeholder="Введите фамилию"
+          .formBlock
+            label.fieldWrapper
+              span.fieldWrapper__label Ваше имя
+              input.fieldWrapper__input type="text" name="" value="Павел" placeholder="Введите имя" 
+          .formBlock
+            label.fieldWrapper
+              span.fieldWrapper__label Ваше отчество
+              input.fieldWrapper__input type="text" name="" value="Алексеевич" placeholder="Введите отчество"
+          .buttonContainer
+            button.buttonContainer__button.linkButton.linkButton--blue type="submit" 
+              | продолжить
+    
+    
+    
+    script src="../js/app.js"
