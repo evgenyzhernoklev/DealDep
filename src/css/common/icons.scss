@@ -8,10 +8,18 @@
 
 
 
+// header
 .icon--logo {
   @include background-image(logo, 102px, 19px);
 }
 
+.icon--bell {
+  @include background-image(bell_gray, 18px, 20px);
+}
+
+
+
+// login
 .icon--login {
   @include background-image(arrow_right_white, 13px, 9px);
 }

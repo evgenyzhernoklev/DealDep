@@ -1,3 +1,4 @@
+// common
 .header {
   position: fixed;
   z-index: 99;
@@ -6,25 +7,125 @@
   right: 0;
   background-color: $white;
   box-shadow: 0 2px 20px 0 rgba(0,77,255,0.08);
+
+  .contentIn {
+    height: 100%;
+  }
 }
 
-
-
-// header top
-.headerTop {
+.headerIn {
   height: 72px;
   padding: 15px 0;
+  border-top: 1px solid #E1E4E9;
+
+  &:first-child {
+    border-top: 0;
+
+    .header__title {
+      padding-right: 0;
+      text-align: center;
+    }
+  }
 }
 
-.headerTop__logo {
+.header__logo {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 20px;
   margin-top: -10px;
 }
 
-.headerTop__title {
+.header__title {
+  padding-right: 205px;
   padding-top: 4px;
   font: 24px/36px $circe-bold;
+}
+
+
+
+// main menu
+.menu {
+  padding: 0 240px;
   text-align: center;
+}
+
+.menu__link {
+  margin-right: 60px;
+  display: inline-block;
+  font: 14px/40px $circe-bold;
+  color: #B1B1B1;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &.is-active {
+    color: $black;
+  }
+}
+
+
+
+// logined user
+.logined {
+  position: absolute;
+  padding-right: 50px;
+  top: 1px;
+  right: 20px;
+}
+
+.loginedUser {
+  line-height: 40px;
+}
+
+.loginedUser__name {
+  display: inline-block;
+  max-width: 120px;
+  font: 14px/40px $circe-regular;
+  vertical-align: middle;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.loginedUser__avatar {
+  width: 40px;
+  margin-left: 23px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+
+
+// notices
+.notices {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  padding: 5px;
+}
+
+.notices__bell {
+
+}
+
+
+
+
+
+// header bottom
+.header__linkCreate {
+  width: 185px;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  margin-top: -23px;
+
+  &:before {
+    content: '';
+    margin-top: -2px;
+    margin-right: 11px;
+    @include background-image(plus_white, 13px, 13px);
+    vertical-align: middle;
+  }
 }
