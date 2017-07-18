@@ -7,7 +7,14 @@ html
     title DealDep - sign in/register
     meta name="description" content=""
     link rel="stylesheet" media="all" href="../css/app.css"
-  body
+  body.first-enter
+    
+    .overlayBg
+      .contentIn
+        .overlayBgInfo
+          span.overlayBgInfo__create.header__linkCreate.linkButton.linkButton--blue.first-enter-close Создать проект
+          p.overlayBgInfo__text Создайте новый проект!
+          a.overlayBgInfo__button.first-enter-close href="#" позже
   
     .header
       .headerIn
@@ -22,12 +29,18 @@ html
               img.loginedUser__avatar src="../img/avatars/avatar_pavel.png"
             a.notices href="#"
               span.notices__bell.icon.icon--bell
-      
       .headerIn
         .contentIn
           h1.header__title Мои проекты
           a.header__linkCreate.linkButton.linkButton--blue href="#" Создать проект
-          
+    
+    .contentWrapper
+      .contentIn
+        .empty.full-height
+          .emptyIn
+            .empty__imgWrapper.imgWrapper
+              img.imgWrapper__img src="../img/icons/svg/docs.svg"
+            .empty__info Здесь будут Ваши проекты, но пока здесь пусто
   
   
   

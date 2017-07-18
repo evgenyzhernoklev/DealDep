@@ -53,6 +53,10 @@ a {
 
 
 
+.contentWrapper {
+  padding-top: 72px;
+}
+
 .titleMain {
 
 }
@@ -63,4 +67,14 @@ a {
   min-width: 320px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+
+
+.imgWrapper {
+
+}
+
+.imgWrapper__img {
+  vertical-align: middle;
 }

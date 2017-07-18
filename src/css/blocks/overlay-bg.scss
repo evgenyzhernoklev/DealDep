@@ -1,0 +1,58 @@
+.overlayBg {
+  @include hide();
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0, 0.5);
+
+  .first-enter & {
+    @include show();
+  }
+}
+
+.overlayBgInfo {
+  padding-top: 40px;
+  width: 140px;
+  position: absolute;
+  top: 109px;
+  right: 20px;
+  text-align: center;
+
+  &:before {
+    content: '';
+    @include background-image(arrow_create, 94px, 147px);
+  }
+}
+
+.overlayBgInfo__create {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.overlayBgInfo__text {
+  margin: 5px 0 27px;
+  font-size: 18px;
+  line-height: 24px;
+  color: $white;
+}
+
+.overlayBgInfo__button {
+  display: inline-block;
+  width: 100px;
+  height: 35px;
+  font: 10px/35px $circe-bold;
+  color: $white;
+  text-transform: uppercase;
+  border: 1px solid #D2D2D2;
+  border-radius: 100px;
+  opacity: 0.4;
+  transition: opacity $transition-normal;
+
+  &:hover {
+    opacity: 1;
+  }
+}

@@ -116,10 +116,12 @@
 // header bottom
 .header__linkCreate {
   width: 185px;
+  height: 40px;
+  line-height: 42px;
   position: absolute;
   top: 50%;
   right: 20px;
-  margin-top: -23px;
+  margin-top: -21px;
 
   &:before {
     content: '';
