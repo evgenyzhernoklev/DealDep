@@ -17,6 +17,10 @@
   @include background-image(bell_gray, 18px, 20px);
 }
 
+.icon--close {
+  @include background-image(cross_black, 19px, 19px);
+}
+
 
 
 // login

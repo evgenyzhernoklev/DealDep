@@ -41,6 +41,13 @@
   font: 24px/36px $circe-bold;
 }
 
+.header__close {
+  position: absolute;
+  top: 11px;
+  right: 20px;
+  cursor: pointer;
+}
+
 
 
 // main menu
