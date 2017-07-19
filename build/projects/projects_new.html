@@ -49,7 +49,7 @@
         <form class="form">
           <div class="formIn">
             <div class="formContent">
-              <div class="form__title">
+              <div class="formTitle">
                 О проекте
               </div>
               <div class="formBlockWrapper">
@@ -79,6 +79,76 @@
             </div>
             <div class="personButton add-legal-entity">
               Добавить юрлицо
+            </div>
+            <div class="personEntity">
+              <div class="formTitle">
+                Юридическое лицо
+                <div class="personEntityTabs">
+                  <p class="personEntityTabs__title">
+                    Юрлицо в российской юрисдикции?
+                  </p>
+                  <div class="personEntityTabsWrapper">
+                    <a class="personEntityTabsWrapper__link is-active" href="#">да</a><a class="personEntityTabsWrapper__link" href="#">нет</a>
+                  </div>
+                </div>
+              </div>
+              <div class="personAttention">
+                <span class="personAttention__close icon icon--crossSmall"></span>
+                <p class="personAttention__info">
+                  Введите только ФИО и номер ОГРН, остальные  данные мы возьмем из Единого Государственного  Реестра Юридических Лиц, а банковские реквизиты  вводить не обязательно, их можно добавить потом.
+                </p>
+                <span class="personAttention__icon icon icon--attention"></span>
+              </div>
+              <div class="formBlockWrapper">
+                <div class="formBlock formBlock--2">
+                  <label class="fieldWrapper"><span class="fieldWrapper__label">ФИО генерального директора</span><input class="fieldWrapper__input" name="" placeholder="Введите ФИО генерального директора" type="text" /></label>
+                </div>
+                <div class="formBlock formBlock--2">
+                  <label class="fieldWrapper"><span class="fieldWrapper__label">ОГРН</span><input class="fieldWrapper__input" name="" placeholder="Введите ОГРН" type="text" /></label>
+                </div>
+              </div>
+              <div class="personDataWrapper">
+                <div class="personData">
+                  <div class="personData__title">
+                    Данные
+                  </div>
+                  <div class="personDataCols colsFlex">
+                    <div class="colFlex--2">
+                      <div class="colFlexIn">
+                        <div class="personDataCols__title">
+                          КПП
+                        </div>
+                        <div class="personDataCols__info">
+                          568246759
+                        </div>
+                      </div>
+                    </div>
+                    <div class="colFlex--2">
+                      <div class="colFlexIn">
+                        <div class="personDataCols__title">
+                          ИНН
+                        </div>
+                        <div class="personDataCols__info">
+                          5682457832
+                        </div>
+                      </div>
+                    </div>
+                    <div class="colFlex--2">
+                      <div class="colFlexIn">
+                        <div class="personDataCols__title">
+                          ОГРН
+                        </div>
+                        <div class="personDataCols__info">
+                          1234567890123
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="personRequisites">
+                <a class="personRequisites__add linkButton linkButton--small" href="#">добавить реквизиты</a>
+              </div>
             </div>
           </div>
           <div class="buttonContainer buttonContainer--center">

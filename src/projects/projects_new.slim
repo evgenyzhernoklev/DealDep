@@ -37,7 +37,7 @@ html
         form.form
           .formIn
             .formContent
-              .form__title О проекте
+              .formTitle О проекте
               .formBlockWrapper
                 .formBlock.formBlock--2
                   label.fieldWrapper
@@ -52,8 +52,57 @@ html
         							option value="1" Добыча сырья
         							option value="3" Строительство
         							option value="5" B2B
+            
             .personButton.add-legal-entity Добавить юрлицо
             
+            .personEntity
+              .formTitle
+                | Юридическое лицо
+                .personEntityTabs
+                  p.personEntityTabs__title Юрлицо в российской юрисдикции?
+                  .personEntityTabsWrapper
+                    a.personEntityTabsWrapper__link.is-active href="#" да
+                    a.personEntityTabsWrapper__link href="#" нет
+              .personAttention
+                span.personAttention__close.icon.icon--crossSmall
+                p.personAttention__info
+                  | Введите только ФИО и номер ОГРН, остальные 
+                  |  данные мы возьмем из Единого Государственного 
+                  |  Реестра Юридических Лиц, а банковские реквизиты 
+                  |  вводить не обязательно, их можно добавить потом.
+                span.personAttention__icon.icon.icon--attention
+              
+              .formBlockWrapper
+                .formBlock.formBlock--2
+                  label.fieldWrapper
+                    span.fieldWrapper__label ФИО генерального директора
+                    input.fieldWrapper__input type="text" name="" placeholder="Введите ФИО генерального директора"
+                .formBlock.formBlock--2
+                  label.fieldWrapper
+                    span.fieldWrapper__label ОГРН
+                    input.fieldWrapper__input type="text" name="" placeholder="Введите ОГРН"
+              
+              .personDataWrapper
+                .personData
+                  .personData__title Данные
+                  .personDataCols.colsFlex
+                    .colFlex--2
+                      .colFlexIn
+                        .personDataCols__title КПП
+                        .personDataCols__info 568246759
+                    .colFlex--2
+                      .colFlexIn
+                        .personDataCols__title ИНН
+                        .personDataCols__info 5682457832
+                    .colFlex--2
+                      .colFlexIn
+                        .personDataCols__title ОГРН
+                        .personDataCols__info 1234567890123
+              
+              .personRequisites
+                a.personRequisites__add.linkButton.linkButton--small href="#" добавить реквизиты
+
+              
           .buttonContainer.buttonContainer--center
             button.buttonContainer__button.linkButton.linkButton--small type="button" отменить
             button.buttonContainer__button.linkButton.linkButton--small.linkButton--blue type="submit" продолжить
