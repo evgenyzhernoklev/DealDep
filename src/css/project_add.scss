@@ -1,22 +1,108 @@
 .addProjectSection {
+  padding: 55px 0 50px;
   background-color: $white;
 }
 
 
+.addProject {
+  margin: 0 0 36px;
+}
+
 
 // steps
 .addProjectSteps {
-
+  margin: 0 auto 36px;
+  padding: 0 50px;
+  line-height: 0;
 }
 
 .addProjectStep {
+  position: relative;
+  text-align: center;
 
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    border-top: 2px dashed $gray;
+    position: absolute;
+    top: 19px;
+    left: 50%;
+  }
+
+  &:last-child {
+    &:before {
+      display: none;
+    }
+  }
+
+  &.is-current {
+    .addProjectStep__number {
+      border: 2px solid #C25FBD;
+    }
+
+    .addProjectStep__info {
+      color: $black;
+    }
+  }
 }
 
 .addProjectStep__number {
-
+  position: relative;
+  display: inline-block;
+  margin-bottom: 11px;
+  width: 40px;
+  height: 40px;
+  font: 14px/38px $circe-bold-extra;
+  color: $black;
+  text-align: center;
+  background-color: $white;
+  border: 2px dashed $gray;
+  border-radius: 50%;
 }
 
 .addProjectStep__info {
-  
+  font-size: 14px;
+  line-height: 1.5;
+  color: #A4A4A4;
+}
+
+
+
+// project about info
+.addProjectAbout {
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.addProjectAbout__title {
+  margin-bottom: 15px;
+  font: 20px/29px $circe-bold;
+}
+
+.addProjectAbout__info {
+  font-size: 14px;
+  color: #797979;
+}
+
+
+
+// form buttons
+.personButton {
+  display: block;
+  margin: 23px 0 0;
+  height: 50px;
+  font: 10px/50px $circe-bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: $black;
+  background-color: $white;
+  border-top: 1px solid $gray;
+  cursor: pointer;
+  transition: background-color $transition-normal;
+
+  &:hover {
+    background-color: $white-light;
+  }
 }

@@ -19,16 +19,44 @@ html
       .contentIn
       
         .addProject
+          .addProjectSteps.cols
+            .addProjectStep.col--2.is-current
+              span.addProjectStep__number 1
+              p.addProjectStep__info О проекте
+            .addProjectStep.col--2
+              span.addProjectStep__number 2
+              p.addProjectStep__info Участники
+          .addProjectAbout
+            .addProjectAbout__title Общая информация
+            .addProjectAbout__info 
+              | Укажите название проекта, и добавьте юридическое лицо, 
+              |  если оно уже есть. Если нет, то это не обязательно, 
+              |  его можно будет добавить в любое время.
         
-          .addProjectSteps
-            .addProjectStep
-              .addProjectStep__number 1
-              .addProjectStep__info О проекте
-            .addProjectStep
-              .addProjectStep__number 2
-              .addProjectStep__info Участники
-    
-    
+        form.form
+          .formIn
+            .formContent
+              .form__title О проекте
+              .formBlockWrapper
+                .formBlock.formBlock--2
+                  label.fieldWrapper
+                    span.fieldWrapper__label Название проекта
+                    input.fieldWrapper__input type="text" name="" placeholder="Введите название проекта"
+                .formBlock.formBlock--2
+        					label.fieldWrapper
+        						span.fieldWrapper__label Тип проекта
+        						select.fieldWrapper__select.form-select placeholder="Выберите тип проекта"
+        							option value="" Выберите тип проекта
+        							option value="4" Перевозки
+        							option value="1" Добыча сырья
+        							option value="3" Строительство
+        							option value="5" B2B
+            .personButton.add-legal-entity Добавить юрлицо
+            
+          .buttonContainer.buttonContainer--center
+            button.buttonContainer__button.linkButton.linkButton--small type="button" отменить
+            button.buttonContainer__button.linkButton.linkButton--small.linkButton--blue type="submit" продолжить
+  
   
   
   script src="../js/app.js"

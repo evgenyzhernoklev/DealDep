@@ -7,16 +7,29 @@
   color: $black;
   text-align: center;
   text-transform: uppercase;
+  background-color: $white;
   cursor: pointer;
   border: 1px solid #D2D2D2;
   border-radius: 100px;
   transition: color $transition-normal, background-color $transition-normal, border-color $transition-normal;
+
+  &:hover {
+    background-color: $white-light;
+  }
+}
+
+.linkButton--small {
+  width: 185px;
 }
 
 .linkButton--blue {
   color: $white;
   background-color: $blue;
   border-color: $blue;
+
+  &:hover {
+    background-color: $blue;
+  }
 }
 
 .linkButton--icon {

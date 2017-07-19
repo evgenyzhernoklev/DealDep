@@ -4,7 +4,7 @@ body {
   line-height: 1.5;
   font-family: $circe-regular;
   color: $black;
-  background-color: #EFF1F5;
+  background-color: $input-bg;
 
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

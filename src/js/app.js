@@ -10,6 +10,7 @@
 
 //= ./vendor/slick.min.js
 //= ./vendor/bpopup.min.js
+//= ./vendor/selectize.min.js
 
 //= ./lib/flexDetect.js
 //= ./lib/viewportSize.js

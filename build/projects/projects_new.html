@@ -22,25 +22,68 @@
     <section class="addProjectSection">
       <div class="contentIn">
         <div class="addProject">
-          <div class="addProjectSteps">
-            <div class="addProjectStep">
-              <div class="addProjectStep__number">
-                1
-              </div>
-              <div class="addProjectStep__info">
+          <div class="addProjectSteps cols">
+            <div class="addProjectStep col--2 is-current">
+              <span class="addProjectStep__number">1</span>
+              <p class="addProjectStep__info">
                 О проекте
-              </div>
+              </p>
             </div>
-            <div class="addProjectStep">
-              <div class="addProjectStep__number">
-                2
-              </div>
-              <div class="addProjectStep__info">
+            <div class="addProjectStep col--2">
+              <span class="addProjectStep__number">2</span>
+              <p class="addProjectStep__info">
                 Участники
-              </div>
+              </p>
+            </div>
+          </div>
+          <div class="addProjectAbout">
+            <div class="addProjectAbout__title">
+              Общая информация
+            </div>
+            <div class="addProjectAbout__info">
+              Укажите название проекта, и добавьте юридическое лицо,  если оно уже есть. Если нет, то это не обязательно,  его можно будет добавить в любое время.
             </div>
           </div>
         </div>
+        <form class="form">
+          <div class="formIn">
+            <div class="formContent">
+              <div class="form__title">
+                О проекте
+              </div>
+              <div class="formBlockWrapper">
+                <div class="formBlock formBlock--2">
+                  <label class="fieldWrapper"><span class="fieldWrapper__label">Название проекта</span><input class="fieldWrapper__input" name="" placeholder="Введите название проекта" type="text" /></label>
+                </div>
+                <div class="formBlock formBlock--2">
+                  <label class="fieldWrapper"><span class="fieldWrapper__label">Тип проекта</span><select class="fieldWrapper__select form-select" placeholder="Выберите тип проекта">
+                      <option value="">
+                        Выберите тип проекта
+                      </option>
+                      <option value="4">
+                        Перевозки
+                      </option>
+                      <option value="1">
+                        Добыча сырья
+                      </option>
+                      <option value="3">
+                        Строительство
+                      </option>
+                      <option value="5">
+                        B2B
+                      </option>
+                    </select></label>
+                </div>
+              </div>
+            </div>
+            <div class="personButton add-legal-entity">
+              Добавить юрлицо
+            </div>
+          </div>
+          <div class="buttonContainer buttonContainer--center">
+            <button class="buttonContainer__button linkButton linkButton--small" type="button">отменить</button><button class="buttonContainer__button linkButton linkButton--small linkButton--blue" type="submit">продолжить</button>
+          </div>
+        </form>
       </div>
     </section>
   </body>

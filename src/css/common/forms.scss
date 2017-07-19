@@ -54,6 +54,17 @@ input::-webkit-inner-spin-button {
 
 }
 
+.formIn {
+  margin: 0 0 35px;
+  background: $white;
+  box-shadow: 0 2px 20px 0 rgba(0,77,255,0.08);
+  border-radius: 5px;
+}
+
+.formContent {
+  padding: 24px 25px 0;
+}
+
 .form__title {
   margin: 0 0 4px;
   font-size: 16px;
@@ -85,8 +96,22 @@ input::-webkit-inner-spin-button {
   width: 100%;
   height: 45px;
   padding: 0 15px;
-  background-color: #EFF1F5;
+  background-color: $input-bg;
   border-radius: 3px;
+}
+
+
+
+// form block cols
+.formBlockWrapper {
+  margin-right: -20px;
+  @include clearfix();
+}
+
+.formBlock--2 {
+  width: 50%;
+  float: left;
+  padding-right: 20px;
 }
 
 
@@ -100,14 +125,22 @@ input::-webkit-inner-spin-button {
 .buttonContainer--link {
   padding-right: 160px;
 
-  .buttonContainer__button {
-
-  }
-
   .buttonContainer__link {
     position: absolute;
     right: 0;
     top: 15px;
+  }
+}
+
+.buttonContainer--center {
+  text-align: center;
+
+  .buttonContainer__button {
+    margin-right: 15px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
@@ -160,4 +193,78 @@ input::-webkit-inner-spin-button {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+
+
+/*** selectize ***/
+.selectize-control.single .selectize-input {
+  width: 100%;
+  height: 45px;
+  padding: 0 15px;
+  font: 14px/45px $circe-regular;
+  color: $black;
+  background: $input-bg;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: none;
+  transition: background-color $transition-normal, border-color $transition-normal;
+}
+
+.selectize-control.single .selectize-input:after {
+  right: 15px;
+  border-color: #D8D8D8 transparent transparent;
+}
+
+.selectize-control.single .selectize-input.dropdown-active:after {
+  border-color: transparent transparent #D8D8D8;
+}
+
+.selectize-control.single .selectize-input.input-active {
+  background: $input-bg;
+  border-color: #E4E4E4;
+  border-radius: 5px 5px 0 0;
+}
+
+.selectize-input input {
+  font-size: 14px;
+  color: $black;
+}
+
+
+
+.selectize-dropdown.single,
+.selectize-dropdown {
+  box-shadow: none;
+  border-color: #E4E4E4;
+}
+
+
+
+.selectize-dropdown [data-selectable] {
+  padding: 11px 15px;
+  background: $input-bg;
+  font: 14px/22px $circe-regular;
+  color: #A4A4A4;
+  border-bottom: 1px solid #E4E4E4;
+  transition: background-color $transition-normal, color $transition-normal;
+
+  &:hover {
+    background: $white;
+    color: $black;
+  }
+
+  &:last-child {
+    border: 0;
+  }
+}
+
+.selectize-dropdown .active {
+  background: $white;
+  color: $black;
+}
+
+.selectize-dropdown-content {
+  max-height: 134px;
 }

@@ -3,6 +3,14 @@ $(document).ready(function() {
       $body = $('body');
 
 
+  $('.form-select').selectize({
+    sortField: {
+      field: 'text',
+      direction: 'asc'
+    }
+    , create: false
+    , dropdownParent: 'body'
+  });
 
   $('.first-enter-close').one('click', function(e) {
     e.preventDefault();
