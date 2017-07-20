@@ -1,3 +1,23 @@
+var Viewer = function() {
+  this.window = $(window);
+  this.body = $('body');
+
+  this.init();
+};
+
+Viewer.prototype.init = function () {
+  this.initClasses();
+};
+
+Viewer.prototype.initClasses = function () {
+  new Forms();
+  $('.tab-container').each(function() {
+    new Tabs(this);
+  });
+};
+
+
+
 $(document).ready(function() {
   var $window = $(window),
       $body = $('body');
@@ -15,4 +35,6 @@ $(document).ready(function() {
   }
 
   $window.on('load resize', fullHeight);
+
+  new Viewer();
 });

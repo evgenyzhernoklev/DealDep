@@ -15,7 +15,8 @@
 //= ./lib/flexDetect.js
 //= ./lib/viewportSize.js
 //= ./lib/tabs.js
+//= ./lib/forms.js
+
+//= ./project_add.js
 
 //= ./common.js
-//= ./forms.js
-//= ./project_add.js

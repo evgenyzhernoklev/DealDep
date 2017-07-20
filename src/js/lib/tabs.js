@@ -31,11 +31,3 @@ Tabs.prototype.switchContent = function (e) {
   $target.addClass('is-active');
   this.checkActiveContent();
 };
-
-
-
-$(document).ready(function() {
-  $('.tab-container').each(function() {
-    new Tabs(this);
-  });
-});
