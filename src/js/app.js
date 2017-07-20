@@ -19,4 +19,5 @@
 
 //= ./project_add.js
 
+//= ./viewer.js
 //= ./common.js
