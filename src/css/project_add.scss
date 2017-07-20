@@ -131,18 +131,53 @@
 
 // tabs
 .personEntityTabs {
-
+  display: inline-block;
+  float: right;
+  white-space: nowrap;
 }
 
 .personEntityTabs__title {
+  margin-right: 25px;
+  display: inline-block;
   font: 14px/27px $circe-regular;
 }
 
 .personEntityTabsWrapper {
+  position: relative;
+  display: inline-block;
+  width: 64px;
+  height: 20px;
+  font-size: 0;
+  line-height: 0;
+  background-color: #A0DD80;
+  border-radius: 100px;
 
+  &:before {
+    content: '';
+    display: block;
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    top: -4px;
+    right: 0;
+    background: $white;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
+  }
 }
 
 .personEntityTabsWrapper__link {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  height: 20px;
+  font: 10px/24px $circe-bold;
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.personEntityTabsWrapper__link--helper {
 
 }
 
@@ -151,7 +186,7 @@
 // attention
 .personAttention {
   position: relative;
-  margin: 0;
+  margin: 25px auto 15px;
   padding: 25px 40px 24px 103px;
   background: $white;
   box-shadow: 0 0 20px 0 rgba(0,0,0,0.08);
@@ -183,7 +218,7 @@
 
 // persons data
 .personDataWrapper {
-  margin: 20px 0;
+  margin: 20px 0 25px;
   background: $white;
   border: 1px dashed $gray;
   border-radius: 5px;
