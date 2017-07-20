@@ -119,8 +119,12 @@ html
                         .personDataCols__info ООО «СтройКамазДеталь»
               
               .personRequisites
-                a.personRequisites__add.linkButton.linkButton--small href="#" добавить реквизиты
-
+                a.personRequisites__add.linkButton.linkButton--small.add-requisites-link href="#" добавить реквизиты
+                a.personRequisites__remove.remove-requisites-link href="#" не указыать
+                .formBlock.add-requisites-hidden
+                  label.fieldWrapper
+                    span.fieldWrapper__label Банковские реквизиты
+                    textarea.fieldWrapper__textarea name="" placeholder="Введите банковские реквизиты"
               
           .buttonContainer.buttonContainer--center
             button.buttonContainer__button.linkButton.linkButton--small type="button" отменить

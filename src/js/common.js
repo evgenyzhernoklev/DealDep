@@ -19,6 +19,24 @@ $(document).ready(function() {
 
 
 
+  $('.add-requisites-link').on('click', function(e) {
+    e.preventDefault();
+    $(this).hide();
+    $('.remove-requisites-link').show();
+    $(this).siblings('.add-requisites-hidden').stop().slideDown(500);
+  });
+
+  $('.remove-requisites-link').on('click', function(e) {
+    e.preventDefault();
+    $(this).hide();
+
+    $(this).siblings('.add-requisites-hidden').stop().slideUp(500, function() {
+      $('.add-requisites-link').fadeIn();
+    });
+  });
+
+
+
   $('.close-container-link').on('click', function(e) {
     e.preventDefault();
     $(this).closest('.close-container').slideUp(500);

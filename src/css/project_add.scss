@@ -273,5 +273,34 @@
 }
 
 .personRequisites__add {
+  &:before {
+    content: '';
+    margin-top: -2px;
+    margin-right: 10px;
+    @include background-image(docs_add, 10px, 12px);
+    vertical-align: middle;
+  }
+}
 
+.personRequisites__remove {
+  position: relative;
+  padding-left: 20px;
+  font: 10px/20px $circe-bold;
+  color: $black;
+  text-transform: uppercase;
+
+  &:before {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    content: '';
+    @include background-image(cross_red, 10px, 10px);
+  }
+}
+
+
+
+.add-requisites-hidden,
+.remove-requisites-link {
+  display: none;
 }
