@@ -35,3 +35,14 @@
 .icon--google {
   @include background-image(google, 13px, 13px);
 }
+
+
+
+// common
+.icon--crossSmall {
+  @include background-image(cross_black, 10px, 10px);
+}
+
+.icon--attention {
+  @include background-image(info_sign, 5px, 19px);
+}

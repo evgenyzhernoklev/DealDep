@@ -18,6 +18,13 @@ $(document).ready(function() {
   });
 
 
+
+  $('.close-container-link').on('click', function(e) {
+    e.preventDefault();
+    $(this).closest('.close-container').slideUp(500);
+  });
+
+
   // full height in empty block
   function fullHeight() {
     var newHeight = $window.height() - $('.header').height();

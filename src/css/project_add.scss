@@ -119,6 +119,9 @@
 
 /*** add person entity ***/
 .personEntity {
+  padding: 25px 25px 25px;
+  border-top: 1px solid $gray;
+
   .formTitle {
 
   }
@@ -132,7 +135,7 @@
 }
 
 .personEntityTabs__title {
-
+  font: 14px/27px $circe-regular;
 }
 
 .personEntityTabsWrapper {
@@ -147,11 +150,19 @@
 
 // attention
 .personAttention {
-
+  position: relative;
+  margin: 0;
+  padding: 25px 40px 24px 103px;
+  background: $white;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.08);
+  border-radius: 5px;
 }
 
 .personAttention__close {
-
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
 }
 
 .personAttention__info {
@@ -159,37 +170,64 @@
 }
 
 .personAttention__icon {
-
+  position: absolute;
+  top: 23px;
+  left: 29px;
+  width: 42px;
+  height: 42px;
+  background-color: #2196F3;
+  border-radius: 50%;
 }
 
 
 
 // persons data
 .personDataWrapper {
-
+  margin: 20px 0;
+  background: $white;
+  border: 1px dashed $gray;
+  border-radius: 5px;
 }
 
 .personData {
+  padding: 25px 20px 15px;
+  border-top: 1px dashed $gray;
 
+  &:first-child {
+    border-top: 0;;
+  }
 }
 
 .personData__title {
-
+  width: 130px;
+  float: left;
+  padding-top: 6px;
+  padding-right: 20px;
+  font-family: $circe-bold;
 }
 
 .personDataCols {
+  margin-left: 130px;
 
   .colFlexIn {
-
+    padding: 6px 0;
+    @include clearfix();
   }
 }
 
 .personDataCols__title {
+  width: 50px;
+  float: left;
+  color: #939393;
 
+  .personDataCols--bold & {
+    font-family: $circe-bold;
+    color: $black;
+  }
 }
 
 .personDataCols__info {
-  
+  margin-left: 60px;
 }
 
 

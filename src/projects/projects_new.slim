@@ -63,8 +63,8 @@ html
                   .personEntityTabsWrapper
                     a.personEntityTabsWrapper__link.is-active href="#" да
                     a.personEntityTabsWrapper__link href="#" нет
-              .personAttention
-                span.personAttention__close.icon.icon--crossSmall
+              .personAttention.close-container
+                span.personAttention__close.icon.icon--crossSmall.close-container-link
                 p.personAttention__info
                   | Введите только ФИО и номер ОГРН, остальные 
                   |  данные мы возьмем из Единого Государственного 
@@ -98,6 +98,25 @@ html
                       .colFlexIn
                         .personDataCols__title ОГРН
                         .personDataCols__info 1234567890123
+                .personData
+                  .personData__title Учредители
+                  .personDataCols.personDataCols--bold.colsFlex
+                    .colFlex--2
+                      .colFlexIn
+                        .personDataCols__title 10%
+                        .personDataCols__info Гужиков Павел Алексеевич
+                    .colFlex--2
+                      .colFlexIn
+                        .personDataCols__title 45%
+                        .personDataCols__info Горбунков Семен Семенович
+                    .colFlex--2
+                      .colFlexIn
+                        .personDataCols__title 25%
+                        .personDataCols__info Ардинцев Иван Сергеевич
+                    .colFlex--2
+                      .colFlexIn
+                        .personDataCols__title 20%
+                        .personDataCols__info ООО «СтройКамазДеталь»
               
               .personRequisites
                 a.personRequisites__add.linkButton.linkButton--small href="#" добавить реквизиты
