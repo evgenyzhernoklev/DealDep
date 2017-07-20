@@ -17,3 +17,5 @@
 //= ./lib/tabs.js
 
 //= ./common.js
+//= ./forms.js
+//= ./project_add.js

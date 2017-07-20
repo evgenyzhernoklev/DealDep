@@ -77,10 +77,7 @@
                 </div>
               </div>
             </div>
-            <div class="personButton add-legal-entity">
-              Добавить юрлицо
-            </div>
-            <div class="personEntity">
+            <div class="personEntity tab-container">
               <div class="formTitle clearfix">
                 Юридическое лицо
                 <div class="personEntityTabs">
@@ -88,116 +85,161 @@
                     Юрлицо в российской юрисдикции?
                   </p>
                   <div class="personEntityTabsWrapper">
-                    <a class="personEntityTabsWrapper__link is-active" href="#">да</a><a class="personEntityTabsWrapper__link" href="#">нет</a>
+                    <a class="personEntityTabsWrapper__link tab-link" href="#">да</a><a class="personEntityTabsWrapper__link tab-link is-active" href="#">нет</a>
                   </div>
                 </div>
               </div>
-              <div class="personAttention close-container">
-                <span class="personAttention__close icon icon--crossSmall close-container-link"></span>
+              <div class="personAttention attention-container">
+                <span class="personAttention__close icon icon--crossSmall attention-close"></span>
                 <p class="personAttention__info">
                   Введите только ФИО и номер ОГРН, остальные  данные мы возьмем из Единого Государственного  Реестра Юридических Лиц, а банковские реквизиты  вводить не обязательно, их можно добавить потом.
                 </p>
                 <span class="personAttention__icon icon icon--attention"></span>
               </div>
-              <div class="formBlockWrapper">
-                <div class="formBlock formBlock--2">
-                  <label class="fieldWrapper"><span class="fieldWrapper__label">ФИО генерального директора</span><input class="fieldWrapper__input" name="" placeholder="Введите ФИО генерального директора" type="text" /></label>
+              <div class="tab-content">
+                <div class="formBlockWrapper">
+                  <div class="formBlock formBlock--2">
+                    <label class="fieldWrapper"><span class="fieldWrapper__label">ФИО генерального директора</span><input class="fieldWrapper__input" name="" placeholder="Введите ФИО генерального директора" type="text" /></label>
+                  </div>
+                  <div class="formBlock formBlock--2">
+                    <label class="fieldWrapper"><span class="fieldWrapper__label">ОГРН</span><input class="fieldWrapper__input" name="" placeholder="Введите ОГРН" type="text" /></label>
+                  </div>
                 </div>
-                <div class="formBlock formBlock--2">
-                  <label class="fieldWrapper"><span class="fieldWrapper__label">ОГРН</span><input class="fieldWrapper__input" name="" placeholder="Введите ОГРН" type="text" /></label>
+                <div class="personDataWrapper">
+                  <div class="personData">
+                    <div class="personData__title">
+                      Данные
+                    </div>
+                    <div class="personDataCols colsFlex">
+                      <div class="colFlex--2">
+                        <div class="colFlexIn">
+                          <div class="personDataCols__title">
+                            КПП
+                          </div>
+                          <div class="personDataCols__info">
+                            568246759
+                          </div>
+                        </div>
+                      </div>
+                      <div class="colFlex--2">
+                        <div class="colFlexIn">
+                          <div class="personDataCols__title">
+                            ИНН
+                          </div>
+                          <div class="personDataCols__info">
+                            5682457832
+                          </div>
+                        </div>
+                      </div>
+                      <div class="colFlex--2">
+                        <div class="colFlexIn">
+                          <div class="personDataCols__title">
+                            ОГРН
+                          </div>
+                          <div class="personDataCols__info">
+                            1234567890123
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="personData">
+                    <div class="personData__title">
+                      Учредители
+                    </div>
+                    <div class="personDataCols personDataCols--bold colsFlex">
+                      <div class="colFlex--2">
+                        <div class="colFlexIn">
+                          <div class="personDataCols__title">
+                            10%
+                          </div>
+                          <div class="personDataCols__info">
+                            Гужиков Павел Алексеевич
+                          </div>
+                        </div>
+                      </div>
+                      <div class="colFlex--2">
+                        <div class="colFlexIn">
+                          <div class="personDataCols__title">
+                            45%
+                          </div>
+                          <div class="personDataCols__info">
+                            Горбунков Семен Семенович
+                          </div>
+                        </div>
+                      </div>
+                      <div class="colFlex--2">
+                        <div class="colFlexIn">
+                          <div class="personDataCols__title">
+                            25%
+                          </div>
+                          <div class="personDataCols__info">
+                            Ардинцев Иван Сергеевич
+                          </div>
+                        </div>
+                      </div>
+                      <div class="colFlex--2">
+                        <div class="colFlexIn">
+                          <div class="personDataCols__title">
+                            20%
+                          </div>
+                          <div class="personDataCols__info">
+                            ООО «СтройКамазДеталь»
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="personRequisites">
+                  <a class="personRequisites__add linkButton linkButton--small add-requisites-link" href="#">добавить реквизиты</a><a class="personRequisites__remove remove-requisites-link" href="#">не указыать</a>
+                  <div class="formBlock add-requisites-hidden">
+                    <label class="fieldWrapper"><span class="fieldWrapper__label">Банковские реквизиты</span><textarea class="fieldWrapper__textarea" name="" placeholder="Введите банковские реквизиты"></textarea></label>
+                  </div>
                 </div>
               </div>
-              <div class="personDataWrapper">
-                <div class="personData">
-                  <div class="personData__title">
-                    Данные
+              <div class="tab-content">
+                <div class="formBlockWrapper">
+                  <div class="formBlock formBlock--2">
+                    <label class="fieldWrapper"><span class="fieldWrapper__label">Название компании</span><input class="fieldWrapper__input" name="" placeholder="Введите название компании" type="text" /></label>
                   </div>
-                  <div class="personDataCols colsFlex">
-                    <div class="colFlex--2">
-                      <div class="colFlexIn">
-                        <div class="personDataCols__title">
-                          КПП
-                        </div>
-                        <div class="personDataCols__info">
-                          568246759
-                        </div>
-                      </div>
-                    </div>
-                    <div class="colFlex--2">
-                      <div class="colFlexIn">
-                        <div class="personDataCols__title">
-                          ИНН
-                        </div>
-                        <div class="personDataCols__info">
-                          5682457832
-                        </div>
-                      </div>
-                    </div>
-                    <div class="colFlex--2">
-                      <div class="colFlexIn">
-                        <div class="personDataCols__title">
-                          ОГРН
-                        </div>
-                        <div class="personDataCols__info">
-                          1234567890123
-                        </div>
-                      </div>
-                    </div>
+                  <div class="formBlock formBlock--2">
+                    <label class="fieldWrapper"><span class="fieldWrapper__label">Страна юрисдикции</span><select class="fieldWrapper__select form-select" placeholder="Выберите страну юрисдикции">
+                        <option value="">
+                          Выберите страну юрисдикции
+                        </option>
+                        <option value="4">
+                          Россия
+                        </option>
+                        <option value="1">
+                          Германия
+                        </option>
+                        <option value="3">
+                          Финляндия
+                        </option>
+                        <option value="5">
+                          Кипр
+                        </option>
+                      </select></label>
                   </div>
                 </div>
-                <div class="personData">
-                  <div class="personData__title">
-                    Учредители
-                  </div>
-                  <div class="personDataCols personDataCols--bold colsFlex">
-                    <div class="colFlex--2">
-                      <div class="colFlexIn">
-                        <div class="personDataCols__title">
-                          10%
-                        </div>
-                        <div class="personDataCols__info">
-                          Гужиков Павел Алексеевич
-                        </div>
-                      </div>
-                    </div>
-                    <div class="colFlex--2">
-                      <div class="colFlexIn">
-                        <div class="personDataCols__title">
-                          45%
-                        </div>
-                        <div class="personDataCols__info">
-                          Горбунков Семен Семенович
-                        </div>
-                      </div>
-                    </div>
-                    <div class="colFlex--2">
-                      <div class="colFlexIn">
-                        <div class="personDataCols__title">
-                          25%
-                        </div>
-                        <div class="personDataCols__info">
-                          Ардинцев Иван Сергеевич
-                        </div>
-                      </div>
-                    </div>
-                    <div class="colFlex--2">
-                      <div class="colFlexIn">
-                        <div class="personDataCols__title">
-                          20%
-                        </div>
-                        <div class="personDataCols__info">
-                          ООО «СтройКамазДеталь»
-                        </div>
-                      </div>
-                    </div>
+                <div class="formBlock">
+                  <label class="fieldWrapper"><span class="fieldWrapper__label">Остальные данные</span><textarea class="fieldWrapper__textarea" name="" placeholder="Введите остальные данные"></textarea></label>
+                </div>
+                <div class="personRequisites">
+                  <a class="personRequisites__add linkButton linkButton--small add-requisites-link" href="#">добавить реквизиты</a><a class="personRequisites__remove remove-requisites-link" href="#">не указыать</a>
+                  <div class="formBlock add-requisites-hidden">
+                    <label class="fieldWrapper"><span class="fieldWrapper__label">Банковские реквизиты</span><textarea class="fieldWrapper__textarea" name="" placeholder="Введите банковские реквизиты"></textarea></label>
                   </div>
                 </div>
               </div>
-              <div class="personRequisites">
-                <a class="personRequisites__add linkButton linkButton--small add-requisites-link" href="#">добавить реквизиты</a><a class="personRequisites__remove remove-requisites-link" href="#">не указыать</a>
-                <div class="formBlock add-requisites-hidden">
-                  <label class="fieldWrapper"><span class="fieldWrapper__label">Банковские реквизиты</span><textarea class="fieldWrapper__textarea" name="" placeholder="Введите банковские реквизиты"></textarea></label>
-                </div>
+            </div>
+            <div class="personButtonWrapper is-first">
+              <div class="personButton personButton--remove remove-legal-entity">
+                Удалить юрлицо
+              </div>
+              <div class="personButton personButton--add add-legal-entity">
+                Добавить юрлицо
               </div>
             </div>
           </div>
