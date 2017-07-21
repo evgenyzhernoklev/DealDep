@@ -28,7 +28,6 @@ Tabs.prototype.switchContent = function (e) {
     return;
   }
 
-
   this.linksContainer.removeClass('slide');
   this.links.removeClass('is-active');
   this.content.removeClass('is-active');

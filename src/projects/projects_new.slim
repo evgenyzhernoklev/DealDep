@@ -53,7 +53,7 @@ html
         							option value="3" Строительство
         							option value="5" B2B
             
-            .personEntity.hidden.tab-container
+            .personEntity.tab-container.person-entity-clone
               .formTitle
                 | Юридическое лицо
                 .personEntityTabs
@@ -120,7 +120,7 @@ html
                           .personDataCols__info ООО «СтройКамазДеталь»
                 .personRequisites
                   a.personRequisites__add.linkButton.linkButton--small.add-requisites-link href="#" добавить реквизиты
-                  a.personRequisites__remove.remove-requisites-link href="#" не указыать
+                  a.personRequisites__remove.remove-requisites-link href="#" не указывать
                   .formBlock.add-requisites-hidden
                     label.fieldWrapper
                       span.fieldWrapper__label Банковские реквизиты
@@ -147,15 +147,15 @@ html
                     textarea.fieldWrapper__textarea name="" placeholder="Введите остальные данные"
                 .personRequisites
                   a.personRequisites__add.linkButton.linkButton--small.add-requisites-link href="#" добавить реквизиты
-                  a.personRequisites__remove.remove-requisites-link href="#" не указыать
+                  a.personRequisites__remove.remove-requisites-link href="#" не указывать
                   .formBlock.add-requisites-hidden
                     label.fieldWrapper
                       span.fieldWrapper__label Банковские реквизиты
                       textarea.fieldWrapper__textarea name="" placeholder="Введите банковские реквизиты"
                 
-            .personButtonWrapper.is-first
-              .personButton.personButton--remove.remove-legal-entity Удалить юрлицо
-              .personButton.personButton--add.add-legal-entity Добавить юрлицо
+            .personButtonWrapper.person-entity-links.is-first
+              .personButton.personButton--remove.person-entity-remove Удалить юрлицо
+              .personButton.personButton--add.person-entity-add Добавить юрлицо
               
           .buttonContainer.buttonContainer--center
             button.buttonContainer__button.linkButton.linkButton--small type="button" отменить
