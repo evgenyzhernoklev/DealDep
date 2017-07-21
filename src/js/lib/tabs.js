@@ -2,7 +2,7 @@ var Tabs = function(container) {
   this.container = $(container);
   this.content = this.container.find('.tab-content');
   this.linksContainer = this.container.find('.tab-link-container');
-  this.links = this.linksContainer.find('.tab-link');
+  this.links = this.container.find('.tab-link');
 
   this.init();
 };
