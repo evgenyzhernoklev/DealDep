@@ -1,6 +1,7 @@
 var ProjectAdd = function() {
   this.body = $('body');
   this.personEntity = this.body.find('.person-entity-clone');
+  this.personEntityClone = this.personEntity.clone();
   this.personButtonsContainer = this.body.find('.person-entity-links');
   this.addPersonButton = this.personButtonsContainer.find('.person-entity-add');
   this.removePersonButton = this.personButtonsContainer.find('.person-entity-remove');
@@ -54,14 +55,13 @@ ProjectAdd.prototype.addPerson = function (e) {
     this.personEntity.slideDown(700);
     this.personButtonsContainer.removeClass('is-first');
   } else {
-    var $clone = this.personEntity.clone();
-    
+    var $clone = this.personEntityClone.clone();
+
+    new Tabs($clone);
+
     $clone.hide();
     $persons.last().after($clone);
     $clone.slideDown(700);
-
-    // var $tabs = $clone.find('.tab-link-container');
-    // new Tabs($tabs);
   }
 };
 
