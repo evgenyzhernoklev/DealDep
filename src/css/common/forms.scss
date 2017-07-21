@@ -66,9 +66,21 @@ input::-webkit-inner-spin-button {
 }
 
 .formTitle {
+  position: relative;
   margin: 0 0 4px;
   font-size: 16px;
   font-family: $circe-bold;
+}
+
+.formTitle__avatar {
+  margin-right: 18px;
+  width: 40px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.formTitle__hint {
+  color: #878787;
 }
 
 

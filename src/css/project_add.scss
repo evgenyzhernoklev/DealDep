@@ -38,11 +38,23 @@
 
   &.is-current {
     .addProjectStep__number {
-      border: 2px solid #C25FBD;
+      border: 2px solid $violet;
     }
 
     .addProjectStep__info {
       color: $black;
+    }
+  }
+
+  &.is-active {
+    &:before {
+      border-top: 2px solid $violet;
+    }
+
+    .addProjectStep__number {
+      color: $white;
+      background-color: $violet;
+      border: 2px solid $violet;
     }
   }
 }
@@ -146,8 +158,8 @@
   padding: 25px 25px 25px;
   border-top: 1px solid $gray;
 
-  .formTitle {
-
+  &:first-child {
+    border-top: 0;
   }
 }
 
