@@ -13,6 +13,7 @@ ProjectAdd.prototype.init = function () {
   this.body.on('click', '.attention-close', this.closeAttention.bind(this));
   this.body.on('click', '.add-requisites-link', this.addRequisites.bind(this));
   this.body.on('click', '.remove-requisites-link', this.removeRequisites.bind(this));
+  this.body.on('click', '.partner-entity-remove', this.removePartner.bind(this));
 
   this.addPersonButton.on('click', this.addPerson.bind(this));
   this.removePersonButton.on('click', this.removePerson.bind(this));
@@ -132,7 +133,19 @@ ProjectAdd.prototype.updatePartnerTitle = function ($container, length) {
 
   $hint.remove();
   $title.text(titleText + ' участник');
+  $title.append('<span class="formTitle__remove partner-entity-remove">убрать участника</span>');
 }
+
+ProjectAdd.prototype.removePartner = function(e) {
+  e.preventDefault();
+  var $target = $(e.target);
+
+  $target.closest('.personEntity').slideUp(700, function() {
+    $(this).remove();
+  });
+};
+
+
 
 
 
