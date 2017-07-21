@@ -53,14 +53,14 @@ html
         							option value="3" Строительство
         							option value="5" B2B
             
-            .personEntity.tab-container
-              .formTitle.clearfix
+            .personEntity.hidden.tab-container
+              .formTitle
                 | Юридическое лицо
                 .personEntityTabs
+                  .personEntityTabsWrapper.tab-link-container
+                    a.personEntityTabsWrapper__link.personEntityTabsWrapper__link--helper.tab-link.is-active href="#" нет
+                    a.personEntityTabsWrapper__link.tab-link data-container-class="slide" href="#" да
                   p.personEntityTabs__title Юрлицо в российской юрисдикции?
-                  .personEntityTabsWrapper
-                    a.personEntityTabsWrapper__link.tab-link.is-active href="#" да
-                    a.personEntityTabsWrapper__link.tab-link href="#" нет
               .personAttention.attention-container
                 span.personAttention__close.icon.icon--crossSmall.attention-close
                 p.personAttention__info

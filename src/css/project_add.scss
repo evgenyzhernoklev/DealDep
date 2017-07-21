@@ -142,7 +142,6 @@
 
 /*** add person entity ***/
 .personEntity {
-  margin-top: 18px;
   padding: 25px 25px 25px;
   border-top: 1px solid $gray;
 
@@ -157,36 +156,29 @@
 .personEntityTabs {
   display: inline-block;
   float: right;
-  white-space: nowrap;
+  margin-top: -1px;
 }
 
 .personEntityTabs__title {
-  margin-right: 25px;
-  display: inline-block;
+  margin-right: 90px;
   font: 14px/27px $circe-regular;
 }
 
 .personEntityTabsWrapper {
+  float: right;
   position: relative;
-  display: inline-block;
+  display: block;
   width: 64px;
   height: 20px;
+  margin-top: 3px;
   font-size: 0;
   line-height: 0;
   background-color: #A0DD80;
   border-radius: 100px;
+  transition: background-color $transition-fast;
 
-  &:before {
-    content: '';
-    display: block;
-    width: 27px;
-    height: 27px;
-    position: absolute;
-    top: -4px;
-    right: 0;
-    background: $white;
-    border-radius: 50%;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
+  &.slide {
+    background-color: $input-bg;
   }
 }
 
@@ -194,6 +186,7 @@
   position: relative;
   display: inline-block;
   width: 50%;
+  float: right;
   height: 20px;
   font: 10px/24px $circe-bold;
   color: $white;
@@ -202,7 +195,27 @@
 }
 
 .personEntityTabsWrapper__link--helper {
+  color: #686868;
 
+  &:before {
+    content: '';
+    display: block;
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    top: -4px;
+    right: 37px;
+    background: $white;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
+    transition: right $transition-fast;
+  }
+
+  &.is-active {
+    &:before {
+     right: 0;
+    }
+  }
 }
 
 
