@@ -8,6 +8,7 @@
  * Custom
  */
 
+//= ./vendor/jquery-ui.js
 //= ./vendor/slick.min.js
 //= ./vendor/bpopup.min.js
 //= ./vendor/selectize.min.js

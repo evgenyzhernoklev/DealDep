@@ -59,15 +59,17 @@ html
         							option value="1" Аналом
         							option value="3" Рабство
         							option value="5" B2B
-              
               .formBlockWrapper
-                .formBlock.formBlock--2
-                
+                .formBlock.formBlock--2.formBlock--slider
+                  label.fieldWrapper
+                    span.fieldWrapper__label Доля
+                    input.fieldWrapper__input.fieldWrapper__input--slider type="number" name="" placeholder="0" value="50"
+                    span.fieldWrapper__dimension %
+                  .formSlider
                 .formBlock.formBlock--2
                   label.fieldWrapper
                     span.fieldWrapper__label Email
                     input.fieldWrapper__input type="text" name="" placeholder="Введите Email" value="pavel@bongord.com"
-                
               .formBlockWrapper
                 .formBlock.formBlock--2
                   label.fieldWrapper
