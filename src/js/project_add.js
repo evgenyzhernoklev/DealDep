@@ -129,23 +129,52 @@ ProjectAdd.prototype.updatePartnerTitle = function ($container, length) {
     case 4:
       titleText = 'Пятый'
       break;
+    case 5:
+      titleText = 'Шестой'
+      break;
   }
 
   $hint.remove();
   $title.text(titleText + ' участник');
-  $title.append('<span class="formTitle__remove partner-entity-remove">убрать участника</span>');
+  $title.closest('.formTitle').append('<span class="formTitle__remove partner-entity-remove">убрать участника</span>');
 }
 
 ProjectAdd.prototype.removePartner = function(e) {
   e.preventDefault();
-  var $target = $(e.target);
+  var $target = $(e.target),
+      self = this;
 
   $target.closest('.personEntity').slideUp(700, function() {
     $(this).remove();
+    self.updateTitles();
   });
 };
 
+ProjectAdd.prototype.updateTitles = function () {
+  var $counter = $('.formTitle__counter'),
+      counterLength = $counter.length;
 
+  for (var i = 2; i < counterLength; i++) {
+    var titleText = '';
+
+    switch (i) {
+      case 2:
+        titleText = 'Третий'
+        break;
+      case 3:
+        titleText = 'Четвертый'
+        break;
+      case 4:
+        titleText = 'Пятый'
+        break;
+      case 5:
+        titleText = 'Шестой'
+        break;
+    }
+
+    $counter.eq(i).text(titleText + ' участник');
+  }
+};
 
 
 
