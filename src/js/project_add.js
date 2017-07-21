@@ -36,7 +36,7 @@ ProjectAdd.prototype.closeAttention = function (e) {
   e.preventDefault();
   var $target = $(e.target);
 
-  $target.closest('.close-container').slideUp(500);
+  $target.closest('.attention-container').slideUp(500);
 };
 
 

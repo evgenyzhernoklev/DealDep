@@ -28,16 +28,16 @@ Viewer.prototype.initClasses = function () {
 };
 
 Viewer.prototype.initFunctions = function () {
-  this.fullHeight();
+  this.fullWindowHeight();
 };
 
 Viewer.prototype.updateResizer = function () {
-  this.fullHeight();
+  this.fullWindowHeight();
 };
 
 
 
-Viewer.prototype.fullHeight = function () {
+Viewer.prototype.fullWindowHeight = function () {
   var newHeight = this.window.height() - $('.header').height();
 
   $('.full-height').height(newHeight);

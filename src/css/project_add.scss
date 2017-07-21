@@ -107,7 +107,7 @@
 .personButton {
   display: inline-block;
   width: 50%;
-  margin: 23px 0 0;
+  margin: 0;
   height: 50px;
   font: 10px/50px $circe-bold;
   text-align: center;
@@ -142,6 +142,7 @@
 
 /*** add person entity ***/
 .personEntity {
+  margin-top: 18px;
   padding: 25px 25px 25px;
   border-top: 1px solid $gray;
 
@@ -258,7 +259,7 @@
 
 // persons data
 .personDataWrapper {
-  margin: 20px 0 25px;
+  margin: 20px 0;
   background: $white;
   border: 1px dashed $gray;
   border-radius: 5px;
@@ -310,6 +311,7 @@
 // requisites
 .personRequisites {
   position: relative;
+  margin-top: 25px;
 }
 
 .personRequisites__add {
