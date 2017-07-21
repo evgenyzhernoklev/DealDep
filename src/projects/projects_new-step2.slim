@@ -37,14 +37,12 @@ html
         form.form
           .formIn
             
-            .personEntity.person-entity-clone style="display: block;"
-              
+            .personEntity.personEntity--visible.person-entity-clone style="display: block;"
               .formTitle
                 img.formTitle__avatar src="../img/icons/svg/avatar_default.svg"
                 | Первый участник 
                 span.formTitle__hint
                   | (это вы)
-                
               .formBlockWrapper
                 .formBlock.formBlock--2
                   label.fieldWrapper
@@ -79,7 +77,48 @@ html
                       option value="2" Шлюха
                       option value="1" Глава надела
                       option value="3" Пес
-                
+            
+            / 
+            .personEntity.personEntity--visible
+              .formTitle
+                img.formTitle__avatar src="../img/icons/svg/avatar_default.svg"
+                | Второй участник
+              .formBlockWrapper
+                .formBlock.formBlock--2
+                  label.fieldWrapper
+                    span.fieldWrapper__label Имя участника
+                    input.fieldWrapper__input type="text" name="" placeholder="Введите имя участника" value="Павел Гужиков"
+                .formBlock.formBlock--2
+                  label.fieldWrapper
+                    span.fieldWrapper__label Вложение в проект
+                    select.fieldWrapper__select.form-select placeholder="Выберите тип вложения"
+                      option value="" Выберите тип вложения
+                      option value="2" Налом
+                      option value="1" Аналом
+                      option value="3" Рабство
+                      option value="5" B2B
+              .formBlockWrapper
+                .formBlock.formBlock--2.formBlock--slider
+                  label.fieldWrapper
+                    span.fieldWrapper__label Доля
+                    input.fieldWrapper__input.fieldWrapper__input--slider type="number" name="" placeholder="0" value="50"
+                    span.fieldWrapper__dimension %
+                  .formSlider
+                .formBlock.formBlock--2
+                  label.fieldWrapper
+                    span.fieldWrapper__label Email
+                    input.fieldWrapper__input type="text" name="" placeholder="Введите Email" value="pavel@bongord.com"
+              .formBlockWrapper
+                .formBlock.formBlock--2
+                  label.fieldWrapper
+                    span.fieldWrapper__label Роль участника
+                    select.fieldWrapper__select.form-select placeholder="Выберите роль"
+                      option value="" Выберите роль
+                      option value="2" Шлюха
+                      option value="1" Глава надела
+                      option value="3" Пес
+
+            
             .personButtonWrapper.person-entity-links.is-first
               / .personButton.personButton--remove.person-entity-remove Удалить юрлицо
               .personButton.personButton--add.person-entity-add Добавить еще одного

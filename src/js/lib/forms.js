@@ -1,4 +1,5 @@
 var Forms = function() {
+  this.body = $('body');
   this.select = $('.form-select');
 
   this.init();
@@ -40,18 +41,20 @@ Forms.prototype.initSlider = function () {
     }
   });
 
-  $('.fieldWrapper__input--slider').on('input', function() {
-    var inputValue = $(this).val();
-    var $parent = $(this).closest('.formBlock');
-    var $slider = $parent.find('.formSlider');
+  this.body.on('input', '.fieldWrapper__input--slider', this.updateSlider);
+};
 
-    if (inputValue < 0) {
-      inputValue = 0;
-    } else if (inputValue > 100) {
-      inputValue = 100;
-    }
+Forms.prototype.updateSlider = function () {
+  var inputValue = $(this).val(),
+      $parent = $(this).closest('.formBlock'),
+      $slider = $parent.find('.formSlider');
 
-    $(this).val(inputValue);
-    $slider.slider('value', inputValue);
-  });
+  if ( inputValue < 0 ) {
+    inputValue = 0;
+  } else if ( inputValue > 100 ) {
+    inputValue = 100;
+  }
+
+  $(this).val(inputValue);
+  $slider.slider('value', inputValue);
 };
