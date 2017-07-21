@@ -58,6 +58,14 @@ ProjectAdd.prototype.addPerson = function (e) {
     var $clone = this.personEntityClone.clone();
 
     new Tabs($clone);
+    $clone.find('.form-select').selectize({
+      sortField: {
+        field: 'text',
+        direction: 'asc'
+      }
+      , create: false
+      , dropdownParent: 'body'
+    });
 
     $clone.hide();
     $persons.last().after($clone);
