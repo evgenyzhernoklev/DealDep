@@ -22,7 +22,7 @@ Forms.prototype.initSelect = function () {
 };
 
 Forms.prototype.initSlider = function () {
-  $( ".formSlider" ).slider({
+  $(".formSlider").slider({
     range: "min",
     min: 1,
     max: 100,

@@ -67,6 +67,11 @@ ProjectAdd.prototype.addPerson = function (e) {
       , dropdownParent: 'body'
     });
 
+    if ( $(e.target).data('partner') ) {
+      this.initSlider($clone);
+      this.updatePartnerTitle($clone, $persons.length);
+    }
+
     $clone.hide();
     $persons.last().after($clone);
     $clone.slideDown(700);
@@ -86,6 +91,48 @@ ProjectAdd.prototype.removePerson = function (e) {
     });
   }
 };
+
+ProjectAdd.prototype.initSlider = function ($container) {
+  $container.find(".formSlider").slider({
+    range: "min",
+    min: 1,
+    max: 100,
+    create: function() {
+      var $parent = $(this).closest('.formBlock'),
+          $input = $parent.find('.fieldWrapper__input'),
+          inputValue = $input.val();
+
+      $(this).slider('value', inputValue);
+    },
+    slide: function( event, ui ) {
+      var $parent = $(this).closest('.formBlock'),
+          $input = $parent.find('.fieldWrapper__input');
+
+      $input.val( ui.value );
+    }
+  });
+};
+
+ProjectAdd.prototype.updatePartnerTitle = function ($container, length) {
+  var $title = $container.find('.formTitle__counter'),
+      $hint = $container.find('.formTitle__hint'),
+      titleText = '';
+
+  switch (length) {
+    case 2:
+      titleText = 'Третий'
+      break;
+    case 3:
+      titleText = 'Четвертый'
+      break;
+    case 4:
+      titleText = 'Пятый'
+      break;
+  }
+
+  $hint.remove();
+  $title.text(titleText + ' участник');
+}
 
 
 

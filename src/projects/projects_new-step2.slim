@@ -37,12 +37,11 @@ html
         form.form
           .formIn
             
-            .personEntity.personEntity--visible.person-entity-clone style="display: block;"
+            .personEntity.personEntity--visible.person-entity-clone
               .formTitle
                 img.formTitle__avatar src="../img/icons/svg/avatar_default.svg"
-                | Первый участник 
-                span.formTitle__hint
-                  | (это вы)
+                span.formTitle__counter Первый участник 
+                span.formTitle__hint (это вы)
               .formBlockWrapper
                 .formBlock.formBlock--2
                   label.fieldWrapper
@@ -78,11 +77,10 @@ html
                       option value="1" Глава надела
                       option value="3" Пес
             
-            / 
             .personEntity.personEntity--visible
               .formTitle
                 img.formTitle__avatar src="../img/icons/svg/avatar_default.svg"
-                | Второй участник
+                span.formTitle__counter Второй участник
               .formBlockWrapper
                 .formBlock.formBlock--2
                   label.fieldWrapper
@@ -121,7 +119,7 @@ html
             
             .personButtonWrapper.person-entity-links.is-first
               / .personButton.personButton--remove.person-entity-remove Удалить юрлицо
-              .personButton.personButton--add.person-entity-add Добавить еще одного
+              .personButton.personButton--add.person-entity-add data-partner="true" Добавить еще одного
               
           .buttonContainer.buttonContainer--center
             button.buttonContainer__button.linkButton.linkButton--small type="button" отменить
