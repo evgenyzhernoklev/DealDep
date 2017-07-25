@@ -27,7 +27,7 @@ html
           .submenuTitle
             .submenuTitle__imgWrapper.imgWrapper
               span.icon.icon--test
-            h1.submenuTitle__title Мои проекты
+            h1.submenuTitle__title.titleMain  Мои проекты
             p.submenuTitle__info Не подписано
           ul.submenu
             li.submenuItem
@@ -53,10 +53,29 @@ html
               |  у всех участников. Пока проект не подписан,
               |  его можно отредактировать
       
-      .docs
-    
-    
-    
+      .docs.tab-container
+        .contentIn
+          .titleMain
+            | Документы
+            ul.submenu.docTabs
+              li.submenuItem
+                a.submenuItem__link.is-active href="#" Все документы
+              li.submenuItem
+                a.submenuItem__link href="#" Редактируемые
+              li.submenuItem
+                a.submenuItem__link href="#" На подписи
+              li.submenuItem
+                a.submenuItem__link href="#" Заверенные
+          
+          .empty
+            .emptyIn
+              .empty__imgWrapper.imgWrapper
+                img.imgWrapper__img src="../img/icons/svg/docs.svg"
+              .empty__title Здесь будут все Ваши документы, относящиеся к проекту.
+              .empty__info Добавить их можно будет после подписания проекта.
+              a.empty__link.linkButton.linkButton--blue.linkButton--icon href="#"
+                | отправить на подпись
+                span.linkButton__icon.icon.icon--sign
     
     
   

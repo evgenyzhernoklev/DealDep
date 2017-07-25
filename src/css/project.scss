@@ -1,5 +1,6 @@
 .projectInfo {
   padding: 35px 0 35px;
+  box-shadow: 0 2px 20px 0 rgba(0,77,255,0.08);
 }
 
 
@@ -38,3 +39,16 @@
 
 
 // docs
+.docs {
+  padding: 30px 0 20px;
+
+  .titleMain {
+    position: relative;
+    padding: 4px 520px 20px 0;
+  }
+}
+
+.docTabs {
+  width: 500px;
+  right: 0;
+}

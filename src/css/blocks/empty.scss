@@ -1,7 +1,7 @@
 .empty {
   display: table;
   width: 100%;
-  min-height: 400px;
+  min-height: 500px;
   text-align: center;
 }
 
@@ -21,4 +21,16 @@
   margin: 0 auto;
   font-size: 14px;
   color: #5A5A5A;
+}
+
+.empty__title {
+  max-width: 270px;
+  margin: 0 auto 17px;
+  font: 18px/26px $circe-bold;
+}
+
+.empty__link {
+  width: auto;
+  margin-top: 36px;
+  padding-right: 30px;
 }
