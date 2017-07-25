@@ -21,6 +21,10 @@
   @include background-image(cross_black, 19px, 19px);
 }
 
+.icon--test {
+  @include background-image(unsigned, 52px, 52px);
+}
+
 
 
 // login
