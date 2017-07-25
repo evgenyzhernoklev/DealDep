@@ -1,0 +1,40 @@
+.projectInfo {
+  padding: 35px 0 35px;
+}
+
+
+
+// instructions
+.instructions {
+  padding: 9px 20px 10px;
+  background: $white;
+  border: 1px dashed #D1D5DC;
+  border-radius: 5px;
+  @include clearfix();
+
+  .buttonContainer {
+    width: 400px;
+    float: left;
+    white-space: nowrap;
+  }
+
+  .linkButton {
+    width: auto;
+    margin-left: 15px;
+    padding: 0 25px 0 50px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.instructions__info {
+  margin: 20px 0 20px 410px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+
+
+// docs

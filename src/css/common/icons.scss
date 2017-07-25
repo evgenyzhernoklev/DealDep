@@ -54,3 +54,11 @@
 .icon--notFound {
   @include background-image(person_not_found, 20px, 20px);
 }
+
+.icon--sign {
+  @include background-image(sign_white, 14px, 12px);
+}
+
+.icon--edit_black {
+  @include background-image(edit_black, 13px, 13px);
+}
