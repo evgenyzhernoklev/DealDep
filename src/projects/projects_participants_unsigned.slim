@@ -57,25 +57,59 @@ html
         .contentIn
           .titleMain
             | Документы
-            ul.submenu.docTabs
+            ul.submenu.docTabs.tab-link-container
               li.submenuItem
-                a.submenuItem__link.is-active href="#" Все документы
+                a.submenuItem__link.tab-link.is-active href="#" Все документы
               li.submenuItem
-                a.submenuItem__link href="#" Редактируемые
+                a.submenuItem__link.tab-link href="#" Редактируемые
               li.submenuItem
-                a.submenuItem__link href="#" На подписи
+                a.submenuItem__link.tab-link href="#" На подписи
               li.submenuItem
-                a.submenuItem__link href="#" Заверенные
+                a.submenuItem__link.tab-link href="#" Заверенные
           
-          .empty
-            .emptyIn
-              .empty__imgWrapper.imgWrapper
-                img.imgWrapper__img src="../img/icons/svg/docs.svg"
-              .empty__title Здесь будут все Ваши документы, относящиеся к проекту.
-              .empty__info Добавить их можно будет после подписания проекта.
-              a.empty__link.linkButton.linkButton--blue.linkButton--icon href="#"
-                | отправить на подпись
-                span.linkButton__icon.icon.icon--sign
+          .tab-content
+            .empty
+              .emptyIn
+                .empty__imgWrapper.imgWrapper
+                  img.imgWrapper__img src="../img/icons/svg/docs.svg"
+                .empty__title Здесь будут все Ваши документы, относящиеся к проекту.
+                .empty__info Добавить их можно будет после подписания проекта.
+                a.empty__link.linkButton.linkButton--blue.linkButton--icon href="#"
+                  | отправить на подпись
+                  span.linkButton__icon.icon.icon--sign
+          
+          .tab-content
+            .empty
+              .emptyIn
+                .empty__imgWrapper.imgWrapper
+                  img.imgWrapper__img src="../img/icons/svg/docs.svg"
+                .empty__title Здесь будут все Ваши документы, относящиеся к редактируемым.
+                .empty__info Добавить их можно будет после подписания проекта.
+                a.empty__link.linkButton.linkButton--blue.linkButton--icon href="#"
+                  | отправить на подпись
+                  span.linkButton__icon.icon.icon--sign
+          
+          .tab-content
+            .empty
+              .emptyIn
+                .empty__imgWrapper.imgWrapper
+                  img.imgWrapper__img src="../img/icons/svg/docs.svg"
+                .empty__title Здесь будут все Ваши документы перед подписанием.
+                .empty__info Добавить их можно будет перед подписанием проекта.
+                a.empty__link.linkButton.linkButton--blue.linkButton--icon href="#"
+                  | отправить на подпись
+                  span.linkButton__icon.icon.icon--sign
+          
+          .tab-content
+            .empty
+              .emptyIn
+                .empty__imgWrapper.imgWrapper
+                  img.imgWrapper__img src="../img/icons/svg/docs.svg"
+                .empty__title Здесь будут все Ваши документы, заверенные Бонго.
+                .empty__info Добавить их можно будет после подписания проекта.
+                a.empty__link.linkButton.linkButton--blue.linkButton--icon href="#"
+                  | отправить на подпись
+                  span.linkButton__icon.icon.icon--sign
     
     
   
