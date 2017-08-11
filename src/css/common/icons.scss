@@ -66,3 +66,7 @@
 .icon--briefcase_white {
   @include background-image(briefcase_white, 14px, 13px);
 }
+
+.icon--shield {
+  @include background-image(account_attention, 37px, 45px);
+}

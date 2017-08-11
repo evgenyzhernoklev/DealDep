@@ -241,7 +241,7 @@
 .personAttention {
   position: relative;
   margin: 25px auto 15px;
-  padding: 25px 40px 24px 103px;
+  padding: 25px 60px 24px 103px;
   background: $white;
   box-shadow: 0 0 20px 0 rgba(0,0,0,0.08);
   border-radius: 5px;
@@ -255,17 +255,22 @@
 }
 
 .personAttention__info {
-
+  font-size: 12px;
+  line-height: 20px;
+  color: #6D6D6D;
 }
 
 .personAttention__icon {
   position: absolute;
   top: 23px;
-  left: 29px;
-  width: 42px;
-  height: 42px;
-  background-color: #2196F3;
-  border-radius: 50%;
+  left: 32px;
+
+  &.icon--attention {
+    width: 42px;
+    height: 42px;
+    background-color: #2196F3;
+    border-radius: 50%;
+  }
 }
 
 
