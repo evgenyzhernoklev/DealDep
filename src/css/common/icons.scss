@@ -62,3 +62,7 @@
 .icon--edit_black {
   @include background-image(edit_black, 13px, 13px);
 }
+
+.icon--briefcase_white {
+  @include background-image(briefcase_white, 14px, 13px);
+}
