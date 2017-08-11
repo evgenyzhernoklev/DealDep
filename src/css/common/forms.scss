@@ -72,6 +72,10 @@ input::-webkit-inner-spin-button {
   font-family: $circe-bold;
 }
 
+.formTitle--center {
+  text-align: center;
+}
+
 .formTitle__avatar {
   margin-right: 18px;
   width: 40px;
@@ -226,6 +230,31 @@ input::-webkit-inner-spin-button {
   font: 12px/19px $circe-regular;
   color: #6D6D6D;
   text-align: center;
+}
+
+
+
+/*** persons avatar ***/
+.formBlock--avatar {
+  padding: 25px 0 0;
+  text-align: center;
+
+  .linkButton {
+    width: 157px;
+    height: 40px;
+    line-height: 42px;
+  }
+}
+
+.fieldWrapper__input--avatar {
+  display: none;
+}
+
+.formBlock__accountAvatar {
+  display: block;
+  max-width: 160px;
+  width: 100%;
+  margin: 0 auto 35px;
 }
 
 

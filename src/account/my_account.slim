@@ -17,14 +17,38 @@ html
     
     .accountIn.tab-container
       .loginHeader
-        a.loginHeader__link.tab-link href="#" Персональные данные
-        a.loginHeader__link.tab-link.is-active href="#" Настройки аккаунта
+        a.loginHeader__link.tab-link.is-active href="#" Персональные данные
+        a.loginHeader__link.tab-link href="#" Настройки аккаунта
         a.loginHeader__link.tab-link href="#" Мои юрлица
       
       .loginContent
         
         .tab-content
           form.form
+          
+            .formBlockWrapper
+              .formBlock--2
+                .formTitle Личные данные
+                .formBlock
+                  label.fieldWrapper
+                    span.fieldWrapper__label Ваша фамилия
+                    input.fieldWrapper__input type="text" name="" placeholder="" value="Гужиков"
+                .formBlock
+                  label.fieldWrapper
+                    span.fieldWrapper__label Ваше имя
+                    input.fieldWrapper__input type="text" name="" placeholder="" value="Павел"
+                .formBlock
+                  label.fieldWrapper
+                    span.fieldWrapper__label Ваше отчество
+                    input.fieldWrapper__input type="text" name="" placeholder="" value="Алексеевич"
+              .formBlock--2
+                .formTitle.formTitle--center Фотография
+                .formBlock.formBlock--avatar
+                  input.fieldWrapper__input.fieldWrapper__input--avatar type="text" name="" placeholder=""
+                  img.formBlock__accountAvatar src="../img/icons/svg/avatar_default.svg"
+                  span.linkButton.linkButton--small загрузить фото
+                  
+            .form__hr
             .formTitle Паспортные данные
             .formBlockWrapper
               .formBlock.formBlock--2
@@ -91,14 +115,9 @@ html
               button.buttonContainer__button.linkButton.linkButton--small.linkButton--blue type="submit" сохранить
               button.buttonContainer__button.linkButton.linkButton--small type="button" отменить
         
-        
         .tab-content
           .formTitle Список юридических лиц
-            
-        
-        
-        
-                
-          
-          
+
+
+
     script src="../js/app.js"
