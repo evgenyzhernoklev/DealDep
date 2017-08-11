@@ -25,10 +25,10 @@
 .linkButton--blue {
   color: $white;
   background-color: $blue;
-  border-color: $blue;
+  border: 0;
 
   &:hover {
-    background-color: $blue;
+    background-color: #487fea;
   }
 }
 

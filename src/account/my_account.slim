@@ -1,0 +1,104 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta http-equiv="X-UA-Compatible" content="IE=edge"
+    meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0"
+    title DealDep - sign in/register
+    meta name="description" content=""
+    link rel="stylesheet" media="all" href="../css/app.css"
+  body
+    
+    .header
+      .headerIn
+        .contentIn
+          a.header__logo.icon.icon--logo href="/"
+          h1.header__title Авторизация
+    
+    .accountIn.tab-container
+      .loginHeader
+        a.loginHeader__link.tab-link href="#" Персональные данные
+        a.loginHeader__link.tab-link.is-active href="#" Настройки аккаунта
+        a.loginHeader__link.tab-link href="#" Мои юрлица
+      
+      .loginContent
+        
+        .tab-content
+          form.form
+            .formTitle Паспортные данные
+            .formBlockWrapper
+              .formBlock.formBlock--2
+                label.fieldWrapper
+                  span.fieldWrapper__label Номер и серия паспорта
+                  input.fieldWrapper__input type="text" name="" placeholder=""
+              .formBlock.formBlock--2
+                label.fieldWrapper
+                  span.fieldWrapper__label Дата выдачи
+                  input.fieldWrapper__input type="text" name="" placeholder=""
+            .formBlock
+              label.fieldWrapper
+                span.fieldWrapper__label Кем выдан
+                input.fieldWrapper__input type="text" name="" placeholder=""
+            .formBlock
+              label.fieldWrapper
+                span.fieldWrapper__label Адрес регистрации
+                input.fieldWrapper__input type="text" name="" placeholder=""
+            .buttonContainer.buttonContainer--center
+              button.buttonContainer__button.linkButton.linkButton--small.linkButton--blue type="submit" сохранить
+              button.buttonContainer__button.linkButton.linkButton--small type="button" отменить
+        
+        .tab-content
+          form.form
+            .formTitle Контактные данные
+            .formBlockWrapper
+              .formBlock.formBlock--2
+                label.fieldWrapper
+                  span.fieldWrapper__label Ваш email
+                  input.fieldWrapper__input type="text" name="" placeholder="" value="pavel@bongord.com"
+              .formBlock.formBlock--2
+                label.fieldWrapper
+                  span.fieldWrapper__label Ваш телефон
+                  input.fieldWrapper__input type="text" name="" placeholder="" value="+7 (999) 123-23-23"
+          
+            .form__hr
+            .formTitle Смена пароля
+            .formBlockWrapper
+              .formBlock.formBlock--2
+                label.fieldWrapper
+                  span.fieldWrapper__label Текущий пароль
+                  input.fieldWrapper__input type="password" name="" placeholder=""
+              .formBlock.formBlock--2
+                label.fieldWrapper
+                  span.fieldWrapper__label Новый пароль
+                  input.fieldWrapper__input type="password" name="" placeholder=""
+            .formBlockWrapper
+              .formBlock.formBlock--2
+                label.fieldWrapper
+                  span.fieldWrapper__label Новый пароль еще раз
+                  input.fieldWrapper__input type="password" name="" placeholder=""
+            
+            .form__hr
+            .buttonContainer--social
+              .formTitle Подключите вход через соцсети
+              a.buttonContainer__button.linkButton.linkButton--icon href="#" 
+                | войти с помощью Facebook
+                span.linkButton__icon.icon.icon--facebook
+              a.buttonContainer__button.linkButton.linkButton--icon href="#" 
+                | войти с помощью Google
+                span.linkButton__icon.icon.icon--google
+            
+            .buttonContainer.buttonContainer--center
+              button.buttonContainer__button.linkButton.linkButton--small.linkButton--blue type="submit" сохранить
+              button.buttonContainer__button.linkButton.linkButton--small type="button" отменить
+        
+        
+        .tab-content
+          .formTitle Список юридических лиц
+            
+        
+        
+        
+                
+          
+          
+    script src="../js/app.js"

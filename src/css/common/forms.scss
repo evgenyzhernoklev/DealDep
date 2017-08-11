@@ -103,6 +103,14 @@ input::-webkit-inner-spin-button {
   }
 }
 
+.form__hr {
+  display: block;
+  margin: 30px -40px;
+  height: 1px;
+  background-color: $gray-light;
+}
+
+
 
 // form block
 .formBlock {
@@ -190,6 +198,13 @@ input::-webkit-inner-spin-button {
       margin-right: 0;
     }
   }
+}
+
+.buttonContainer--social {
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .buttonContainer__button {
