@@ -53,7 +53,6 @@ html
         							option value="3" Строительство
         							option value="5" B2B
 
-            /
             .personEntity.personEntity--visible.person-entity-clone
               .formTitle
                 img.formTitle__avatar src="../img/icons/svg/avatar_default.svg"
@@ -92,7 +91,6 @@ html
                     span.fieldWrapper__label Email
                     input.fieldWrapper__input type="text" name="" placeholder="Введите Email" value="pavel@bongord.com"
 
-
             .personEntity.personEntity--visible
               .formTitle
                 img.formTitle__avatar src="../img/icons/svg/avatar_default.svg"
@@ -129,123 +127,124 @@ html
                     span.fieldWrapper__label Email
                     input.fieldWrapper__input type="text" name="" placeholder="Введите Email" value=""
 
-
-
-
             .personButtonWrapper.person-entity-links.is-first
-              / .personButton.personButton--remove.person-entity-remove Удалить юрлицо
               .personButton.personButton--add.person-entity-add data-partner="true" Добавить еще одного
-
-
-            / .personEntity.tab-container.person-entity-clone
-              .formTitle
-                | Юридическое лицо
-                .personEntityTabs
-                  .personEntityTabsWrapper.tab-link-container
-                    a.personEntityTabsWrapper__link.personEntityTabsWrapper__link--helper.tab-link.is-active href="#" нет
-                    a.personEntityTabsWrapper__link.tab-link data-container-class="slide" href="#" да
-                  p.personEntityTabs__title Юрлицо в российской юрисдикции?
-              .personAttention.attention-container
-                span.personAttention__close.icon.icon--crossSmall.attention-close
-                p.personAttention__info
-                  | Введите только ФИО и номер ОГРН, остальные
-                  |  данные мы возьмем из Единого Государственного
-                  |  Реестра Юридических Лиц, а банковские реквизиты
-                  |  вводить не обязательно, их можно добавить потом.
-                span.personAttention__icon.icon.icon--attention
-
-              .tab-content
-                .formBlockWrapper
-                  .formBlock.formBlock--2
-                    label.fieldWrapper
-                      span.fieldWrapper__label ФИО генерального директора
-                      input.fieldWrapper__input type="text" name="" placeholder="Введите ФИО генерального директора"
-                  .formBlock.formBlock--2
-                    label.fieldWrapper
-                      span.fieldWrapper__label ОГРН
-                      input.fieldWrapper__input type="text" name="" placeholder="Введите ОГРН"
-                / .personDataFailure
-                  span.personDataFailure__icon.icon.icon--notFound
-                  p.personDataFailure__info Извините, юрлицо не найдено в реестре, мы не можем его добавить
-                .personDataWrapper
-                  .personData
-                    .personData__title Данные
-                    .personDataCols.colsFlex
-                      .colFlex--2
-                        .colFlexIn
-                          .personDataCols__title КПП
-                          .personDataCols__info 568246759
-                      .colFlex--2
-                        .colFlexIn
-                          .personDataCols__title ИНН
-                          .personDataCols__info 5682457832
-                      .colFlex--2
-                        .colFlexIn
-                          .personDataCols__title ОГРН
-                          .personDataCols__info 1234567890123
-                  .personData
-                    .personData__title Учредители
-                    .personDataCols.personDataCols--bold.colsFlex
-                      .colFlex--2
-                        .colFlexIn
-                          .personDataCols__title 10%
-                          .personDataCols__info Гужиков Павел Алексеевич
-                      .colFlex--2
-                        .colFlexIn
-                          .personDataCols__title 45%
-                          .personDataCols__info Горбунков Семен Семенович
-                      .colFlex--2
-                        .colFlexIn
-                          .personDataCols__title 25%
-                          .personDataCols__info Ардинцев Иван Сергеевич
-                      .colFlex--2
-                        .colFlexIn
-                          .personDataCols__title 20%
-                          .personDataCols__info ООО «СтройКамазДеталь»
-                .personRequisites
-                  a.personRequisites__add.linkButton.linkButton--small.add-requisites-link href="#" добавить реквизиты
-                  a.personRequisites__remove.remove-requisites-link href="#" не указывать
-                  .formBlock.add-requisites-hidden
-                    label.fieldWrapper
-                      span.fieldWrapper__label Банковские реквизиты
-                      textarea.fieldWrapper__textarea name="" placeholder="Введите банковские реквизиты"
-
-              .tab-content
-                .formBlockWrapper
-                  .formBlock.formBlock--2
-                    label.fieldWrapper
-                      span.fieldWrapper__label Название компании
-                      input.fieldWrapper__input type="text" name="" placeholder="Введите название компании"
-                  .formBlock.formBlock--2
-                    label.fieldWrapper
-                      span.fieldWrapper__label Страна юрисдикции
-                      select.fieldWrapper__select.form-select placeholder="Выберите страну юрисдикции"
-                        option value="" Выберите страну юрисдикции
-                        option value="4" Россия
-                        option value="1" Германия
-                        option value="3" Финляндия
-                        option value="5" Кипр
-                .formBlock
-                  label.fieldWrapper
-                    span.fieldWrapper__label Остальные данные
-                    textarea.fieldWrapper__textarea name="" placeholder="Введите остальные данные"
-                .personRequisites
-                  a.personRequisites__add.linkButton.linkButton--small.add-requisites-link href="#" добавить реквизиты
-                  a.personRequisites__remove.remove-requisites-link href="#" не указывать
-                  .formBlock.add-requisites-hidden
-                    label.fieldWrapper
-                      span.fieldWrapper__label Банковские реквизиты
-                      textarea.fieldWrapper__textarea name="" placeholder="Введите банковские реквизиты"
-
-            / .personButtonWrapper.person-entity-links.is-first
-              .personButton.personButton--remove.person-entity-remove Удалить юрлицо
-              .personButton.personButton--add.person-entity-add Добавить юрлицо
 
           .buttonContainer.buttonContainer--center
             button.buttonContainer__button.linkButton.linkButton--small.linkButton--icon type="button"
               | отменить
               span.linkButton__icon.icon.icon--cross_blue
             button.buttonContainer__button.linkButton.linkButton--small.linkButton--blue type="submit" продолжить
+
+
+
+
+
+
+
+          / .personEntity.tab-container.person-entity-clone
+            .formTitle
+              | Юридическое лицо
+              .personEntityTabs
+                .personEntityTabsWrapper.tab-link-container
+                  a.personEntityTabsWrapper__link.personEntityTabsWrapper__link--helper.tab-link.is-active href="#" нет
+                  a.personEntityTabsWrapper__link.tab-link data-container-class="slide" href="#" да
+                p.personEntityTabs__title Юрлицо в российской юрисдикции?
+            .personAttention.attention-container
+              span.personAttention__close.icon.icon--crossSmall.attention-close
+              p.personAttention__info
+                | Введите только ФИО и номер ОГРН, остальные
+                |  данные мы возьмем из Единого Государственного
+                |  Реестра Юридических Лиц, а банковские реквизиты
+                |  вводить не обязательно, их можно добавить потом.
+              span.personAttention__icon.icon.icon--attention
+
+            .tab-content
+              .formBlockWrapper
+                .formBlock.formBlock--2
+                  label.fieldWrapper
+                    span.fieldWrapper__label ФИО генерального директора
+                    input.fieldWrapper__input type="text" name="" placeholder="Введите ФИО генерального директора"
+                .formBlock.formBlock--2
+                  label.fieldWrapper
+                    span.fieldWrapper__label ОГРН
+                    input.fieldWrapper__input type="text" name="" placeholder="Введите ОГРН"
+              / .personDataFailure
+                span.personDataFailure__icon.icon.icon--notFound
+                p.personDataFailure__info Извините, юрлицо не найдено в реестре, мы не можем его добавить
+              .personDataWrapper
+                .personData
+                  .personData__title Данные
+                  .personDataCols.colsFlex
+                    .colFlex--2
+                      .colFlexIn
+                        .personDataCols__title КПП
+                        .personDataCols__info 568246759
+                    .colFlex--2
+                      .colFlexIn
+                        .personDataCols__title ИНН
+                        .personDataCols__info 5682457832
+                    .colFlex--2
+                      .colFlexIn
+                        .personDataCols__title ОГРН
+                        .personDataCols__info 1234567890123
+                .personData
+                  .personData__title Учредители
+                  .personDataCols.personDataCols--bold.colsFlex
+                    .colFlex--2
+                      .colFlexIn
+                        .personDataCols__title 10%
+                        .personDataCols__info Гужиков Павел Алексеевич
+                    .colFlex--2
+                      .colFlexIn
+                        .personDataCols__title 45%
+                        .personDataCols__info Горбунков Семен Семенович
+                    .colFlex--2
+                      .colFlexIn
+                        .personDataCols__title 25%
+                        .personDataCols__info Ардинцев Иван Сергеевич
+                    .colFlex--2
+                      .colFlexIn
+                        .personDataCols__title 20%
+                        .personDataCols__info ООО «СтройКамазДеталь»
+              .personRequisites
+                a.personRequisites__add.linkButton.linkButton--small.add-requisites-link href="#" добавить реквизиты
+                a.personRequisites__remove.remove-requisites-link href="#" не указывать
+                .formBlock.add-requisites-hidden
+                  label.fieldWrapper
+                    span.fieldWrapper__label Банковские реквизиты
+                    textarea.fieldWrapper__textarea name="" placeholder="Введите банковские реквизиты"
+
+            .tab-content
+              .formBlockWrapper
+                .formBlock.formBlock--2
+                  label.fieldWrapper
+                    span.fieldWrapper__label Название компании
+                    input.fieldWrapper__input type="text" name="" placeholder="Введите название компании"
+                .formBlock.formBlock--2
+                  label.fieldWrapper
+                    span.fieldWrapper__label Страна юрисдикции
+                    select.fieldWrapper__select.form-select placeholder="Выберите страну юрисдикции"
+                      option value="" Выберите страну юрисдикции
+                      option value="4" Россия
+                      option value="1" Германия
+                      option value="3" Финляндия
+                      option value="5" Кипр
+              .formBlock
+                label.fieldWrapper
+                  span.fieldWrapper__label Остальные данные
+                  textarea.fieldWrapper__textarea name="" placeholder="Введите остальные данные"
+              .personRequisites
+                a.personRequisites__add.linkButton.linkButton--small.add-requisites-link href="#" добавить реквизиты
+                a.personRequisites__remove.remove-requisites-link href="#" не указывать
+                .formBlock.add-requisites-hidden
+                  label.fieldWrapper
+                    span.fieldWrapper__label Банковские реквизиты
+                    textarea.fieldWrapper__textarea name="" placeholder="Введите банковские реквизиты"
+
+          / .personButtonWrapper.person-entity-links.is-first
+            .personButton.personButton--remove.person-entity-remove Удалить юрлицо
+            .personButton.personButton--add.person-entity-add Добавить юрлицо
 
 
 

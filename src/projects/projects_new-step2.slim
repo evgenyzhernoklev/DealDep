@@ -4,127 +4,54 @@ html
     meta charset="utf-8"
     meta http-equiv="X-UA-Compatible" content="IE=edge"
     meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0"
-    title DealDep - projects new
+    title DealDep - projects new (step 2)
     meta name="description" content=""
     link rel="stylesheet" media="all" href="../css/app.css"
   body
-  
+
     .header
       .headerIn
         .contentIn
           a.header__logo.icon.icon--logo href="/"
           h1.header__title Создание нового проекта
           a.header__close.icon.icon--close href="#"
-    
+
     section.addProjectSection
       .contentIn
-      
+
         .addProject
           .addProjectSteps.cols
             .addProjectStep.col--2.is-active
               span.addProjectStep__number 1
-              p.addProjectStep__info О проекте
+              p.addProjectStep__info Название и участники
             .addProjectStep.col--2.is-current
               span.addProjectStep__number 2
-              p.addProjectStep__info Участники
+              p.addProjectStep__info Распределение долей
           .addProjectAbout
-            .addProjectAbout__title Ваши партнеры
-            .addProjectAbout__info 
-              | Укажите всех участников проекта и выберите их долю, 
-              |  вклад и обязательно email, на него мы пришлем 
-              |  приглашение для участия в проекте.
-        
+            .addProjectAbout__title Распределение долей
+            .addProjectAbout__info
+              | Здесь еще нужно будет дописать текст о том,
+              |  как работает фиксация роли и зачем она вообще нужна.
+
         form.form
           .formIn
-            
-            .personEntity.personEntity--visible.person-entity-clone
-              .formTitle
-                img.formTitle__avatar src="../img/icons/svg/avatar_default.svg"
-                span.formTitle__counter Первый участник 
-                span.formTitle__hint (это вы)
-              .formBlockWrapper
-                .formBlock.formBlock--2
-                  label.fieldWrapper
-                    span.fieldWrapper__label Имя участника
-                    input.fieldWrapper__input type="text" name="" placeholder="Введите имя участника" value="Павел Гужиков"
-                .formBlock.formBlock--2
-        					label.fieldWrapper
-        						span.fieldWrapper__label Вложение в проект
-        						select.fieldWrapper__select.form-select placeholder="Выберите тип вложения"
-        							option value="" Выберите тип вложения
-        							option value="2" Налом
-        							option value="1" Аналом
-        							option value="3" Рабство
-        							option value="5" B2B
-              .formBlockWrapper
-                .formBlock.formBlock--2.formBlock--slider
-                  label.fieldWrapper
-                    span.fieldWrapper__label Доля
-                    input.fieldWrapper__input.fieldWrapper__input--slider type="number" name="" placeholder="0" value="50"
-                    span.fieldWrapper__dimension %
-                  .formSlider
-                .formBlock.formBlock--2
-                  label.fieldWrapper
-                    span.fieldWrapper__label Email
-                    input.fieldWrapper__input type="text" name="" placeholder="Введите Email" value="pavel@bongord.com"
-              .formBlockWrapper
-                .formBlock.formBlock--2
-                  label.fieldWrapper
-                    span.fieldWrapper__label Роль участника
-                    select.fieldWrapper__select.form-select placeholder="Выберите роль"
-                      option value="" Выберите роль
-                      option value="2" Шлюха
-                      option value="1" Глава надела
-                      option value="3" Пес
-            
-            .personEntity.personEntity--visible
-              .formTitle
-                img.formTitle__avatar src="../img/icons/svg/avatar_default.svg"
-                span.formTitle__counter Второй участник
-              .formBlockWrapper
-                .formBlock.formBlock--2
-                  label.fieldWrapper
-                    span.fieldWrapper__label Имя участника
-                    input.fieldWrapper__input type="text" name="" placeholder="Введите имя участника" value="Павел Гужиков"
-                .formBlock.formBlock--2
-                  label.fieldWrapper
-                    span.fieldWrapper__label Вложение в проект
-                    select.fieldWrapper__select.form-select placeholder="Выберите тип вложения"
-                      option value="" Выберите тип вложения
-                      option value="2" Налом
-                      option value="1" Аналом
-                      option value="3" Рабство
-                      option value="5" B2B
-              .formBlockWrapper
-                .formBlock.formBlock--2.formBlock--slider
-                  label.fieldWrapper
-                    span.fieldWrapper__label Доля
-                    input.fieldWrapper__input.fieldWrapper__input--slider type="number" name="" placeholder="0" value="50"
-                    span.fieldWrapper__dimension %
-                  .formSlider
-                .formBlock.formBlock--2
-                  label.fieldWrapper
-                    span.fieldWrapper__label Email
-                    input.fieldWrapper__input type="text" name="" placeholder="Введите Email" value="pavel@bongord.com"
-              .formBlockWrapper
-                .formBlock.formBlock--2
-                  label.fieldWrapper
-                    span.fieldWrapper__label Роль участника
-                    select.fieldWrapper__select.form-select placeholder="Выберите роль"
-                      option value="" Выберите роль
-                      option value="2" Шлюха
-                      option value="1" Глава надела
-                      option value="3" Пес
 
-            
-            .personButtonWrapper.person-entity-links.is-first
-              / .personButton.personButton--remove.person-entity-remove Удалить юрлицо
-              .personButton.personButton--add.person-entity-add data-partner="true" Добавить еще одного
-              
+            .share
+              .formTitle Павел Гужиков
+
+              .shareLock
+
+                .shareTip
+                  | Зафиксировать долю 
+
+
+
           .buttonContainer.buttonContainer--center
-            button.buttonContainer__button.linkButton.linkButton--small type="button" отменить
-            button.buttonContainer__button.linkButton.linkButton--small.linkButton--blue type="submit" продолжить
-  
-  
-  
+            a.buttonContainer__button.linkButton.linkButton--small.linkButton--icon href="/projects/projects_new.html"
+              | назад
+              span.linkButton__icon.icon.icon--back
+            button.buttonContainer__button.linkButton.linkButton--small.linkButton--blue type="submit" создать проект
+
+
+
   script src="../js/app.js"
