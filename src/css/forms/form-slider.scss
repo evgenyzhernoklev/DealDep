@@ -1,5 +1,14 @@
 .formBlock--slider {
   padding-bottom: 13px;
+
+  .fieldWrapper__input {
+    padding-top: 3px;
+    height: 40px;
+  }
+
+  .fieldWrapper__dimension {
+    top: 12px;
+  }
 }
 
 .formSlider {

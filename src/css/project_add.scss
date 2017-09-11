@@ -390,19 +390,96 @@
 
 
 /*** share ***/
-.share {
+.shareWrapper {
+  padding: 30px 35px;
+}
 
+.share {
+  position: relative;
+  margin-bottom: 35px;
+  padding-right: 80px;
+  height: 45px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .formTitle {
+    float: left;
+    width: 45%;
+    margin: 0;
+    padding-top: 10px;
+    padding-right: 20px;
+  }
+
+  .formBlock--slider {
+    float: left;
+    width: 55%;
+    margin: 0;
+    padding: 0;
+  }
+
+  &.is-locked {
+    .shareLock {
+      background-color: #61B85B;
+      border-color: #61B85B;
+
+      &:before {
+        @include background-image(lock_white_closed, 12px, 13px);
+      }
+    }
+  }
 }
 
 
 
 // lock
 .shareLock {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 45px;
+  line-height: 47px;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid #E2E2E2;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: background-color $transition-normal, border-color $transition-normal;
 
+  &:before {
+    content: '';
+    display: inline-block;
+    @include background-image(lock_black, 12px, 13px);
+    transition: background-image $transition-normal;
+  }
+
+  &:hover {
+    &:before {
+      @include background-image(lock_blue, 12px, 13px);
+    }
+
+    .shareTip {
+      margin-left: 15px;
+      @include show();
+      transition: opacity $transition-normal, visibility $transition-normal, margin-left $transition-normal;
+    }
+  }
 }
 
 .shareTip {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin-left: 0;
+  padding: 9px 15px;
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 20px;
   background: $white;
   box-shadow: 0 0 14px 0 rgba(0,0,0,0.20);
   border-radius: 3px;
+  @include hide();
+  transition: opacity $transition-normal, visibility $transition-normal, margin-left $transition-normal .3s;
 }
