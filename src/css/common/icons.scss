@@ -47,6 +47,10 @@
   @include background-image(cross_black, 10px, 10px);
 }
 
+.icon--cross_blue {
+  @include background-image(cross_blue, 12px, 12px);
+}
+
 .icon--attention {
   @include background-image(info_sign, 5px, 19px);
 }

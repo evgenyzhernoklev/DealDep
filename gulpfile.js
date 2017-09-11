@@ -43,7 +43,7 @@ var config = {
     tunnel: true,
     host: 'localhost',
     port: 9000,
-    logPrefix: "gazprom"
+    logPrefix: "DealDep"
 };
 
 gulp.task('webserver', function () {

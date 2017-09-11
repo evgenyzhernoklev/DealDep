@@ -1,0 +1,36 @@
+.formBlock--slider {
+  padding-bottom: 13px;
+}
+
+.formSlider {
+  height: 5px;
+  background-color: #E2E5EB;
+}
+
+.ui-slider {
+  .ui-slider-range {
+    background-color: $blue;
+  }
+
+  .ui-slider-handle {
+    width: 20px;
+    height: 20px;
+    top: -7px;
+    line-height: 18px;
+    background: $white;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
+    border-radius: 50%;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      background-color: $blue;
+      vertical-align: middle;
+      border-radius: 50%;
+    }
+  }
+}

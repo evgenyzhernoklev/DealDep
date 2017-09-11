@@ -1,0 +1,68 @@
+.selectize-control.single .selectize-input {
+  width: 100%;
+  height: 45px;
+  padding: 0 15px;
+  font: 14px/45px $circe-regular;
+  color: $black;
+  background: $input-bg;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: none;
+  transition: background-color $transition-normal, border-color $transition-normal;
+}
+
+.selectize-control.single .selectize-input:after {
+  right: 15px;
+  border-color: #D8D8D8 transparent transparent;
+}
+
+.selectize-control.single .selectize-input.dropdown-active:after {
+  border-color: transparent transparent #D8D8D8;
+}
+
+.selectize-control.single .selectize-input.input-active {
+  background: $input-bg;
+  border-color: #E4E4E4;
+  border-radius: 5px 5px 0 0;
+}
+
+.selectize-input input {
+  font-size: 14px;
+  color: $black;
+}
+
+.selectize-dropdown.single,
+.selectize-dropdown {
+  box-shadow: none;
+  border-color: #E4E4E4;
+}
+
+
+
+.selectize-dropdown [data-selectable] {
+  padding: 11px 15px;
+  background: $input-bg;
+  font: 14px/22px $circe-regular;
+  color: #A4A4A4;
+  border-bottom: 1px solid #E4E4E4;
+  transition: background-color $transition-normal, color $transition-normal;
+
+  &:hover {
+    background: $white;
+    color: $black;
+  }
+
+  &:last-child {
+    border: 0;
+  }
+}
+
+.selectize-dropdown .active {
+  background: $white;
+  color: $black;
+}
+
+.selectize-dropdown-content {
+  max-height: 134px;
+}

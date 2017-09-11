@@ -73,6 +73,7 @@ ProjectAdd.prototype.addPerson = function (e) {
       this.updatePartnerTitle($clone, $persons.length);
     }
 
+    $clone.find('input').val('');
     $clone.hide();
     $persons.last().after($clone);
     $clone.slideDown(700);

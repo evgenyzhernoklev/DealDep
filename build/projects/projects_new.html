@@ -27,22 +27,22 @@
             <div class="addProjectStep col--2 is-current">
               <span class="addProjectStep__number">1</span>
               <p class="addProjectStep__info">
-                О проекте
+                Название и участники
               </p>
             </div>
             <div class="addProjectStep col--2">
               <span class="addProjectStep__number">2</span>
               <p class="addProjectStep__info">
-                Участники
+                Распределение долей
               </p>
             </div>
           </div>
           <div class="addProjectAbout">
             <div class="addProjectAbout__title">
-              Общая информация
+              Название и участники
             </div>
             <div class="addProjectAbout__info">
-              Укажите название проекта, и добавьте юридическое лицо,  если оно уже есть. Если нет, то это не обязательно,  его можно будет добавить в любое время.
+              Укажите название и всех участников проекта, выбрав их долю, вклад и обязательно email, на него мы пришлем приглашение для участия в проекте.
             </div>
           </div>
         </div>
@@ -77,174 +77,120 @@
                 </div>
               </div>
             </div>
-            <div class="personEntity tab-container person-entity-clone">
+            <div class="personEntity personEntity--visible person-entity-clone">
               <div class="formTitle">
-                Юридическое лицо
-                <div class="personEntityTabs">
-                  <div class="personEntityTabsWrapper tab-link-container">
-                    <a class="personEntityTabsWrapper__link personEntityTabsWrapper__link--helper tab-link is-active" href="#">нет</a><a class="personEntityTabsWrapper__link tab-link" data-container-class="slide" href="#">да</a>
-                  </div>
-                  <p class="personEntityTabs__title">
-                    Юрлицо в российской юрисдикции?
-                  </p>
+                <img class="formTitle__avatar" src="../img/icons/svg/avatar_default.svg" /><span class="formTitle__counter">Первый участник</span><span class="formTitle__hint"> (это вы)</span>
+              </div>
+              <div class="formBlockWrapper">
+                <div class="formBlock formBlock--4">
+                  <label class="fieldWrapper"><span class="fieldWrapper__label">Фамилия</span><input class="fieldWrapper__input" name="" placeholder="Введите фамилию" type="text" value="Гужиков" /></label>
+                </div>
+                <div class="formBlock formBlock--4">
+                  <label class="fieldWrapper"><span class="fieldWrapper__label">Имя</span><input class="fieldWrapper__input" name="" placeholder="Введите имя" type="text" value="Павел" /></label>
+                </div>
+                <div class="formBlock formBlock--2">
+                  <label class="fieldWrapper"><span class="fieldWrapper__label">Вложение в проект</span><select class="fieldWrapper__select form-select" placeholder="Выберите тип вложения">
+                      <option value="">
+                        Выберите тип вложения
+                      </option>
+                      <option value="2">
+                        Налом
+                      </option>
+                      <option value="1">
+                        Аналом
+                      </option>
+                      <option value="3">
+                        Рабство
+                      </option>
+                      <option value="5">
+                        B2B
+                      </option>
+                    </select></label>
                 </div>
               </div>
-              <div class="personAttention attention-container">
-                <span class="personAttention__close icon icon--crossSmall attention-close"></span>
-                <p class="personAttention__info">
-                  Введите только ФИО и номер ОГРН, остальные  данные мы возьмем из Единого Государственного  Реестра Юридических Лиц, а банковские реквизиты  вводить не обязательно, их можно добавить потом.
-                </p>
-                <span class="personAttention__icon icon icon--attention"></span>
-              </div>
-              <div class="tab-content">
-                <div class="formBlockWrapper">
-                  <div class="formBlock formBlock--2">
-                    <label class="fieldWrapper"><span class="fieldWrapper__label">ФИО генерального директора</span><input class="fieldWrapper__input" name="" placeholder="Введите ФИО генерального директора" type="text" /></label>
-                  </div>
-                  <div class="formBlock formBlock--2">
-                    <label class="fieldWrapper"><span class="fieldWrapper__label">ОГРН</span><input class="fieldWrapper__input" name="" placeholder="Введите ОГРН" type="text" /></label>
-                  </div>
+              <div class="formBlockWrapper">
+                <div class="formBlock formBlock--2">
+                  <label class="fieldWrapper"><span class="fieldWrapper__label">Роль участника</span><select class="fieldWrapper__select form-select" placeholder="Выберите роль">
+                      <option value="">
+                        Выберите роль
+                      </option>
+                      <option value="2">
+                        Шлюха
+                      </option>
+                      <option value="1">
+                        Глава надела
+                      </option>
+                      <option value="3">
+                        Пес
+                      </option>
+                    </select></label>
                 </div>
-                <div class="personDataWrapper">
-                  <div class="personData">
-                    <div class="personData__title">
-                      Данные
-                    </div>
-                    <div class="personDataCols colsFlex">
-                      <div class="colFlex--2">
-                        <div class="colFlexIn">
-                          <div class="personDataCols__title">
-                            КПП
-                          </div>
-                          <div class="personDataCols__info">
-                            568246759
-                          </div>
-                        </div>
-                      </div>
-                      <div class="colFlex--2">
-                        <div class="colFlexIn">
-                          <div class="personDataCols__title">
-                            ИНН
-                          </div>
-                          <div class="personDataCols__info">
-                            5682457832
-                          </div>
-                        </div>
-                      </div>
-                      <div class="colFlex--2">
-                        <div class="colFlexIn">
-                          <div class="personDataCols__title">
-                            ОГРН
-                          </div>
-                          <div class="personDataCols__info">
-                            1234567890123
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="personData">
-                    <div class="personData__title">
-                      Учредители
-                    </div>
-                    <div class="personDataCols personDataCols--bold colsFlex">
-                      <div class="colFlex--2">
-                        <div class="colFlexIn">
-                          <div class="personDataCols__title">
-                            10%
-                          </div>
-                          <div class="personDataCols__info">
-                            Гужиков Павел Алексеевич
-                          </div>
-                        </div>
-                      </div>
-                      <div class="colFlex--2">
-                        <div class="colFlexIn">
-                          <div class="personDataCols__title">
-                            45%
-                          </div>
-                          <div class="personDataCols__info">
-                            Горбунков Семен Семенович
-                          </div>
-                        </div>
-                      </div>
-                      <div class="colFlex--2">
-                        <div class="colFlexIn">
-                          <div class="personDataCols__title">
-                            25%
-                          </div>
-                          <div class="personDataCols__info">
-                            Ардинцев Иван Сергеевич
-                          </div>
-                        </div>
-                      </div>
-                      <div class="colFlex--2">
-                        <div class="colFlexIn">
-                          <div class="personDataCols__title">
-                            20%
-                          </div>
-                          <div class="personDataCols__info">
-                            ООО «СтройКамазДеталь»
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="personRequisites">
-                  <a class="personRequisites__add linkButton linkButton--small add-requisites-link" href="#">добавить реквизиты</a><a class="personRequisites__remove remove-requisites-link" href="#">не указывать</a>
-                  <div class="formBlock add-requisites-hidden">
-                    <label class="fieldWrapper"><span class="fieldWrapper__label">Банковские реквизиты</span><textarea class="fieldWrapper__textarea" name="" placeholder="Введите банковские реквизиты"></textarea></label>
-                  </div>
+                <div class="formBlock formBlock--2">
+                  <label class="fieldWrapper"><span class="fieldWrapper__label">Email</span><input class="fieldWrapper__input" name="" placeholder="Введите Email" type="text" value="pavel@bongord.com" /></label>
                 </div>
               </div>
-              <div class="tab-content">
-                <div class="formBlockWrapper">
-                  <div class="formBlock formBlock--2">
-                    <label class="fieldWrapper"><span class="fieldWrapper__label">Название компании</span><input class="fieldWrapper__input" name="" placeholder="Введите название компании" type="text" /></label>
-                  </div>
-                  <div class="formBlock formBlock--2">
-                    <label class="fieldWrapper"><span class="fieldWrapper__label">Страна юрисдикции</span><select class="fieldWrapper__select form-select" placeholder="Выберите страну юрисдикции">
-                        <option value="">
-                          Выберите страну юрисдикции
-                        </option>
-                        <option value="4">
-                          Россия
-                        </option>
-                        <option value="1">
-                          Германия
-                        </option>
-                        <option value="3">
-                          Финляндия
-                        </option>
-                        <option value="5">
-                          Кипр
-                        </option>
-                      </select></label>
-                  </div>
+            </div>
+            <div class="personEntity personEntity--visible">
+              <div class="formTitle">
+                <img class="formTitle__avatar" src="../img/icons/svg/avatar_default.svg" /><span class="formTitle__counter">Второй участник</span>
+              </div>
+              <div class="formBlockWrapper">
+                <div class="formBlock formBlock--4">
+                  <label class="fieldWrapper"><span class="fieldWrapper__label">Фамилия</span><input class="fieldWrapper__input" name="" placeholder="Введите фамилию" type="text" value="" /></label>
                 </div>
-                <div class="formBlock">
-                  <label class="fieldWrapper"><span class="fieldWrapper__label">Остальные данные</span><textarea class="fieldWrapper__textarea" name="" placeholder="Введите остальные данные"></textarea></label>
+                <div class="formBlock formBlock--4">
+                  <label class="fieldWrapper"><span class="fieldWrapper__label">Имя</span><input class="fieldWrapper__input" name="" placeholder="Введите имя" type="text" value="" /></label>
                 </div>
-                <div class="personRequisites">
-                  <a class="personRequisites__add linkButton linkButton--small add-requisites-link" href="#">добавить реквизиты</a><a class="personRequisites__remove remove-requisites-link" href="#">не указывать</a>
-                  <div class="formBlock add-requisites-hidden">
-                    <label class="fieldWrapper"><span class="fieldWrapper__label">Банковские реквизиты</span><textarea class="fieldWrapper__textarea" name="" placeholder="Введите банковские реквизиты"></textarea></label>
-                  </div>
+                <div class="formBlock formBlock--2">
+                  <label class="fieldWrapper"><span class="fieldWrapper__label">Вложение в проект</span><select class="fieldWrapper__select form-select" placeholder="Выберите тип вложения">
+                      <option value="">
+                        Выберите тип вложения
+                      </option>
+                      <option value="2">
+                        Налом
+                      </option>
+                      <option value="1">
+                        Аналом
+                      </option>
+                      <option value="3">
+                        Рабство
+                      </option>
+                      <option value="5">
+                        B2B
+                      </option>
+                    </select></label>
+                </div>
+              </div>
+              <div class="formBlockWrapper">
+                <div class="formBlock formBlock--2">
+                  <label class="fieldWrapper"><span class="fieldWrapper__label">Роль участника</span><select class="fieldWrapper__select form-select" placeholder="Выберите роль">
+                      <option value="">
+                        Выберите роль
+                      </option>
+                      <option value="2">
+                        Шлюха
+                      </option>
+                      <option value="1">
+                        Глава надела
+                      </option>
+                      <option value="3">
+                        Пес
+                      </option>
+                    </select></label>
+                </div>
+                <div class="formBlock formBlock--2">
+                  <label class="fieldWrapper"><span class="fieldWrapper__label">Email</span><input class="fieldWrapper__input" name="" placeholder="Введите Email" type="text" value="" /></label>
                 </div>
               </div>
             </div>
             <div class="personButtonWrapper person-entity-links is-first">
-              <div class="personButton personButton--remove person-entity-remove">
-                Удалить юрлицо
-              </div>
-              <div class="personButton personButton--add person-entity-add">
-                Добавить юрлицо
+              <div class="personButton personButton--add person-entity-add" data-partner="true">
+                Добавить еще одного
               </div>
             </div>
           </div>
           <div class="buttonContainer buttonContainer--center">
-            <button class="buttonContainer__button linkButton linkButton--small" type="button">отменить</button><button class="buttonContainer__button linkButton linkButton--small linkButton--blue" type="submit">продолжить</button>
+            <button class="buttonContainer__button linkButton linkButton--small linkButton--icon" type="button">отменить<span class="linkButton__icon icon icon--cross_blue"></span></button><button class="buttonContainer__button linkButton linkButton--small linkButton--blue" type="submit">продолжить</button>
           </div>
         </form>
       </div>

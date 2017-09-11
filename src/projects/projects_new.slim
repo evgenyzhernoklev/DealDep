@@ -8,32 +8,32 @@ html
     meta name="description" content=""
     link rel="stylesheet" media="all" href="../css/app.css"
   body
-  
+
     .header
       .headerIn
         .contentIn
           a.header__logo.icon.icon--logo href="/"
           h1.header__title Создание нового проекта
           a.header__close.icon.icon--close href="#"
-    
+
     section.addProjectSection
       .contentIn
-      
+
         .addProject
           .addProjectSteps.cols
             .addProjectStep.col--2.is-current
               span.addProjectStep__number 1
-              p.addProjectStep__info О проекте
+              p.addProjectStep__info Название и участники
             .addProjectStep.col--2
               span.addProjectStep__number 2
-              p.addProjectStep__info Участники
+              p.addProjectStep__info Распределение долей
           .addProjectAbout
-            .addProjectAbout__title Общая информация
-            .addProjectAbout__info 
-              | Укажите название проекта, и добавьте юридическое лицо, 
-              |  если оно уже есть. Если нет, то это не обязательно, 
-              |  его можно будет добавить в любое время.
-        
+            .addProjectAbout__title Название и участники
+            .addProjectAbout__info
+              | Укажите название и всех участников проекта,
+              |  выбрав их долю, вклад и обязательно email,
+              |  на него мы пришлем приглашение для участия в проекте.
+
         form.form
           .formIn
             .formContent
@@ -52,8 +52,92 @@ html
         							option value="1" Добыча сырья
         							option value="3" Строительство
         							option value="5" B2B
-            
-            .personEntity.tab-container.person-entity-clone
+
+            /
+            .personEntity.personEntity--visible.person-entity-clone
+              .formTitle
+                img.formTitle__avatar src="../img/icons/svg/avatar_default.svg"
+                span.formTitle__counter Первый участник
+                span.formTitle__hint
+                  |  (это вы)
+              .formBlockWrapper
+                .formBlock.formBlock--4
+                  label.fieldWrapper
+                    span.fieldWrapper__label Фамилия
+                    input.fieldWrapper__input type="text" name="" placeholder="Введите фамилию" value="Гужиков"
+                .formBlock.formBlock--4
+                  label.fieldWrapper
+                    span.fieldWrapper__label Имя
+                    input.fieldWrapper__input type="text" name="" placeholder="Введите имя" value="Павел"
+                .formBlock.formBlock--2
+        					label.fieldWrapper
+        						span.fieldWrapper__label Вложение в проект
+        						select.fieldWrapper__select.form-select placeholder="Выберите тип вложения"
+        							option value="" Выберите тип вложения
+        							option value="2" Налом
+        							option value="1" Аналом
+        							option value="3" Рабство
+        							option value="5" B2B
+              .formBlockWrapper
+                .formBlock.formBlock--2
+                  label.fieldWrapper
+                    span.fieldWrapper__label Роль участника
+                    select.fieldWrapper__select.form-select placeholder="Выберите роль"
+                      option value="" Выберите роль
+                      option value="2" Шлюха
+                      option value="1" Глава надела
+                      option value="3" Пес
+                .formBlock.formBlock--2
+                  label.fieldWrapper
+                    span.fieldWrapper__label Email
+                    input.fieldWrapper__input type="text" name="" placeholder="Введите Email" value="pavel@bongord.com"
+
+
+            .personEntity.personEntity--visible
+              .formTitle
+                img.formTitle__avatar src="../img/icons/svg/avatar_default.svg"
+                span.formTitle__counter Второй участник
+              .formBlockWrapper
+                .formBlock.formBlock--4
+                  label.fieldWrapper
+                    span.fieldWrapper__label Фамилия
+                    input.fieldWrapper__input type="text" name="" placeholder="Введите фамилию" value=""
+                .formBlock.formBlock--4
+                  label.fieldWrapper
+                    span.fieldWrapper__label Имя
+                    input.fieldWrapper__input type="text" name="" placeholder="Введите имя" value=""
+                .formBlock.formBlock--2
+                  label.fieldWrapper
+                    span.fieldWrapper__label Вложение в проект
+                    select.fieldWrapper__select.form-select placeholder="Выберите тип вложения"
+                      option value="" Выберите тип вложения
+                      option value="2" Налом
+                      option value="1" Аналом
+                      option value="3" Рабство
+                      option value="5" B2B
+              .formBlockWrapper
+                .formBlock.formBlock--2
+                  label.fieldWrapper
+                    span.fieldWrapper__label Роль участника
+                    select.fieldWrapper__select.form-select placeholder="Выберите роль"
+                      option value="" Выберите роль
+                      option value="2" Шлюха
+                      option value="1" Глава надела
+                      option value="3" Пес
+                .formBlock.formBlock--2
+                  label.fieldWrapper
+                    span.fieldWrapper__label Email
+                    input.fieldWrapper__input type="text" name="" placeholder="Введите Email" value=""
+
+
+
+
+            .personButtonWrapper.person-entity-links.is-first
+              / .personButton.personButton--remove.person-entity-remove Удалить юрлицо
+              .personButton.personButton--add.person-entity-add data-partner="true" Добавить еще одного
+
+
+            / .personEntity.tab-container.person-entity-clone
               .formTitle
                 | Юридическое лицо
                 .personEntityTabs
@@ -64,12 +148,12 @@ html
               .personAttention.attention-container
                 span.personAttention__close.icon.icon--crossSmall.attention-close
                 p.personAttention__info
-                  | Введите только ФИО и номер ОГРН, остальные 
-                  |  данные мы возьмем из Единого Государственного 
-                  |  Реестра Юридических Лиц, а банковские реквизиты 
+                  | Введите только ФИО и номер ОГРН, остальные
+                  |  данные мы возьмем из Единого Государственного
+                  |  Реестра Юридических Лиц, а банковские реквизиты
                   |  вводить не обязательно, их можно добавить потом.
                 span.personAttention__icon.icon.icon--attention
-              
+
               .tab-content
                 .formBlockWrapper
                   .formBlock.formBlock--2
@@ -125,7 +209,7 @@ html
                     label.fieldWrapper
                       span.fieldWrapper__label Банковские реквизиты
                       textarea.fieldWrapper__textarea name="" placeholder="Введите банковские реквизиты"
-                
+
               .tab-content
                 .formBlockWrapper
                   .formBlock.formBlock--2
@@ -152,15 +236,17 @@ html
                     label.fieldWrapper
                       span.fieldWrapper__label Банковские реквизиты
                       textarea.fieldWrapper__textarea name="" placeholder="Введите банковские реквизиты"
-                
-            .personButtonWrapper.person-entity-links.is-first
+
+            / .personButtonWrapper.person-entity-links.is-first
               .personButton.personButton--remove.person-entity-remove Удалить юрлицо
               .personButton.personButton--add.person-entity-add Добавить юрлицо
-              
+
           .buttonContainer.buttonContainer--center
-            button.buttonContainer__button.linkButton.linkButton--small type="button" отменить
+            button.buttonContainer__button.linkButton.linkButton--small.linkButton--icon type="button"
+              | отменить
+              span.linkButton__icon.icon.icon--cross_blue
             button.buttonContainer__button.linkButton.linkButton--small.linkButton--blue type="submit" продолжить
-  
-  
-  
+
+
+
   script src="../js/app.js"

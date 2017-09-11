@@ -1,0 +1,52 @@
+/*** persons avatar ***/
+.formBlock--avatar {
+  padding: 25px 0 0;
+  text-align: center;
+
+  .linkButton {
+    width: 157px;
+    height: 40px;
+    line-height: 42px;
+  }
+}
+
+.fieldWrapper__input--avatar {
+  display: none;
+}
+
+.formBlock__accountAvatar {
+  display: block;
+  max-width: 160px;
+  width: 100%;
+  margin: 0 auto 35px;
+}
+
+
+
+/*** persons info ***/
+.formPersonInfo {
+  position: relative;
+  margin: 23px 0 27px;
+  padding-left: 110px;
+}
+
+.formPersonInfo__avatar {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 80px;
+  border-radius: 50%;
+}
+
+.formPersonInfoAbout {
+  position: relative;
+  padding: 22px 0 0;
+  font: 12px/19px $circe-regular;
+  color: #6D6D6D;
+}
+
+.formPersonInfoAbout__social {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

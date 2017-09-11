@@ -1,0 +1,54 @@
+.buttonContainer {
+  position: relative;
+  margin: 20px 0 0;
+}
+
+.buttonContainer--link {
+  padding-right: 160px;
+
+  .buttonContainer__link {
+    position: absolute;
+    right: 0;
+    top: 15px;
+  }
+}
+
+.buttonContainer--center {
+  text-align: center;
+
+  .buttonContainer__button {
+    margin-right: 15px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.buttonContainer--social {
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.buttonContainer__button {
+  margin-top: 15px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.buttonContainer__link {
+  font: 10px/18px $circe-bold;
+  color: $blue;
+  text-transform: uppercase;
+}
+
+.buttonContainer__info {
+  margin: 20px 0 0;
+  font: 12px/19px $circe-regular;
+  color: #6D6D6D;
+  text-align: center;
+}

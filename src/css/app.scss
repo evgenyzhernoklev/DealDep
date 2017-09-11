@@ -5,6 +5,7 @@
 /*
 * Custom
 */
+// additional
 @import "additional/reset.scss";
 @import "additional/fonts.scss";
 @import "additional/variables.scss";
@@ -12,21 +13,32 @@
 @import "additional/cols.scss";
 @import "additional/cols-flex.scss";
 
+// vendor
 @import "vendor/jquery-ui.css";
 @import "vendor/slick.scss";
 @import "vendor/selectize.scss";
 
+// common
 @import "common/common.scss";
 @import "common/icons.scss";
 @import "common/buttons.scss";
-@import "common/forms.scss";
 @import "common/popups.scss";
 
+// forms
+@import "forms/form-reset.scss";
+@import "forms/form-common.scss";
+@import "forms/form-buttons.scss";
+@import "forms/form-person.scss";
+@import "forms/form-select.scss";
+@import "forms/form-slider.scss";
+
+// blocks
 @import "blocks/menu.scss";
 @import "blocks/tabs.scss";
 @import "blocks/overlay-bg.scss";
 @import "blocks/empty.scss";
 
+// pages
 @import "login.scss";
 @import "project_add.scss";
 @import "project.scss";
