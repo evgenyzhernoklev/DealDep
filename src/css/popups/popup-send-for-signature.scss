@@ -1,0 +1,25 @@
+.signatureList {
+  padding: 22px 0 7px;
+}
+
+.signatureListItem {
+  position: relative;
+  margin-bottom: 26px;
+  padding-left: 50px;
+  min-height: 35px;
+}
+
+.signatureListItem__avatar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  border-radius: 50%;
+}
+
+.signatureListItem__info {
+  padding-top: 7px;
+  padding-right: 21px;
+  font-size: 16px;
+  line-height: 20px;
+}

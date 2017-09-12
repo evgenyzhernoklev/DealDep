@@ -8,7 +8,7 @@ html
     meta name="description" content=""
     link rel="stylesheet" media="all" href="../css/app.css"
   body
-  
+
     .header
       .headerIn
         .contentIn
@@ -36,25 +36,50 @@ html
               a.submenuItem__link.is-active href="/projects/projects_dogovor_unsigned.html" Договоренности
             li.submenuItem
               a.submenuItem__link href="/projects/projects_yurlitsa_unsigned.html" Юрлица
-          
+
     .contentWrapperTop
       .docs
         .contentIn
           .titleMain
             | История договоренностей
-          
+
           .empty
             .emptyIn
               .empty__imgWrapper.imgWrapper
                 img.imgWrapper__img src="../img/icons/svg/docs.svg"
-              .empty__title Здесь будут все Ваши договоренности, относящиеся к проекту.
-              .empty__info Добавить их можно будет после подписания проекта.
-              a.empty__link.linkButton.linkButton--blue.linkButton--icon href="#"
+              .empty__title Здесь будут все Ваши договоренности, в виде полноценных документов.
+              .empty__info Создать их можно будет после подписания проекта всеми участниками.
+              a.empty__link.linkButton.linkButton--blue.linkButton--icon.popup-open data-popup="send-for-signature" href="#"
                 | отправить на подпись
                 span.linkButton__icon.icon.icon--sign
-    
-    
-  
-  
-  
+
+
+  .popup.send-for-signature
+    span.popup__close.icon--close.popup-close
+    p.popupTitle Отправить на подпись?
+    p.popupSubtitle Приглашение подписать проект будет разослано следующим участникам
+
+    ul.signatureList.colsFlex
+      li.signatureListItem.colFlex--2
+        img.signatureListItem__avatar src="../img/avatars/avatar_pavel.png"
+        p.signatureListItem__info Гужиков Павел
+      li.signatureListItem.colFlex--2
+        img.signatureListItem__avatar src="../img/avatars/avatar_pavel.png"
+        p.signatureListItem__info Гужиков Павел
+      li.signatureListItem.colFlex--2
+        img.signatureListItem__avatar src="../img/avatars/avatar_pavel.png"
+        p.signatureListItem__info Гужиков Павел
+      li.signatureListItem.colFlex--2
+        img.signatureListItem__avatar src="../img/avatars/avatar_pavel.png"
+        p.signatureListItem__info Гужиков Павел
+      li.signatureListItem.colFlex--2
+        img.signatureListItem__avatar src="../img/avatars/avatar_pavel.png"
+        p.signatureListItem__info Гужиков Павел
+
+    .buttonContainer.buttonContainer--center
+      button.buttonContainer__button.linkButton.linkButton--small.linkButton--blue type="submit" отправить
+      button.buttonContainer__button.linkButton.linkButton--small.popup-close type="button" отменить
+
+
+
   script src="../js/app.js"

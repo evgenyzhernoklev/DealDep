@@ -12,13 +12,14 @@
 //= ./vendor/slick.min.js
 //= ./vendor/bpopup.min.js
 //= ./vendor/selectize.min.js
+//= ./vendor/viewportSize.js
 
 //= ./lib/flexDetect.js
-//= ./lib/viewportSize.js
 //= ./lib/tabs.js
 //= ./lib/forms.js
 
 //= ./project_add.js
+//= ./popups.js
 
 //= ./viewer.js
 //= ./common.js

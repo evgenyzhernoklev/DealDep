@@ -22,6 +22,7 @@ Viewer.prototype.init = function () {
 
 Viewer.prototype.initClasses = function () {
   new Forms();
+  new Popups();
   $('.tab-container').each(function() {
     new Tabs(this);
   });

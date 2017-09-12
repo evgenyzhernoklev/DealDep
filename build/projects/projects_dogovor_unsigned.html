@@ -63,17 +63,61 @@
                 <img class="imgWrapper__img" src="../img/icons/svg/docs.svg" />
               </div>
               <div class="empty__title">
-                Здесь будут все Ваши договоренности, относящиеся к проекту.
+                Здесь будут все Ваши договоренности, в виде полноценных документов.
               </div>
               <div class="empty__info">
-                Добавить их можно будет после подписания проекта.
+                Создать их можно будет после подписания проекта всеми участниками.
               </div>
-              <a class="empty__link linkButton linkButton--blue linkButton--icon" href="#">отправить на подпись<span class="linkButton__icon icon icon--sign"></span></a>
+              <a class="empty__link linkButton linkButton--blue linkButton--icon popup-open" data-popup="send-for-signature" href="#">отправить на подпись<span class="linkButton__icon icon icon--sign"></span></a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </body>
+  <div class="popup send-for-signature">
+    <span class="popup__close icon--close popup-close"></span>
+    <p class="popupTitle">
+      Отправить на подпись?
+    </p>
+    <p class="popupSubtitle">
+      Приглашение подписать проект будет разослано следующим участникам
+    </p>
+    <ul class="signatureList colsFlex">
+      <li class="signatureListItem colFlex--2">
+        <img class="signatureListItem__avatar" src="../img/avatars/avatar_pavel.png" />
+        <p class="signatureListItem__info">
+          Гужиков Павел
+        </p>
+      </li>
+      <li class="signatureListItem colFlex--2">
+        <img class="signatureListItem__avatar" src="../img/avatars/avatar_pavel.png" />
+        <p class="signatureListItem__info">
+          Гужиков Павел
+        </p>
+      </li>
+      <li class="signatureListItem colFlex--2">
+        <img class="signatureListItem__avatar" src="../img/avatars/avatar_pavel.png" />
+        <p class="signatureListItem__info">
+          Гужиков Павел
+        </p>
+      </li>
+      <li class="signatureListItem colFlex--2">
+        <img class="signatureListItem__avatar" src="../img/avatars/avatar_pavel.png" />
+        <p class="signatureListItem__info">
+          Гужиков Павел
+        </p>
+      </li>
+      <li class="signatureListItem colFlex--2">
+        <img class="signatureListItem__avatar" src="../img/avatars/avatar_pavel.png" />
+        <p class="signatureListItem__info">
+          Гужиков Павел
+        </p>
+      </li>
+    </ul>
+    <div class="buttonContainer buttonContainer--center">
+      <button class="buttonContainer__button linkButton linkButton--small linkButton--blue" type="submit">отправить</button><button class="buttonContainer__button linkButton linkButton--small popup-close" type="button">отменить</button>
+    </div>
+  </div>
   <script src="../js/app.js"></script>
 </html>
