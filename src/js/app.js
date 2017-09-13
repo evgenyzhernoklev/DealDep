@@ -13,6 +13,7 @@
 //= ./vendor/bpopup.min.js
 //= ./vendor/selectize.min.js
 //= ./vendor/viewportSize.js
+//= ./vendor/jquery.inputmask.bundle.js
 
 //= ./lib/flexDetect.js
 //= ./lib/tabs.js
