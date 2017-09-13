@@ -115,10 +115,88 @@
   top: 5px;
   right: 0;
   padding: 5px;
+
+  &.is-active {
+    .icon--bell {
+      @include background-image(bell_blue, 18px, 20px);
+    }
+  }
 }
 
 .notices__bell {
+  transition: background-image $transition-normal;
+}
 
+.notices__newQuantity {
+  display: inline-block;
+  position: absolute;
+  top: 3px;
+  right: 0;
+  padding: 1px 3px 0;
+  height: 11px;
+  font: 8px/11px $circe-bold-extra;
+  color: $white;
+  background: #F94141;
+  border-radius: 2px;
+}
+
+
+
+// notices tooltip
+.noticesListWrapper {
+  position: absolute;
+  top: 100%;
+  right: -57px;
+  margin-top: 10px;
+  z-index: 10;
+
+  .noticesList__triangle {
+    left: auto;
+    right: 57px;
+  }
+}
+
+.noticesList {
+  width: 334px;
+  height: 324px;
+  padding: 5px 0 0;
+  overflow-y: auto;
+  background: $white;
+  box-shadow: 0 0 14px 0 rgba(0,0,0,0.20);
+  cursor: default;
+}
+
+.noticesListItem {
+  position: relative;
+  padding: 15px 20px;
+  border-bottom: 1px solid $gray;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.noticesListItem__label {
+  position: absolute;
+  top: 12px;
+  right: 24px;
+  display: inline-block;
+  padding: 0 14px;
+  height: 25px;
+  font: 13px/25px $circe-bold-extra;
+  color: $white;
+  text-align: center;
+  background-color: #E72081;
+  border-radius: 100px;
+}
+
+.noticesListItem__date {
+  margin: 0 75px 11px 0;
+  color: #4F636F;
+}
+
+.noticesListItem__info {
+  color: $black;
 }
 
 

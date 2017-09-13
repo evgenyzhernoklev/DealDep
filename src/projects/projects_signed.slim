@@ -16,12 +16,42 @@ html
           .menu
             a.menu__link.is-active href="#" Мои проекты
             a.menu__link href="#" Мой профиль
-          .logined
+          .logined.tooltip-container
             .loginedUser
               span.loginedUser__name Гужиков П. А.
               img.loginedUser__avatar src="../img/avatars/avatar_pavel.png"
-            a.notices href="#"
+            a.notices.tooltip-link href="#"
               span.notices__bell.icon.icon--bell
+              span.notices__newQuantity 2
+            .noticesListWrapper.tooltip-content
+              p.noticesList__triangle.triangleShadow.triangleShadow--top
+                span.triangleShadow__helper
+              .noticesList
+                .noticesListItem
+                  span.noticesListItem__label Новое
+                  p.noticesListItem__date 02 марта 2017,  20:04:34
+                  p.noticesListItem__info
+                    | Дмитрий Медведев подписал распределение долей в проекте «Дилдеп Технолоджис»
+                .noticesListItem
+                  span.noticesListItem__label Новое
+                  p.noticesListItem__date 03 марта 2017,  20:04:34
+                  p.noticesListItem__info
+                    | Дмитрий Медведев подписал распределение долей в проекте «Дилдеп Технолоджис»
+                    |  Дмитрий Медведев подписал распределение долей в проекте «Дилдеп Технолоджис»
+                .noticesListItem
+                  p.noticesListItem__date 04 марта 2017,  20:04:34
+                  p.noticesListItem__info
+                    | Дмитрий Медведев подписал распределение долей в проекте «Дилдеп Технолоджис»
+                    | Дмитрий Медведев подписал
+                .noticesListItem
+                  p.noticesListItem__date 05 марта 2017,  20:04:34
+                  p.noticesListItem__info
+                    | Дмитрий Медведев подписал распределение долей в проекте «Дилдеп Технолоджис»
+                .noticesListItem
+                  p.noticesListItem__date 05 марта 2017,  20:04:34
+                  p.noticesListItem__info
+                    | Дмитрий Медведев подписал распределение
+
       .headerSubmenu
         .contentIn
           .submenuTitle

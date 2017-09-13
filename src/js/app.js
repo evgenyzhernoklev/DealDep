@@ -18,6 +18,7 @@
 //= ./lib/flexDetect.js
 //= ./lib/tabs.js
 //= ./lib/forms.js
+//= ./lib/tooltip.js
 
 //= ./project_add.js
 //= ./popups.js
