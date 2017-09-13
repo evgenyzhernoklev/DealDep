@@ -50,6 +50,61 @@
 
 
 
+// tabs
+.arrangementTabsWrapper {
+  margin-bottom: 15px;
+  font-size: 0;
+  line-height: 0;
+}
+
+.arrangementTabsWrapper__tab {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  padding: 0 20px;
+  height: 40px;
+  font: 14px/40px $circe-bold;
+  background-color: #DCDFE5;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: background-color $transition-normal, color $transition-normal, padding-right $transition-normal;
+
+  &:hover {
+    background-color: #d5d8de;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    margin-top: -6px;
+    @include background-image(cross_white, 12px, 12px);
+    vertical-align: middle;
+    @include hide();
+  }
+
+  &.is-active {
+    padding-right: 44px;
+    color: $white;
+    background-color: $blue;
+
+    &:hover {
+      background-color: #487fea;
+    }
+
+    &:after {
+      @include show();
+    }
+  }
+}
+
+
+
 // content
 .arrangementsWrapper {
   padding: 25px 0 0;
