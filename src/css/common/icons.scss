@@ -25,6 +25,10 @@
   @include background-image(unsigned, 52px, 52px);
 }
 
+.icon--signed {
+  @include background-image(ok_white, 23px, 23px);
+}
+
 
 
 // login

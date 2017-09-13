@@ -68,6 +68,11 @@
 
   &.is-active {
     color: $black;
+    cursor: default;
+  }
+
+  &:hover {
+    color: $black;
   }
 }
 
@@ -153,8 +158,15 @@
 
 .submenuTitle__imgWrapper {
   position: absolute;
-  top: -2px;
+  top: -3px;
   left: 0;
+
+  .icon--signed {
+    width: 52px;
+    height: 52px;
+    background-color: #A3C65A;
+    border-radius: 50%;
+  }
 }
 
 .submenuTitle__title {
