@@ -11,8 +11,13 @@
 
 // header
 .loginHeader {
+  padding: 0 20px;
   text-align: center;
   border-bottom: 1px solid $gray-light;
+}
+
+.loginHeader--left {
+  text-align: left;
 }
 
 .loginHeader__link {

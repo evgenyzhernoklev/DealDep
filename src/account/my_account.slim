@@ -8,29 +8,28 @@ html
     meta name="description" content=""
     link rel="stylesheet" media="all" href="../css/app.css"
   body
-    
+
     .header
       .headerIn
         .contentIn
           a.header__logo.icon.icon--logo href="/"
           h1.header__title Авторизация
-    
+
     .accountIn.tab-container
-      .loginHeader
+      .loginHeader.loginHeader--left
         a.loginHeader__link.tab-link.is-active href="#" Персональные данные
         a.loginHeader__link.tab-link href="#" Настройки аккаунта
-        a.loginHeader__link.tab-link href="#" Мои юрлица
-      
+
       .loginContent
-        
+
         .tab-content
           .personAttention.personAttention--account
             p.personAttention__info
-              | Мы ни при каких обстоятельствах не передаем ваши 
-              |  личные данные третьим лицам, а используем их только 
+              | Мы ни при каких обстоятельствах не передаем ваши
+              |  личные данные третьим лицам, а используем их только
               |  для составления важных документов.
             span.personAttention__icon.icon.icon--shield
-          
+
           form.form
             .formBlockWrapper
               .formBlock--2
@@ -53,7 +52,7 @@ html
                   input.fieldWrapper__input.fieldWrapper__input--avatar type="text" name="" placeholder=""
                   img.formBlock__accountAvatar src="../img/icons/svg/avatar_default.svg"
                   span.linkButton.linkButton--small загрузить фото
-                  
+
             .form__hr
             .formTitle Паспортные данные
             .formBlockWrapper
@@ -76,7 +75,7 @@ html
             .buttonContainer.buttonContainer--center
               button.buttonContainer__button.linkButton.linkButton--small.linkButton--blue type="submit" сохранить
               button.buttonContainer__button.linkButton.linkButton--small type="button" отменить
-        
+
         .tab-content
           form.form
             .formTitle Контактные данные
@@ -89,7 +88,7 @@ html
                 label.fieldWrapper
                   span.fieldWrapper__label Ваш телефон
                   input.fieldWrapper__input type="text" name="" placeholder="" value="+7 (999) 123-23-23"
-          
+
             .form__hr
             .formTitle Смена пароля
             .formBlockWrapper
@@ -106,23 +105,20 @@ html
                 label.fieldWrapper
                   span.fieldWrapper__label Новый пароль еще раз
                   input.fieldWrapper__input type="password" name="" placeholder=""
-            
+
             .form__hr
             .buttonContainer--social
               .formTitle Подключите вход через соцсети
-              a.buttonContainer__button.linkButton.linkButton--icon href="#" 
+              a.buttonContainer__button.linkButton.linkButton--icon href="#"
                 | войти с помощью Facebook
                 span.linkButton__icon.icon.icon--facebook
-              a.buttonContainer__button.linkButton.linkButton--icon href="#" 
+              a.buttonContainer__button.linkButton.linkButton--icon href="#"
                 | войти с помощью Google
                 span.linkButton__icon.icon.icon--google
-            
+
             .buttonContainer.buttonContainer--center
               button.buttonContainer__button.linkButton.linkButton--small.linkButton--blue type="submit" сохранить
               button.buttonContainer__button.linkButton.linkButton--small type="button" отменить
-        
-        .tab-content
-          .formTitle Список юридических лиц
 
 
 
