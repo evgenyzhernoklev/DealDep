@@ -1,0 +1,41 @@
+.note {
+  position: fixed;
+  z-index: 98;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #383838;
+}
+
+.note__cols {
+  min-height: 92px;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.noteInfo {
+  position: relative;
+  padding: 10px 20px 10px 65px;
+  min-height: 44px;
+}
+
+.noteInfo__icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -21px;
+  width: 42px;
+  height: 42px;
+  background-color: #2196F3;
+  border-radius: 50%;
+}
+
+.noteInfo__text {
+  font-size: 14px;
+  line-height: 22px;
+  color: $white;
+}
+
+.noteButtons {
+  @include flex-basis(360px);
+}

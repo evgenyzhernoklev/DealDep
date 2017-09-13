@@ -82,3 +82,7 @@
 .icon--back {
   @include background-image(arrow_left_blue, 7px, 13px);
 }
+
+.icon--info {
+  @include background-image(info_sign, 5px, 19px);
+}

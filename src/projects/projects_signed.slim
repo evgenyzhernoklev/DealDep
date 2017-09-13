@@ -7,7 +7,7 @@ html
     title DealDep - projects signed
     meta name="description" content=""
     link rel="stylesheet" media="all" href="../css/app.css"
-  body
+  body.with-note
 
     .header
       .headerIn
@@ -61,9 +61,9 @@ html
             p.submenuTitle__info Подписано
           ul.submenu
             li.submenuItem
-              a.submenuItem__link href="/projects/projects_participants_unsigned.html" Участники и карта
+              a.submenuItem__link.is-active href="/projects/projects_participants_unsigned.html" Участники и карта
             li.submenuItem
-              a.submenuItem__link.is-active href="/projects/projects_dogovor_unsigned.html" Договоренности
+              a.submenuItem__link href="/projects/projects_dogovor_unsigned.html" Договоренности
             li.submenuItem
               a.submenuItem__link href="/projects/projects_yurlitsa_unsigned.html" Юрлица
 
@@ -175,6 +175,14 @@ html
               .arrangementInfo
                 | Порядок распределения<br>прибыли и выплаты<br>дивидендов
 
+    .note
+      .contentIn
+        .note__cols.colsFlex
+          .noteInfo
+            span.noteInfo__icon.icon.icon--info
+            .noteInfo__text
+              | Вы можете сформировать готовый документ по вашим договоренностям, чтобы подписать его и отправить в блокчейн, по желанию.
+          .noteButtons
 
 
   script src="../js/app.js"

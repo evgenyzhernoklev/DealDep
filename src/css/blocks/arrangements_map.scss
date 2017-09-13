@@ -5,7 +5,7 @@
 
 .contentWrapperBlured__overlay {
   position: absolute;
-  z-index: 97;
+  z-index: 88;
   top: 0;
   bottom: 0;
   left: 0;
@@ -19,7 +19,7 @@
 // bubble
 .bubble {
   position: absolute;
-  z-index: 98;
+  z-index: 89;
   top: 50%;
   left: 50%;
   width: 456px;
@@ -169,7 +169,7 @@
 }
 
 .arrangementCols {
-  margin: 0 -8px;
+  margin: 0 -8px 38px;
 }
 
 .arrangement {
