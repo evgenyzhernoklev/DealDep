@@ -1,0 +1,176 @@
+// header
+.arrangementHeader {
+  @include clearfix();
+  padding: 34px 0 32px;
+}
+
+.arrangementHeader__title {
+  float: left;
+  width: 195px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: $circe-bold;
+}
+
+.arrangementHeader__info {
+  float: right;
+  width: 150px;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: right;
+}
+
+
+
+// progress
+.arrangementProgress {
+  margin: 0 150px 0 195px;
+  padding-top: 4px;
+  font-size: 0;
+  line-height: 0;
+  text-align: justify;
+
+  &:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+.arrangementProgress__item {
+  display: inline-block;
+  width: 7px;
+  height: 15px;
+  background-color: #DCDFE5;
+
+  &.is-active {
+    background-color: #A3C65A;
+  }
+}
+
+
+
+// content
+.arrangementsWrapper {
+  padding: 25px 0 0;
+  border-top: 1px solid $gray;
+}
+
+.arrangementCols {
+  margin: 0 -8px;
+}
+
+.arrangement {
+  margin-bottom: 18px;
+}
+
+
+
+// arrangement block
+.arrangement__in {
+  position: relative;
+  display: flex;
+  margin: 10px 9px;
+  height: 100%;
+  min-height: 88px;
+  background-color: $white;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1;
+  transition: background-color $transition-normal, box-shadow $transition-normal, z-index $transition-normal, border-radius $transition-normal;
+
+  &:hover {
+    background-color: $white-light;
+  }
+
+  &.is-colored {
+    .arrangementInfo {
+      color: $white;
+    }
+
+    &:hover {
+      z-index: 99;
+      border-radius: 5px 5px 0 0;
+
+      .arrangementHidden {
+        margin-top: 0;
+        @include show();
+        transition: opacity $transition-normal, visibility $transition-normal, margin-top $transition-normal;
+      }
+    }
+  }
+
+  &.is-green {
+    background-color: #A3C65A;
+
+    &:hover {
+      box-shadow: 10px 10px 15px 0 rgba(163,198,90,0.50);
+    }
+
+    .arrangementHidden {
+      background-color: #A3C65A;
+      box-shadow: 10px 10px 15px 0 rgba(163,198,90,0.50);
+    }
+  }
+
+  &.is-orange {
+    background-color: #F8BC4D;
+
+    &:hover {
+      box-shadow: 10px 10px 15px 0 rgba(248,188,77,0.50);
+    }
+
+    .arrangementHidden {
+      background-color: #F8BC4D;
+      box-shadow: 10px 10px 15px 0 rgba(248,188,77,0.50);
+    }
+  }
+
+  &.is-transparent {
+    background-color: transparent;
+    border: 2px dashed #979797;
+  }
+}
+
+
+
+// info
+.arrangementInfo {
+  flex-basis: 100%;
+  margin: 0 5px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #595959;
+  text-align: center;
+  align-self: center;
+  transition: color $transition-normal;
+}
+
+
+
+// hidden block
+.arrangementHidden {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  margin-top: -15px;
+  height: 54px;
+  font: 10px/54px $circe-bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  border-top: 1px solid rgba(255,255,255, 0.2);
+  border-radius: 0 0 5px 5px;
+  @include hide();
+  transition: opacity $transition-normal, visibility $transition-normal, margin-top $transition-normal .3s;
+
+  &:before {
+    content: '';
+    margin-right: 10px;
+    margin-bottom: 3px;
+    @include background-image(circulation_white, 13px, 13px);
+    vertical-align: middle;
+  }
+}

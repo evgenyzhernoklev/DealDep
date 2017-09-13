@@ -86,7 +86,7 @@ gulp.task('compile-html', function () {
             options: "encoding='utf-8'"
         }))
         .pipe(gulp.dest(path.build.html))
-        // .pipe(reload({stream: true}));
+        .pipe(reload({stream: true}));
 });
 
 
