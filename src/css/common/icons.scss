@@ -75,6 +75,10 @@
   @include background-image(sign_white, 14px, 12px);
 }
 
+.icon--sign_green {
+  @include background-image(sign_green, 14px, 12px);
+}
+
 .icon--edit_black {
   @include background-image(edit_black, 13px, 13px);
 }
