@@ -1,0 +1,57 @@
+.circlesParticipant {
+
+}
+
+.circlesParticipant__item {
+  display: inline-block;
+  margin-right: -5px;
+  width: 29px;
+  height: 29px;
+  line-height: 28px;
+  text-align: center;
+  background-color: $white;
+  border-radius: 50%;
+  vertical-align: middle;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.circlesParticipant__item--success {
+  &:before {
+    content: '';
+    vertical-align: middle;
+  }
+}
+
+
+
+// orange
+.circlesParticipant--orange {
+  .circlesParticipant__item--success {
+    @include background-image(ok_orange, 13px, 13px);
+  }
+
+  .circlesParticipant__item {
+    width: 29px;
+    height: 29px;
+    border: 1px solid #F3C266;
+  }
+}
+
+
+
+// green
+.circlesParticipant--green {
+  .circlesParticipant__item--success {
+    background-color: #CDDC39;
+    @include background-image(ok_white, 13px, 13px);
+  }
+
+  .circlesParticipant__item {
+    width: 29px;
+    height: 29px;
+    border: 1px solid #CDDC39;
+  }
+}

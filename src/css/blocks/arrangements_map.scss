@@ -293,28 +293,3 @@
   @include hide();
   transition: opacity $transition-normal, visibility $transition-normal, margin-top $transition-normal .3s;
 }
-
-.arrangementHidden__participant {
-  display: inline-block;
-  margin-right: -5px;
-  width: 29px;
-  height: 29px;
-  line-height: 28px;
-  text-align: center;
-  background-color: $white;
-  border: 1px solid #F3C266;
-  border-radius: 50%;
-  vertical-align: middle;
-
-  &:last-child {
-    margin-right: 0;
-  }
-}
-
-.arrangementHidden__participant--success {
-  &:before {
-    content: '';
-    @include background-image(ok_orange, 13px, 13px);
-    vertical-align: middle;
-  }
-}

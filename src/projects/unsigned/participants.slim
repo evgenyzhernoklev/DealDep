@@ -1,0 +1,198 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta http-equiv="X-UA-Compatible" content="IE=edge"
+    meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0"
+    title DealDep - projects participants - unsigned
+    meta name="description" content=""
+    link rel="stylesheet" media="all" href="../../css/app.css"
+  body
+
+    .header
+      .headerIn
+        .contentIn
+          a.header__logo.icon.icon--logo href="/"
+          .menu
+            a.menu__link.is-active href="#" Мои проекты
+            a.menu__link href="#" Мой профиль
+          .logined
+            .loginedUser
+              span.loginedUser__name Гужиков П. А.
+              img.loginedUser__avatar src="../../img/avatars/avatar_pavel.png"
+            a.notices href="#"
+              span.notices__bell.icon.icon--bell
+      .headerSubmenu
+        .contentIn
+          .submenuTitle
+            .submenuTitle__imgWrapper.imgWrapper
+              span.icon.icon--test
+            h1.submenuTitle__title.titleMain  Мои проекты
+            p.submenuTitle__info Не подписано
+          ul.submenu
+            li.submenuItem
+              a.submenuItem__link.is-active href="/projects/projects_participants_unsigned.html" Участники и карта
+            li.submenuItem
+              a.submenuItem__link href="/projects/projects_dogovor_unsigned.html" Договоренности
+            li.submenuItem
+              a.submenuItem__link href="/projects/projects_yurlitsa_unsigned.html" Юрлица
+
+    .contentWrapperTop
+      .projectInfo.bgWhite
+        .contentIn
+          .instructions
+            .buttonContainer
+              a.linkButton.linkButton--blue.linkButton--icon.popup-open data-popup="send-for-signature" href="#"
+                | отправить на подпись
+                span.linkButton__icon.icon.icon--sign
+              a.linkButton.linkButton--icon href="#"
+                | редактировать
+                span.linkButton__icon.icon.icon--edit_black
+            .instructions__info
+              | Теперь, когда проект создан, Вам нужно подписать его
+              |  у всех участников. Пока проект не подписан,
+              |  его можно отредактировать
+
+    .contentWrapperBlured
+      .contentWrapperBlured__overlay
+
+      .bubble
+        .bubble__title
+          | Здесь будет карта договоренностей проекта
+        .bubble__info
+          | Заполнить ее можно будет после подписания проекта всеми участниками.
+        a.bubble__link.linkButton.linkButton--blue.linkButton--icon.popup-open data-popup="send-for-signature" href="#"
+          | отправить на подпись
+          span.linkButton__icon.icon.icon--sign
+
+      .contentIn
+        .arrangementHeader
+          .arrangementHeader__title
+            | Карта договоренностей
+          .arrangementHeader__info.arrangementHeaderInfo
+            | Заполнена на&nbsp;
+            span.arrangementHeaderInfo__percentage 0%
+          .arrangementProgress
+            .arrangementProgress__item
+            .arrangementProgress__item
+            .arrangementProgress__item
+            .arrangementProgress__item
+            .arrangementProgress__item
+            .arrangementProgress__item
+            .arrangementProgress__item
+            .arrangementProgress__item
+            .arrangementProgress__item
+            .arrangementProgress__item
+            .arrangementProgress__item
+            .arrangementProgress__item
+            .arrangementProgress__item
+            .arrangementProgress__item
+            .arrangementProgress__item
+            .arrangementProgress__item
+            .arrangementProgress__item
+            .arrangementProgress__item
+            .arrangementProgress__item
+            .arrangementProgress__item
+            .arrangementProgress__item
+            .arrangementProgress__item
+            .arrangementProgress__item
+            .arrangementProgress__item
+
+      .arrangementsWrapper
+        .contentIn
+          .arrangementTabsWrapper
+            span.arrangementTabsWrapper__tab Финансирование
+            span.arrangementTabsWrapper__tab Управление
+            span.arrangementTabsWrapper__tab Планирование
+            span.arrangementTabsWrapper__tab Контроль
+            span.arrangementTabsWrapper__tab Изменение долей
+          .arrangementCols.colsFlex
+            .arrangement.colFlex--4
+              .arrangement__in.colFlexIn
+                .arrangementInfo
+                  | Финансирование проекта<br>участниками
+            .arrangement.colFlex--4
+              .arrangement__in.colFlexIn
+                .arrangementInfo
+                  | Полномочия участников
+            .arrangement.colFlex--4
+              .arrangement__in.colFlexIn
+                .arrangementInfo
+                  | Планирование и контроль<br>деятельности проекта
+            .arrangement.colFlex--4
+              .arrangement__in.colFlexIn
+                .arrangementInfo
+                  | Совет директоров
+            .arrangement.colFlex--4
+              .arrangement__in.colFlexIn
+                .arrangementInfo
+                  | Разрешение<br>корпоративных<br>конфликтов
+            .arrangement.colFlex--4
+              .arrangement__in.colFlexIn
+                .arrangementInfo
+                  | Порядок оценки стоимости<br>бизнеса
+            .arrangement.colFlex--4
+              .arrangement__in.colFlexIn
+                .arrangementInfo
+                  | Ограничение<br>на отчуждение участниками<br>своих долей
+            .arrangement.colFlex--4
+              .arrangement__in.colFlexIn
+                .arrangementInfo
+                  | Ограничение обременения<br>участниками своих долей
+            .arrangement.colFlex--4
+              .arrangement__in.colFlexIn
+                .arrangementInfo
+                  | Право присоединения<br>к продаже долей проекта<br>в пользу третьих лиц
+            .arrangement.colFlex--4
+              .arrangement__in.colFlexIn
+                .arrangementInfo
+                  | Право требования совместной<br>продажи долей проекта<br>в пользу третьих лиц
+            .arrangement.colFlex--4
+              .arrangement__in.colFlexIn
+                .arrangementInfo
+                  | Вопросы конкуренции<br>участников
+            .arrangement.colFlex--4
+              .arrangement__in.colFlexIn
+                .arrangementInfo
+                  | Генеральный директор
+            .arrangement.colFlex--4
+              .arrangement__in.colFlexIn
+                .arrangementInfo
+                  | Опционы
+            .arrangement.colFlex--4
+              .arrangement__in.colFlexIn
+                .arrangementInfo
+                  | Порядок распределения<br>прибыли и выплаты<br>дивидендов
+
+
+
+
+  .popup.send-for-signature
+    span.popup__close.icon--close.popup-close
+    p.popupTitle Отправить на подпись?
+    p.popupSubtitle Приглашение подписать проект будет разослано следующим участникам
+
+    ul.signatureList.colsFlex
+      li.signatureListItem.colFlex--2
+        img.signatureListItem__avatar src="../../img/avatars/avatar_pavel.png"
+        p.signatureListItem__info Гужиков Павел
+      li.signatureListItem.colFlex--2
+        img.signatureListItem__avatar src="../../img/avatars/avatar_pavel.png"
+        p.signatureListItem__info Гужиков Павел
+      li.signatureListItem.colFlex--2
+        img.signatureListItem__avatar src="../../img/avatars/avatar_pavel.png"
+        p.signatureListItem__info Гужиков Павел
+      li.signatureListItem.colFlex--2
+        img.signatureListItem__avatar src="../../img/avatars/avatar_pavel.png"
+        p.signatureListItem__info Гужиков Павел
+      li.signatureListItem.colFlex--2
+        img.signatureListItem__avatar src="../../img/avatars/avatar_pavel.png"
+        p.signatureListItem__info Гужиков Павел
+
+    .buttonContainer.buttonContainer--center
+      button.buttonContainer__button.linkButton.linkButton--small.linkButton--blue type="submit" отправить
+      button.buttonContainer__button.linkButton.linkButton--small.popup-close type="button" отменить
+
+
+
+  script src="../../js/app.js"

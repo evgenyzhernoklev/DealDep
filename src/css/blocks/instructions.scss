@@ -1,0 +1,80 @@
+.instructions {
+  padding: 9px 20px 10px;
+  background: $white;
+  border: 1px dashed #D1D5DC;
+  border-radius: 5px;
+  @include clearfix();
+
+  .buttonContainer {
+    width: 400px;
+    margin-top: 22px;
+    float: left;
+    white-space: nowrap;
+  }
+
+  .linkButton {
+    width: auto;
+    height: 40px;
+    line-height: 42px;
+    margin-left: 15px;
+    padding: 0 25px 0 50px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  .icon--signed {
+    @include background-image(ok_white, 13px, 13px);
+  }
+}
+
+.instructions__info {
+  margin: 20px 0 20px 410px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+
+
+// right
+.instructions--right {
+  .instructions__info {
+    margin: 20px 350px 20px 15px;
+  }
+
+  .buttonContainer {
+    width: 350px;
+    padding-right: 20px;
+    float: right;
+    text-align: right;
+  }
+}
+
+
+
+// invitation
+.instructions--invitation {
+  background-color: rgba(254, 191, 84, 0.1);
+  border: 0;
+}
+
+.instructionsParticipants {
+  width: 350px;
+  padding-right: 35px;
+  float: right;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.instructionsParticipants__circles {
+  display: inline-block;
+  margin-right: 20px;
+  line-height: 84px;
+}
+
+.instructionsParticipants__title {
+  display: inline-block;
+  font-size: 14px;
+  font-family: $circe-bold;
+}

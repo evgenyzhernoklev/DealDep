@@ -46,6 +46,26 @@
   }
 }
 
+.linkButton--green {
+  color: $white;
+  background-color: #A3C65A;
+  border: 0;
+
+  &:hover {
+    background-color: #9dbf57;
+  }
+}
+
+.linkButton--red {
+  color: $white;
+  background-color: #D06C6C;
+  border: 0;
+
+  &:hover {
+    background-color: #c36565;
+  }
+}
+
 
 
 // icons

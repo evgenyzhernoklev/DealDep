@@ -29,6 +29,10 @@
   @include background-image(ok_white, 23px, 23px);
 }
 
+.icon--onsign {
+  @include background-image(sandglasses_white, 18px, 23px);
+}
+
 
 
 // login
@@ -53,6 +57,10 @@
 
 .icon--cross_blue {
   @include background-image(cross_blue, 12px, 12px);
+}
+
+.icon--cross_circle_white {
+  @include background-image(cross_circle_white, 13px, 13px);
 }
 
 .icon--attention {
