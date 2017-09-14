@@ -1,0 +1,65 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta http-equiv="X-UA-Compatible" content="IE=edge"
+    meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0"
+    title DealDep - projects yurlitsa - signed
+    meta name="description" content=""
+    link rel="stylesheet" media="all" href="../../css/app.css"
+  body
+
+    .header
+      .headerIn
+        .contentIn
+          a.header__logo.icon.icon--logo href="/"
+          .menu
+            a.menu__link.is-active href="#" Мои проекты
+            a.menu__link href="#" Мой профиль
+          .logined
+            .loginedUser
+              span.loginedUser__name Гужиков П. А.
+              img.loginedUser__avatar src="../../img/avatars/avatar_pavel.png"
+            a.notices href="#"
+              span.notices__bell.icon.icon--bell
+      .headerSubmenu
+        .contentIn
+          .submenuTitle
+            .submenuTitle__imgWrapper.imgWrapper
+              span.icon.icon--signed
+            h1.submenuTitle__title.titleMain Дилдеп Технолоджис
+            p.submenuTitle__info Подписано
+          ul.submenu
+            li.submenuItem
+              a.submenuItem__link href="/projects/signed/participants.html" Участники и карта
+            li.submenuItem
+              a.submenuItem__link.is-active href="/projects/signed/dogovor.html" Договоренности
+            li.submenuItem
+              a.submenuItem__link href="/projects/signed/yurlitsa.html" Юрлица
+
+    .contentWrapperTop
+      .docs
+        .contentIn
+          .titleMain.titleMain--small
+            | История договоренностей
+
+
+      .contentIn
+        .entityIn
+          .entityHeader
+            / .entityHeader__company ООО «Бонго Ресерч энд Девелопмент»
+            / span.entityHeader__position Ген. директор
+            / span.entityHeader__name Гужиков Павел Алексеевич
+          .entityFooter
+            .personDataCols
+              a.personDataCols__button.linkButton.linkButton--icon.popup-open data-popup="popup-edit-legal" href="#"
+                | редактировать
+                span.linkButton__icon.icon.icon--edit_black
+              a.personDataCols__button.linkButton.linkButton--icon href="#"
+                | удалить
+                span.linkButton__icon.icon.icon--basket_remove
+
+
+
+
+  script src="../../js/app.js"
