@@ -32,8 +32,9 @@
 @import "forms/form-slider.scss";
 
 // popups
-@import "popups/popup-common.scss";
-@import "popups/popup-send-for-signature.scss";
+@import "popups/common.scss";
+@import "popups/send-for-signature.scss";
+@import "popups/person.scss";
 
 // blocks
 @import "blocks/menu.scss";

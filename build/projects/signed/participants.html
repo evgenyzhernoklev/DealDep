@@ -18,7 +18,7 @@
           </div>
           <div class="logined tooltip-container">
             <div class="loginedUser">
-              <span class="loginedUser__name">Гужиков П. А.</span><img class="loginedUser__avatar" src="../../img/avatars/avatar_pavel.png" />
+              <span class="loginedUser__name">Гужиков П. А.</span><img class="loginedUser__avatar popup-open" data-popup="popup-person-note" src="../../img/avatars/avatar_pavel.png" />
             </div>
             <a class="notices tooltip-link" href="#"><span class="notices__bell icon icon--bell"></span><span class="notices__newQuantity">2</span></a>
             <div class="noticesListWrapper tooltip-content">
@@ -263,6 +263,52 @@
           <div class="noteButtons"></div>
         </div>
       </div>
+    </div>
+    <div class="popup popup-person-note">
+      <span class="popup__close icon--close popup-close"></span><img class="popup__avatar" src="../../img/avatars/avatar_pavel.png" />
+      <div class="popupPerson">
+        <p class="titleMain popupPerson__name">
+          Гужиков Павел Алексеевич
+        </p>
+        <div class="colsFlex">
+          <div class="popupPerson__col colFlex--2">
+            <div class="colFlexIn">
+              <div class="popupPerson__label">
+                Роль
+              </div>
+              <div class="popupPerson__title">
+                Управляющий партнер
+              </div>
+            </div>
+          </div>
+          <div class="popupPerson__col colFlex--2">
+            <div class="colFlexIn">
+              <div class="popupPerson__label">
+                Вложение
+              </div>
+              <div class="popupPerson__title">
+                Имущество
+              </div>
+            </div>
+          </div>
+          <div class="popupPerson__col colFlex">
+            <div class="popupPerson__label">
+              Описание вложения
+            </div>
+            <div class="popupPerson__info">
+              Предоставление автомобиля «Форд Фокус» в безвозмездное пользование компании
+            </div>
+          </div>
+        </div>
+      </div>
+      <form class="form">
+        <div class="formBlock">
+          <label class="fieldWrapper"><span class="fieldWrapper__label">Заметка к участнику <i>(будет видна только вам)</i></span><textarea class="fieldWrapper__input" name="" placeholder="Текст заметки"></textarea></label>
+        </div>
+        <div class="buttonContainer buttonContainer--center">
+          <button class="buttonContainer__button linkButton linkButton--small linkButton--blue" type="submit">сохранить</button><button class="buttonContainer__button linkButton linkButton--small popup-close" type="button">отменить</button>
+        </div>
+      </form>
     </div>
   </body>
   <script src="../../js/app.js"></script>

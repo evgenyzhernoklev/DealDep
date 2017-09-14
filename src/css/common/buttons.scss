@@ -3,7 +3,7 @@
   display: inline-block;
   width: 100%;
   height: 45px;
-  font: 10px/47px $circe-bold;
+  font: 10px/45px $circe-bold;
   color: $black;
   text-align: center;
   text-transform: uppercase;
@@ -25,10 +25,11 @@
 .linkButton--blue {
   color: $white;
   background-color: $blue;
-  border: 0;
+  border-color: $blue;
 
   &:hover {
     background-color: #487fea;
+    border-color: #487fea;
   }
 }
 
@@ -43,30 +44,33 @@
 .linkButton--violet {
   color: $white;
   background-color: #C25FBD;
-  border: 0;
+  border-color: #C25FBD;
 
   &:hover {
     background-color: #d066ca;
+    border-color: #d066ca;
   }
 }
 
 .linkButton--green {
   color: $white;
   background-color: #A3C65A;
-  border: 0;
+  border-color: #A3C65A;
 
   &:hover {
     background-color: #9dbf57;
+    border-color: #9dbf57;
   }
 }
 
 .linkButton--red {
   color: $white;
   background-color: #D06C6C;
-  border: 0;
+  border-color: #D06C6C;
 
   &:hover {
     background-color: #c36565;
+    border-color: #c36565;
   }
 }
 

@@ -5,6 +5,11 @@
   position: relative;
   background: $white;
   border-radius: 10px;
+
+  .linkButton {
+    height: 40px;
+    line-height: 42px;
+  }
 }
 
 .popup--big {
@@ -13,6 +18,7 @@
 
 .popup__close {
   position: absolute;
+  z-index: 1;
   top: 40px;
   right: 35px;
   cursor: pointer;

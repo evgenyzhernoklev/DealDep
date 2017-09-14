@@ -19,7 +19,7 @@ html
           .logined.tooltip-container
             .loginedUser
               span.loginedUser__name Гужиков П. А.
-              img.loginedUser__avatar src="../../img/avatars/avatar_pavel.png"
+              img.loginedUser__avatar.popup-open data-popup="popup-person-note" src="../../img/avatars/avatar_pavel.png"
             a.notices.tooltip-link href="#"
               span.notices__bell.icon.icon--bell
               span.notices__newQuantity 2
@@ -184,6 +184,34 @@ html
             .noteInfo__text
               | Вы можете сформировать готовый документ по вашим договоренностям, чтобы подписать его и отправить в блокчейн, по желанию.
           .noteButtons
+
+    .popup.popup-person-note
+      span.popup__close.icon--close.popup-close
+      img.popup__avatar src="../../img/avatars/avatar_pavel.png"
+      .popupPerson
+        p.titleMain.popupPerson__name Гужиков Павел Алексеевич
+        .colsFlex
+          .popupPerson__col.colFlex--2
+            .colFlexIn
+              .popupPerson__label Роль
+              .popupPerson__title Управляющий партнер
+          .popupPerson__col.colFlex--2
+            .colFlexIn
+              .popupPerson__label Вложение
+              .popupPerson__title Имущество
+          .popupPerson__col.colFlex
+            .popupPerson__label Описание вложения
+            .popupPerson__info Предоставление автомобиля «Форд Фокус» в безвозмездное пользование компании
+      form.form
+        .formBlock
+          label.fieldWrapper
+            span.fieldWrapper__label
+              | Заметка к участнику <i>(будет видна только вам)</i>
+            textarea.fieldWrapper__input name="" placeholder="Текст заметки"
+        .buttonContainer.buttonContainer--center
+          button.buttonContainer__button.linkButton.linkButton--small.linkButton--blue type="submit" сохранить
+          button.buttonContainer__button.linkButton.linkButton--small.popup-close type="button" отменить
+
 
 
   script src="../../js/app.js"
