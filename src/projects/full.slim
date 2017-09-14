@@ -1,0 +1,83 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta http-equiv="X-UA-Compatible" content="IE=edge"
+    meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0"
+    title DealDep - projects full
+    meta name="description" content=""
+    link rel="stylesheet" media="all" href="../../css/app.css"
+  body
+
+    .header
+      .headerIn
+        .contentIn
+          a.header__logo.icon.icon--logo href="/"
+          .menu
+            a.menu__link.is-active href="#" Мои проекты
+            a.menu__link href="#" Мой профиль
+          .logined
+            .loginedUser
+              span.loginedUser__name Гужиков П. А.
+              img.loginedUser__avatar src="../../img/avatars/avatar_pavel.png"
+            a.notices href="#"
+              span.notices__bell.icon.icon--bell
+      .headerIn
+        .contentIn
+          h1.header__title
+            | Мои проекты <i>6</i>
+          a.header__linkCreate.linkButton.linkButton--blue href="/projects/new/step1.html" Создать проект
+
+    .contentWrapper
+      .contentIn
+        .projectsList.colsFlex
+          .projectsList__col.colFlex--4
+            a.projectItem.colFlexIn href="#"
+              .projectItemLabel.projectItemLabel--ok
+                span.projectItemLabel__icon
+              .projectItemHeader style="background-color: #73AFAE;"
+                p.projectItemHeader__title Ди
+              .projectItemContent
+                p.projectItemContent__name Дилдеп Технолоджис
+                p.projectItemContent__membersQuantity 2 участника
+          .projectsList__col.colFlex--4
+            a.projectItem.colFlexIn href="#"
+              .projectItemLabel.projectItemLabel--onsign
+                span.projectItemLabel__icon
+              .projectItemHeader style="background-color: #BE7070;"
+                p.projectItemHeader__title Су
+              .projectItemContent
+                p.projectItemContent__name Супермаркет
+                p.projectItemContent__membersQuantity 4 участника
+          .projectsList__col.colFlex--4
+            a.projectItem.colFlexIn href="#"
+              .projectItemHeader style="background-color: #51A9C8;"
+                p.projectItemHeader__title Сл
+              .projectItemContent
+                p.projectItemContent__name Случайный стартап
+                p.projectItemContent__membersQuantity 1 участник
+          .projectsList__col.colFlex--4
+            a.projectItem.colFlexIn href="#"
+              .projectItemHeader style="background-color: #BA60A3;"
+                p.projectItemHeader__title Се
+              .projectItemContent
+                p.projectItemContent__name Серьезный бизнес
+                p.projectItemContent__membersQuantity 3 участника
+          .projectsList__col.colFlex--4
+            a.projectItem.colFlexIn href="#"
+              .projectItemHeader style="background-color: #BC87E8;"
+                p.projectItemHeader__title Ус
+              .projectItemContent
+                p.projectItemContent__name Успешный бизнес
+                p.projectItemContent__membersQuantity 2 участника
+          .projectsList__col.colFlex--4
+            a.projectItem.colFlexIn href="#"
+              .projectItemHeader style="background-color: #B8C064;"
+                p.projectItemHeader__title Ещ
+              .projectItemContent
+                p.projectItemContent__name Еще один стартап
+                p.projectItemContent__membersQuantity 4 участника
+
+
+
+  script src="../../js/app.js"

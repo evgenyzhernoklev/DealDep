@@ -19,3 +19,114 @@
   width: 500px;
   right: 0;
 }
+
+
+
+// full list
+.projectsList {
+  margin: 0 -11px;
+  padding: 30px 0;
+  align-items: stretch;
+}
+
+.projectsList__col {
+  margin: 0 0 22px;
+}
+
+.projectItem {
+  display: block;
+  position: relative;
+  margin: 0 11px;
+  height: 100%;
+  z-index: 1;
+  background: $white;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 5px;
+  transition: box-shadow $transition-normal, z-index $transition-normal;
+
+  &:hover {
+    z-index: 10;
+    box-shadow: 10px 10px 15px 0 rgba(0,77,255,0.08);
+
+    .projectItemContent__name {
+      color: $blue;
+    }
+  }
+}
+
+.projectItemLabel {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  width: 24px;
+  height: 29px;
+  line-height: 29px;
+  text-align: center;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 8px solid transparent;
+  }
+}
+
+.projectItemLabel--ok {
+  background-color: #CDDC39;
+
+  &:after {
+    border-left-color: #CDDC39;
+    border-right-color: #CDDC39;
+  }
+
+  .projectItemLabel__icon {
+    @include background-image(ok_white, 13px, 13px);
+  }
+}
+
+.projectItemLabel--onsign {
+  background-color: #FEBF54;
+
+  &:after {
+    border-left-color: #FEBF54;
+    border-right-color: #FEBF54;
+  }
+
+  .projectItemLabel__icon {
+    @include background-image(sandglasses_white, 9px, 11px);
+  }
+}
+
+.projectItemLabel__icon {
+  vertical-align: middle;
+}
+
+.projectItemHeader {
+  height: 154px;
+  text-align: center;
+}
+
+.projectItemHeader__title {
+  font: 51px/154px $circe-light;
+  color: $white;
+}
+
+.projectItemContent {
+  padding: 17px 20px 18px;
+}
+
+.projectItemContent__name {
+  margin-bottom: 2px;
+  color: $black;
+  transition: color $transition-normal;
+}
+
+.projectItemContent__membersQuantity {
+  font-size: 12px;
+  color: #A0A0A0;
+}

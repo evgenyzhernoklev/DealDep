@@ -39,6 +39,11 @@
   padding-right: 205px;
   padding-top: 4px;
   font: 24px/36px $circe-bold;
+
+  i {
+    font-family: $circe-regular;
+    color: #BABABA;
+  }
 }
 
 .header__close {
