@@ -57,12 +57,9 @@ html
 
       .bubble
         .bubble__title
-          | Здесь будет карта договоренностей проекта
+          | Здесь будет карта договоренностей, относящихся к проекту.
         .bubble__info
           | Заполнить ее можно будет после подписания проекта всеми участниками.
-        a.bubble__link.linkButton.linkButton--blue.linkButton--icon.popup-open data-popup="send-for-signature" href="#"
-          | отправить на подпись
-          span.linkButton__icon.icon.icon--sign
 
       .contentIn
         .arrangementHeader
@@ -165,28 +162,12 @@ html
 
 
 
-
-  .popup.send-for-signature
+  .popup
     span.popup__close.icon--close.popup-close
-    p.popupTitle Отправить на подпись?
-    p.popupSubtitle Приглашение подписать проект будет разослано следующим участникам
-
-    ul.signatureList.colsFlex
-      li.signatureListItem.colFlex--2
-        img.signatureListItem__avatar src="../../img/avatars/avatar_pavel.png"
-        p.signatureListItem__info Гужиков Павел
-      li.signatureListItem.colFlex--2
-        img.signatureListItem__avatar src="../../img/avatars/avatar_pavel.png"
-        p.signatureListItem__info Гужиков Павел
-      li.signatureListItem.colFlex--2
-        img.signatureListItem__avatar src="../../img/avatars/avatar_pavel.png"
-        p.signatureListItem__info Гужиков Павел
-      li.signatureListItem.colFlex--2
-        img.signatureListItem__avatar src="../../img/avatars/avatar_pavel.png"
-        p.signatureListItem__info Гужиков Павел
-      li.signatureListItem.colFlex--2
-        img.signatureListItem__avatar src="../../img/avatars/avatar_pavel.png"
-        p.signatureListItem__info Гужиков Павел
+    p.popupTitle Вы не согласны?
+    p.popupSubtitle
+      | Если Вы не согласны с этой договоренностью, пожалуйста укажите причину.
+      |  Автор получит уведомление об этом.
 
     .buttonContainer.buttonContainer--center
       button.buttonContainer__button.linkButton.linkButton--small.linkButton--blue type="submit" отправить

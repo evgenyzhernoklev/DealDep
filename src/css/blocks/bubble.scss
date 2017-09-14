@@ -1,0 +1,35 @@
+.bubble {
+  position: absolute;
+  z-index: 89;
+  top: 50%;
+  left: 50%;
+  width: 456px;
+  padding: 55px 60px 20px;
+  text-align: center;
+  color: $black;
+  background-color: $white;
+  box-shadow: 0 2px 20px 0 rgba(0,77,255,0.08);
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+}
+
+.bubble__title {
+  margin: 0 0 17px;
+  font: 18px/26px $circe-bold;
+  line-height: 26px;
+}
+
+.bubble__info {
+  max-width: 260px;
+  margin: 0 auto 35px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #5A5A5A;
+}
+
+.bubble__link {
+  width: auto;
+  margin: 2px 0 30px;
+  padding-left: 50px;
+  padding-right: 30px;
+}
