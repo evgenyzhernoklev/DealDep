@@ -1,0 +1,129 @@
+.entityIn {
+  margin-bottom: 40px;
+  background: $white;
+  box-shadow: 0 2px 20px 0 rgba(0,77,255,0.08);
+  border-radius: 5px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// entity  header
+.entityHeader {
+  padding: 24px 25px 18px;
+  border-bottom: 1px solid $gray;
+}
+
+.entityHeader__company {
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-family: $circe-bold;
+}
+
+.entityHeader__position {
+  display: inline-block;
+  margin-right: 10px;
+  color: #939393;
+}
+
+.entityHeader__name {
+  display: inline-block;
+}
+
+
+
+// entity content
+.entityContent {
+  padding: 10px 20px 20px;
+}
+
+
+
+
+// persons data not found
+.personDataFailure {
+  padding: 50px 0 20px;
+  text-align: center;
+}
+
+.personDataFailure__icon {
+
+}
+
+.personDataFailure__info {
+  max-width: 230px;
+  margin: 10px auto 0;
+  color: #A4A4A4;
+}
+
+
+// persons data
+.personDataWrapper {
+  margin: 20px 0;
+  background: $white;
+  border: 1px dashed $gray;
+  border-radius: 5px;
+}
+
+.personData {
+  padding: 12px 0 10px;
+  // border-top: 1px dashed $gray;
+
+  // &:first-child {
+  //   border-top: 0;;
+  // }
+}
+
+.personData__title {
+  width: 130px;
+  float: left;
+  padding-top: 6px;
+  padding-right: 20px;
+  font-family: $circe-bold;
+}
+
+.personDataCols {
+  margin-left: 180px;
+
+  .colFlex--2 {
+    @include flex-basis(40%);
+  }
+
+  .colFlexIn {
+    padding: 6px 0;
+    @include clearfix();
+  }
+}
+
+.personDataCols__title {
+  width: 50px;
+  float: left;
+  color: #939393;
+
+  .personDataCols--bold & {
+    font-family: $circe-bold;
+    color: $black;
+  }
+}
+
+.personDataCols__info {
+  margin-left: 60px;
+}
+
+
+
+// entity footer
+.entityFooter {
+  padding: 20px;
+  border-top: 1px solid $gray;
+}
+
+.personDataCols__button {
+  width: auto;
+  margin-right: 15px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

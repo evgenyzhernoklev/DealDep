@@ -74,8 +74,14 @@ a {
 }
 
 .titleMain {
+  position: relative;
   font: 24px/32px $circe-bold;
   color: $black;
+}
+
+.titleMain--small {
+  font-size: 20px;
+  line-height: 29px;
 }
 
 .contentIn {
