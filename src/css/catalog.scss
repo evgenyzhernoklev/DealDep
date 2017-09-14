@@ -9,6 +9,8 @@
   }
 }
 
+
+
 // entity  header
 .entityHeader {
   padding: 24px 25px 18px;
@@ -40,7 +42,6 @@
 
 
 
-
 // persons data not found
 .personDataFailure {
   padding: 50px 0 20px;
@@ -68,11 +69,6 @@
 
 .personData {
   padding: 12px 0 10px;
-  // border-top: 1px dashed $gray;
-
-  // &:first-child {
-  //   border-top: 0;;
-  // }
 }
 
 .personData__title {
@@ -91,7 +87,7 @@
   }
 
   .colFlexIn {
-    padding: 6px 0;
+    padding: 6px 15px 6px 0;
     @include clearfix();
   }
 }
@@ -125,5 +121,31 @@
 
   &:last-child {
     margin-right: 0;
+  }
+}
+
+
+
+// popup person data
+.popupData {
+  margin: 20px 0 22px;
+  padding: 20px 20px 17px;
+  border: 1px dashed $gray;
+  border-radius: 5px;
+
+  .personData {
+    margin-right: -15px;
+  }
+
+  .personDataCols {
+    margin-left: 120px;
+
+    .colFlex--2 {
+      @include flex-basis(50%);
+    }
+  }
+
+  .personDataCols__info {
+    margin-left: 50px;
   }
 }
