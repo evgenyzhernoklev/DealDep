@@ -45,7 +45,7 @@ html
               a.linkButton.linkButton--green.linkButton--icon.popup-open data-popup="send-for-signature" href="#"
                 | я согласен
                 span.linkButton__icon.icon.icon--signed
-              a.linkButton.linkButton--red.linkButton--icon href="#"
+              a.linkButton.linkButton--red.linkButton--icon.popup-open data-popup="popup-disagree" href="#"
                 | я не согласен
                 span.linkButton__icon.icon.icon--cross_circle_white
             .instructions__info
@@ -162,13 +162,17 @@ html
 
 
 
-  .popup
+  .popup.popup-disagree
     span.popup__close.icon--close.popup-close
     p.popupTitle Вы не согласны?
     p.popupSubtitle
       | Если Вы не согласны с этой договоренностью, пожалуйста укажите причину.
       |  Автор получит уведомление об этом.
-
+    form.form
+      .formBlock
+        label.fieldWrapper
+          span.fieldWrapper__label Описание причины отказа
+          textarea.fieldWrapper__input name="" placeholder="Опишите что не так?"
     .buttonContainer.buttonContainer--center
       button.buttonContainer__button.linkButton.linkButton--small.linkButton--blue type="submit" отправить
       button.buttonContainer__button.linkButton.linkButton--small.popup-close type="button" отменить

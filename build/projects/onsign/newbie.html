@@ -56,7 +56,7 @@
         <div class="contentIn">
           <div class="instructions instructions--right instructions--invitation">
             <div class="buttonContainer">
-              <a class="linkButton linkButton--green linkButton--icon popup-open" data-popup="send-for-signature" href="#">я согласен<span class="linkButton__icon icon icon--signed"></span></a><a class="linkButton linkButton--red linkButton--icon" href="#">я не согласен<span class="linkButton__icon icon icon--cross_circle_white"></span></a>
+              <a class="linkButton linkButton--green linkButton--icon popup-open" data-popup="send-for-signature" href="#">я согласен<span class="linkButton__icon icon icon--signed"></span></a><a class="linkButton linkButton--red linkButton--icon popup-open" data-popup="popup-disagree" href="#">я не согласен<span class="linkButton__icon icon icon--cross_circle_white"></span></a>
             </div>
             <div class="instructions__info">
               Если вы согласны с распределением ролей в проекте,<br>нажмите Согласен или откажитесь, нажатием Не согласен.
@@ -220,7 +220,7 @@
       </div>
     </div>
   </body>
-  <div class="popup">
+  <div class="popup popup-disagree">
     <span class="popup__close icon--close popup-close"></span>
     <p class="popupTitle">
       Вы не согласны?
@@ -228,6 +228,11 @@
     <p class="popupSubtitle">
       Если Вы не согласны с этой договоренностью, пожалуйста укажите причину. Автор получит уведомление об этом.
     </p>
+    <form class="form">
+      <div class="formBlock">
+        <label class="fieldWrapper"><span class="fieldWrapper__label">Описание причины отказа</span><textarea class="fieldWrapper__input" name="" placeholder="Опишите что не так?"></textarea></label>
+      </div>
+    </form>
     <div class="buttonContainer buttonContainer--center">
       <button class="buttonContainer__button linkButton linkButton--small linkButton--blue" type="submit">отправить</button><button class="buttonContainer__button linkButton linkButton--small popup-close" type="button">отменить</button>
     </div>

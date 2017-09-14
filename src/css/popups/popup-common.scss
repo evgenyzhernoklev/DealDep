@@ -22,10 +22,14 @@
 }
 
 .popupSubtitle {
-  max-width: 310px;
+  max-width: 500px;
   margin: 0 auto 35px;
   color: #5A5A5A;
   text-align: center;
+}
+
+.popupSubtitle--small {
+  max-width: 310px;
 }
 
 
