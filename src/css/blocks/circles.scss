@@ -1,5 +1,5 @@
 .circlesParticipant {
-
+  display: inline-block;
 }
 
 .circlesParticipant__item {
@@ -10,6 +10,7 @@
   line-height: 28px;
   text-align: center;
   background-color: $white;
+  border: 1px solid $white;
   border-radius: 50%;
   vertical-align: middle;
 
@@ -36,7 +37,7 @@
   .circlesParticipant__item {
     width: 29px;
     height: 29px;
-    border: 1px solid #F3C266;
+    border-color: #F3C266;
   }
 }
 
@@ -52,6 +53,6 @@
   .circlesParticipant__item {
     width: 29px;
     height: 29px;
-    border: 1px solid #CDDC39;
+    border-color: #CDDC39;
   }
 }

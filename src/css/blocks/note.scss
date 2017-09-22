@@ -107,3 +107,43 @@
     @include background-image(ok_white, 13px, 13px);
   }
 }
+
+
+
+// signed
+.noteColButtons {
+  text-align: center;
+
+  .linkButton {
+    width: auto;
+
+    &:hover {
+      .linkButton__icon {
+        transform: rotate(180deg);
+        transition: transform $transition-normal;
+      }
+    }
+  }
+
+  .linkButton__icon {
+    transform: none;
+    top: 13px;
+  }
+}
+
+.noteSignedInfo {
+  text-align: right;
+
+  .icon--signed {
+    margin-right: 15px;
+    background-size: 13px 13px;
+    width: 29px;
+    height: 29px;
+    background-color: #CDDC39;
+    border-radius: 50%;
+  }
+}
+
+.noteSignedInfo__date {
+  font-size: 16px;
+}

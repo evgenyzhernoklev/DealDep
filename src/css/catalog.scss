@@ -187,14 +187,6 @@
   font: 16px/29px $circe-bold;
 }
 
-.personDataCols__participants {
-  display: inline-block;
-
-  .circlesParticipant__item {
-    border: 1px solid $white;
-  }
-}
-
 .personDataCols__button--send {
   float: right;
   padding-left: 45px;

@@ -118,3 +118,7 @@
 .icon--print {
   @include background-image(print, 14px, 12px);
 }
+
+.icon--circulation_white {
+  @include background-image(circulation_white, 13px, 13px);
+}
