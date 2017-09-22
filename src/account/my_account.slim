@@ -13,7 +13,15 @@ html
       .headerIn
         .contentIn
           a.header__logo.icon.icon--logo href="/"
-          h1.header__title Авторизация
+          .menu
+            a.menu__link.is-active href="#" Мои проекты
+            a.menu__link href="#" Мой профиль
+          .logined
+            .loginedUser
+              span.loginedUser__name Гужиков П. А.
+              img.loginedUser__avatar src="../../img/avatars/avatar_pavel.png"
+            a.notices href="#"
+              span.notices__bell.icon.icon--bell
 
     .accountIn.tab-container
       .loginHeader.loginHeader--left

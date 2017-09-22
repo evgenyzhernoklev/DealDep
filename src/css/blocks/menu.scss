@@ -6,10 +6,15 @@
   left: 0;
   right: 0;
   background-color: $white;
-  box-shadow: 0 2px 20px 0 rgba(0,77,255,0.08);
+  box-shadow: 0 2px 20px 0 rgba(0,77,255,0.10);
 
   .contentIn {
     height: 100%;
+  }
+
+  &.header--border {
+    border-bottom: 1px solid $gray;
+    box-shadow: none;
   }
 }
 
