@@ -62,7 +62,7 @@
   background-color: #DCDFE5;
 
   &.is-active {
-    background-color: #A3C65A;
+    background-color: $green;
   }
 }
 
@@ -174,7 +174,7 @@
   }
 
   &.is-green {
-    background-color: #A3C65A;
+    background-color: $green;
 
     &:hover {
       box-shadow: 10px 10px 15px 0 rgba(163,198,90,0.50);
@@ -182,7 +182,7 @@
 
     .arrangementHidden {
       border-top: 1px solid rgba(255,255,255, 0.2);
-      background-color: #A3C65A;
+      background-color: $green;
       box-shadow: 10px 10px 15px 0 rgba(163,198,90,0.50);
 
       &:before {

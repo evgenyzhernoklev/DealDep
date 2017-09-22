@@ -83,6 +83,10 @@
   @include background-image(edit_black, 13px, 13px);
 }
 
+.icon--edit_white {
+  @include background-image(edit_white, 20px, 20px);
+}
+
 .icon--basket_remove {
   @include background-image(basket_remove, 11px, 13px);
 }

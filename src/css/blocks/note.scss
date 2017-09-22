@@ -35,7 +35,7 @@
 .noteInfoIn {
   position: relative;
   min-height: 44px;
-  padding: 10px 20px 10px 65px;
+  padding: 10px 10px 10px 65px;
 }
 
 .noteInfo__icon {
@@ -45,17 +45,36 @@
   margin-top: -21px;
   width: 42px;
   height: 42px;
-  background-color: #2196F3;
   border-radius: 50%;
+
+  &.icon--info {
+    background-color: #2196F3;
+  }
+
+  &.icon--signed {
+    background-color: $green;
+  }
+
+  &.icon--onsign {
+    background-color: #FEBF54;
+  }
+
+  &.icon--edit_white {
+    background-color: #2196F3;
+  }
 }
 
-.noteInfo__text {
+.noteInfoText {
   font-size: 14px;
   line-height: 22px;
 }
 
-.noteInfo__date {
+.noteInfoText__date {
   display: inline-block;
+}
+
+.noteInfoText__title {
+  font-family: $circe-bold;
 }
 
 
