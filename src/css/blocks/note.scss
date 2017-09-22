@@ -38,6 +38,10 @@
   padding: 10px 10px 10px 65px;
 }
 
+.noteInfoIn--noIcon {
+  padding-left: 0;
+}
+
 .noteInfo__icon {
   position: absolute;
   top: 50%;
@@ -83,6 +87,11 @@
 .noteButtonsWrapper {
   @include flex-basis(40%);
   justify-content: flex-end;
+
+  .instructionsParticipants {
+    width: auto;
+    padding-right: 0;
+  }
 }
 
 .noteButtonsWrapper__button {
@@ -92,5 +101,9 @@
 
   &:last-child {
     margin-right: 0;
+  }
+
+  .icon--signed {
+    @include background-image(ok_white, 13px, 13px);
   }
 }

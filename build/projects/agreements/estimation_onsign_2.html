@@ -39,6 +39,39 @@
         </form>
       </div>
     </section>
+    <div class="note note--yellow">
+      <div class="contentIn">
+        <div class="note__cols colsFlex">
+          <div class="noteInfo">
+            <div class="noteInfoIn noteInfoIn--noIcon">
+              <div class="noteInfoText">
+                Если вы согласны с указанными договоренностями,нажмите «Я согласен», если что-то не так, нажмите «Я не согласен», инициатор получит уведомление.
+              </div>
+            </div>
+          </div>
+          <div class="noteButtonsWrapper colsFlex">
+            <a class="noteButtonsWrapper__button linkButton linkButton--green linkButton--icon" href="#">я согласен<span class="linkButton__icon icon icon--signed"></span></a><a class="noteButtonsWrapper__button linkButton linkButton--red linkButton--icon popup-open" data-popup="popup-disagree" href="#">я не согласен<span class="linkButton__icon icon icon--cross_circle_white"></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
+  <div class="popup popup-disagree">
+    <span class="popup__close icon--close popup-close"></span>
+    <p class="popupTitle">
+      Вы не согласны?
+    </p>
+    <p class="popupSubtitle">
+      Если Вы не согласны с этой договоренностью, пожалуйста укажите причину. Автор получит уведомление об этом.
+    </p>
+    <form class="form">
+      <div class="formBlock">
+        <label class="fieldWrapper"><span class="fieldWrapper__label">Описание причины отказа</span><textarea class="fieldWrapper__input" name="" placeholder="Опишите что не так?"></textarea></label>
+      </div>
+      <div class="buttonContainer buttonContainer--center">
+        <button class="buttonContainer__button linkButton linkButton--small linkButton--blue" type="submit">отправить</button><button class="buttonContainer__button linkButton linkButton--small popup-close" type="button">отменить</button>
+      </div>
+    </form>
+  </div>
   <script src="../../js/app.js"></script>
 </html>
