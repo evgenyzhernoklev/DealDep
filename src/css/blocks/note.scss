@@ -4,7 +4,19 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #383838;
+  background: $white;
+  box-shadow: 0 0 20px 0 rgba(0,77,255,0.08);
+
+  &.note--black {
+    color: $white;
+    background: #383838;
+    box-shadow: none;
+  }
+
+  &.note--yellow {
+    background: #FEF8ED;
+    box-shadow: none;
+  }
 }
 
 .note__cols {
@@ -13,10 +25,17 @@
   flex-wrap: nowrap;
 }
 
+
+
+// info
 .noteInfo {
+  @include flex-basis(60%);
+}
+
+.noteInfoIn {
   position: relative;
-  padding: 10px 20px 10px 65px;
   min-height: 44px;
+  padding: 10px 20px 10px 65px;
 }
 
 .noteInfo__icon {
@@ -33,9 +52,26 @@
 .noteInfo__text {
   font-size: 14px;
   line-height: 22px;
-  color: $white;
 }
 
-.noteButtons {
-  @include flex-basis(360px);
+.noteInfo__date {
+  display: inline-block;
+}
+
+
+
+// buttons
+.noteButtonsWrapper {
+  @include flex-basis(40%);
+  justify-content: flex-end;
+}
+
+.noteButtonsWrapper__button {
+  width: auto;
+  margin-right: 20px;
+  padding: 0 25px 0 45px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
