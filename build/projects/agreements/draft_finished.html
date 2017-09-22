@@ -34,7 +34,24 @@
         </div>
         <form class="form form--content">
           <div class="formIn">
-            <div class="formContent"></div>
+            <div class="formContent">
+              <div class="formBlock formBlock--aside">
+                <div class="formBlock__title">
+                  Выберите формулу для оценки текущей стоимости проекта
+                </div>
+                <div class="formBlockIn">
+                  <label class="fieldWrapper fieldWrapper--radio"><input checked="checked" class="fieldWrapper__input" name="estimation" type="radio" value="est1" /><span class="fieldWrapper__radioInfo">V (оценка) = К (договорной коэффициент, мультипликатор) * EBITDA за последние 12 месяцев</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--radio"><input class="fieldWrapper__input" name="estimation" type="radio" value="est2" /><span class="fieldWrapper__radioInfo">V (оценка) = К (договорной коэффициент, мультипликатор) * REVENUE за последние 12 месяцев</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--radio"><input class="fieldWrapper__input" name="estimation" type="radio" value="est3" /><span class="fieldWrapper__radioInfo">V (оценка) = С (количество платящих клиентов) * S (цена за одного платящего клиента)</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--radio"><input class="fieldWrapper__input" name="estimation" type="radio" value="est_own" /><span class="fieldWrapper__radioInfo">Указать свою</span><span class="fieldWrapper__radioIcon"></span></label>
+                </div>
+              </div>
+              <div class="formBlock formBlock--aside">
+                <div class="formBlock__title formBlock__title--indentTop">
+                  Укажите свою формулу оценки бизнеса
+                </div>
+                <div class="formBlockIn">
+                  <label class="fieldWrapper"><textarea class="fieldWrapper__input" name="" placeholder="Укажите формулу">V (оценка) = С (количество платящих клиентов) * S (цена за одного платящего клиента)</textarea></label>
+                </div>
+              </div>
+            </div>
           </div>
         </form>
       </div>

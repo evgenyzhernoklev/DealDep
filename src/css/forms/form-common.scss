@@ -74,6 +74,14 @@
   padding: 35px 0 0;
 }
 
+.formBlock__title {
+  font: 14px/20px $circe-bold;
+}
+
+.formBlock__title--indentTop {
+  padding-top: 13px;
+}
+
 .fieldWrapper {
   position: relative;
   display: block;
@@ -99,8 +107,10 @@ textarea.fieldWrapper__input {
   display: block;
   width: 100%;
   max-width: 100%;
+  min-width: 100%;
   height: 170px;
   max-height: 250px;
+  min-height: 130px;
   padding: 13px 15px;
   background: #EFF1F5;
   border-radius: 3px;

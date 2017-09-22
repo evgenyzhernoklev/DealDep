@@ -1,0 +1,40 @@
+.fieldWrapper--radio {
+  margin-bottom: 18px;
+  padding-left: 35px;
+  cursor: pointer;
+
+  &:last-child {
+    margin-bottom: 11px;
+  }
+
+  .fieldWrapper__input {
+    display: none;
+  }
+}
+
+.fieldWrapper__radioInfo {
+  font-size: 14px;
+  line-height: 20px;
+  color: #9C9C9C;
+  transition: color $transition-normal;
+
+  .fieldWrapper__input:checked ~ & {
+    color: $black;
+  }
+}
+
+.fieldWrapper__radioIcon {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #E4E4E4;
+  border-radius: 50%;
+  transition: border-color $transition-normal, border-width $transition-fast;
+
+  .fieldWrapper__input:checked ~ & {
+    border: 5px solid $violet;
+  }
+}

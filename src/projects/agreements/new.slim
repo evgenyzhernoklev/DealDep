@@ -28,6 +28,31 @@ html
         form.form.form--content
           .formIn
             .formContent
+              .formBlock.formBlock--aside
+                .formBlock__title Выберите формулу для оценки текущей стоимости проекта
+                .formBlockIn
+                  label.fieldWrapper.fieldWrapper--radio
+                    input.fieldWrapper__input type="radio" name="estimation" value="est1" checked="checked"
+                    span.fieldWrapper__radioInfo V (оценка) = К (договорной коэффициент, мультипликатор) * EBITDA за последние 12 месяцев
+                    span.fieldWrapper__radioIcon
+                  label.fieldWrapper.fieldWrapper--radio
+                    input.fieldWrapper__input type="radio" name="estimation" value="est2"
+                    span.fieldWrapper__radioInfo V (оценка) = К (договорной коэффициент, мультипликатор) * REVENUE за последние 12 месяцев
+                    span.fieldWrapper__radioIcon
+                  label.fieldWrapper.fieldWrapper--radio
+                    input.fieldWrapper__input type="radio" name="estimation" value="est3"
+                    span.fieldWrapper__radioInfo V (оценка) = С (количество платящих клиентов) * S (цена за одного платящего клиента)
+                    span.fieldWrapper__radioIcon
+                  label.fieldWrapper.fieldWrapper--radio
+                    input.fieldWrapper__input type="radio" name="estimation" value="est_own"
+                    span.fieldWrapper__radioInfo Указать свою
+                    span.fieldWrapper__radioIcon
+              .formBlock.formBlock--aside
+                .formBlock__title.formBlock__title--indentTop Укажите свою формулу оценки бизнеса
+                .formBlockIn
+                  label.fieldWrapper
+                    textarea.fieldWrapper__input name="" placeholder="Укажите формулу"
+                      | V (оценка) = С (количество платящих клиентов) * S (цена за одного платящего клиента)
 
           .buttonContainer.buttonContainer--center
             button.buttonContainer__button.linkButton.linkButton--small type="button" отменить
