@@ -89,18 +89,33 @@ Forms.prototype.updateSlider = function (e) {
       }),
       updatingSlidersLength = updatingSliders.length;
 
+  // находим заблокированные значения
+  var lockedValue = 0;
+
+  this.sliders
+    .not($targetSlider)
+    .each(function(index, element) {
+      var $parent = $(element).closest('.share');
+
+      if ($parent.hasClass('is-locked')) {
+        var currentLockedValue = +$parent.find('.fieldWrapper__input--slider').val();
+
+        lockedValue += currentLockedValue;
+      }
+    });
+
   // находим значение для текущего блока со слайдером и инпутом
   if (targetValue <= 0) {
     targetValue = 1;
-  } else if (targetValue > 100 - updatingSlidersLength) {
-    targetValue = 100 - updatingSlidersLength;
+  } else if (targetValue > 100 - updatingSlidersLength - lockedValue) {
+    targetValue = 100 - updatingSlidersLength - lockedValue;
   }
 
   $target.val(targetValue);
   $targetSlider.slider('value', targetValue);
 
   // распределяем оставшееся значение между слайдерами
-  var leftValue = 100 - targetValue,
+  var leftValue = 100 - targetValue - lockedValue,
       valueForEachSliderLeft = Math.floor(leftValue / updatingSlidersLength),
       modulo = leftValue % updatingSlidersLength;
 
@@ -126,12 +141,12 @@ Forms.prototype.updateSlider = function (e) {
   });
 
   /***** общая сумма для проверки (временно) *****/
-  var counter = 0;
-  $('.fieldWrapper__input--slider').each(function() {
-    var value = +$(this).val();
-    counter += value;
-  });
-  console.log('counter - ' + counter);
+  // var counter = 0;
+  // $('.fieldWrapper__input--slider').each(function() {
+  //   var value = +$(this).val();
+  //   counter += value;
+  // });
+  // console.log('counter - ' + counter);
   /***** end *****/
 };
 
@@ -197,12 +212,12 @@ Forms.prototype.updateAllSliders = function ($currentSlider) {
   }
 
   /***** общая сумма для проверки (временно) *****/
-  console.log('counter before - ' + counter);
-  counter = 0;
-  $('.fieldWrapper__input--slider').each(function() {
-    var value = +$(this).val();
-    counter += value;
-  });
-  console.log('counter after - ' + counter);
+  // console.log('counter before - ' + counter);
+  // counter = 0;
+  // $('.fieldWrapper__input--slider').each(function() {
+  //   var value = +$(this).val();
+  //   counter += value;
+  // });
+  // console.log('counter after - ' + counter);
   /***** end *****/
 };
