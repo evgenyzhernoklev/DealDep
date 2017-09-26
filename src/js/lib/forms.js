@@ -53,31 +53,33 @@ Forms.prototype.initSlider = function () {
     },
     stop: function(event, ui) {
       self.sliderStopValue = ui.value;
-      self.updateAllSliders(this);
+      self.updateAllSliders($(this));
     }
   });
 
   this.body.on('input', '.fieldWrapper__input--slider', this.updateSlider);
 
   // TODO
-  // 1 - закреплять значения (+)
-  // 2 - обновлять значения у незакрепленных слайдеров (+)
-  // 3 - при вводе значения подстраивать значения если превышен лимит
-  // 4 - при изменениии слайдера подстраивать значения если превышен лимит
+  // 1 - при вводе значения подстраивать значения если превышен лимит
+  //      a - в большую сторону
+  //      b - в меньшую сторону
 };
 
 Forms.prototype.sliderLockToggle = function(e) {
   e.preventDefault();
   var $parent = $(this).closest('.share'),
       $slider = $parent.find('.formSlider'),
-      $input = $parent.find('.fieldWrapper__input--slider');
+      $input = $parent.find('.fieldWrapper__input--slider'),
+      $info = $(this).find('.shareTip__info');
 
   $parent.toggleClass('is-locked');
 
   if ($parent.hasClass('is-locked')) {
+    $info.text('Разблокировать долю');
     $input.prop('readonly', 'readonly');
     $slider.slider('disable');
   } else {
+    $info.text('Зафиксировать долю');
     $input.prop('readonly', '');
     $slider.slider('enable');
   }
@@ -98,8 +100,8 @@ Forms.prototype.updateSlider = function () {
   $slider.slider('value', inputValue);
 };
 
-Forms.prototype.updateAllSliders = function (currentSlider) {
-  var updatingSliders = this.sliders.not($(currentSlider)).not(function() {
+Forms.prototype.updateAllSliders = function ($currentSlider) {
+  var updatingSliders = this.sliders.not($currentSlider).not(function() {
         return $(this).closest('.share').hasClass('is-locked');
       }),
       updatingSlidersLength = updatingSliders.length,
@@ -121,13 +123,13 @@ Forms.prototype.updateAllSliders = function (currentSlider) {
 
   // распределяем по слайдерам оставшееся дробное значения
   for (i = 0; i < modulo; i++) {
-    var currentSlider = updatingSliders.eq(i),
-        currentValue = currentSlider.slider('value');
+    var $indexSlider = updatingSliders.eq(i),
+        indexSliderValue = $indexSlider.slider('value');
 
     if (difference > 0) {
-      currentSlider.slider('value', currentValue - 1);
+      $indexSlider.slider('value', indexSliderValue - 1);
     } else {
-      currentSlider.slider('value', currentValue + 1);
+      $indexSlider.slider('value', indexSliderValue + 1);
     }
   }
 
@@ -137,11 +139,29 @@ Forms.prototype.updateAllSliders = function (currentSlider) {
     $(element).closest('.formBlock--slider').find('.fieldWrapper__input--slider').val(currentValue);
   });
 
-  // общая сумма для проверки (временно)
+  // проверяем сумму процентов
   var counter = 0;
   $('.fieldWrapper__input--slider').each(function() {
     var value = +$(this).val();
     counter += value;
   });
-  console.log('counter - ' + counter);
+
+  // при превышении суммы в 100% убавляем значение у активного слайдера на превышение
+  if (counter > 100) {
+    var overdraft = counter - 100,
+        currentSliderValue = $currentSlider.slider('value');
+
+    $currentSlider.slider('value', currentSliderValue - overdraft);
+    $currentSlider.closest('.formBlock--slider').find('.fieldWrapper__input--slider').val(currentSliderValue - overdraft);
+  }
+
+  /***** общая сумма для проверки (временно) *****/
+  console.log('counter before - ' + counter);
+  counter = 0;
+  $('.fieldWrapper__input--slider').each(function() {
+    var value = +$(this).val();
+    counter += value;
+  });
+  console.log('counter after - ' + counter);
+  /***** end *****/
 };
