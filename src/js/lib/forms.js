@@ -1,14 +1,13 @@
 var Forms = function() {
   this.body = $('body');
   this.select = $('.form-select');
-
   this.init();
 };
 
 Forms.prototype.init = function () {
   this.initSelect();
-  this.initSlider();
   this.initMasks();
+  this.initSlider();
 };
 
 Forms.prototype.initSelect = function () {
@@ -21,8 +20,17 @@ Forms.prototype.initSelect = function () {
   });
 };
 
+Forms.prototype.initMasks = function () {
+  $('.field-mobile').inputmask("+7 (999) 999-99-99", { "clearIncomplete": true });
+  $('.field-date').inputmask("date", { placeholder: "дд/мм/гггг", "clearIncomplete": true });
+  $('.field-passport-numbers').inputmask("9999 999999", { "clearIncomplete": true });
+  $('.field-email').inputmask("email", { "clearIncomplete": true });
+};
+
 Forms.prototype.initSlider = function () {
-  $(".formSlider").slider({
+  var self = this;
+
+  this.sliders = $(".formSlider").slider({
     range: "min",
     min: 1,
     max: 100,
@@ -33,15 +41,27 @@ Forms.prototype.initSlider = function () {
 
       $(this).slider('value', inputValue);
     },
-    slide: function( event, ui ) {
+    slide: function(event, ui) {
       var $parent = $(this).closest('.formBlock'),
           $input = $parent.find('.fieldWrapper__input');
 
-      $input.val( ui.value );
+      $input.val(ui.value);
+    },
+    start: function(event, ui) {
+      self.sliderStartValue = ui.value;
+    },
+    stop: function(event, ui) {
+      self.sliderStopValue = ui.value;
+      self.updateAllSliders(this);
     }
   });
 
   this.body.on('input', '.fieldWrapper__input--slider', this.updateSlider);
+
+  // TODO
+  // 1 - закреплять значения
+  // 2 - обновлять значения у незакрепленных слайдеров
+  // 3 - при превышении лимита подстраивать значения
 };
 
 Forms.prototype.updateSlider = function () {
@@ -59,9 +79,48 @@ Forms.prototype.updateSlider = function () {
   $slider.slider('value', inputValue);
 };
 
-Forms.prototype.initMasks = function () {
-  $('.field-mobile').inputmask("+7 (999) 999-99-99", { "clearIncomplete": true });
-  $('.field-date').inputmask("date", { placeholder: "дд/мм/гггг", "clearIncomplete": true });
-  $('.field-passport-numbers').inputmask("9999 999999", { "clearIncomplete": true });
-  $('.field-email').inputmask("email", { "clearIncomplete": true });
+Forms.prototype.updateAllSliders = function (currentSlider) {
+  var updatingSliders = this.sliders.not($(currentSlider)),
+      updatingSlidersLength = updatingSliders.length,
+      difference = this.sliderStopValue - this.sliderStartValue,
+      modulo = Math.abs(difference % updatingSlidersLength),
+      division;
+
+  if (difference > 0) {
+    division = Math.floor(difference / updatingSlidersLength);
+  } else {
+    division = Math.ceil(difference / updatingSlidersLength);
+  }
+
+  // присваиваем слайдерам целые значения
+  updatingSliders.each(function(index, element) {
+    var currentValue = $(element).slider('value');
+    $(element).slider('value', currentValue - division);
+  });
+
+  // распределяем по слайдерам оставшееся дробное значения
+  for (i = 0; i < modulo; i++) {
+    var currentSlider = updatingSliders.eq(i),
+        currentValue = currentSlider.slider('value');
+
+    if (difference > 0) {
+      currentSlider.slider('value', currentValue - 1);
+    } else {
+      currentSlider.slider('value', currentValue + 1);
+    }
+  }
+
+  // обновляем значения инпутов
+  updatingSliders.each(function(index, element) {
+    var currentValue = $(element).slider('value');
+    $(element).closest('.formBlock--slider').find('.fieldWrapper__input--slider').val(currentValue);
+  });
+
+  // общая сумма для проверки (временно)
+  var counter = 0;
+  $('.fieldWrapper__input--slider').each(function() {
+    var value = +$(this).val();
+    counter += value;
+  });
+  console.log('counter - ' + counter);
 };
