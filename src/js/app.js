@@ -22,7 +22,7 @@
 //= ./lib/popups.js
 
 //= ./project_add.js
-//= ./agreements.js
+//= ./arrangement.js
 //= ./viewer.js
 
 
