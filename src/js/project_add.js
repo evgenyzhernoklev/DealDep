@@ -180,5 +180,7 @@ ProjectAdd.prototype.updateTitles = function () {
 
 
 $(document).ready(function() {
-  new ProjectAdd();
+  if ($('.person-entity-clone').length) {
+    new ProjectAdd();
+  }
 });

@@ -19,9 +19,19 @@
 //= ./lib/tabs.js
 //= ./lib/forms.js
 //= ./lib/tooltip.js
+//= ./lib/popups.js
 
 //= ./project_add.js
-//= ./popups.js
-
+//= ./agreements.js
 //= ./viewer.js
-//= ./common.js
+
+
+
+$(document).ready(function() {
+  new Viewer();
+
+  $('.first-enter-close').one('click', function(e) {
+    e.preventDefault();
+    $('body').removeClass('first-enter');
+  });
+});

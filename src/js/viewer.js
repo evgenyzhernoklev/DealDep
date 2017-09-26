@@ -10,14 +10,6 @@ Viewer.prototype.init = function () {
   this.initFunctions();
 
   this.window.on('resize', this.updateResizer.bind(this));
-
-
-
-  // temporary here
-  $('.first-enter-close').one('click', function(e) {
-    e.preventDefault();
-    $('body').removeClass('first-enter');
-  });
 };
 
 Viewer.prototype.initClasses = function () {
