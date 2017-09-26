@@ -91,10 +91,12 @@ Forms.prototype.updateSlider = function () {
       $slider = $parent.find('.formSlider');
 
   if ( inputValue < 0 ) {
-    inputValue = 0;
+    inputValue = 1;
   } else if ( inputValue > 100 ) {
     inputValue = 100;
   }
+
+  // this.updateAllSliders($slider);
 
   $(this).val(inputValue);
   $slider.slider('value', inputValue);
