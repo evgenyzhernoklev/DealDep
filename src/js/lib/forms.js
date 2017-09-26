@@ -61,8 +61,9 @@ Forms.prototype.initSlider = function () {
 
   // TODO
   // 1 - закреплять значения (+)
-  // 2 - обновлять значения у незакрепленных слайдеров
-  // 3 - при превышении лимита подстраивать значения
+  // 2 - обновлять значения у незакрепленных слайдеров (+)
+  // 3 - при вводе значения подстраивать значения если превышен лимит
+  // 4 - при изменениии слайдера подстраивать значения если превышен лимит
 };
 
 Forms.prototype.sliderLockToggle = function(e) {
@@ -98,7 +99,9 @@ Forms.prototype.updateSlider = function () {
 };
 
 Forms.prototype.updateAllSliders = function (currentSlider) {
-  var updatingSliders = this.sliders.not($(currentSlider)),
+  var updatingSliders = this.sliders.not($(currentSlider)).not(function() {
+        return $(this).closest('.share').hasClass('is-locked');
+      }),
       updatingSlidersLength = updatingSliders.length,
       difference = this.sliderStopValue - this.sliderStartValue,
       modulo = Math.abs(difference % updatingSlidersLength),
