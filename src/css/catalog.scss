@@ -3,9 +3,19 @@
   background: $white;
   box-shadow: 0 2px 20px 0 rgba(0,77,255,0.08);
   border-radius: 5px;
+}
 
-  &:last-child {
-    margin-bottom: 0;
+.entityIn--inactive {
+  border: 1px solid #D6D9DE;
+  background-color: transparent;
+  box-shadow: none;
+
+  .entityHeader {
+    border-color: #D6D9DE;
+  }
+
+  .personDataCols__button {
+    background-color: transparent;
   }
 }
 
