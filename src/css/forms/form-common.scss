@@ -130,6 +130,10 @@ textarea.fieldWrapper__input {
   @include clearfix();
 }
 
+.formBlockWrapper--select {
+  overflow: visible;
+}
+
 .formBlock--2 {
   width: 50%;
   float: left;
