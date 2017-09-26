@@ -57,12 +57,7 @@ Forms.prototype.initSlider = function () {
     }
   });
 
-  this.body.on('input', '.fieldWrapper__input--slider', this.updateSlider);
-
-  // TODO
-  // 1 - при вводе значения подстраивать значения если превышен лимит
-  //      a - в большую сторону
-  //      b - в меньшую сторону
+  this.body.on('input', '.fieldWrapper__input--slider', this.updateSlider.bind(this));
 };
 
 Forms.prototype.sliderLockToggle = function(e) {
@@ -85,21 +80,59 @@ Forms.prototype.sliderLockToggle = function(e) {
   }
 };
 
-Forms.prototype.updateSlider = function () {
-  var inputValue = $(this).val(),
-      $parent = $(this).closest('.formBlock'),
-      $slider = $parent.find('.formSlider');
+Forms.prototype.updateSlider = function (e) {
+  var $target = $(e.target),
+      targetValue = +$target.val(),
+      $targetSlider = $target.closest('.formBlock').find('.formSlider'),
+      updatingSliders = this.sliders.not($targetSlider).not(function() {
+        return $(this).closest('.share').hasClass('is-locked');
+      }),
+      updatingSlidersLength = updatingSliders.length;
 
-  if ( inputValue < 0 ) {
-    inputValue = 1;
-  } else if ( inputValue > 100 ) {
-    inputValue = 100;
+  // находим значение для текущего блока со слайдером и инпутом
+  if (targetValue <= 0) {
+    targetValue = 1;
+  } else if (targetValue > 100 - updatingSlidersLength) {
+    targetValue = 100 - updatingSlidersLength;
   }
 
-  // this.updateAllSliders($slider);
+  $target.val(targetValue);
+  $targetSlider.slider('value', targetValue);
 
-  $(this).val(inputValue);
-  $slider.slider('value', inputValue);
+  // распределяем оставшееся значение между слайдерами
+  var leftValue = 100 - targetValue,
+      valueForEachSliderLeft = Math.floor(leftValue / updatingSlidersLength),
+      modulo = leftValue % updatingSlidersLength;
+
+  updatingSliders.each(function(index, element) {
+    $(element).slider('value', valueForEachSliderLeft);
+  });
+
+  for (var i = 0; i < modulo; i++) {
+    var $indexSlider = updatingSliders.eq(i),
+        indexSliderValue = $indexSlider.slider('value');
+
+    $indexSlider.slider('value', indexSliderValue + 1);
+  }
+
+  // обновляем значение инпутов
+  updatingSliders.each(function(index, element) {
+    var indexSliderValue = $(element).slider('value');
+
+    $(element)
+      .closest('.formBlock')
+      .find('.fieldWrapper__input--slider')
+      .val(indexSliderValue);
+  });
+
+  /***** общая сумма для проверки (временно) *****/
+  var counter = 0;
+  $('.fieldWrapper__input--slider').each(function() {
+    var value = +$(this).val();
+    counter += value;
+  });
+  console.log('counter - ' + counter);
+  /***** end *****/
 };
 
 Forms.prototype.updateAllSliders = function ($currentSlider) {
@@ -138,7 +171,10 @@ Forms.prototype.updateAllSliders = function ($currentSlider) {
   // обновляем значения инпутов
   updatingSliders.each(function(index, element) {
     var currentValue = $(element).slider('value');
-    $(element).closest('.formBlock--slider').find('.fieldWrapper__input--slider').val(currentValue);
+    $(element)
+      .closest('.formBlock--slider')
+      .find('.fieldWrapper__input--slider')
+      .val(currentValue);
   });
 
   // проверяем сумму процентов
@@ -154,7 +190,10 @@ Forms.prototype.updateAllSliders = function ($currentSlider) {
         currentSliderValue = $currentSlider.slider('value');
 
     $currentSlider.slider('value', currentSliderValue - overdraft);
-    $currentSlider.closest('.formBlock--slider').find('.fieldWrapper__input--slider').val(currentSliderValue - overdraft);
+    $currentSlider
+      .closest('.formBlock--slider')
+      .find('.fieldWrapper__input--slider')
+      .val(currentSliderValue - overdraft);
   }
 
   /***** общая сумма для проверки (временно) *****/
