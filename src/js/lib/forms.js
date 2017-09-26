@@ -8,6 +8,7 @@ Forms.prototype.init = function () {
   this.initSelect();
   this.initMasks();
   this.initSlider();
+  $('.slider-lock-toggle').on('click', this.sliderLockToggle);
 };
 
 Forms.prototype.initSelect = function () {
@@ -59,9 +60,26 @@ Forms.prototype.initSlider = function () {
   this.body.on('input', '.fieldWrapper__input--slider', this.updateSlider);
 
   // TODO
-  // 1 - закреплять значения
+  // 1 - закреплять значения (+)
   // 2 - обновлять значения у незакрепленных слайдеров
   // 3 - при превышении лимита подстраивать значения
+};
+
+Forms.prototype.sliderLockToggle = function(e) {
+  e.preventDefault();
+  var $parent = $(this).closest('.share'),
+      $slider = $parent.find('.formSlider'),
+      $input = $parent.find('.fieldWrapper__input--slider');
+
+  $parent.toggleClass('is-locked');
+
+  if ($parent.hasClass('is-locked')) {
+    $input.prop('readonly', 'readonly');
+    $slider.slider('disable');
+  } else {
+    $input.prop('readonly', '');
+    $slider.slider('enable');
+  }
 };
 
 Forms.prototype.updateSlider = function () {
