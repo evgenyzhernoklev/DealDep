@@ -32,6 +32,22 @@
         <form class="form form--content">
           <div class="formIn">
             <div class="formContent">
+              <div class="formBlock formBlock--aside formBlock--quantity">
+                <div class="formBlock__title">
+                  Укажите количественный состав совета директоров
+                </div>
+                <div class="formBlockIn">
+                  <span class="formBlock__quantityButton quantity-reduce"></span><label class="fieldWrapper"><input class="fieldWrapper__input field-quantity" name="" type="number" value="0" /></label><span class="formBlock__quantityButton formBlock__quantityButton--add quantity-add"></span>
+                </div>
+              </div>
+              <div class="formBlock formBlock--aside formBlock--quantity formBlock--mb">
+                <div class="formBlock__title">
+                  Из них независимых членов<span>Оставьте 0, если их нет</span>
+                </div>
+                <div class="formBlockIn">
+                  <span class="formBlock__quantityButton quantity-reduce"></span><label class="fieldWrapper"><input class="fieldWrapper__input field-quantity" name="" type="number" value="0" /></label><span class="formBlock__quantityButton formBlock__quantityButton--add quantity-add"></span>
+                </div>
+              </div>
               <div class="formBlock formBlock--aside">
                 <div class="formBlock__title">
                   Как распределяются места в совете директоров?
@@ -53,7 +69,7 @@
                   Оплата работы членов совета директоров
                 </div>
                 <div class="formBlockIn">
-                  <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="seats_allocation" type="radio" value="director_salary" /><span class="fieldWrapper__checkInfo">Оплачиваются, все</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="seats_allocation" type="radio" value="director_salary2" /><span class="fieldWrapper__checkInfo">Только независимые (если есть)</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input checked="checked" class="fieldWrapper__input" name="seats_allocation" type="radio" value="director_salary3" /><span class="fieldWrapper__checkInfo">Не оплачиваются</span><span class="fieldWrapper__radioIcon"></span></label>
+                  <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="director_salary" type="radio" value="director_salary1" /><span class="fieldWrapper__checkInfo">Оплачиваются, все</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="director_salary" type="radio" value="director_salary2" /><span class="fieldWrapper__checkInfo">Только независимые (если есть)</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input checked="checked" class="fieldWrapper__input" name="director_salary" type="radio" value="director_salary3" /><span class="fieldWrapper__checkInfo">Не оплачиваются</span><span class="fieldWrapper__radioIcon"></span></label>
                 </div>
               </div>
             </div>

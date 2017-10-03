@@ -9,8 +9,12 @@ Forms.prototype.init = function () {
   this.initSelect();
   this.initMasks();
   this.initSlider();
+
   $('.slider-lock-toggle').on('click', this.sliderLockToggle);
   $('.formblock-toggle-link').on('change', this.toggleHiddenBlock.bind(this));
+  $('.quantity-reduce').on('click', this.quantityReduce);
+  $('.quantity-add').on('click', this.quantityAdd);
+  $('.field-quantity').on('input', this.checkQuantityField);
 };
 
 Forms.prototype.initSelect = function () {
@@ -234,3 +238,36 @@ Forms.prototype.toggleHiddenBlock = function (e) {
 
   $targetBlock.stop().slideToggle();
 };
+
+Forms.prototype.quantityReduce = function (e) {
+  e.preventDefault();
+  var $input = $(this).closest('.formBlock').find('.fieldWrapper__input'),
+      value = +$input.val();
+
+  value -= 1;
+
+  if (value < 0) {
+    value = 0;
+  }
+
+  $input.val(value);
+};
+
+Forms.prototype.quantityAdd = function (e) {
+  e.preventDefault();
+  var $input = $(this).closest('.formBlock').find('.fieldWrapper__input'),
+      value = +$input.val();
+
+  value += 1;
+  $input.val(value);
+};
+
+Forms.prototype.checkQuantityField = function () {
+  var value = +$(this).val();
+
+  if (value < 0) {
+    value = 0;
+  }
+
+  $(this).val(value);
+}

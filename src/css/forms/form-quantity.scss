@@ -1,0 +1,46 @@
+.formBlock--quantity {
+  padding: 0 0 10px;
+
+  .fieldWrapper {
+    display: inline-block;
+    margin: 0 10px;
+    width: 88px;
+    vertical-align: top;
+  }
+
+  .fieldWrapper__input {
+    text-align: center;
+  }
+}
+
+.formBlock__quantityButton {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 43px;
+  border: 1px solid $input-bg;
+  border-radius: 3px;
+  background-color: $white;
+  cursor: pointer;
+  vertical-align: top;
+  transition: background-color $transition-normal;
+
+  &:before {
+    content: '\2014';
+    font-size: 20px;
+  }
+
+  &:hover {
+    background-color: $white-light;
+  }
+}
+
+.formBlock__quantityButton--add {
+  line-height: 48px;
+
+  &:before {
+    content: '+';
+    font-size: 24px;
+  }
+}

@@ -72,10 +72,20 @@
 .formBlock {
   margin: 10px 0 0;
   padding: 35px 0 0;
+
+  &.formBlock--mb {
+    margin-bottom: 24px;
+  }
 }
 
 .formBlock__title {
   font: 14px/20px $circe-bold;
+
+  span {
+    display: inline-block;
+    font: 14px/20px $circe-regular;
+    color: #A4A4A4;
+  }
 }
 
 .formBlock__title--indentTop {
