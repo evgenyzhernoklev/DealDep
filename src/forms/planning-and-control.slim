@@ -103,16 +103,15 @@ html
                     span.fieldWrapper__checkInfo Чистая прибыль
                     span.fieldWrapper__checkboxIcon
                   label.fieldWrapper.fieldWrapper--check
-                    input.fieldWrapper__input type="checkbox" name="key_parameters" value="key_parameters4"
+                    input.fieldWrapper__input.formblock-toggle-link data-target="evaluation parameters" type="checkbox" name="key_parameters" value="key_parameters4"
                     span.fieldWrapper__checkInfo Иное
                     span.fieldWrapper__checkboxIcon
 
-              / .formBlock.formBlock--aside
-                .formBlock__title.formBlock__title--indentTop Укажите свою формулу оценки бизнеса
+              .formBlock.formBlock--aside.formblock-toggle-hidden data-target="evaluation parameters"
+                .formBlock__title.formBlock__title--indentTop Иные параметры для оценки
                 .formBlockIn
                   label.fieldWrapper
-                    textarea.fieldWrapper__input name="" placeholder="Укажите формулу"
-                      | V (оценка) = С (количество платящих клиентов) * S (цена за одного платящего клиента)
+                    textarea.fieldWrapper__input name="" placeholder="Введите иные договоренности"
 
           .buttonContainer.buttonContainer--center
             button.buttonContainer__button.linkButton.linkButton--small type="button" отменить

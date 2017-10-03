@@ -1,6 +1,7 @@
 var Forms = function() {
   this.body = $('body');
   this.select = $('.form-select');
+  this.hiddenBlocks = $('.formblock-toggle-hidden');
   this.init();
 };
 
@@ -9,6 +10,7 @@ Forms.prototype.init = function () {
   this.initMasks();
   this.initSlider();
   $('.slider-lock-toggle').on('click', this.sliderLockToggle);
+  $('.formblock-toggle-link').on('change', this.toggleHiddenBlock.bind(this));
 };
 
 Forms.prototype.initSelect = function () {
@@ -220,4 +222,15 @@ Forms.prototype.updateAllSliders = function ($currentSlider) {
   // });
   // console.log('counter after - ' + counter);
   /***** end *****/
+};
+
+Forms.prototype.toggleHiddenBlock = function (e) {
+  var $target = $(e.target),
+      targetData = $target.data('target'),
+      isChecked = $target.prop('checked'),
+      $targetBlock = this.hiddenBlocks.filter(function() {
+        return $(this).data('target') == targetData;
+      });
+
+  $targetBlock.stop().slideToggle();
 };
