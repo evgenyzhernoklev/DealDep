@@ -122,3 +122,7 @@
 .icon--circulation_white {
   @include background-image(circulation_white, 13px, 13px);
 }
+
+.icon--question {
+  @include background-image(question_blue, 17px, 17px);
+}

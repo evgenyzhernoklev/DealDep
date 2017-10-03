@@ -1,0 +1,16 @@
+.formBlock__iconTooltip {
+  position: relative;
+  margin-left: 6px;
+}
+
+.formBlock__tooltip {
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  min-width: 150px;
+  background: $white;
+  box-shadow: 0 0 14px 0 rgba(0,0,0,.2);
+  transform: translateX(-50%);
+}

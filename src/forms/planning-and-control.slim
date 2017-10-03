@@ -1,0 +1,123 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta http-equiv="X-UA-Compatible" content="IE=edge"
+    meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0"
+    title Forms - planning and control
+    meta name="description" content=""
+    link rel="stylesheet" media="all" href="../css/app.css"
+  body
+
+    .header.header--border
+      .headerIn
+        .contentIn
+          a.header__logo.icon.icon--logo href="/"
+          h1.header__title Новая договоренность
+          a.header__close.icon.icon--close href="#"
+
+    section.addProjectSection
+      .contentIn
+
+        .addProject
+          .addProjectAbout
+            .addProjectAbout__title Планирование и контроль деятельности проекта
+
+        form.form.form--content
+          .formIn
+            .formContent
+
+              .formBlock.formBlock--aside
+                .formBlock__title Какие механизмы планирования будете использовать (на даном этапе)?
+                .formBlockIn
+                  label.fieldWrapper.fieldWrapper--check.tooltip-container
+                    input.fieldWrapper__input type="checkbox" name="planning_mechanisms" value="planning_mechanisms1" checked="checked"
+                    span.fieldWrapper__checkInfo.fieldWrapperCheckInfo
+                      | Бизнес-план
+                      i.formBlock__iconTooltip.icon.icon--question.tooltip-link
+                        .formBlock__tooltip.tooltip-content Принять во внимание некий бизнес-план
+                    span.fieldWrapper__checkboxIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="checkbox" name="planning_mechanisms" value="planning_mechanisms2"
+                    span.fieldWrapper__checkInfo Годовой бюджет
+                    span.fieldWrapper__checkboxIcon
+
+              .formBlock.formBlock--aside
+                .formBlock__title Кто формирует эти документы (ответственный)?
+                .formBlockIn
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="radio" name="responsible" value="responsible1" checked="checked"
+                    span.fieldWrapper__checkInfo Директор
+                    span.fieldWrapper__radioIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="radio" name="responsible" value="responsible2"
+                    span.fieldWrapper__checkInfo Другой
+                    span.fieldWrapper__radioIcon
+
+              .formBlock.formBlock--aside
+                .formBlock__title Как утверждаем эти документы?
+                .formBlockIn
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="radio" name="document_approval" value="document_approval1" checked="checked"
+                    span.fieldWrapper__checkInfo Все участники (Собрание участников)
+                    span.fieldWrapper__radioIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="radio" name="document_approval" value="document_approval2"
+                    span.fieldWrapper__checkInfo Совет Директров (если есть)
+                    span.fieldWrapper__radioIcon
+
+              .formBlock.formBlock--aside
+                .formBlock__title Как контролируем результаты?
+                .formBlockIn
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="radio" name="result_control" value="result_control1" checked="checked"
+                    span.fieldWrapper__checkInfo Отчет директора участникам раз в месяц
+                    span.fieldWrapper__radioIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="radio" name="result_control" value="result_control2"
+                    span.fieldWrapper__checkInfo Отчет совету директоров раз в месяц
+                    span.fieldWrapper__radioIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="radio" name="result_control" value="result_control3"
+                    span.fieldWrapper__checkInfo Отчет директора участникам раз в квартал
+                    span.fieldWrapper__radioIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="radio" name="result_control" value="result_control4"
+                    span.fieldWrapper__checkInfo Отчет директора СД раз в квартал
+                    span.fieldWrapper__radioIcon
+
+              .formBlock.formBlock--aside
+                .formBlock__title Укажите ключевые параметры проекта
+                .formBlockIn
+                  label.fieldWrapper.fieldWrapper--check.tooltip-container
+                    input.fieldWrapper__input type="checkbox" name="key_parameters" value="key_parameters1" checked="checked"
+                    span.fieldWrapper__checkInfo.fieldWrapperCheckInfo
+                      | Выручка
+                    span.fieldWrapper__checkboxIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="checkbox" name="key_parameters" value="key_parameters2"
+                    span.fieldWrapper__checkInfo EBITDA
+                    span.fieldWrapper__checkboxIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="checkbox" name="key_parameters" value="key_parameters3"
+                    span.fieldWrapper__checkInfo Чистая прибыль
+                    span.fieldWrapper__checkboxIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="checkbox" name="key_parameters" value="key_parameters4"
+                    span.fieldWrapper__checkInfo Иное
+                    span.fieldWrapper__checkboxIcon
+
+              / .formBlock.formBlock--aside
+                .formBlock__title.formBlock__title--indentTop Укажите свою формулу оценки бизнеса
+                .formBlockIn
+                  label.fieldWrapper
+                    textarea.fieldWrapper__input name="" placeholder="Укажите формулу"
+                      | V (оценка) = С (количество платящих клиентов) * S (цена за одного платящего клиента)
+
+          .buttonContainer.buttonContainer--center
+            button.buttonContainer__button.linkButton.linkButton--small type="button" отменить
+            button.buttonContainer__button.linkButton.linkButton--small.linkButton--blue type="submit" сохранить
+
+
+
+  script src="../js/app.js"
