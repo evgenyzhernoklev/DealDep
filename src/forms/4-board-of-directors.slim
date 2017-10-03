@@ -1,0 +1,110 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta http-equiv="X-UA-Compatible" content="IE=edge"
+    meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0"
+    title Forms - board of directors
+    meta name="description" content=""
+    link rel="stylesheet" media="all" href="../css/app.css"
+  body
+
+    .header.header--border
+      .headerIn
+        .contentIn
+          a.header__logo.icon.icon--logo href="/"
+          h1.header__title Новая договоренность
+          a.header__close.icon.icon--close href="#"
+
+    section.addProjectSection
+      .contentIn
+
+        .addProject
+          .addProjectAbout
+            .addProjectAbout__title Совет директоров
+
+        form.form.form--content
+          .formIn
+            .formContent
+
+              .formBlock.formBlock--aside
+                .formBlock__title Как распределяются места в совете директоров?
+                .formBlockIn
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="radio" name="seats_allocation" value="seats_allocation1" checked="checked"
+                    span.fieldWrapper__checkInfo Согласно проценту владения участника
+                    span.fieldWrapper__radioIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="radio" name="seats_allocation" value="seats_allocation2"
+                    span.fieldWrapper__checkInfo Указать иной порядок
+                    span.fieldWrapper__radioIcon
+
+              .formBlock.formBlock--aside
+                .formBlock__title Полномочия совета директоров (какие вопросы решает совет директоров)
+                .formBlockIn
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="checkbox" name="director_powers" value="director_powers1" checked="checked"
+                    span.fieldWrapper__checkInfo Утверждение бизнес-плана
+                    span.fieldWrapper__checkboxIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="checkbox" name="director_powers" value="director_powers2"
+                    span.fieldWrapper__checkInfo Утверждение бюджета
+                    span.fieldWrapper__checkboxIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="checkbox" name="director_powers" value="director_powers3"
+                    span.fieldWrapper__checkInfo Назначение/увольнение директора проекта
+                    span.fieldWrapper__checkboxIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="checkbox" name="director_powers" value="director_powers4"
+                    span.fieldWrapper__checkInfo Решения о создании/ликвидации дочерних компаний проекта
+                    span.fieldWrapper__checkboxIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="checkbox" name="director_powers" value="director_powers5"
+                    span.fieldWrapper__checkInfo Назначение/увольнение директоров дочерних компаний
+                    span.fieldWrapper__checkboxIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="checkbox" name="director_powers" value="director_powers6"
+                    span.fieldWrapper__checkInfo Решения о распределении чистой прибыли
+                    span.fieldWrapper__checkboxIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="checkbox" name="director_powers" value="director_powers7"
+                    span.fieldWrapper__checkInfo Утверждение  кандидатов на ключевые поциии топ-менеджеров
+                    span.fieldWrapper__checkboxIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="checkbox" name="director_powers" value="director_powers8"
+                    span.fieldWrapper__checkInfo Утверждение сделок, размером более
+                    span.fieldWrapper__checkboxIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="checkbox" name="director_powers" value="director_powers9"
+                    span.fieldWrapper__checkInfo Иное
+                    span.fieldWrapper__checkboxIcon
+
+              .formBlock.formBlock--aside
+                .formBlock__title Оплата работы членов совета директоров
+                .formBlockIn
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="radio" name="seats_allocation" value="director_salary"
+                    span.fieldWrapper__checkInfo Оплачиваются, все
+                    span.fieldWrapper__radioIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="radio" name="seats_allocation" value="director_salary2"
+                    span.fieldWrapper__checkInfo Только независимые (если есть)
+                    span.fieldWrapper__radioIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="radio" name="seats_allocation" value="director_salary3" checked="checked"
+                    span.fieldWrapper__checkInfo Не оплачиваются
+                    span.fieldWrapper__radioIcon
+
+
+
+
+
+
+
+          .buttonContainer.buttonContainer--center
+            button.buttonContainer__button.linkButton.linkButton--small type="button" отменить
+            button.buttonContainer__button.linkButton.linkButton--small.linkButton--blue type="submit" сохранить
+
+
+
+  script src="../js/app.js"

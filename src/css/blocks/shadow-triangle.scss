@@ -48,3 +48,20 @@
     }
   }
 }
+
+
+
+// on bottom
+.triangleShadow--bottom {
+  top: auto;
+  bottom: -30px;
+  left: 50%;
+  margin: 0 0 0 -15px;
+
+  .triangleShadow__helper {
+    &:after {
+      top: -8px;
+      left: 7px;
+    }
+  }
+}

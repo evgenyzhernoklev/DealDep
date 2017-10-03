@@ -1,16 +1,45 @@
-.formBlock__iconTooltip {
+.formBlockTooltipWrapper {
   position: relative;
   margin-left: 6px;
+  width: 17px;
+  height: 17px;
+  border: 1px solid $blue;
+  background-color: $white;
+  border-radius: 50%;
+  transition: background-color $transition-normal, background-image $transition-normal;
+
+  &:hover {
+    @include background-image(question_white, 5px, 7px);
+    width: 17px;
+    height: 17px;
+    background-color: $blue;
+
+    .formBlockTooltip {
+      @include show();
+    }
+  }
 }
 
-.formBlock__tooltip {
+.formBlockTooltip {
   position: absolute;
-  left: 50%;
+  left: -38px;
   bottom: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   padding: 10px 15px;
-  min-width: 150px;
+  width: 350px;
+  color: $black;
   background: $white;
-  box-shadow: 0 0 14px 0 rgba(0,0,0,.2);
-  transform: translateX(-50%);
+  box-shadow: 0 0 14px 0 rgba(0,77,255,0.10);
+  border-radius: 3px;
+  @include hide();
+
+  .triangleShadow--bottom {
+    left: 47px;
+
+    .triangleShadow__helper {
+      &:after {
+        box-shadow: 0 0 14px 0 rgba(0,77,255,0.10);
+      }
+    }
+  }
 }

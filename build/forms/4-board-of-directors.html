@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0" name="viewport" />
+    <title>Forms - board of directors</title>
+    <meta content="" name="description" />
+    <link href="../css/app.css" media="all" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="header header--border">
+      <div class="headerIn">
+        <div class="contentIn">
+          <a class="header__logo icon icon--logo" href="/"></a>
+          <h1 class="header__title">
+            Новая договоренность
+          </h1>
+          <a class="header__close icon icon--close" href="#"></a>
+        </div>
+      </div>
+    </div>
+    <section class="addProjectSection">
+      <div class="contentIn">
+        <div class="addProject">
+          <div class="addProjectAbout">
+            <div class="addProjectAbout__title">
+              Совет директоров
+            </div>
+          </div>
+        </div>
+        <form class="form form--content">
+          <div class="formIn">
+            <div class="formContent">
+              <div class="formBlock formBlock--aside">
+                <div class="formBlock__title">
+                  Как распределяются места в совете директоров?
+                </div>
+                <div class="formBlockIn">
+                  <label class="fieldWrapper fieldWrapper--check"><input checked="checked" class="fieldWrapper__input" name="seats_allocation" type="radio" value="seats_allocation1" /><span class="fieldWrapper__checkInfo">Согласно проценту владения участника</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="seats_allocation" type="radio" value="seats_allocation2" /><span class="fieldWrapper__checkInfo">Указать иной порядок</span><span class="fieldWrapper__radioIcon"></span></label>
+                </div>
+              </div>
+              <div class="formBlock formBlock--aside">
+                <div class="formBlock__title">
+                  Полномочия совета директоров (какие вопросы решает совет директоров)
+                </div>
+                <div class="formBlockIn">
+                  <label class="fieldWrapper fieldWrapper--check"><input checked="checked" class="fieldWrapper__input" name="director_powers" type="checkbox" value="director_powers1" /><span class="fieldWrapper__checkInfo">Утверждение бизнес-плана</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="director_powers" type="checkbox" value="director_powers2" /><span class="fieldWrapper__checkInfo">Утверждение бюджета</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="director_powers" type="checkbox" value="director_powers3" /><span class="fieldWrapper__checkInfo">Назначение/увольнение директора проекта</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="director_powers" type="checkbox" value="director_powers4" /><span class="fieldWrapper__checkInfo">Решения о создании/ликвидации дочерних компаний проекта</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="director_powers" type="checkbox" value="director_powers5" /><span class="fieldWrapper__checkInfo">Назначение/увольнение директоров дочерних компаний</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="director_powers" type="checkbox" value="director_powers6" /><span class="fieldWrapper__checkInfo">Решения о распределении чистой прибыли</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="director_powers" type="checkbox" value="director_powers7" /><span class="fieldWrapper__checkInfo">Утверждение  кандидатов на ключевые поциии топ-менеджеров</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="director_powers" type="checkbox" value="director_powers8" /><span class="fieldWrapper__checkInfo">Утверждение сделок, размером более</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="director_powers" type="checkbox" value="director_powers9" /><span class="fieldWrapper__checkInfo">Иное</span><span class="fieldWrapper__checkboxIcon"></span></label>
+                </div>
+              </div>
+              <div class="formBlock formBlock--aside">
+                <div class="formBlock__title">
+                  Оплата работы членов совета директоров
+                </div>
+                <div class="formBlockIn">
+                  <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="seats_allocation" type="radio" value="director_salary" /><span class="fieldWrapper__checkInfo">Оплачиваются, все</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="seats_allocation" type="radio" value="director_salary2" /><span class="fieldWrapper__checkInfo">Только независимые (если есть)</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input checked="checked" class="fieldWrapper__input" name="seats_allocation" type="radio" value="director_salary3" /><span class="fieldWrapper__checkInfo">Не оплачиваются</span><span class="fieldWrapper__radioIcon"></span></label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="buttonContainer buttonContainer--center">
+            <button class="buttonContainer__button linkButton linkButton--small" type="button">отменить</button><button class="buttonContainer__button linkButton linkButton--small linkButton--blue" type="submit">сохранить</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+  <script src="../js/app.js"></script>
+</html>
