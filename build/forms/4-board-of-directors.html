@@ -53,7 +53,49 @@
                   Как распределяются места в совете директоров?
                 </div>
                 <div class="formBlockIn">
-                  <label class="fieldWrapper fieldWrapper--check"><input checked="checked" class="fieldWrapper__input" name="seats_allocation" type="radio" value="seats_allocation1" /><span class="fieldWrapper__checkInfo">Согласно проценту владения участника</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="seats_allocation" type="radio" value="seats_allocation2" /><span class="fieldWrapper__checkInfo">Указать иной порядок</span><span class="fieldWrapper__radioIcon"></span></label>
+                  <label class="fieldWrapper fieldWrapper--check"><input checked="checked" class="fieldWrapper__input" name="seats_allocation" type="radio" value="seats_allocation1" /><span class="fieldWrapper__checkInfo">Согласно проценту владения</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" data-target="custom places" name="seats_allocation" type="radio" value="seats_allocation2" /><span class="fieldWrapper__checkInfo">Указать места вручную</span><span class="fieldWrapper__radioIcon"></span></label>
+                </div>
+              </div>
+              <div class="formblock-toggle-hidden" data-target="custom places">
+                <div class="formBlock formBlock--aside formBlock--quantity">
+                  <div class="formBlock__title">
+                    Гужиков Павел
+                  </div>
+                  <div class="formBlockIn">
+                    <span class="formBlock__quantityButton quantity-reduce"></span><label class="fieldWrapper"><input class="fieldWrapper__input field-quantity" name="" type="number" value="0" /></label><span class="formBlock__quantityButton formBlock__quantityButton--add quantity-add"></span>
+                  </div>
+                </div>
+                <div class="formBlock formBlock--aside formBlock--quantity">
+                  <div class="formBlock__title">
+                    Ардинцев Иван
+                  </div>
+                  <div class="formBlockIn">
+                    <span class="formBlock__quantityButton quantity-reduce"></span><label class="fieldWrapper"><input class="fieldWrapper__input field-quantity" name="" type="number" value="0" /></label><span class="formBlock__quantityButton formBlock__quantityButton--add quantity-add"></span>
+                  </div>
+                </div>
+                <div class="formBlock formBlock--aside formBlock--quantity">
+                  <div class="formBlock__title">
+                    Путин Владимир
+                  </div>
+                  <div class="formBlockIn">
+                    <span class="formBlock__quantityButton quantity-reduce"></span><label class="fieldWrapper"><input class="fieldWrapper__input field-quantity" name="" type="number" value="0" /></label><span class="formBlock__quantityButton formBlock__quantityButton--add quantity-add"></span>
+                  </div>
+                </div>
+                <div class="formBlock formBlock--aside formBlock--quantity">
+                  <div class="formBlock__title">
+                    Медведев Дмитрий
+                  </div>
+                  <div class="formBlockIn">
+                    <span class="formBlock__quantityButton quantity-reduce"></span><label class="fieldWrapper"><input class="fieldWrapper__input field-quantity" name="" type="number" value="0" /></label><span class="formBlock__quantityButton formBlock__quantityButton--add quantity-add"></span>
+                  </div>
+                </div>
+                <div class="formBlock formBlock--aside formBlock--quantity formBlock--mb">
+                  <div class="formBlock__title">
+                    Шойгу Сергей
+                  </div>
+                  <div class="formBlockIn">
+                    <span class="formBlock__quantityButton quantity-reduce"></span><label class="fieldWrapper"><input class="fieldWrapper__input field-quantity" name="" type="number" value="0" /></label><span class="formBlock__quantityButton formBlock__quantityButton--add quantity-add"></span>
+                  </div>
                 </div>
               </div>
               <div class="formBlock formBlock--aside">
@@ -69,7 +111,35 @@
                   Оплата работы членов совета директоров
                 </div>
                 <div class="formBlockIn">
-                  <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="director_salary" type="radio" value="director_salary1" /><span class="fieldWrapper__checkInfo">Оплачиваются, все</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="director_salary" type="radio" value="director_salary2" /><span class="fieldWrapper__checkInfo">Только независимые (если есть)</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input checked="checked" class="fieldWrapper__input" name="director_salary" type="radio" value="director_salary3" /><span class="fieldWrapper__checkInfo">Не оплачиваются</span><span class="fieldWrapper__radioIcon"></span></label>
+                  <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" data-target="director salary" name="director_salary" type="radio" value="director_salary1" /><span class="fieldWrapper__checkInfo">Оплачиваются, все</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="director_salary" type="radio" value="director_salary2" /><span class="fieldWrapper__checkInfo">Только независимые (если есть)</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input checked="checked" class="fieldWrapper__input" name="director_salary" type="radio" value="director_salary3" /><span class="fieldWrapper__checkInfo">Не оплачиваются</span><span class="fieldWrapper__radioIcon"></span></label>
+                </div>
+              </div>
+              <div class="formBlock formBlock--aside formblock-toggle-hidden" data-target="director salary">
+                <div class="formBlock__title formBlock__title--indentTop">
+                  Ставка
+                </div>
+                <div class="formBlockIn">
+                  <div class="formBlockWrapper formBlockWrapper--select">
+                    <div class="formBlock formBlock--2">
+                      <label class="fieldWrapper"><input class="fieldWrapper__input" name="" placeholder="Введите сумму" type="number" /></label>
+                    </div>
+                    <div class="formBlock formBlock--2">
+                      <label class="fieldWrapper"><select class="fieldWrapper__select form-select" placeholder="Выберите ставку">
+                          <option value="">
+                            Выберите ставку
+                          </option>
+                          <option selected="selected" value="1">
+                            В месяц
+                          </option>
+                          <option value="2">
+                            В квартал
+                          </option>
+                          <option value="3">
+                            В год
+                          </option>
+                        </select></label>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

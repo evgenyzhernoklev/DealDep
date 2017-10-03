@@ -34,7 +34,6 @@ html
                   label.fieldWrapper
                     input.fieldWrapper__input.field-quantity type="number" name="" value="0"
                   span.formBlock__quantityButton.formBlock__quantityButton--add.quantity-add
-
               .formBlock.formBlock--aside.formBlock--quantity.formBlock--mb
                 .formBlock__title
                   | Из них независимых членов
@@ -50,12 +49,49 @@ html
                 .formBlockIn
                   label.fieldWrapper.fieldWrapper--check
                     input.fieldWrapper__input type="radio" name="seats_allocation" value="seats_allocation1" checked="checked"
-                    span.fieldWrapper__checkInfo Согласно проценту владения участника
+                    span.fieldWrapper__checkInfo Согласно проценту владения
                     span.fieldWrapper__radioIcon
                   label.fieldWrapper.fieldWrapper--check
-                    input.fieldWrapper__input type="radio" name="seats_allocation" value="seats_allocation2"
-                    span.fieldWrapper__checkInfo Указать иной порядок
+                    input.fieldWrapper__input.formblock-toggle-link data-target="custom places" type="radio" name="seats_allocation" value="seats_allocation2"
+                    span.fieldWrapper__checkInfo Указать места вручную
                     span.fieldWrapper__radioIcon
+
+              .formblock-toggle-hidden data-target="custom places"
+                .formBlock.formBlock--aside.formBlock--quantity
+                  .formBlock__title Гужиков Павел
+                  .formBlockIn
+                    span.formBlock__quantityButton.quantity-reduce
+                    label.fieldWrapper
+                      input.fieldWrapper__input.field-quantity type="number" name="" value="0"
+                    span.formBlock__quantityButton.formBlock__quantityButton--add.quantity-add
+                .formBlock.formBlock--aside.formBlock--quantity
+                  .formBlock__title Ардинцев Иван
+                  .formBlockIn
+                    span.formBlock__quantityButton.quantity-reduce
+                    label.fieldWrapper
+                      input.fieldWrapper__input.field-quantity type="number" name="" value="0"
+                    span.formBlock__quantityButton.formBlock__quantityButton--add.quantity-add
+                .formBlock.formBlock--aside.formBlock--quantity
+                  .formBlock__title Путин Владимир
+                  .formBlockIn
+                    span.formBlock__quantityButton.quantity-reduce
+                    label.fieldWrapper
+                      input.fieldWrapper__input.field-quantity type="number" name="" value="0"
+                    span.formBlock__quantityButton.formBlock__quantityButton--add.quantity-add
+                .formBlock.formBlock--aside.formBlock--quantity
+                  .formBlock__title Медведев Дмитрий
+                  .formBlockIn
+                    span.formBlock__quantityButton.quantity-reduce
+                    label.fieldWrapper
+                      input.fieldWrapper__input.field-quantity type="number" name="" value="0"
+                    span.formBlock__quantityButton.formBlock__quantityButton--add.quantity-add
+                .formBlock.formBlock--aside.formBlock--quantity.formBlock--mb
+                  .formBlock__title Шойгу Сергей
+                  .formBlockIn
+                    span.formBlock__quantityButton.quantity-reduce
+                    label.fieldWrapper
+                      input.fieldWrapper__input.field-quantity type="number" name="" value="0"
+                    span.formBlock__quantityButton.formBlock__quantityButton--add.quantity-add
 
               .formBlock.formBlock--aside
                 .formBlock__title Полномочия совета директоров (какие вопросы решает совет директоров)
@@ -101,7 +137,7 @@ html
                 .formBlock__title Оплата работы членов совета директоров
                 .formBlockIn
                   label.fieldWrapper.fieldWrapper--check
-                    input.fieldWrapper__input type="radio" name="director_salary" value="director_salary1"
+                    input.fieldWrapper__input.formblock-toggle-link data-target="director salary" type="radio" name="director_salary" value="director_salary1"
                     span.fieldWrapper__checkInfo Оплачиваются, все
                     span.fieldWrapper__radioIcon
                   label.fieldWrapper.fieldWrapper--check
@@ -113,11 +149,20 @@ html
                     span.fieldWrapper__checkInfo Не оплачиваются
                     span.fieldWrapper__radioIcon
 
-
-
-
-
-
+              .formBlock.formBlock--aside.formblock-toggle-hidden data-target="director salary"
+                .formBlock__title.formBlock__title--indentTop Ставка
+                .formBlockIn
+                  .formBlockWrapper.formBlockWrapper--select
+                    .formBlock.formBlock--2
+                      label.fieldWrapper
+                        input.fieldWrapper__input type="number" name="" placeholder="Введите сумму"
+                    .formBlock.formBlock--2
+            					label.fieldWrapper
+            						select.fieldWrapper__select.form-select placeholder="Выберите ставку"
+            							option value="" Выберите ставку
+            							option value="1" selected="selected" В месяц
+            							option value="2" В квартал
+            							option value="3" В год
 
           .buttonContainer.buttonContainer--center
             button.buttonContainer__button.linkButton.linkButton--small type="button" отменить
