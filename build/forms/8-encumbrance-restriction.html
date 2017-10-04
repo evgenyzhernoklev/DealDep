@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0" name="viewport" />
+    <title>Forms - encumbrance restriction</title>
+    <meta content="" name="description" />
+    <link href="../css/app.css" media="all" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="header header--border">
+      <div class="headerIn">
+        <div class="contentIn">
+          <a class="header__logo icon icon--logo" href="/"></a>
+          <h1 class="header__title">
+            Новая договоренность
+          </h1>
+          <a class="header__close icon icon--close" href="#"></a>
+        </div>
+      </div>
+    </div>
+    <section class="addProjectSection">
+      <div class="contentIn">
+        <div class="addProject">
+          <div class="addProjectAbout">
+            <div class="addProjectAbout__title">
+              Ограничения обременения участниками долей
+            </div>
+            <div class="addProjectAbout__info">
+              Договоренности об ограничениях участников на отчуждениедолей проекта в пользу третьих лиц
+            </div>
+          </div>
+        </div>
+        <form class="form form--content">
+          <div class="formIn">
+            <div class="formContent">
+              <div class="formBlock formBlock--aside">
+                <div class="formBlock__title">
+                  Какие ограничениях участников будут действовать на обременение долей проекта в пользу третьих лиц?
+                </div>
+                <div class="formBlockIn">
+                  <label class="fieldWrapper fieldWrapper--check"><input checked="checked" class="fieldWrapper__input formblock-toggle-link" name="encumbrance_restriction" type="radio" value="encumbrance_restriction1" /><span class="fieldWrapper__checkInfo">Участники не имеют права накладывать обременение на принадлежащие им доли в проекте</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" data-target="participants no right" name="encumbrance_restriction" type="radio" value="encumbrance_restriction2" /><span class="fieldWrapper__checkInfo">Выбрать конкретных участников, которые не имеют права накладывать обременение на принадлежащие им доли</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" name="encumbrance_restriction" type="radio" value="encumbrance_restriction3" /><span class="fieldWrapper__checkInfo">Участники имеют права накладывать обременение на принадлежащие им доли в проекте только с письменного согласия остальных всех участников</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" data-target="participants no right without permission" name="encumbrance_restriction" type="radio" value="encumbrance_restriction4" /><span class="fieldWrapper__checkInfo">Выбрать конкретных участников, которые имеют права накладывать обременение на принадлежащие им доли в проекте третьим лицам только с письменного согласия других выбранных участников</span><span class="fieldWrapper__radioIcon"></span></label>
+                </div>
+              </div>
+              <div class="formblock-toggle-hidden" data-target="participants no right">
+                <div class="formBlock formBlock--aside">
+                  <div class="formBlock__title">
+                    Укажите участников, которые не имеют права на обременение
+                  </div>
+                  <div class="formBlockIn">
+                    <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="participants_no_right_encumbrance" type="checkbox" value="participants_no_right_encumbrance1" /><span class="fieldWrapper__checkInfo">Павел Гужиков</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="participants_no_right_encumbrance" type="checkbox" value="participants_no_right_encumbrance2" /><span class="fieldWrapper__checkInfo">Иван Ардинцев</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="participants_no_right_encumbrance" type="checkbox" value="participants_no_right_encumbrance3" /><span class="fieldWrapper__checkInfo">Владимир Путин</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="participants_no_right_encumbrance" type="checkbox" value="participants_no_right_encumbrance4" /><span class="fieldWrapper__checkInfo">Дмитрий Медведев</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="participants_no_right_encumbrance" type="checkbox" value="participants_no_right_encumbrance5" /><span class="fieldWrapper__checkInfo">Сергей Шойгу</span><span class="fieldWrapper__checkboxIcon"></span></label>
+                  </div>
+                </div>
+                <div class="formBlock formBlock--aside">
+                  <div class="formBlock__title">
+                    Укажите период действия ограничения
+                  </div>
+                  <div class="formBlockIn">
+                    <div class="formBlockWrapper formBlockWrapper--select">
+                      <div class="formBlock formBlock--2 formBlock--quantity">
+                        <span class="formBlock__quantityButton quantity-reduce"></span><label class="fieldWrapper"><input class="fieldWrapper__input field-quantity" name="" type="number" value="0" /></label><span class="formBlock__quantityButton formBlock__quantityButton--add quantity-add"></span>
+                      </div>
+                      <div class="formBlock formBlock--2">
+                        <label class="fieldWrapper"><select class="fieldWrapper__select form-select" placeholder="Выберите период">
+                            <option value="">
+                              Выберите период
+                            </option>
+                            <option selected="selected" value="1">
+                              Месяцев
+                            </option>
+                            <option value="2">
+                              Дней
+                            </option>
+                            <option value="3">
+                              Недель
+                            </option>
+                          </select></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="formBlock formBlock--aside">
+                  <div class="formBlock__title formBlock__title--indentTop">
+                    Иные договоренности<br /><span>(если есть)</span>
+                  </div>
+                  <div class="formBlockIn">
+                    <label class="fieldWrapper"><textarea class="fieldWrapper__input" name="participants_no_right_arrangements" placeholder="Введите иные договоренности"></textarea></label>
+                  </div>
+                </div>
+              </div>
+              <div class="formblock-toggle-hidden" data-target="participants no right without permission">
+                <div class="formBlock formBlock--aside field-related-container" data-related="participant">
+                  <div class="formBlock__title">
+                    Укажите участников, которым требуется разрешение
+                  </div>
+                  <div class="formBlockIn">
+                    <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input field-related" name="participants_no_right_without_permission_encumbrance" type="checkbox" value="participants_no_right_without_permission_encumbrance1" /><span class="fieldWrapper__checkInfo">Павел Гужиков</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input field-related" name="participants_no_right_without_permission_encumbrance" type="checkbox" value="participants_no_right_without_permission_encumbrance2" /><span class="fieldWrapper__checkInfo">Иван Ардинцев</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input field-related" name="participants_no_right_without_permission_encumbrance" type="checkbox" value="participants_no_right_without_permission_encumbrance3" /><span class="fieldWrapper__checkInfo">Владимир Путин</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input field-related" name="participants_no_right_without_permission_encumbrance" type="checkbox" value="participants_no_right_without_permission_encumbrance4" /><span class="fieldWrapper__checkInfo">Дмитрий Медведев</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input field-related" name="participants_no_right_without_permission_encumbrance" type="checkbox" value="participants_no_right_without_permission_encumbrance5" /><span class="fieldWrapper__checkInfo">Сергей Шойгу</span><span class="fieldWrapper__checkboxIcon"></span></label>
+                  </div>
+                </div>
+                <div class="formBlock formBlock--aside field-related-container" data-related="participant">
+                  <div class="formBlock__title">
+                    Укажите участников, чье разрешение требуется
+                  </div>
+                  <div class="formBlockIn">
+                    <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input field-related" name="participants_no_right_without_permission_encumbrance" type="checkbox" value="participants_no_right_without_permission_encumbrance1" /><span class="fieldWrapper__checkInfo">Павел Гужиков</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input field-related" name="participants_no_right_without_permission_encumbrance" type="checkbox" value="participants_no_right_without_permission_encumbrance2" /><span class="fieldWrapper__checkInfo">Иван Ардинцев</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input field-related" name="participants_no_right_without_permission_encumbrance" type="checkbox" value="participants_no_right_without_permission_encumbrance3" /><span class="fieldWrapper__checkInfo">Владимир Путин</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input field-related" name="participants_no_right_without_permission_encumbrance" type="checkbox" value="participants_no_right_without_permission_encumbrance4" /><span class="fieldWrapper__checkInfo">Дмитрий Медведев</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input field-related" name="participants_no_right_without_permission_encumbrance" type="checkbox" value="participants_no_right_without_permission_encumbrance5" /><span class="fieldWrapper__checkInfo">Сергей Шойгу</span><span class="fieldWrapper__checkboxIcon"></span></label>
+                  </div>
+                </div>
+                <div class="formBlock formBlock--aside">
+                  <div class="formBlock__title">
+                    Укажите период действия ограничения
+                  </div>
+                  <div class="formBlockIn">
+                    <div class="formBlockWrapper formBlockWrapper--select">
+                      <div class="formBlock formBlock--2 formBlock--quantity">
+                        <span class="formBlock__quantityButton quantity-reduce"></span><label class="fieldWrapper"><input class="fieldWrapper__input field-quantity" name="" type="number" value="0" /></label><span class="formBlock__quantityButton formBlock__quantityButton--add quantity-add"></span>
+                      </div>
+                      <div class="formBlock formBlock--2">
+                        <label class="fieldWrapper"><select class="fieldWrapper__select form-select" placeholder="Выберите период">
+                            <option value="">
+                              Выберите период
+                            </option>
+                            <option selected="selected" value="1">
+                              Месяцев
+                            </option>
+                            <option value="2">
+                              Дней
+                            </option>
+                            <option value="3">
+                              Недель
+                            </option>
+                          </select></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="formBlock formBlock--aside">
+                  <div class="formBlock__title formBlock__title--indentTop">
+                    Иные договоренности<br /><span>(если есть)</span>
+                  </div>
+                  <div class="formBlockIn">
+                    <label class="fieldWrapper"><textarea class="fieldWrapper__input" name="participants_no_right_without_permission_arrangements" placeholder="Введите иные договоренности"></textarea></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="buttonContainer buttonContainer--center">
+            <button class="buttonContainer__button linkButton linkButton--small" type="button">отменить</button><button class="buttonContainer__button linkButton linkButton--small linkButton--blue" type="submit">сохранить</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+  <script src="../js/app.js"></script>
+</html>
