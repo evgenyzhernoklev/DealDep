@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0" name="viewport" />
+    <title>Forms - accession right</title>
+    <meta content="" name="description" />
+    <link href="../css/app.css" media="all" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="header header--border">
+      <div class="headerIn">
+        <div class="contentIn">
+          <a class="header__logo icon icon--logo" href="/"></a>
+          <h1 class="header__title">
+            Новая договоренность
+          </h1>
+          <a class="header__close icon icon--close" href="#"></a>
+        </div>
+      </div>
+    </div>
+    <section class="addProjectSection">
+      <div class="contentIn">
+        <div class="addProject">
+          <div class="addProjectAbout">
+            <div class="addProjectAbout__title">
+              Право присоединения к продаже долей проекта
+            </div>
+            <div class="addProjectAbout__info">
+              Договоренности об ограничениях участниковна отчуждение долей проекта в пользу третьих лиц
+            </div>
+          </div>
+        </div>
+        <form class="form form--content">
+          <div class="formIn">
+            <div class="formContent">
+              <div class="formBlock formBlock--aside">
+                <div class="formBlock__title">
+                  Выберите участников, продающие свои доли в пользу третьих лиц
+                </div>
+                <div class="formBlockIn">
+                  <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="participants_sell_shares" type="checkbox" value="participants_sell_shares1" /><span class="fieldWrapper__checkInfo">Павел Гужиков</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="participants_sell_shares" type="checkbox" value="participants_sell_shares2" /><span class="fieldWrapper__checkInfo">Иван Ардинцев</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="participants_sell_shares" type="checkbox" value="participants_sell_shares3" /><span class="fieldWrapper__checkInfo">Владимир Путин</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="participants_sell_shares" type="checkbox" value="participants_sell_shares4" /><span class="fieldWrapper__checkInfo">Дмитрий Медведев</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="participants_sell_shares" type="checkbox" value="participants_sell_shares5" /><span class="fieldWrapper__checkInfo">Сергей Шойгу</span><span class="fieldWrapper__checkboxIcon"></span></label>
+                </div>
+              </div>
+              <div class="formBlock formBlock--aside">
+                <div class="formBlock__title">
+                  Выберите участников (присоединяющихся), которым предлагается продать свои доли на тех же условиях, что и участники выше
+                </div>
+                <div class="formBlockIn">
+                  <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="participants_offer_sell_shares" type="checkbox" value="participants_offer_sell_shares1" /><span class="fieldWrapper__checkInfo">Павел Гужиков</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="participants_offer_sell_shares" type="checkbox" value="participants_offer_sell_shares2" /><span class="fieldWrapper__checkInfo">Иван Ардинцев</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="participants_offer_sell_shares" type="checkbox" value="participants_offer_sell_shares3" /><span class="fieldWrapper__checkInfo">Владимир Путин</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="participants_offer_sell_shares" type="checkbox" value="participants_offer_sell_shares4" /><span class="fieldWrapper__checkInfo">Дмитрий Медведев</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="participants_offer_sell_shares" type="checkbox" value="participants_offer_sell_shares5" /><span class="fieldWrapper__checkInfo">Сергей Шойгу</span><span class="fieldWrapper__checkboxIcon"></span></label>
+                </div>
+              </div>
+              <formBlock class="formBlock--aside">
+                <div class="formBlock__title">
+                  Укажите период действия ограничения
+                </div>
+                <div class="formBlockIn">
+                  <div class="formBlockWrapper formBlockWrapper--select">
+                    <div class="formBlock formBlock--2 formBlock--quantity">
+                      <span class="formBlock__quantityButton quantity-reduce"></span><label class="fieldWrapper"><input class="fieldWrapper__input field-quantity" name="" type="number" value="0" /></label><span class="formBlock__quantityButton formBlock__quantityButton--add quantity-add"></span>
+                    </div>
+                    <div class="formBlock formBlock--2">
+                      <label class="fieldWrapper"><select class="fieldWrapper__select form-select" placeholder="Выберите период">
+                          <option value="">
+                            Выберите период
+                          </option>
+                          <option selected="selected" value="1">
+                            Месяцев
+                          </option>
+                          <option value="2">
+                            Дней
+                          </option>
+                          <option value="3">
+                            Недель
+                          </option>
+                        </select></label>
+                    </div>
+                  </div>
+                </div>
+              </formBlock>
+              <div class="formBlock formBlock--aside">
+                <div class="formBlock__title formBlock__title--indentTop">
+                  Иные договоренности<br /><span>(если есть)</span>
+                </div>
+                <div class="formBlockIn">
+                  <label class="fieldWrapper"><textarea class="fieldWrapper__input" name="participants_sell_shares_arrangements" placeholder="Введите иные договоренности"></textarea></label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="buttonContainer buttonContainer--center">
+            <button class="buttonContainer__button linkButton linkButton--small" type="button">отменить</button><button class="buttonContainer__button linkButton linkButton--small linkButton--blue" type="submit">сохранить</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+  <script src="../js/app.js"></script>
+</html>
