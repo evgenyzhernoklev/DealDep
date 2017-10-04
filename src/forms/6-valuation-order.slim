@@ -1,0 +1,66 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta http-equiv="X-UA-Compatible" content="IE=edge"
+    meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0"
+    title Forms - valuation order
+    meta name="description" content=""
+    link rel="stylesheet" media="all" href="../css/app.css"
+  body
+
+    .header.header--border
+      .headerIn
+        .contentIn
+          a.header__logo.icon.icon--logo href="/"
+          h1.header__title Новая договоренность
+          a.header__close.icon.icon--close href="#"
+
+    section.addProjectSection
+      .contentIn
+
+        .addProject
+          .addProjectAbout
+            .addProjectAbout__title Порядок оценки стоимости бизнеса
+
+        form.form.form--content
+          .formIn
+            .formContent
+
+              .formBlock.formBlock--aside
+                .formBlock__title Выберите формулу для оценки текущей стоимости проекта
+                .formBlockIn
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input.formblock-toggle-link type="radio" name="valuation_formula" value="valuation_formula1" checked="checked"
+                    span.fieldWrapper__checkInfo V (оценка) = К (договорной коэффициент, мультипликатор) * EBITDA за последние 12 месяцев
+                    span.fieldWrapper__radioIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input.formblock-toggle-link type="radio" name="valuation_formula" value="valuation_formula2"
+                    span.fieldWrapper__checkInfo V (оценка) = К (договорной коэффициент, мультипликатор) * REVENUE за последние 12 месяцев
+                    span.fieldWrapper__radioIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input.formblock-toggle-link type="radio" name="valuation_formula" value="valuation_formula3"
+                    span.fieldWrapper__checkInfo V (оценка) = С (количество платящих клиентов) * S (цена за одного платящего клиента)
+                    span.fieldWrapper__radioIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input.formblock-toggle-link data-target="custom formula" type="radio" name="valuation_formula" value="valuation_formula4"
+                    span.fieldWrapper__checkInfo Указать свою
+                    span.fieldWrapper__radioIcon
+
+              .formBlock.formBlock--aside.formblock-toggle-hidden data-target="custom formula"
+                .formBlock__title.formBlock__title--indentTop Введите свою формулу оценки текущей стоимости проекта
+                .formBlockIn
+                  label.fieldWrapper
+                    textarea.fieldWrapper__input name="custom_formula" placeholder="Введите формулу"
+
+
+
+
+
+          .buttonContainer.buttonContainer--center
+            button.buttonContainer__button.linkButton.linkButton--small type="button" отменить
+            button.buttonContainer__button.linkButton.linkButton--small.linkButton--blue type="submit" сохранить
+
+
+
+  script src="../js/app.js"
