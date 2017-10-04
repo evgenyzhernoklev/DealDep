@@ -84,6 +84,12 @@ a {
   line-height: 29px;
 }
 
+.subtitleMain {
+  position: relative;
+  font: 20px/29px $circe-bold;
+  color: $black;
+}
+
 .contentIn {
   position: relative;
   max-width: 1000px;

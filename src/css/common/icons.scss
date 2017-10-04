@@ -115,6 +115,10 @@
   @include background-image(docs_add, 10px, 12px);
 }
 
+.icon--docs_add_white {
+  @include background-image(docs_add_white, 10px, 12px);
+}
+
 .icon--print {
   @include background-image(print, 14px, 12px);
 }

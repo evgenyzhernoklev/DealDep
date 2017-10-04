@@ -1,7 +1,9 @@
 /*
  * Third party
  */
+
 //= ../../node_modules/jquery/dist/jquery.min.js
+
 
 
 /*
@@ -21,6 +23,7 @@
 //= ./lib/tooltip.js
 //= ./lib/popups.js
 
+//= ./piechart.js
 //= ./project_add.js
 //= ./arrangement.js
 //= ./viewer.js
