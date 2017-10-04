@@ -233,7 +233,6 @@ Forms.prototype.toggleHiddenBlock = function (e) {
       $target = $(e.target),
       targetType = $target.attr('type'),
       targetData = $target.data('target'),
-      isChecked = $target.prop('checked'),
       $targetBlock = this.hiddenBlocks.filter(function() {
         return $(this).data('target') == targetData;
       });
@@ -244,58 +243,25 @@ Forms.prototype.toggleHiddenBlock = function (e) {
   }
 
   if (targetType == 'radio') {
-    var $siblings = $target
-      .closest('.formBlock')
-      .find('.formblock-toggle-link');
+    var $siblings = $target.closest('.formBlock').find('.formblock-toggle-link'),
+        $siblingsWithHiddenBlock = $siblings.filter(function() {
+          return $(this).data('target');
+        });
 
-    var $siblingsWithHiddenBlock = $siblings.filter(function() {
-      return $(this).data('target');
+    $siblingsWithHiddenBlock.each(function() {
+      var currentData = $(this).data('target');
+
+      self.hiddenBlocks.each(function() {
+        if ($(this).data('target') == currentData) {
+          $(this).stop().slideUp();
+        }
+      });
     });
 
-    console.log($siblingsWithHiddenBlock);
-
-    // $siblingsWithHiddenBlock.each(function() {
-    //   var $currentHiddenBlocks =
-    // });
-
-    // $siblingsWithHiddenBlock.each(function() {
-    //   var targetDataClose = $(this).data('target');
-    //
-    //   self.hiddenBlocks.each(function() {
-    //     var hiddenBlockData = $(this).data('target');
-    //
-    //     if (hiddenBlockData == targetDataClose) {
-    //       $(this).stop().slideDown();
-    //     } else {
-    //       $(this).stop().slideUp();
-    //     }
-    //   });
-    // });
+    if (targetData) {
+      $targetBlock.stop().slideDown();
+    }
   }
-
-
-
-
-  // console.log($target.attr('type'));
-
-  // if ($targetBlock.length) {
-  //   $targetBlock.stop().slideToggle();
-  // } else {
-  //   $target
-  //     .closest('.formBlock')
-  //     .find('.formblock-toggle-link')
-  //     .each(function() {
-  //       var targetDataClose = $(this).data('target'),
-  //           $closeTargetBlock;
-  //
-  //       if (targetDataClose) {
-  //         $closeTargetBlock = self.hiddenBlocks.filter(function() {
-  //           return $(this).data('target') == targetDataClose;
-  //         });
-  //         $closeTargetBlock.stop().slideUp();
-  //       }
-  //     });
-  // }
 };
 
 Forms.prototype.quantityReduce = function (e) {
