@@ -236,7 +236,24 @@ Forms.prototype.toggleHiddenBlock = function (e) {
         return $(this).data('target') == targetData;
       });
 
-  $targetBlock.stop().slideToggle();
+  var self = this;
+
+  if ($targetBlock.length) {
+    $targetBlock.stop().slideToggle();
+  } else {
+    var $siblings = $target.closest('.formBlock').find('.formblock-toggle-link');
+
+    $siblings.each(function() {
+      var closeTargetData = $(this).data('target');
+      var $closeTargetBlock = self.hiddenBlocks.filter(function() {
+        return $(this).data('target') == closeTargetData;
+      });
+
+      $closeTargetBlock.stop().slideUp();
+
+    });
+  }
+
 };
 
 Forms.prototype.quantityReduce = function (e) {
@@ -270,4 +287,4 @@ Forms.prototype.checkQuantityField = function () {
   }
 
   $(this).val(value);
-}
+};
