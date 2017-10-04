@@ -1,0 +1,110 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta http-equiv="X-UA-Compatible" content="IE=edge"
+    meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0"
+    title Forms - participants competition
+    meta name="description" content=""
+    link rel="stylesheet" media="all" href="../css/app.css"
+  body
+
+    .header.header--border
+      .headerIn
+        .contentIn
+          a.header__logo.icon.icon--logo href="/"
+          h1.header__title Новая договоренность
+          a.header__close.icon.icon--close href="#"
+
+    section.addProjectSection
+      .contentIn
+
+        .addProject
+          .addProjectAbout
+            .addProjectAbout__title Вопросы конкуренции участников
+            .addProjectAbout__info
+              | Договоренности об ограничении конкуренции участников между собой
+
+        form.form.form--content
+          .formIn
+            .formContent
+
+              .formBlock.formBlock--aside
+                .formBlock__title Укажите участников, которые обязуются не конкурировать
+                .formBlockIn
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="checkbox" name="participants_no_competition" value="participants_no_competition1"
+                    span.fieldWrapper__checkInfo Павел Гужиков
+                    span.fieldWrapper__checkboxIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="checkbox" name="participants_no_competition" value="participants_no_competition2"
+                    span.fieldWrapper__checkInfo Иван Ардинцев
+                    span.fieldWrapper__checkboxIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="checkbox" name="participants_no_competition" value="participants_no_competition3"
+                    span.fieldWrapper__checkInfo Владимир Путин
+                    span.fieldWrapper__checkboxIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="checkbox" name="participants_no_competition" value="participants_no_competition4"
+                    span.fieldWrapper__checkInfo Дмитрий Медведев
+                    span.fieldWrapper__checkboxIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="checkbox" name="participants_no_competition" value="participants_no_competition5"
+                    span.fieldWrapper__checkInfo Сергей Шойгу
+                    span.fieldWrapper__checkboxIcon
+
+              .formBlock.formBlock--aside
+                .formBlock__title Выберите ограничения конкуренции
+                .formBlockIn
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="checkbox" name="competition_restriction" value="competition_restriction1"
+                    span.fieldWrapper__checkInfo Не осуществлять деятельность, конкурирующую с основной деятельностью проекта
+                    span.fieldWrapper__checkboxIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="checkbox" name="competition_restriction" value="competition_restriction2"
+                    span.fieldWrapper__checkInfo Не приобретать акции, доли в уставном капитале и/или иные права участия в юридических лицах/проектах, осуществляющих деятельность, конкурирующую с основной деятельностью проекта
+                    span.fieldWrapper__checkboxIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="checkbox" name="competition_restriction" value="competition_restriction3"
+                    span.fieldWrapper__checkInfo Не вступать в трудовые отношения с юридическими лицами/проектами, осуществляющими деятельность, конкурирующую с основной деятельностью проекта, а также не оказывать таким юридическим лицам/проектам какие-либо услуги (не выполнять для них работы)
+                    span.fieldWrapper__checkboxIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="checkbox" name="competition_restriction" value="competition_restriction4"
+                    span.fieldWrapper__checkInfo Не осуществлять действия, направленные на прекращение работниками проекта и (или) лицами, выполняющими работы (оказывающими услуги) для проекта, трудовых и (или) гражданско-правовых отношений с проектом
+                    span.fieldWrapper__checkboxIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="checkbox" name="competition_restriction" value="competition_restriction5"
+                    span.fieldWrapper__checkInfo Не финансировать любым способом проекты/юридические лица, конкурирующие с основной деятельностью проекта
+                    span.fieldWrapper__checkboxIcon
+
+              formBlock.formBlock--aside
+                .formBlock__title Укажите период действия ограничения
+                .formBlockIn
+                  .formBlockWrapper.formBlockWrapper--select
+                    .formBlock.formBlock--2.formBlock--quantity.formBlock--mb
+                      span.formBlock__quantityButton.quantity-reduce
+                      label.fieldWrapper
+                        input.fieldWrapper__input.field-quantity type="number" name="" value="0"
+                      span.formBlock__quantityButton.formBlock__quantityButton--add.quantity-add
+                    .formBlock.formBlock--2
+            					label.fieldWrapper
+            						select.fieldWrapper__select.form-select placeholder="Выберите период"
+            							option value="" Выберите период
+            							option value="1" selected="selected" Месяцев
+            							option value="2" Дней
+            							option value="3" Недель
+
+              .formBlock.formBlock--aside
+                .formBlock__title.formBlock__title--indentTop
+                  | Стороны договорились о следующей формулировке основной деятельности проекта
+                .formBlockIn
+                  label.fieldWrapper
+                    textarea.fieldWrapper__input name="project_formulation" placeholder="Введите формулировку деятельности проекта"
+
+          .buttonContainer.buttonContainer--center
+            button.buttonContainer__button.linkButton.linkButton--small type="button" отменить
+            button.buttonContainer__button.linkButton.linkButton--small.linkButton--blue type="submit" сохранить
+
+
+
+  script src="../js/app.js"
