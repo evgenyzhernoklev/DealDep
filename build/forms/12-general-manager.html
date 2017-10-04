@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0" name="viewport" />
+    <title>Forms - general manager</title>
+    <meta content="" name="description" />
+    <link href="../css/app.css" media="all" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="header header--border">
+      <div class="headerIn">
+        <div class="contentIn">
+          <a class="header__logo icon icon--logo" href="/"></a>
+          <h1 class="header__title">
+            Новая договоренность
+          </h1>
+          <a class="header__close icon icon--close" href="#"></a>
+        </div>
+      </div>
+    </div>
+    <section class="addProjectSection">
+      <div class="contentIn">
+        <div class="addProject">
+          <div class="addProjectAbout">
+            <div class="addProjectAbout__title">
+              Генеральный директор
+            </div>
+          </div>
+        </div>
+        <form class="form form--content">
+          <div class="formIn">
+            <div class="formContent">
+              <div class="formBlock formBlock--aside">
+                <div class="formBlock__title">
+                  Полномочия генерального директора (какие вопросы решает генеральный директор)
+                </div>
+                <div class="formBlockIn">
+                  <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="general_director_powers" type="checkbox" value="general_director_powers1" /><span class="fieldWrapper__checkInfo">Утверждение бизнес-плана</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="general_director_powers" type="checkbox" value="general_director_powers2" /><span class="fieldWrapper__checkInfo">Утверждение бюджета</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="general_director_powers" type="checkbox" value="general_director_powers3" /><span class="fieldWrapper__checkInfo">Назначение/увольнение директора проекта</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="general_director_powers" type="checkbox" value="general_director_powers4" /><span class="fieldWrapper__checkInfo">Решения о создании/ликвидации дочерних компаний проекта</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="general_director_powers" type="checkbox" value="general_director_powers5" /><span class="fieldWrapper__checkInfo">Назначение/увольнение директоров дочерних компаний</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="general_director_powers" type="checkbox" value="general_director_powers5" /><span class="fieldWrapper__checkInfo">Решения о распределении чистой прибыли</span><span class="fieldWrapper__checkboxIcon"></span></label>
+                </div>
+              </div>
+              <div class="formBlock formBlock--aside">
+                <div class="formBlock__title">
+                  Кто назначает (утверждает) генерального директора?
+                </div>
+                <div class="formBlockIn">
+                  <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="general_director_approval" type="checkbox" value="general_director_approval1" /><span class="fieldWrapper__checkInfo">Совет директров</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="general_director_approval" type="checkbox" value="general_director_approval2" /><span class="fieldWrapper__checkInfo">Собрание участников</span><span class="fieldWrapper__checkboxIcon"></span></label>
+                </div>
+              </div>
+              <div class="formBlock formBlock--aside">
+                <div class="formBlock__title">
+                  Кто предлагает кандидатуру генерального директора?
+                </div>
+                <div class="formBlockIn">
+                  <label class="fieldWrapper fieldWrapper--check"><input checked="checked" class="fieldWrapper__input formblock-toggle-link" name="who_offers_general_manager" type="radio" value="who_offers_general_manager1" /><span class="fieldWrapper__checkInfo">Любой участник</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" data-target="who offers general manager" name="who_offers_general_manager" type="radio" value="who_offers_general_manager2" /><span class="fieldWrapper__checkInfo">Конкретные участники</span><span class="fieldWrapper__radioIcon"></span></label>
+                </div>
+              </div>
+              <div class="formBlock formBlock--aside formblock-toggle-hidden" data-target="who offers general manager">
+                <div class="formBlock__title">
+                  Выберите участников, которые могут предлагать кандидатуру генерального директора
+                </div>
+                <div class="formBlockIn">
+                  <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="person_offers_general_manager" type="checkbox" value="person_offers_general_manager1" /><span class="fieldWrapper__checkInfo">Павел Гужиков</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="person_offers_general_manager" type="checkbox" value="person_offers_general_manager2" /><span class="fieldWrapper__checkInfo">Иван Ардинцев</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="person_offers_general_manager" type="checkbox" value="person_offers_general_manager3" /><span class="fieldWrapper__checkInfo">Владимир Путин</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="person_offers_general_manager" type="checkbox" value="person_offers_general_manager4" /><span class="fieldWrapper__checkInfo">Дмитрий Медведев</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="person_offers_general_manager" type="checkbox" value="person_offers_general_manager5" /><span class="fieldWrapper__checkInfo">Сергей Шойгу</span><span class="fieldWrapper__checkboxIcon"></span></label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="buttonContainer buttonContainer--center">
+            <button class="buttonContainer__button linkButton linkButton--small" type="button">отменить</button><button class="buttonContainer__button linkButton linkButton--small linkButton--blue" type="submit">сохранить</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+  <script src="../js/app.js"></script>
+</html>

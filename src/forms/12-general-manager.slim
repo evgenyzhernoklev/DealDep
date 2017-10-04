@@ -1,0 +1,112 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta http-equiv="X-UA-Compatible" content="IE=edge"
+    meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0"
+    title Forms - general manager
+    meta name="description" content=""
+    link rel="stylesheet" media="all" href="../css/app.css"
+  body
+
+    .header.header--border
+      .headerIn
+        .contentIn
+          a.header__logo.icon.icon--logo href="/"
+          h1.header__title Новая договоренность
+          a.header__close.icon.icon--close href="#"
+
+    section.addProjectSection
+      .contentIn
+
+        .addProject
+          .addProjectAbout
+            .addProjectAbout__title Генеральный директор
+
+        form.form.form--content
+          .formIn
+            .formContent
+
+              .formBlock.formBlock--aside
+                .formBlock__title Полномочия генерального директора (какие вопросы решает генеральный директор)
+                .formBlockIn
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="checkbox" name="general_director_powers" value="general_director_powers1"
+                    span.fieldWrapper__checkInfo Утверждение бизнес-плана
+                    span.fieldWrapper__checkboxIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="checkbox" name="general_director_powers" value="general_director_powers2"
+                    span.fieldWrapper__checkInfo Утверждение бюджета
+                    span.fieldWrapper__checkboxIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="checkbox" name="general_director_powers" value="general_director_powers3"
+                    span.fieldWrapper__checkInfo Назначение/увольнение директора проекта
+                    span.fieldWrapper__checkboxIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="checkbox" name="general_director_powers" value="general_director_powers4"
+                    span.fieldWrapper__checkInfo Решения о создании/ликвидации дочерних компаний проекта
+                    span.fieldWrapper__checkboxIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="checkbox" name="general_director_powers" value="general_director_powers5"
+                    span.fieldWrapper__checkInfo Назначение/увольнение директоров дочерних компаний
+                    span.fieldWrapper__checkboxIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="checkbox" name="general_director_powers" value="general_director_powers5"
+                    span.fieldWrapper__checkInfo Решения о распределении чистой прибыли
+                    span.fieldWrapper__checkboxIcon
+
+              .formBlock.formBlock--aside
+                .formBlock__title Кто назначает (утверждает) генерального директора?
+                .formBlockIn
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="checkbox" name="general_director_approval" value="general_director_approval1"
+                    span.fieldWrapper__checkInfo Совет директров
+                    span.fieldWrapper__checkboxIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="checkbox" name="general_director_approval" value="general_director_approval2"
+                    span.fieldWrapper__checkInfo Собрание участников
+                    span.fieldWrapper__checkboxIcon
+
+              .formBlock.formBlock--aside
+                .formBlock__title Кто предлагает кандидатуру генерального директора?
+                .formBlockIn
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input.formblock-toggle-link type="radio" name="who_offers_general_manager" value="who_offers_general_manager1" checked="checked"
+                    span.fieldWrapper__checkInfo Любой участник
+                    span.fieldWrapper__radioIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input.formblock-toggle-link data-target="who offers general manager" type="radio" name="who_offers_general_manager" value="who_offers_general_manager2"
+                    span.fieldWrapper__checkInfo Конкретные участники
+                    span.fieldWrapper__radioIcon
+
+              .formBlock.formBlock--aside.formblock-toggle-hidden data-target="who offers general manager"
+                .formBlock__title Выберите участников, которые могут предлагать кандидатуру генерального директора
+                .formBlockIn
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="checkbox" name="person_offers_general_manager" value="person_offers_general_manager1"
+                    span.fieldWrapper__checkInfo Павел Гужиков
+                    span.fieldWrapper__checkboxIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="checkbox" name="person_offers_general_manager" value="person_offers_general_manager2"
+                    span.fieldWrapper__checkInfo Иван Ардинцев
+                    span.fieldWrapper__checkboxIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="checkbox" name="person_offers_general_manager" value="person_offers_general_manager3"
+                    span.fieldWrapper__checkInfo Владимир Путин
+                    span.fieldWrapper__checkboxIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="checkbox" name="person_offers_general_manager" value="person_offers_general_manager4"
+                    span.fieldWrapper__checkInfo Дмитрий Медведев
+                    span.fieldWrapper__checkboxIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="checkbox" name="person_offers_general_manager" value="person_offers_general_manager5"
+                    span.fieldWrapper__checkInfo Сергей Шойгу
+                    span.fieldWrapper__checkboxIcon
+
+          .buttonContainer.buttonContainer--center
+            button.buttonContainer__button.linkButton.linkButton--small type="button" отменить
+            button.buttonContainer__button.linkButton.linkButton--small.linkButton--blue type="submit" сохранить
+
+
+
+  script src="../js/app.js"
