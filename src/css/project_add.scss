@@ -83,17 +83,18 @@
 
 // project about info
 .addProjectAbout {
-  max-width: 480px;
-  margin: 0 auto;
   text-align: center;
 }
 
 .addProjectAbout__title {
-  margin-bottom: 15px;
+  max-width: 500px;
+  margin: 0 auto 15px;
   font: 20px/29px $circe-bold;
 }
 
 .addProjectAbout__info {
+  max-width: 480px;
+  margin: 0 auto;
   font-size: 14px;
   color: #797979;
 }

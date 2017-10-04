@@ -15,12 +15,8 @@
 .fieldWrapper__checkInfo {
   font-size: 14px;
   line-height: 20px;
-  color: #9C9C9C;
+  color: $black;
   transition: color $transition-normal;
-
-  .fieldWrapper__input:checked ~ & {
-    color: $black;
-  }
 }
 
 .fieldWrapper__radioIcon {

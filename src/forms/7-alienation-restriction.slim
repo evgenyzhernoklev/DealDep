@@ -1,0 +1,190 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta http-equiv="X-UA-Compatible" content="IE=edge"
+    meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0"
+    title Forms - alienation restriction
+    meta name="description" content=""
+    link rel="stylesheet" media="all" href="../css/app.css"
+  body
+
+    .header.header--border
+      .headerIn
+        .contentIn
+          a.header__logo.icon.icon--logo href="/"
+          h1.header__title Новая договоренность
+          a.header__close.icon.icon--close href="#"
+
+    section.addProjectSection
+      .contentIn
+
+        .addProject
+          .addProjectAbout
+            .addProjectAbout__title Ограничение на отчуждение участниками своих долей
+            .addProjectAbout__info
+              | Договоренности об ограничениях участников на отчуждение
+              |  долей проекта в пользу третьих лиц
+
+        form.form.form--content
+          .formIn
+            .formContent
+
+              .formBlock.formBlock--aside
+                .formBlock__title Какие ограничениях участников будут действовать на отчуждение долей проекта в пользу третьих лиц?
+                .formBlockIn
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input.formblock-toggle-link type="radio" name="alienation_restriction" value="alienation_restriction1" checked="checked"
+                    span.fieldWrapper__checkInfo Все участники не имеют права отчуждать принадлежащие им доли в проекте третьим лицам
+                    span.fieldWrapper__radioIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input.formblock-toggle-link data-target="participants no right" type="radio" name="alienation_restriction" value="alienation_restriction2"
+                    span.fieldWrapper__checkInfo Выбрать конкретных участников, которые не имеют права отчуждать принадлежащие им доли в проекте третьим лицам
+                    span.fieldWrapper__radioIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input.formblock-toggle-link type="radio" name="alienation_restriction" value="alienation_restriction3"
+                    span.fieldWrapper__checkInfo Участники имеют права отчуждать принадлежащие им доли в проекте третьим лицам только с письменного согласия остальных всех участников
+                    span.fieldWrapper__radioIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input.formblock-toggle-link data-target="participants no right without permission" type="radio" name="alienation_restriction" value="alienation_restriction4"
+                    span.fieldWrapper__checkInfo Выбрать конкретных участников, которые не имеют права отчуждать принадлежащие им доли в проекте третьим лицам без письменного согласия других выбранных участников
+                    span.fieldWrapper__radioIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input.formblock-toggle-link type="radio" name="alienation_restriction" value="alienation_restriction5"
+                    span.fieldWrapper__checkInfo Участники не имеют права отчуждать принадлежащие им доли по безвозмездным сделкам (например, дарение)
+                    span.fieldWrapper__radioIcon
+
+              .formblock-toggle-hidden data-target="participants no right"
+                .formBlock.formBlock--aside
+                  .formBlock__title Укажите участников, которые не имеют права на отчуждение
+                  .formBlockIn
+                    label.fieldWrapper.fieldWrapper--check
+                      input.fieldWrapper__input type="checkbox" name="participants_no_right_alienation" value="participants_no_right_alienation1"
+                      span.fieldWrapper__checkInfo Павел Гужиков
+                      span.fieldWrapper__checkboxIcon
+                    label.fieldWrapper.fieldWrapper--check
+                      input.fieldWrapper__input type="checkbox" name="participants_no_right_alienation" value="participants_no_right_alienation2"
+                      span.fieldWrapper__checkInfo Иван Ардинцев
+                      span.fieldWrapper__checkboxIcon
+                    label.fieldWrapper.fieldWrapper--check
+                      input.fieldWrapper__input type="checkbox" name="participants_no_right_alienation" value="participants_no_right_alienation3"
+                      span.fieldWrapper__checkInfo Владимир Путин
+                      span.fieldWrapper__checkboxIcon
+                    label.fieldWrapper.fieldWrapper--check
+                      input.fieldWrapper__input type="checkbox" name="participants_no_right_alienation" value="participants_no_right_alienation4"
+                      span.fieldWrapper__checkInfo Дмитрий Медведев
+                      span.fieldWrapper__checkboxIcon
+                    label.fieldWrapper.fieldWrapper--check
+                      input.fieldWrapper__input type="checkbox" name="participants_no_right_alienation" value="participants_no_right_alienation5"
+                      span.fieldWrapper__checkInfo Сергей Шойгу
+                      span.fieldWrapper__checkboxIcon
+                .formBlock.formBlock--aside
+                  .formBlock__title Укажите период действия ограничения
+                  .formBlockIn
+                    .formBlockWrapper.formBlockWrapper--select
+                      .formBlock.formBlock--2.formBlock--quantity
+                        span.formBlock__quantityButton.quantity-reduce
+                        label.fieldWrapper
+                          input.fieldWrapper__input.field-quantity type="number" name="" value="0"
+                        span.formBlock__quantityButton.formBlock__quantityButton--add.quantity-add
+                      .formBlock.formBlock--2
+              					label.fieldWrapper
+              						select.fieldWrapper__select.form-select placeholder="Выберите период"
+              							option value="" Выберите период
+              							option value="1" selected="selected" Месяцев
+              							option value="2" Дней
+              							option value="3" Недель
+                .formBlock.formBlock--aside
+                  .formBlock__title.formBlock__title--indentTop
+                    | Иные договоренности
+                    br
+                    span
+                      | (если есть)
+                  .formBlockIn
+                    label.fieldWrapper
+                      textarea.fieldWrapper__input name="participants_no_right_arrangements" placeholder="Введите иные договоренности"
+
+              .formblock-toggle-hidden data-target="participants no right without permission"
+                .formBlock.formBlock--aside
+                  .formBlock__title Укажите участников, которым требуется письменное согласие
+                  .formBlockIn
+                    label.fieldWrapper.fieldWrapper--check
+                      input.fieldWrapper__input type="checkbox" name="participants_no_right_without_permission_alienation" value="participants_no_right_without_permission_alienation1"
+                      span.fieldWrapper__checkInfo Павел Гужиков
+                      span.fieldWrapper__checkboxIcon
+                    label.fieldWrapper.fieldWrapper--check
+                      input.fieldWrapper__input type="checkbox" name="participants_no_right_without_permission_alienation" value="participants_no_right_without_permission_alienation2"
+                      span.fieldWrapper__checkInfo Иван Ардинцев
+                      span.fieldWrapper__checkboxIcon
+                    label.fieldWrapper.fieldWrapper--check
+                      input.fieldWrapper__input type="checkbox" name="participants_no_right_without_permission_alienation" value="participants_no_right_without_permission_alienation3"
+                      span.fieldWrapper__checkInfo Владимир Путин
+                      span.fieldWrapper__checkboxIcon
+                    label.fieldWrapper.fieldWrapper--check
+                      input.fieldWrapper__input type="checkbox" name="participants_no_right_without_permission_alienation" value="participants_no_right_without_permission_alienation4"
+                      span.fieldWrapper__checkInfo Дмитрий Медведев
+                      span.fieldWrapper__checkboxIcon
+                    label.fieldWrapper.fieldWrapper--check
+                      input.fieldWrapper__input type="checkbox" name="participants_no_right_without_permission_alienation" value="participants_no_right_without_permission_alienation5"
+                      span.fieldWrapper__checkInfo Сергей Шойгу
+                      span.fieldWrapper__checkboxIcon
+                .formBlock.formBlock--aside
+                  .formBlock__title Укажите участников, чье письменное согласие требуется
+                  .formBlockIn
+                    label.fieldWrapper.fieldWrapper--check
+                      input.fieldWrapper__input type="checkbox" name="participants_no_right_without_permission_alienation" value="participants_no_right_without_permission_alienation1"
+                      span.fieldWrapper__checkInfo Павел Гужиков
+                      span.fieldWrapper__checkboxIcon
+                    label.fieldWrapper.fieldWrapper--check
+                      input.fieldWrapper__input type="checkbox" name="participants_no_right_without_permission_alienation" value="participants_no_right_without_permission_alienation2"
+                      span.fieldWrapper__checkInfo Иван Ардинцев
+                      span.fieldWrapper__checkboxIcon
+                    label.fieldWrapper.fieldWrapper--check
+                      input.fieldWrapper__input type="checkbox" name="participants_no_right_without_permission_alienation" value="participants_no_right_without_permission_alienation3"
+                      span.fieldWrapper__checkInfo Владимир Путин
+                      span.fieldWrapper__checkboxIcon
+                    label.fieldWrapper.fieldWrapper--check
+                      input.fieldWrapper__input type="checkbox" name="participants_no_right_without_permission_alienation" value="participants_no_right_without_permission_alienation4"
+                      span.fieldWrapper__checkInfo Дмитрий Медведев
+                      span.fieldWrapper__checkboxIcon
+                    label.fieldWrapper.fieldWrapper--check
+                      input.fieldWrapper__input type="checkbox" name="participants_no_right_without_permission_alienation" value="participants_no_right_without_permission_alienation5"
+                      span.fieldWrapper__checkInfo Сергей Шойгу
+                      span.fieldWrapper__checkboxIcon
+                .formBlock.formBlock--aside
+                  .formBlock__title Укажите период действия ограничения
+                  .formBlockIn
+                    .formBlockWrapper.formBlockWrapper--select
+                      .formBlock.formBlock--2.formBlock--quantity
+                        span.formBlock__quantityButton.quantity-reduce
+                        label.fieldWrapper
+                          input.fieldWrapper__input.field-quantity type="number" name="" value="0"
+                        span.formBlock__quantityButton.formBlock__quantityButton--add.quantity-add
+                      .formBlock.formBlock--2
+              					label.fieldWrapper
+              						select.fieldWrapper__select.form-select placeholder="Выберите период"
+              							option value="" Выберите период
+              							option value="1" selected="selected" Месяцев
+              							option value="2" Дней
+              							option value="3" Недель
+                .formBlock.formBlock--aside
+                  .formBlock__title.formBlock__title--indentTop
+                    | Иные договоренности
+                    br
+                    span
+                      | (если есть)
+                  .formBlockIn
+                    label.fieldWrapper
+                      textarea.fieldWrapper__input name="participants_no_right_without_permission_arrangements" placeholder="Введите иные договоренности"
+
+
+
+
+
+          .buttonContainer.buttonContainer--center
+            button.buttonContainer__button.linkButton.linkButton--small type="button" отменить
+            button.buttonContainer__button.linkButton.linkButton--small.linkButton--blue type="submit" сохранить
+
+
+
+  script src="../js/app.js"
