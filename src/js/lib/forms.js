@@ -2,6 +2,7 @@ var Forms = function() {
   this.body = $('body');
   this.select = $('.form-select');
   this.hiddenBlocks = $('.formblock-toggle-hidden');
+  this.relatedBlocks = $('.field-related-container');
   this.init();
 };
 
@@ -12,6 +13,7 @@ Forms.prototype.init = function () {
 
   $('.slider-lock-toggle').on('click', this.sliderLockToggle);
   $('.formblock-toggle-link').on('change', this.toggleHiddenBlock.bind(this));
+  $('.field-related').on('change', this.toggleRelatedFields.bind(this));
   $('.quantity-reduce').on('click', this.quantityReduce);
   $('.quantity-add').on('click', this.quantityAdd);
   $('.field-quantity').on('input', this.checkQuantityField);
@@ -261,6 +263,25 @@ Forms.prototype.toggleHiddenBlock = function (e) {
     if (targetData) {
       $targetBlock.stop().slideDown();
     }
+  }
+};
+
+Forms.prototype.toggleRelatedFields = function (e) {
+  var $target = $(e.target),
+      isChecked = $target.prop('checked'),
+      $parent = $target.closest('.field-related-container'),
+      $siblings = $parent.find('.field-related'),
+      index = $siblings.index($target),
+      related = $parent.data('related'),
+      $relatedBlock = this.relatedBlocks.not($parent).filter(function() {
+        return $(this).data('related') == related;
+      }),
+      $relatedInput = $relatedBlock.find('.field-related').eq(index);
+
+  if (isChecked) {
+    $relatedInput.prop('disabled', 'true');
+  } else {
+    $relatedInput.prop('disabled', '');
   }
 };
 

@@ -17,6 +17,11 @@
   line-height: 20px;
   color: $black;
   transition: color $transition-normal;
+
+  .fieldWrapper__input:disabled ~ & {
+    color: #CDCDCD;
+    cursor: default;
+  }
 }
 
 .fieldWrapper__radioIcon {
