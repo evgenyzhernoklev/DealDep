@@ -231,30 +231,71 @@ Forms.prototype.updateAllSliders = function ($currentSlider) {
 Forms.prototype.toggleHiddenBlock = function (e) {
   var self = this,
       $target = $(e.target),
+      targetType = $target.attr('type'),
       targetData = $target.data('target'),
       isChecked = $target.prop('checked'),
       $targetBlock = this.hiddenBlocks.filter(function() {
         return $(this).data('target') == targetData;
       });
 
-  if ($targetBlock.length) {
+  if (targetType == 'checkbox') {
     $targetBlock.stop().slideToggle();
-  } else {
-    $target
-      .closest('.formBlock')
-      .find('.formblock-toggle-link')
-      .each(function() {
-        var targetDataClose = $(this).data('target'),
-            $closeTargetBlock;
-
-        if (targetDataClose) {
-          $closeTargetBlock = self.hiddenBlocks.filter(function() {
-            return $(this).data('target') == targetDataClose;
-          });
-          $closeTargetBlock.stop().slideUp();
-        }
-      });
+    return;
   }
+
+  if (targetType == 'radio') {
+    var $siblings = $target
+      .closest('.formBlock')
+      .find('.formblock-toggle-link');
+
+    var $siblingsWithHiddenBlock = $siblings.filter(function() {
+      return $(this).data('target');
+    });
+
+    console.log($siblingsWithHiddenBlock);
+
+    // $siblingsWithHiddenBlock.each(function() {
+    //   var $currentHiddenBlocks =
+    // });
+
+    // $siblingsWithHiddenBlock.each(function() {
+    //   var targetDataClose = $(this).data('target');
+    //
+    //   self.hiddenBlocks.each(function() {
+    //     var hiddenBlockData = $(this).data('target');
+    //
+    //     if (hiddenBlockData == targetDataClose) {
+    //       $(this).stop().slideDown();
+    //     } else {
+    //       $(this).stop().slideUp();
+    //     }
+    //   });
+    // });
+  }
+
+
+
+
+  // console.log($target.attr('type'));
+
+  // if ($targetBlock.length) {
+  //   $targetBlock.stop().slideToggle();
+  // } else {
+  //   $target
+  //     .closest('.formBlock')
+  //     .find('.formblock-toggle-link')
+  //     .each(function() {
+  //       var targetDataClose = $(this).data('target'),
+  //           $closeTargetBlock;
+  //
+  //       if (targetDataClose) {
+  //         $closeTargetBlock = self.hiddenBlocks.filter(function() {
+  //           return $(this).data('target') == targetDataClose;
+  //         });
+  //         $closeTargetBlock.stop().slideUp();
+  //       }
+  //     });
+  // }
 };
 
 Forms.prototype.quantityReduce = function (e) {
