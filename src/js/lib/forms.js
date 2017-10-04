@@ -229,31 +229,32 @@ Forms.prototype.updateAllSliders = function ($currentSlider) {
 };
 
 Forms.prototype.toggleHiddenBlock = function (e) {
-  var $target = $(e.target),
+  var self = this,
+      $target = $(e.target),
       targetData = $target.data('target'),
       isChecked = $target.prop('checked'),
       $targetBlock = this.hiddenBlocks.filter(function() {
         return $(this).data('target') == targetData;
       });
 
-  var self = this;
-
   if ($targetBlock.length) {
     $targetBlock.stop().slideToggle();
   } else {
-    var $siblings = $target.closest('.formBlock').find('.formblock-toggle-link');
+    $target
+      .closest('.formBlock')
+      .find('.formblock-toggle-link')
+      .each(function() {
+        var targetDataClose = $(this).data('target'),
+            $closeTargetBlock;
 
-    $siblings.each(function() {
-      var closeTargetData = $(this).data('target');
-      var $closeTargetBlock = self.hiddenBlocks.filter(function() {
-        return $(this).data('target') == closeTargetData;
+        if (targetDataClose) {
+          $closeTargetBlock = self.hiddenBlocks.filter(function() {
+            return $(this).data('target') == targetDataClose;
+          });
+          $closeTargetBlock.stop().slideUp();
+        }
       });
-
-      $closeTargetBlock.stop().slideUp();
-
-    });
   }
-
 };
 
 Forms.prototype.quantityReduce = function (e) {
