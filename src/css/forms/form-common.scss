@@ -92,6 +92,10 @@
   padding-top: 13px;
 }
 
+.formBlock__title--attention {
+  color: #E05F5F;
+}
+
 .fieldWrapper {
   position: relative;
   display: block;
@@ -130,6 +134,13 @@ textarea.fieldWrapper__input {
   position: absolute;
   top: 13px;
   right: 15px;
+}
+
+.fieldWrapper__icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
 }
 
 

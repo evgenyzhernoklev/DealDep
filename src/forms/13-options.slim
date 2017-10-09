@@ -1,0 +1,157 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta http-equiv="X-UA-Compatible" content="IE=edge"
+    meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0"
+    title Forms - options
+    meta name="description" content=""
+    link rel="stylesheet" media="all" href="../css/app.css"
+  body
+
+    .header.header--border
+      .headerIn
+        .contentIn
+          a.header__logo.icon.icon--logo href="/"
+          h1.header__title Новая договоренность
+          a.header__close.icon.icon--close href="#"
+
+    section.addProjectSection
+      .contentIn
+
+        .addProject
+          .addProjectAbout
+            .addProjectAbout__title Опционы
+
+        form.form.form--content
+          .formIn
+            .formContent
+
+              .formBlock.formBlock--aside
+                .formBlock__title Выберите тип опциона
+                .formBlockIn
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="radio" name="options_type" value="options_type1"
+                    span.fieldWrapper__checkInfo Право требовать у остальных участников покупку принадлежащей участнику/опционеру доли проекта (put option)
+                    span.fieldWrapper__radioIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="radio" name="options_type" value="options_type2"
+                    span.fieldWrapper__checkInfo Право покупки доли проекта (call option)
+                    span.fieldWrapper__radioIcon
+
+              .formBlock.formBlock--aside
+                .formBlock__title Укажите адресат опциона (к кому из участников предъявляется требование)
+                .formBlockIn
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input.formblock-toggle-link type="radio" name="options_addressee" value="options_addressee1"
+                    span.fieldWrapper__checkInfo Все участники
+                    span.fieldWrapper__radioIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input.formblock-toggle-link data-target="options addressee personally" type="radio" name="options_addressee" value="options_addressee2"
+                    span.fieldWrapper__checkInfo Конкретный участник
+                    span.fieldWrapper__radioIcon
+
+              .formblock-toggle-hidden data-target="options addressee personally"
+                .formBlock.formBlock--aside
+                  .formBlock__title Укажите участника
+                  .formBlockIn
+                    label.fieldWrapper.fieldWrapper--check
+                      input.fieldWrapper__input type="radio" name="options_addressee_personally" value="options_addressee_personally1"
+                      span.fieldWrapper__checkInfo Павел Гужиков
+                      span.fieldWrapper__radioIcon
+                    label.fieldWrapper.fieldWrapper--check
+                      input.fieldWrapper__input type="radio" name="options_addressee_personally" value="options_addressee_personally2"
+                      span.fieldWrapper__checkInfo Иван Ардинцев
+                      span.fieldWrapper__radioIcon
+                    label.fieldWrapper.fieldWrapper--check
+                      input.fieldWrapper__input type="radio" name="options_addressee_personally" value="options_addressee_personally3"
+                      span.fieldWrapper__checkInfo Владимир Путин
+                      span.fieldWrapper__radioIcon
+                    label.fieldWrapper.fieldWrapper--check
+                      input.fieldWrapper__input type="radio" name="options_addressee_personally" value="options_addressee_personally4"
+                      span.fieldWrapper__checkInfo Дмитрий Медведев
+                      span.fieldWrapper__radioIcon
+                    label.fieldWrapper.fieldWrapper--check
+                      input.fieldWrapper__input type="radio" name="options_addressee_personally" value="options_addressee_personally5"
+                      span.fieldWrapper__checkInfo Сергей Шойгу
+                      span.fieldWrapper__radioIcon
+
+              .formBlock.formBlock--aside
+                .formBlock__title.formBlock__title--attention Здесь надо написать что мы выбираем
+                .formBlockIn
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="radio" name="choose_options_share" value="choose_options_share1"
+                    span.fieldWrapper__checkInfo Указать долю участия в реализации опциона
+                    span.fieldWrapper__radioIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="radio" name="choose_options_share" value="choose_options_share2"
+                    span.fieldWrapper__checkInfo Пропорционально своей доли в проекте
+                    span.fieldWrapper__radioIcon
+
+              .formBlock.formBlock--aside
+                .formBlock__title Доля участия в реализации опциона
+                .formBlockIn
+                  .formBlock.formBlock--slider
+                    label.fieldWrapper
+                      input.fieldWrapper__input.fieldWrapper__input--slider type="number" name="" placeholder="0" value="20"
+                      span.fieldWrapper__dimension % доли в проекте
+                    .formSlider
+
+              .formBlock.formBlock--aside
+                .formBlock__title Выберите период реализации опциона
+                .formBlockIn
+                  .formBlockWrapper
+                    .formBlock.formBlock--2
+                      label.fieldWrapper
+                        input.fieldWrapper__input.field-date type="text" name="" placeholder="Дата начала"
+                        span.fieldWrapper__icon.icon.icon--calendar
+                    .formBlock.formBlock--2
+                      label.fieldWrapper
+                        input.fieldWrapper__input.field-date type="text" name="" placeholder="Дата окончания"
+                        span.fieldWrapper__icon.icon.icon--calendar
+
+              .formBlock.formBlock--aside
+                .formBlock__title Порядок расчета стоимости опциона
+                .formBlockIn
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="radio" name="options_calculating" value="options_calculating1"
+                    span.fieldWrapper__checkInfo По формуле
+                    span.fieldWrapper__radioIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input type="radio" name="options_calculating" value="options_calculating2"
+                    span.fieldWrapper__checkInfo Указать сумму
+                    span.fieldWrapper__radioIcon
+
+              .formBlock.formBlock--aside
+                .formBlock__title.formBlock__title--indentTop Укажите форму расчета
+                .formBlockIn
+                  label.fieldWrapper
+                    input.fieldWrapper__input type="text" name="" placeholder="Введите формулу"
+
+              .formBlock.formBlock--aside
+                .formBlock__title
+                  | Дополнительные условия опциона
+                  br
+                  span
+                    | (если есть)
+                .formBlockIn
+                  label.fieldWrapper
+                    input.fieldWrapper__input type="text" name="" placeholder="Введите иные договоренности"
+
+              .formBlock.formBlock--aside.formblock-toggle-hidden data-target="custom formula"
+                .formBlock__title.formBlock__title--indentTop Введите свою формулу оценки текущей стоимости проекта
+                .formBlockIn
+                  label.fieldWrapper
+                    textarea.fieldWrapper__input name="custom_formula" placeholder="Введите формулу"
+
+
+
+
+
+          .buttonContainer.buttonContainer--center
+            button.buttonContainer__button.linkButton.linkButton--small type="button" отменить
+            button.buttonContainer__button.linkButton.linkButton--small.linkButton--blue type="submit" сохранить
+
+
+
+  script src="../js/app.js"
