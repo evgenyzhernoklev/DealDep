@@ -26,6 +26,7 @@ Forms.prototype.initSelect = function () {
       direction: 'asc'
     }
     , create: false
+    , dropdownParent: 'body'
   });
 };
 
