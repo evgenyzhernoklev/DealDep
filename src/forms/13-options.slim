@@ -34,7 +34,6 @@ html
                   a.personEntityTabsWrapper__link.personEntityTabsWrapper__link--helper.tab-link href="#"
                   a.personEntityTabsWrapper__link.tab-link.is-active data-container-class="slide" href="#"
                 .formSwitch__title Участник проекта
-
                 .tab-content
                   .formBlock.formBlock--aside
                     .formBlock__title Выберите тип опциона
@@ -147,15 +146,41 @@ html
                       label.fieldWrapper
                         input.fieldWrapper__input type="text" name="" placeholder="Введите иные договоренности"
 
+              .formSwitch.tab-container
+                .personEntityTabsWrapper.tab-link-container.slide
+                  a.personEntityTabsWrapper__link.personEntityTabsWrapper__link--helper.tab-link href="#"
+                  a.personEntityTabsWrapper__link.tab-link.is-active data-container-class="slide" href="#"
+                .formSwitch__title Сотрудник в проекте
+                .tab-content
+                  .formBlock.formBlock--aside
+                    .formBlock__title Сотрудник получает право приобрести доли проекта?
+                    .formBlockIn
+                      label.fieldWrapper.fieldWrapper--check
+                        input.fieldWrapper__input.formblock-toggle-link data-target="" type="radio" name="right_to_purchase_project_shares" value="right_to_purchase_project_shares1"
+                        span.fieldWrapper__checkInfo Да
+                        span.fieldWrapper__radioIcon
+                      label.fieldWrapper.fieldWrapper--check
+                        input.fieldWrapper__input.formblock-toggle-link data-target="no right to purchase project shares" type="radio" name="right_to_purchase_project_shares" value="right_to_purchase_project_shares2"
+                        span.fieldWrapper__checkInfo Нет
+                        span.fieldWrapper__radioIcon
+
+                  .formBlock.formBlock--aside.formblock-toggle-hidden data-target="no right to purchase project shares"
+                    .formBlock__title.formBlock__title--indentTop Иные условия опциона
+                    .formBlockIn
+                      label.fieldWrapper
+                        textarea.fieldWrapper__input name="" placeholder="Введите иные условия"
+
+              .formSwitch.tab-container
+                .personEntityTabsWrapper.tab-link-container.slide
+                  a.personEntityTabsWrapper__link.personEntityTabsWrapper__link--helper.tab-link href="#"
+                  a.personEntityTabsWrapper__link.tab-link.is-active data-container-class="slide" href="#"
+                .formSwitch__title Третье лицо
+                .tab-content
 
 
 
 
-              .formBlock.formBlock--aside.formblock-toggle-hidden data-target="custom formula"
-                .formBlock__title.formBlock__title--indentTop Введите свою формулу оценки текущей стоимости проекта
-                .formBlockIn
-                  label.fieldWrapper
-                    textarea.fieldWrapper__input name="custom_formula" placeholder="Введите формулу"
+
 
 
 

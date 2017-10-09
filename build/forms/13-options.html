@@ -132,13 +132,40 @@
                   </div>
                 </div>
               </div>
-              <div class="formBlock formBlock--aside formblock-toggle-hidden" data-target="custom formula">
-                <div class="formBlock__title formBlock__title--indentTop">
-                  Введите свою формулу оценки текущей стоимости проекта
+              <div class="formSwitch tab-container">
+                <div class="personEntityTabsWrapper tab-link-container slide">
+                  <a class="personEntityTabsWrapper__link personEntityTabsWrapper__link--helper tab-link" href="#"></a><a class="personEntityTabsWrapper__link tab-link is-active" data-container-class="slide" href="#"></a>
                 </div>
-                <div class="formBlockIn">
-                  <label class="fieldWrapper"><textarea class="fieldWrapper__input" name="custom_formula" placeholder="Введите формулу"></textarea></label>
+                <div class="formSwitch__title">
+                  Сотрудник в проекте
                 </div>
+                <div class="tab-content">
+                  <div class="formBlock formBlock--aside">
+                    <div class="formBlock__title">
+                      Сотрудник получает право приобрести доли проекта?
+                    </div>
+                    <div class="formBlockIn">
+                      <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" data-target="" name="right_to_purchase_project_shares" type="radio" value="right_to_purchase_project_shares1" /><span class="fieldWrapper__checkInfo">Да</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" data-target="no right to purchase project shares" name="right_to_purchase_project_shares" type="radio" value="right_to_purchase_project_shares2" /><span class="fieldWrapper__checkInfo">Нет</span><span class="fieldWrapper__radioIcon"></span></label>
+                    </div>
+                  </div>
+                  <div class="formBlock formBlock--aside formblock-toggle-hidden" data-target="no right to purchase project shares">
+                    <div class="formBlock__title formBlock__title--indentTop">
+                      Иные условия опциона
+                    </div>
+                    <div class="formBlockIn">
+                      <label class="fieldWrapper"><textarea class="fieldWrapper__input" name="" placeholder="Введите иные условия"></textarea></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="formSwitch tab-container">
+                <div class="personEntityTabsWrapper tab-link-container slide">
+                  <a class="personEntityTabsWrapper__link personEntityTabsWrapper__link--helper tab-link" href="#"></a><a class="personEntityTabsWrapper__link tab-link is-active" data-container-class="slide" href="#"></a>
+                </div>
+                <div class="formSwitch__title">
+                  Третье лицо
+                </div>
+                <div class="tab-content"></div>
               </div>
             </div>
           </div>
