@@ -15,6 +15,28 @@
   .formBlockIn {
     margin-left: 290px;
   }
+
+  .share {
+    height: auto;
+    margin-bottom: 16px;
+
+    .shareLock {
+      top: auto;
+      bottom: 0;
+    }
+
+    .formTitle,
+    .formBlock--slider {
+      float: none;
+      width: 100%;
+    }
+
+    .formTitle {
+      margin-bottom: 7px;
+      padding-top: 0;
+      font: 14px/20px $circe-regular;
+    }
+  }
 }
 
 

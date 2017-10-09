@@ -1,0 +1,207 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta http-equiv="X-UA-Compatible" content="IE=edge"
+    meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0"
+    title Forms - conflict resolution
+    meta name="description" content=""
+    link rel="stylesheet" media="all" href="../css/app.css"
+  body
+
+    .header.header--border
+      .headerIn
+        .contentIn
+          a.header__logo.icon.icon--logo href="/"
+          h1.header__title Новая договоренность
+          a.header__close.icon.icon--close href="#"
+
+    section.addProjectSection
+      .contentIn
+
+        .addProject
+          .addProjectAbout
+            .addProjectAbout__title Порядок разрешения тупиковых ситуаций
+            .addProjectAbout__info
+              | Как разрешаются тупиковые ситуации, как из них выходить
+              |  и прочие важные вещи
+
+        form.form.form--content
+          .formIn
+            .formContent
+
+              .formBlock.formBlock--aside
+                .formBlock__title Выберите способ разрешения корпоративного конфликта
+                .formBlockIn
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input.formblock-toggle-link data-target="organization liquidation" type="radio" name="resolution_method" value="resolution_method1"
+                    span.fieldWrapper__checkInfo
+                      | Ликвидация проекта и распределение активов между участниками
+                      i.formBlockTooltipWrapper.icon.icon--question
+                        .formBlockTooltip
+                          p.triangleShadow.triangleShadow--bottom
+                            span.triangleShadow__helper
+                          | Понятие политического конфликта традиционно ограничивает системный постиндустриализм, говорится в докладе ОБСЕ. Наконец, субъект политического процесса традиционно интегрирует марксизм. Харизматическое лидерство верифицирует феномен толпы, на что указывают и многие другие факторы.
+                    span.fieldWrapper__radioIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input.formblock-toggle-link type="radio" name="resolution_method" value="resolution_method2"
+                    span.fieldWrapper__checkInfo
+                      | Выход/исключение участника из проекта
+                      i.formBlockTooltipWrapper.icon.icon--question
+                        .formBlockTooltip
+                          p.triangleShadow.triangleShadow--bottom
+                            span.triangleShadow__helper
+                          | Понятие политического конфликта традиционно ограничивает системный постиндустриализм, говорится в докладе ОБСЕ. Наконец, субъект политического процесса традиционно интегрирует марксизм. Харизматическое лидерство верифицирует феномен толпы, на что указывают и многие другие факторы.
+                    span.fieldWrapper__radioIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input.formblock-toggle-link data-target="shotgun resolution method" type="radio" name="resolution_method" value="resolution_method3"
+                    span.fieldWrapper__checkInfo
+                      | Shotgun условия по международной практике
+                      i.formBlockTooltipWrapper.icon.icon--question
+                        .formBlockTooltip
+                          p.triangleShadow.triangleShadow--bottom
+                            span.triangleShadow__helper
+                          | Понятие политического конфликта традиционно ограничивает системный постиндустриализм, говорится в докладе ОБСЕ. Наконец, субъект политического процесса традиционно интегрирует марксизм. Харизматическое лидерство верифицирует феномен толпы, на что указывают и многие другие факторы.
+                    span.fieldWrapper__radioIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input.formblock-toggle-link data-target="another resolution method" type="radio" name="resolution_method" value="resolution_method4"
+                    span.fieldWrapper__checkInfo
+                      | Иной способ разрешения
+                      i.formBlockTooltipWrapper.icon.icon--question
+                        .formBlockTooltip
+                          p.triangleShadow.triangleShadow--bottom
+                            span.triangleShadow__helper
+                          | Понятие политического конфликта традиционно ограничивает системный постиндустриализм, говорится в докладе ОБСЕ. Наконец, субъект политического процесса традиционно интегрирует марксизм. Харизматическое лидерство верифицирует феномен толпы, на что указывают и многие другие факторы.
+                    span.fieldWrapper__radioIcon
+
+              .formblock-toggle-hidden data-target="organization liquidation"
+                .formBlock.formBlock--aside
+                  .formBlock__title Выберите способ распределения активов между участниками
+                  .formBlockIn
+                    label.fieldWrapper.fieldWrapper--check
+                      input.fieldWrapper__input.formblock-toggle-link type="radio" name="organization_liquidation_method" value="organization_liquidation_method1"
+                      span.fieldWrapper__checkInfo
+                        | Пропорционально долям в проекте
+                        i.formBlockTooltipWrapper.icon.icon--question
+                          .formBlockTooltip
+                            p.triangleShadow.triangleShadow--bottom
+                              span.triangleShadow__helper
+                            | Понятие политического конфликта традиционно ограничивает системный постиндустриализм, говорится в докладе ОБСЕ. Наконец, субъект политического процесса традиционно интегрирует марксизм. Харизматическое лидерство верифицирует феномен толпы, на что указывают и многие другие факторы.
+                      span.fieldWrapper__radioIcon
+                    label.fieldWrapper.fieldWrapper--check
+                      input.fieldWrapper__input.formblock-toggle-link data-target="special order liquidation" type="radio" name="organization_liquidation_method" value="organization_liquidation_method2"
+                      span.fieldWrapper__checkInfo
+                        | В особом порядке
+                        i.formBlockTooltipWrapper.icon.icon--question
+                          .formBlockTooltip
+                            p.triangleShadow.triangleShadow--bottom
+                              span.triangleShadow__helper
+                            | Понятие политического конфликта традиционно ограничивает системный постиндустриализм, говорится в докладе ОБСЕ. Наконец, субъект политического процесса традиционно интегрирует марксизм. Харизматическое лидерство верифицирует феномен толпы, на что указывают и многие другие факторы.
+                      span.fieldWrapper__radioIcon
+
+                .formblock-toggle-hidden data-target="special order liquidation"
+                  .formBlock.formBlock--aside
+                    .formBlock__title Укажите особый порядок распределения активов при ликвидации проекта
+                    .formBlockIn
+                      .share
+                        .formTitle Павел Гужиков
+                        .formBlock.formBlock--slider
+                          label.fieldWrapper
+                            input.fieldWrapper__input.fieldWrapper__input--slider type="number" name="" placeholder="0" value="20"
+                            span.fieldWrapper__dimension %
+                          .formSlider
+                        .shareLock.slider-lock-toggle
+                          .shareTip
+                            span.shareTip__info Зафиксировать долю
+                            p.triangleShadow
+                              span.triangleShadow__helper
+                      .share
+                        .formTitle Иван Ардинцев
+                        .formBlock.formBlock--slider
+                          label.fieldWrapper
+                            input.fieldWrapper__input.fieldWrapper__input--slider type="number" name="" placeholder="0" value="20"
+                            span.fieldWrapper__dimension %
+                          .formSlider
+                        .shareLock.slider-lock-toggle
+                          .shareTip
+                            span.shareTip__info Зафиксировать долю
+                            p.triangleShadow
+                              span.triangleShadow__helper
+                      .share
+                        .formTitle Владимир Путин
+                        .formBlock.formBlock--slider
+                          label.fieldWrapper
+                            input.fieldWrapper__input.fieldWrapper__input--slider type="number" name="" placeholder="0" value="20"
+                            span.fieldWrapper__dimension %
+                          .formSlider
+                        .shareLock.slider-lock-toggle
+                          .shareTip
+                            span.shareTip__info Зафиксировать долю
+                            p.triangleShadow
+                              span.triangleShadow__helper
+                      .share
+                        .formTitle Дмитрий Медведев
+                        .formBlock.formBlock--slider
+                          label.fieldWrapper
+                            input.fieldWrapper__input.fieldWrapper__input--slider type="number" name="" placeholder="0" value="20"
+                            span.fieldWrapper__dimension %
+                          .formSlider
+                        .shareLock.slider-lock-toggle
+                          .shareTip
+                            span.shareTip__info Зафиксировать долю
+                            p.triangleShadow
+                              span.triangleShadow__helper
+                      .share
+                        .formTitle Сергей Шойгу
+                        .formBlock.formBlock--slider
+                          label.fieldWrapper
+                            input.fieldWrapper__input.fieldWrapper__input--slider type="number" name="" placeholder="0" value="20"
+                            span.fieldWrapper__dimension %
+                          .formSlider
+                        .shareLock.slider-lock-toggle
+                          .shareTip
+                            span.shareTip__info Зафиксировать долю
+                            p.triangleShadow
+                              span.triangleShadow__helper
+
+              .formblock-toggle-hidden data-target="shotgun resolution method"
+                .formBlock.formBlock--aside
+                  .formBlock__title Выберите способ распределения активов между участниками
+                  .formBlockIn
+                    label.fieldWrapper.fieldWrapper--check
+                      input.fieldWrapper__input type="radio" name="resolution_method_shotgun" value="resolution_method_shotgun1"
+                      span.fieldWrapper__checkInfo
+                        | «Русская рулетка»
+                        i.fieldWrapper__checkDescription
+                          | При возникновении тупиковой ситуации каждый из участников корпоративного договора имеет право направить другому участнику предложение о выкупе половины уставного капитала с указанием цены. Другой участник может либо продать свою долю по названной цене, либо потребовать, чтобы по той же самой цене доля была приобретена у него.
+                      span.fieldWrapper__radioIcon
+                    label.fieldWrapper.fieldWrapper--check
+                      input.fieldWrapper__input type="radio" name="resolution_method_shotgun" value="resolution_method_shotgun2"
+                      span.fieldWrapper__checkInfo
+                        | «Техасская перестрелка»
+                        i.fieldWrapper__checkDescription
+                          | Каждая из сторон направляет независимому медиатору запечатанное предложение цены, по которой она готова приобрести долю другой стороны. Конверты вскрываются одновременно, после чего выигрывает заявка с наибольшей ценой. Лицо, подавшее такую заявку, обязано купить, а другая сторона – продать свои акции по указанной цене.
+                      span.fieldWrapper__radioIcon
+                    label.fieldWrapper.fieldWrapper--check
+                      input.fieldWrapper__input type="radio" name="resolution_method_shotgun" value="resolution_method_shotgun3"
+                      span.fieldWrapper__checkInfo
+                        | «Голландский аукцион»
+                        i.fieldWrapper__checkDescription
+                          | Стороны в предложениях указывают минимальную цену, за которую они готовы продать свою долю в компании. Сторона, предложившая наибольшую цену, получает право выкупить долю другой стороны по цене, указанной в ее предложении.
+                      span.fieldWrapper__radioIcon
+
+              .formblock-toggle-hidden data-target="another resolution method"
+                .formBlock.formBlock--aside
+                  .formBlock__title.formBlock__title--indentTop
+                    | Иные способ разрешения
+                  .formBlockIn
+                    label.fieldWrapper
+                      textarea.fieldWrapper__input name="resolution_method_another" placeholder="Введите иной способ разрешения"
+
+          .buttonContainer.buttonContainer--center
+            button.buttonContainer__button.linkButton.linkButton--small type="button" отменить
+            button.buttonContainer__button.linkButton.linkButton--small.linkButton--blue type="submit" сохранить
+
+
+
+  script src="../js/app.js"
