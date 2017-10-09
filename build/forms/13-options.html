@@ -38,88 +38,98 @@
               <div class="formInfo">
                 Выберите какие типы опционов будет предусмотрены в проекте
               </div>
-              <div class="formBlock formBlock--aside">
-                <div class="formBlock__title">
-                  Выберите тип опциона
+              <div class="formSwitch tab-container">
+                <div class="personEntityTabsWrapper tab-link-container slide">
+                  <a class="personEntityTabsWrapper__link personEntityTabsWrapper__link--helper tab-link" href="#"></a><a class="personEntityTabsWrapper__link tab-link is-active" data-container-class="slide" href="#"></a>
                 </div>
-                <div class="formBlockIn">
-                  <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="options_type" type="radio" value="options_type1" /><span class="fieldWrapper__checkInfo">Право требовать у остальных участников покупку принадлежащей участнику/опционеру доли проекта (put option)</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="options_type" type="radio" value="options_type2" /><span class="fieldWrapper__checkInfo">Право покупки доли проекта (call option)</span><span class="fieldWrapper__radioIcon"></span></label>
+                <div class="formSwitch__title">
+                  Участник проекта
                 </div>
-              </div>
-              <div class="formBlock formBlock--aside">
-                <div class="formBlock__title">
-                  Укажите адресат опциона (к кому из участников предъявляется требование)
-                </div>
-                <div class="formBlockIn">
-                  <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" name="options_addressee" type="radio" value="options_addressee1" /><span class="fieldWrapper__checkInfo">Все участники</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" data-target="options addressee personally" name="options_addressee" type="radio" value="options_addressee2" /><span class="fieldWrapper__checkInfo">Конкретный участник</span><span class="fieldWrapper__radioIcon"></span></label>
-                </div>
-              </div>
-              <div class="formblock-toggle-hidden" data-target="options addressee personally">
-                <div class="formBlock formBlock--aside">
-                  <div class="formBlock__title">
-                    Укажите участника
-                  </div>
-                  <div class="formBlockIn">
-                    <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="options_addressee_personally" type="radio" value="options_addressee_personally1" /><span class="fieldWrapper__checkInfo">Павел Гужиков</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="options_addressee_personally" type="radio" value="options_addressee_personally2" /><span class="fieldWrapper__checkInfo">Иван Ардинцев</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="options_addressee_personally" type="radio" value="options_addressee_personally3" /><span class="fieldWrapper__checkInfo">Владимир Путин</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="options_addressee_personally" type="radio" value="options_addressee_personally4" /><span class="fieldWrapper__checkInfo">Дмитрий Медведев</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="options_addressee_personally" type="radio" value="options_addressee_personally5" /><span class="fieldWrapper__checkInfo">Сергей Шойгу</span><span class="fieldWrapper__radioIcon"></span></label>
-                  </div>
-                </div>
-              </div>
-              <div class="formBlock formBlock--aside">
-                <div class="formBlock__title formBlock__title--attention">
-                  Здесь надо написать что мы выбираем
-                </div>
-                <div class="formBlockIn">
-                  <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="choose_options_share" type="radio" value="choose_options_share1" /><span class="fieldWrapper__checkInfo">Указать долю участия в реализации опциона</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="choose_options_share" type="radio" value="choose_options_share2" /><span class="fieldWrapper__checkInfo">Пропорционально своей доли в проекте</span><span class="fieldWrapper__radioIcon"></span></label>
-                </div>
-              </div>
-              <div class="formBlock formBlock--aside">
-                <div class="formBlock__title">
-                  Доля участия в реализации опциона
-                </div>
-                <div class="formBlockIn">
-                  <div class="formBlock formBlock--slider">
-                    <label class="fieldWrapper"><input class="fieldWrapper__input fieldWrapper__input--slider" name="" placeholder="0" type="number" value="20" /><span class="fieldWrapper__dimension">% доли в проекте</span></label>
-                    <div class="formSlider"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="formBlock formBlock--aside">
-                <div class="formBlock__title">
-                  Выберите период реализации опциона
-                </div>
-                <div class="formBlockIn">
-                  <div class="formBlockWrapper">
-                    <div class="formBlock formBlock--2">
-                      <label class="fieldWrapper"><input class="fieldWrapper__input field-date" name="" placeholder="Дата начала" type="text" /><span class="fieldWrapper__icon icon icon--calendar"></span></label>
+                <div class="tab-content">
+                  <div class="formBlock formBlock--aside">
+                    <div class="formBlock__title">
+                      Выберите тип опциона
                     </div>
-                    <div class="formBlock formBlock--2">
-                      <label class="fieldWrapper"><input class="fieldWrapper__input field-date" name="" placeholder="Дата окончания" type="text" /><span class="fieldWrapper__icon icon icon--calendar"></span></label>
+                    <div class="formBlockIn">
+                      <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="options_type" type="radio" value="options_type1" /><span class="fieldWrapper__checkInfo">Право требовать у остальных участников покупку принадлежащей участнику/опционеру доли проекта (put option)</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="options_type" type="radio" value="options_type2" /><span class="fieldWrapper__checkInfo">Право покупки доли проекта (call option)</span><span class="fieldWrapper__radioIcon"></span></label>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="formBlock formBlock--aside">
-                <div class="formBlock__title">
-                  Порядок расчета стоимости опциона
-                </div>
-                <div class="formBlockIn">
-                  <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="options_calculating" type="radio" value="options_calculating1" /><span class="fieldWrapper__checkInfo">По формуле</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="options_calculating" type="radio" value="options_calculating2" /><span class="fieldWrapper__checkInfo">Указать сумму</span><span class="fieldWrapper__radioIcon"></span></label>
-                </div>
-              </div>
-              <div class="formBlock formBlock--aside">
-                <div class="formBlock__title formBlock__title--indentTop">
-                  Укажите форму расчета
-                </div>
-                <div class="formBlockIn">
-                  <label class="fieldWrapper"><input class="fieldWrapper__input" name="" placeholder="Введите формулу" type="text" /></label>
-                </div>
-              </div>
-              <div class="formBlock formBlock--aside">
-                <div class="formBlock__title">
-                  Дополнительные условия опциона<br /><span>(если есть)</span>
-                </div>
-                <div class="formBlockIn">
-                  <label class="fieldWrapper"><input class="fieldWrapper__input" name="" placeholder="Введите иные договоренности" type="text" /></label>
+                  <div class="formBlock formBlock--aside">
+                    <div class="formBlock__title">
+                      Укажите адресат опциона (к кому из участников предъявляется требование)
+                    </div>
+                    <div class="formBlockIn">
+                      <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" name="options_addressee" type="radio" value="options_addressee1" /><span class="fieldWrapper__checkInfo">Все участники</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" data-target="options addressee personally" name="options_addressee" type="radio" value="options_addressee2" /><span class="fieldWrapper__checkInfo">Конкретный участник</span><span class="fieldWrapper__radioIcon"></span></label>
+                    </div>
+                  </div>
+                  <div class="formblock-toggle-hidden" data-target="options addressee personally">
+                    <div class="formBlock formBlock--aside">
+                      <div class="formBlock__title">
+                        Укажите участника
+                      </div>
+                      <div class="formBlockIn">
+                        <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="options_addressee_personally" type="radio" value="options_addressee_personally1" /><span class="fieldWrapper__checkInfo">Павел Гужиков</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="options_addressee_personally" type="radio" value="options_addressee_personally2" /><span class="fieldWrapper__checkInfo">Иван Ардинцев</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="options_addressee_personally" type="radio" value="options_addressee_personally3" /><span class="fieldWrapper__checkInfo">Владимир Путин</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="options_addressee_personally" type="radio" value="options_addressee_personally4" /><span class="fieldWrapper__checkInfo">Дмитрий Медведев</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="options_addressee_personally" type="radio" value="options_addressee_personally5" /><span class="fieldWrapper__checkInfo">Сергей Шойгу</span><span class="fieldWrapper__radioIcon"></span></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="formBlock formBlock--aside">
+                    <div class="formBlock__title formBlock__title--attention">
+                      Здесь надо написать что мы выбираем
+                    </div>
+                    <div class="formBlockIn">
+                      <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="choose_options_share" type="radio" value="choose_options_share1" /><span class="fieldWrapper__checkInfo">Указать долю участия в реализации опциона</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="choose_options_share" type="radio" value="choose_options_share2" /><span class="fieldWrapper__checkInfo">Пропорционально своей доли в проекте</span><span class="fieldWrapper__radioIcon"></span></label>
+                    </div>
+                  </div>
+                  <div class="formBlock formBlock--aside">
+                    <div class="formBlock__title">
+                      Доля участия в реализации опциона
+                    </div>
+                    <div class="formBlockIn">
+                      <div class="formBlock formBlock--slider">
+                        <label class="fieldWrapper"><input class="fieldWrapper__input fieldWrapper__input--slider" name="" placeholder="0" type="number" value="20" /><span class="fieldWrapper__dimension">% доли в проекте</span></label>
+                        <div class="formSlider"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="formBlock formBlock--aside">
+                    <div class="formBlock__title">
+                      Выберите период реализации опциона
+                    </div>
+                    <div class="formBlockIn">
+                      <div class="formBlockWrapper">
+                        <div class="formBlock formBlock--2">
+                          <label class="fieldWrapper"><input class="fieldWrapper__input field-date" name="" placeholder="Дата начала" type="text" /><span class="fieldWrapper__icon icon icon--calendar"></span></label>
+                        </div>
+                        <div class="formBlock formBlock--2">
+                          <label class="fieldWrapper"><input class="fieldWrapper__input field-date" name="" placeholder="Дата окончания" type="text" /><span class="fieldWrapper__icon icon icon--calendar"></span></label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="formBlock formBlock--aside">
+                    <div class="formBlock__title">
+                      Порядок расчета стоимости опциона
+                    </div>
+                    <div class="formBlockIn">
+                      <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="options_calculating" type="radio" value="options_calculating1" /><span class="fieldWrapper__checkInfo">По формуле</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="options_calculating" type="radio" value="options_calculating2" /><span class="fieldWrapper__checkInfo">Указать сумму</span><span class="fieldWrapper__radioIcon"></span></label>
+                    </div>
+                  </div>
+                  <div class="formBlock formBlock--aside">
+                    <div class="formBlock__title formBlock__title--indentTop">
+                      Укажите форму расчета
+                    </div>
+                    <div class="formBlockIn">
+                      <label class="fieldWrapper"><input class="fieldWrapper__input" name="" placeholder="Введите формулу" type="text" /></label>
+                    </div>
+                  </div>
+                  <div class="formBlock formBlock--aside">
+                    <div class="formBlock__title">
+                      Дополнительные условия опциона<br /><span>(если есть)</span>
+                    </div>
+                    <div class="formBlockIn">
+                      <label class="fieldWrapper"><input class="fieldWrapper__input" name="" placeholder="Введите иные договоренности" type="text" /></label>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="formBlock formBlock--aside formblock-toggle-hidden" data-target="custom formula">
