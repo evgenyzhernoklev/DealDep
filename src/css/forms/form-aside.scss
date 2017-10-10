@@ -7,6 +7,14 @@
     padding-top: 0;
   }
 
+  .fieldWrapper--check + .formblock-toggle-hidden {
+    margin: -12px 0 5px;
+
+    .formBlock--mt {
+      margin-top: 10px;
+    }
+  }
+
   .formBlock__title {
     float: left;
     width: 240px;
