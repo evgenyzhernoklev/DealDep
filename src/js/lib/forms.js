@@ -9,6 +9,7 @@ var Forms = function() {
 Forms.prototype.init = function () {
   this.initSelect();
   this.initMasks();
+  this.initSliderSingle();
   this.initSlider();
 
   $('.slider-lock-toggle').on('click', this.sliderLockToggle);
@@ -35,6 +36,46 @@ Forms.prototype.initMasks = function () {
   $('.field-date').inputmask("date", { placeholder: "дд/мм/гггг", "clearIncomplete": true });
   $('.field-passport-numbers').inputmask("9999 999999", { "clearIncomplete": true });
   $('.field-email').inputmask("email", { "clearIncomplete": true });
+};
+
+Forms.prototype.initSliderSingle = function () {
+  $('.formSliderSingle').each(function(index, element) {
+    $(element).slider({
+      range: "min",
+      min: 1,
+      max: 100,
+      create: function() {
+        var $parent = $(this).closest('.formBlock'),
+            $input = $parent.find('.fieldWrapper__input'),
+            inputValue = $input.val();
+
+        $(this).slider('value', inputValue);
+      },
+      slide: function(event, ui) {
+        var $parent = $(this).closest('.formBlock'),
+            $input = $parent.find('.fieldWrapper__input');
+
+        $input.val(ui.value);
+      }
+    });
+  });
+
+  this.body.on('input', '.fieldWrapper__input--sliderSingle', this.updateSliderSingle.bind(this));
+};
+
+Forms.prototype.updateSliderSingle = function (e) {
+  var $target = $(e.target),
+      targetValue = +$target.val(),
+      $targetSlider = $target.closest('.formBlock').find('.formSliderSingle');
+
+  if (targetValue <= 0) {
+    targetValue = 1;
+  } else if (targetValue > 100) {
+    targetValue = 100;
+  }
+
+  $target.val(targetValue);
+  $targetSlider.slider('value', targetValue);
 };
 
 Forms.prototype.initSlider = function () {
