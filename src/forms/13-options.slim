@@ -64,13 +64,47 @@ html
                     .formBlock__title Укажите участника
                     .formBlockIn
                       label.fieldWrapper.fieldWrapper--check
-                        input.fieldWrapper__input type="checkbox" name="options_addressee_personally" value="options_addressee_personally1"
+                        input.fieldWrapper__input.formblock-toggle-link data-target="person addressee 1" type="checkbox" name="options_addressee_personally" value="options_addressee_personally1"
                         span.fieldWrapper__checkInfo Павел Гужиков
                         span.fieldWrapper__checkboxIcon
+                      .formBlock.formBlock--tooltip.formblock-toggle-hidden data-target="person addressee 1"
+                        .triangleShadow.triangleShadow--top
+                          span.triangleShadow__helper
+                        label.fieldWrapper.fieldWrapper--check
+                          input.fieldWrapper__input.formblock-toggle-link type="radio" name="person_addressee1" value=""
+                          span.fieldWrapper__checkInfo Пропорционально своей доли в проекте
+                          span.fieldWrapper__radioIcon
+                        label.fieldWrapper.fieldWrapper--check
+                          input.fieldWrapper__input.formblock-toggle-link data-target="person_addressee1" type="radio" name="person_addressee1" value=""
+                          span.fieldWrapper__checkInfo Указать долю участия в реализации опциона
+                          span.fieldWrapper__radioIcon
+                        .formBlock.formBlock--slider.formblock-toggle-hidden data-target="person_addressee1"
+                          label.fieldWrapper
+                            input.fieldWrapper__input.fieldWrapper__input--sliderSingle type="number" name="" placeholder="0" value="20"
+                            span.fieldWrapper__dimension % доли в проекте
+                          .formSliderSingle
+
                       label.fieldWrapper.fieldWrapper--check
-                        input.fieldWrapper__input type="checkbox" name="options_addressee_personally" value="options_addressee_personally2"
+                        input.fieldWrapper__input.formblock-toggle-link data-target="person addressee 2" type="checkbox" name="options_addressee_personally" value="options_addressee_personally2"
                         span.fieldWrapper__checkInfo Иван Ардинцев
                         span.fieldWrapper__checkboxIcon
+                      .formBlock.formBlock--tooltip.formblock-toggle-hidden data-target="person addressee 2"
+                        .triangleShadow.triangleShadow--top
+                          span.triangleShadow__helper
+                        label.fieldWrapper.fieldWrapper--check
+                          input.fieldWrapper__input.formblock-toggle-link type="radio" name="person_addressee2" value=""
+                          span.fieldWrapper__checkInfo Пропорционально своей доли в проекте
+                          span.fieldWrapper__radioIcon
+                        label.fieldWrapper.fieldWrapper--check
+                          input.fieldWrapper__input.formblock-toggle-link data-target="person_addressee2" type="radio" name="person_addressee2" value=""
+                          span.fieldWrapper__checkInfo Указать долю участия в реализации опциона
+                          span.fieldWrapper__radioIcon
+                        .formBlock.formBlock--slider.formblock-toggle-hidden data-target="person_addressee2"
+                          label.fieldWrapper
+                            input.fieldWrapper__input.fieldWrapper__input--sliderSingle type="number" name="" placeholder="0" value="20"
+                            span.fieldWrapper__dimension % доли в проекте
+                          .formSliderSingle
+
                       label.fieldWrapper.fieldWrapper--check
                         input.fieldWrapper__input type="checkbox" name="options_addressee_personally" value="options_addressee_personally3"
                         span.fieldWrapper__checkInfo Владимир Путин
@@ -101,7 +135,7 @@ html
                     .formBlockIn
                       .formBlock.formBlock--slider
                         label.fieldWrapper
-                          input.fieldWrapper__input.fieldWrapper__input--slider type="number" name="" placeholder="0" value="20"
+                          input.fieldWrapper__input.fieldWrapper__input--sliderSingle type="number" name="" placeholder="0" value="20"
                           span.fieldWrapper__dimension % доли в проекте
                         .formSliderSingle
 

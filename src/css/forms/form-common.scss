@@ -82,6 +82,23 @@
   }
 }
 
+.formBlock--tooltip {
+  position: relative;
+  margin: 0 auto 15px;
+  padding: 15px;
+  border: 1px solid $gray-light;
+  border-radius: 5px;
+
+  .triangleShadow--top {
+    left: 23px;
+
+    .triangleShadow__helper:after {
+      top: 25px;
+      box-shadow: -1px -1px 0px 0px $gray-light;
+    }
+  }
+}
+
 .formBlock__title {
   font: 14px/20px $circe-bold;
 

@@ -59,7 +59,29 @@
                       Укажите участника
                     </div>
                     <div class="formBlockIn">
-                      <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="options_addressee_personally" type="checkbox" value="options_addressee_personally1" /><span class="fieldWrapper__checkInfo">Павел Гужиков</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="options_addressee_personally" type="checkbox" value="options_addressee_personally2" /><span class="fieldWrapper__checkInfo">Иван Ардинцев</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="options_addressee_personally" type="checkbox" value="options_addressee_personally3" /><span class="fieldWrapper__checkInfo">Владимир Путин</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="options_addressee_personally" type="checkbox" value="options_addressee_personally4" /><span class="fieldWrapper__checkInfo">Дмитрий Медведев</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="options_addressee_personally" type="checkbox" value="options_addressee_personally5" /><span class="fieldWrapper__checkInfo">Сергей Шойгу</span><span class="fieldWrapper__checkboxIcon"></span></label>
+                      <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" data-target="person addressee 1" name="options_addressee_personally" type="checkbox" value="options_addressee_personally1" /><span class="fieldWrapper__checkInfo">Павел Гужиков</span><span class="fieldWrapper__checkboxIcon"></span></label>
+                      <div class="formBlock formBlock--tooltip formblock-toggle-hidden" data-target="person addressee 1">
+                        <div class="triangleShadow triangleShadow--top">
+                          <span class="triangleShadow__helper"></span>
+                        </div>
+                        <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" name="person_addressee1" type="radio" value="" /><span class="fieldWrapper__checkInfo">Пропорционально своей доли в проекте</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" data-target="person_addressee1" name="person_addressee1" type="radio" value="" /><span class="fieldWrapper__checkInfo">Указать долю участия в реализации опциона</span><span class="fieldWrapper__radioIcon"></span></label>
+                        <div class="formBlock formBlock--slider formblock-toggle-hidden" data-target="person_addressee1">
+                          <label class="fieldWrapper"><input class="fieldWrapper__input fieldWrapper__input--sliderSingle" name="" placeholder="0" type="number" value="20" /><span class="fieldWrapper__dimension">% доли в проекте</span></label>
+                          <div class="formSliderSingle"></div>
+                        </div>
+                      </div>
+                      <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" data-target="person addressee 2" name="options_addressee_personally" type="checkbox" value="options_addressee_personally2" /><span class="fieldWrapper__checkInfo">Иван Ардинцев</span><span class="fieldWrapper__checkboxIcon"></span></label>
+                      <div class="formBlock formBlock--tooltip formblock-toggle-hidden" data-target="person addressee 2">
+                        <div class="triangleShadow triangleShadow--top">
+                          <span class="triangleShadow__helper"></span>
+                        </div>
+                        <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" name="person_addressee2" type="radio" value="" /><span class="fieldWrapper__checkInfo">Пропорционально своей доли в проекте</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" data-target="person_addressee2" name="person_addressee2" type="radio" value="" /><span class="fieldWrapper__checkInfo">Указать долю участия в реализации опциона</span><span class="fieldWrapper__radioIcon"></span></label>
+                        <div class="formBlock formBlock--slider formblock-toggle-hidden" data-target="person_addressee2">
+                          <label class="fieldWrapper"><input class="fieldWrapper__input fieldWrapper__input--sliderSingle" name="" placeholder="0" type="number" value="20" /><span class="fieldWrapper__dimension">% доли в проекте</span></label>
+                          <div class="formSliderSingle"></div>
+                        </div>
+                      </div>
+                      <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="options_addressee_personally" type="checkbox" value="options_addressee_personally3" /><span class="fieldWrapper__checkInfo">Владимир Путин</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="options_addressee_personally" type="checkbox" value="options_addressee_personally4" /><span class="fieldWrapper__checkInfo">Дмитрий Медведев</span><span class="fieldWrapper__checkboxIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="options_addressee_personally" type="checkbox" value="options_addressee_personally5" /><span class="fieldWrapper__checkInfo">Сергей Шойгу</span><span class="fieldWrapper__checkboxIcon"></span></label>
                     </div>
                   </div>
                   <div class="formBlock formBlock--aside">
@@ -68,7 +90,7 @@
                     </div>
                     <div class="formBlockIn">
                       <div class="formBlock formBlock--slider">
-                        <label class="fieldWrapper"><input class="fieldWrapper__input fieldWrapper__input--slider" name="" placeholder="0" type="number" value="20" /><span class="fieldWrapper__dimension">% доли в проекте</span></label>
+                        <label class="fieldWrapper"><input class="fieldWrapper__input fieldWrapper__input--sliderSingle" name="" placeholder="0" type="number" value="20" /><span class="fieldWrapper__dimension">% доли в проекте</span></label>
                         <div class="formSliderSingle"></div>
                       </div>
                     </div>

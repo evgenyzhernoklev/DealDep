@@ -7,6 +7,12 @@
     padding-top: 0;
   }
 
+  .formBlock--tooltip,
+  .formBlock.formBlock--tooltip.formblock-toggle-hidden {
+    margin: 0 0 22px -15px;
+    padding: 17px 15px 0;
+  }
+
   .fieldWrapper--check + .formblock-toggle-hidden {
     margin: -12px 0 5px;
 
