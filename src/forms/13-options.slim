@@ -47,7 +47,7 @@ html
                         span.fieldWrapper__checkInfo Право покупки доли проекта (call option)
                         span.fieldWrapper__radioIcon
 
-                  .formBlock.formBlock--aside
+                  / .formBlock.formBlock--aside
                     .formBlock__title Укажите адресат опциона (к кому из участников предъявляется требование)
                     .formBlockIn
                       label.fieldWrapper.fieldWrapper--check
@@ -59,32 +59,32 @@ html
                         span.fieldWrapper__checkInfo Конкретный участник
                         span.fieldWrapper__radioIcon
 
-                  .formblock-toggle-hidden data-target="options addressee personally"
-                    .formBlock.formBlock--aside
-                      .formBlock__title Укажите участника
-                      .formBlockIn
-                        label.fieldWrapper.fieldWrapper--check
-                          input.fieldWrapper__input type="radio" name="options_addressee_personally" value="options_addressee_personally1"
-                          span.fieldWrapper__checkInfo Павел Гужиков
-                          span.fieldWrapper__radioIcon
-                        label.fieldWrapper.fieldWrapper--check
-                          input.fieldWrapper__input type="radio" name="options_addressee_personally" value="options_addressee_personally2"
-                          span.fieldWrapper__checkInfo Иван Ардинцев
-                          span.fieldWrapper__radioIcon
-                        label.fieldWrapper.fieldWrapper--check
-                          input.fieldWrapper__input type="radio" name="options_addressee_personally" value="options_addressee_personally3"
-                          span.fieldWrapper__checkInfo Владимир Путин
-                          span.fieldWrapper__radioIcon
-                        label.fieldWrapper.fieldWrapper--check
-                          input.fieldWrapper__input type="radio" name="options_addressee_personally" value="options_addressee_personally4"
-                          span.fieldWrapper__checkInfo Дмитрий Медведев
-                          span.fieldWrapper__radioIcon
-                        label.fieldWrapper.fieldWrapper--check
-                          input.fieldWrapper__input type="radio" name="options_addressee_personally" value="options_addressee_personally5"
-                          span.fieldWrapper__checkInfo Сергей Шойгу
-                          span.fieldWrapper__radioIcon
-
+                  / .formblock-toggle-hidden data-target="options addressee personally"
                   .formBlock.formBlock--aside
+                    .formBlock__title Укажите участника
+                    .formBlockIn
+                      label.fieldWrapper.fieldWrapper--check
+                        input.fieldWrapper__input type="checkbox" name="options_addressee_personally" value="options_addressee_personally1"
+                        span.fieldWrapper__checkInfo Павел Гужиков
+                        span.fieldWrapper__checkboxIcon
+                      label.fieldWrapper.fieldWrapper--check
+                        input.fieldWrapper__input type="checkbox" name="options_addressee_personally" value="options_addressee_personally2"
+                        span.fieldWrapper__checkInfo Иван Ардинцев
+                        span.fieldWrapper__checkboxIcon
+                      label.fieldWrapper.fieldWrapper--check
+                        input.fieldWrapper__input type="checkbox" name="options_addressee_personally" value="options_addressee_personally3"
+                        span.fieldWrapper__checkInfo Владимир Путин
+                        span.fieldWrapper__checkboxIcon
+                      label.fieldWrapper.fieldWrapper--check
+                        input.fieldWrapper__input type="checkbox" name="options_addressee_personally" value="options_addressee_personally4"
+                        span.fieldWrapper__checkInfo Дмитрий Медведев
+                        span.fieldWrapper__checkboxIcon
+                      label.fieldWrapper.fieldWrapper--check
+                        input.fieldWrapper__input type="checkbox" name="options_addressee_personally" value="options_addressee_personally5"
+                        span.fieldWrapper__checkInfo Сергей Шойгу
+                        span.fieldWrapper__checkboxIcon
+
+                  / .formBlock.formBlock--aside
                     .formBlock__title.formBlock__title--attention Здесь надо написать что мы выбираем
                     .formBlockIn
                       label.fieldWrapper.fieldWrapper--check
@@ -97,13 +97,13 @@ html
                         span.fieldWrapper__radioIcon
 
                   .formBlock.formBlock--aside
-                    .formBlock__title Доля участия в реализации опциона
+                    .formBlock__title Размер опциона
                     .formBlockIn
                       .formBlock.formBlock--slider
                         label.fieldWrapper
                           input.fieldWrapper__input.fieldWrapper__input--slider type="number" name="" placeholder="0" value="20"
                           span.fieldWrapper__dimension % доли в проекте
-                        .formSlider
+                        .formSliderSingle
 
                   .formBlock.formBlock--aside
                     .formBlock__title Выберите период реализации опциона
@@ -118,7 +118,7 @@ html
                             input.fieldWrapper__input.field-date type="text" name="" placeholder="Дата окончания"
                             span.fieldWrapper__icon.icon.icon--calendar
 
-                  .formBlock.formBlock--aside
+                  / .formBlock.formBlock--aside
                     .formBlock__title Порядок расчета стоимости опциона
                     .formBlockIn
                       label.fieldWrapper.fieldWrapper--check
@@ -130,13 +130,13 @@ html
                         span.fieldWrapper__checkInfo Указать сумму
                         span.fieldWrapper__radioIcon
 
-                  .formBlock.formBlock--aside
+                  / .formBlock.formBlock--aside
                     .formBlock__title.formBlock__title--indentTop Укажите форму расчета
                     .formBlockIn
                       label.fieldWrapper
                         input.fieldWrapper__input type="text" name="" placeholder="Введите формулу"
 
-                  .formBlock.formBlock--aside
+                  .formBlock.formBlock--aside.pattern-field data-field="conditions"
                     .formBlock__title
                       | Дополнительные условия опциона
                       br
@@ -145,6 +145,14 @@ html
                     .formBlockIn
                       label.fieldWrapper
                         input.fieldWrapper__input type="text" name="" placeholder="Введите иные договоренности"
+
+                  .formBlock.formBlock--aside
+                    .formBlockIn
+                      a.linkButton.linkButton--icon.add-field data-field="conditions" href="#"
+                        | добавить еще
+                        span.linkButton__icon.icon.icon--add
+
+
 
               .formSwitch.tab-container
                 .personEntityTabsWrapper.tab-link-container.slide

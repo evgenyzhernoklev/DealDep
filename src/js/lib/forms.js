@@ -3,6 +3,7 @@ var Forms = function() {
   this.select = $('.form-select');
   this.hiddenBlocks = $('.formblock-toggle-hidden');
   this.relatedBlocks = $('.field-related-container');
+  this.duplicateBlocks = $('.pattern-field');
   this.init();
 };
 
@@ -18,6 +19,7 @@ Forms.prototype.init = function () {
   $('.quantity-reduce').on('click', this.quantityReduce);
   $('.quantity-add').on('click', this.quantityAdd);
   $('.field-quantity').on('input', this.checkQuantityField);
+  $('.add-field').on('click', this.duplicateField.bind(this));
 };
 
 Forms.prototype.initSelect = function () {
@@ -357,4 +359,18 @@ Forms.prototype.checkQuantityField = function () {
   }
 
   $(this).val(value);
+};
+
+Forms.prototype.duplicateField = function (e) {
+  e.preventDefault();
+  var $target = $(e.target),
+      dataField = $target.data('field'),
+      $pattern = this.duplicateBlocks.filter(function() {
+        return $(this).data('field') == dataField;
+      }),
+      $clone = $pattern.clone(),
+      $patternsCommon = $pattern.nextAll('.pattern-field[data-field="' + dataField + '"]').addBack();
+
+  $clone.find('input, textarea').val('');
+  $clone.hide().insertAfter($patternsCommon.last()).slideDown(300);
 };

@@ -134,3 +134,7 @@
 .icon--calendar {
   @include background-image(calendar_blue, 13px, 13px);
 }
+
+.icon--add {
+  @include background-image(add_person, 13px, 13px);
+}
