@@ -35,7 +35,6 @@ Forms.prototype.initMasks = function () {
   $('.field-mobile').inputmask("+7 (999) 999-99-99", { "clearIncomplete": true });
   $('.field-date').inputmask("date", { placeholder: "дд/мм/гггг", "clearIncomplete": true });
   $('.field-passport-numbers').inputmask("9999 999999", { "clearIncomplete": true });
-  $('.field-email').inputmask("email", { "clearIncomplete": true });
 };
 
 Forms.prototype.initSliderSingle = function () {

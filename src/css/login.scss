@@ -11,7 +11,8 @@
 
 // header
 .loginHeader {
-  padding: 0 20px;
+  position: relative;
+  padding: 3px 20px 0;
   text-align: center;
   border-bottom: 1px solid $gray-light;
 }
@@ -39,11 +40,41 @@
   }
 }
 
+.loginHeader__exit {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  display: inline-block;
+  color: #B1B1B1;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: -25px;
+    @include background-image(exit, 14px, 13px);
+    opacity: 0.31;
+    transition: opacity $transition-normal;
+  }
+
+  &:hover {
+    color: $black;
+
+    &:before {
+      opacity: 1;
+    }
+  }
+}
+
 
 
 // content
 .loginContent {
   padding: 23px 40px 30px;
+
+  .linkButton--icon {
+    padding: 0 45px;
+  }
 }
 
 
