@@ -75,8 +75,34 @@ html
             a.subtitleMain__button.linkButton.linkButton--blue.linkButton--icon href="#"
               | изменить участников
               span.linkButton__icon.icon.icon--docs_add_white
-          .pieChartWrapper
+          .pieChartWrapper.colsFlex
             #piechart
+            .pieLegend.colsFlex
+              .piePerson.colFlex--2
+                .piePersonIn.popup-open data-popup="popup-guzhikov"
+                  span.piePerson__percentage style="color: #2196F3;" 40%
+                  p.piePerson__name Гужиков Павел
+                  p.piePerson__info Компентенции
+              .piePerson.colFlex--2
+                .piePersonIn.is-disabled
+                  span.piePerson__percentage style="color: #4CAF50;" 10%
+                  p.piePerson__name Медведев Дмитрий
+                  p.piePerson__info Связи
+              .piePerson.colFlex--2
+                .piePersonIn
+                  span.piePerson__percentage style="color: #CDDC39;" 30%
+                  p.piePerson__name Ардинцев Иван
+                  p.piePerson__info Финансы
+              .piePerson.colFlex--2
+                .piePersonIn
+                  span.piePerson__percentage style="color: #FF8F00;" 5%
+                  p.piePerson__name Шойгу Сергей
+                  p.piePerson__info Компетенции
+              .piePerson.colFlex--2
+                .piePersonIn
+                  span.piePerson__percentage style="color: #673AB7;" 15%
+                  p.piePerson__name Путин Владимир
+                  p.piePerson__info Финансы
 
       .contentIn
         .arrangementHeader
@@ -199,7 +225,7 @@ html
               | зафиксировать договоренности
               span.linkButton__icon.icon.icon--handshake_white
 
-    .popup.popup-person-note data-name="Гужиков Павел"
+    .popup.popup-person-note.popup-guzhikov data-name="Гужиков Павел"
       span.popup__close.icon--close.popup-close
       img.popup__avatar src="../../img/avatars/avatar_pavel.png"
       .popupPerson

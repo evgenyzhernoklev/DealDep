@@ -106,8 +106,65 @@
           <div class="subtitleMain">
             Распределение долей<a class="subtitleMain__button linkButton linkButton--blue linkButton--icon" href="#">изменить участников<span class="linkButton__icon icon icon--docs_add_white"></span></a>
           </div>
-          <div class="pieChartWrapper">
+          <div class="pieChartWrapper colsFlex">
             <div id="piechart"></div>
+            <div class="pieLegend colsFlex">
+              <div class="piePerson colFlex--2">
+                <div class="piePersonIn popup-open" data-popup="popup-guzhikov">
+                  <span class="piePerson__percentage" style="color: #2196F3;">40%</span>
+                  <p class="piePerson__name">
+                    Гужиков Павел
+                  </p>
+                  <p class="piePerson__info">
+                    Компентенции
+                  </p>
+                </div>
+              </div>
+              <div class="piePerson colFlex--2">
+                <div class="piePersonIn is-disabled">
+                  <span class="piePerson__percentage" style="color: #4CAF50;">10%</span>
+                  <p class="piePerson__name">
+                    Медведев Дмитрий
+                  </p>
+                  <p class="piePerson__info">
+                    Связи
+                  </p>
+                </div>
+              </div>
+              <div class="piePerson colFlex--2">
+                <div class="piePersonIn">
+                  <span class="piePerson__percentage" style="color: #CDDC39;">30%</span>
+                  <p class="piePerson__name">
+                    Ардинцев Иван
+                  </p>
+                  <p class="piePerson__info">
+                    Финансы
+                  </p>
+                </div>
+              </div>
+              <div class="piePerson colFlex--2">
+                <div class="piePersonIn">
+                  <span class="piePerson__percentage" style="color: #FF8F00;">5%</span>
+                  <p class="piePerson__name">
+                    Шойгу Сергей
+                  </p>
+                  <p class="piePerson__info">
+                    Компетенции
+                  </p>
+                </div>
+              </div>
+              <div class="piePerson colFlex--2">
+                <div class="piePersonIn">
+                  <span class="piePerson__percentage" style="color: #673AB7;">15%</span>
+                  <p class="piePerson__name">
+                    Путин Владимир
+                  </p>
+                  <p class="piePerson__info">
+                    Финансы
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -278,7 +335,7 @@
         </div>
       </div>
     </div>
-    <div class="popup popup-person-note" data-name="Гужиков Павел">
+    <div class="popup popup-person-note popup-guzhikov" data-name="Гужиков Павел">
       <span class="popup__close icon--close popup-close"></span><img class="popup__avatar" src="../../img/avatars/avatar_pavel.png" />
       <div class="popupPerson">
         <p class="titleMain popupPerson__name">

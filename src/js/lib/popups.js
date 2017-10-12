@@ -11,7 +11,7 @@ Popups.prototype.init = function () {
 Popups.prototype.openPopup = function(e) {
   e.preventDefault();
   var self = this,
-      target = $(e.target).data('popup'),
+      target = $(e.target).closest('.popup-open').data('popup'),
       $target = $('.' + target),
       closeEl = 'popup-close';
 

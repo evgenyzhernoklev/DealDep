@@ -22,13 +22,16 @@ PieChart.prototype.init = function () {
     ]);
 
     var options = {
+      colors: ['#2196F3', '#CDDC39', '#673AB7', '#4CAF50', '#FF8F00'],
       fontSize: 16,
       fontName: 'Circe-Regular',
       legend: {
         alignment: 'center'
       },
+      pieSliceText: 'none',
       tooltip: {
-        text: 'percentage'
+        text: 'percentage',
+        trigger: 'none'
       }
     };
 
