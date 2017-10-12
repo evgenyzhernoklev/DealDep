@@ -22,7 +22,9 @@ html
         .addProject
           .addProjectAbout
             .addProjectAbout__title Финансирование проекта
-            .addProjectAbout__info Кто инвестирует в проект, и на каких условиях
+            .addProjectAbout__info
+              | Кто инвестирует в проект, какие суммы и на каких условиях
+              |  будет производится перечисление средств
           .addProjectSteps.cols
             .addProjectStep.col--2.is-current
               span.addProjectStep__number 1
@@ -148,12 +150,12 @@ html
                           span.fieldWrapper__checkInfo Целевой
                           span.fieldWrapper__radioIcon
 
-                    .formblock-toggle-hidden data-target="loan_type"
-                      .formBlock.formBlock--aside
-                        .formBlock__title.formBlock__title--indentTop Укажите цель займа
-                        .formBlockIn
-                          label.fieldWrapper
-                            input.fieldWrapper__input type="text" name="" placeholder="Введите цель займа"
+
+                    .formBlock.formBlock--aside.formblock-toggle-hidden data-target="loan_type"
+                      .formBlock__title.formBlock__title--indentTop Укажите цель займа
+                      .formBlockIn
+                        label.fieldWrapper
+                          input.fieldWrapper__input type="text" name="" placeholder="Введите цель займа"
 
                     .formBlock.formBlock--aside
                       .formBlock__title Возможна конвертация в доли/акции проекта?
@@ -177,7 +179,7 @@ html
 
           .buttonContainer.buttonContainer--center
             button.buttonContainer__button.linkButton.linkButton--small type="button" отменить
-            button.buttonContainer__button.linkButton.linkButton--small.linkButton--blue type="submit" сохранить
+            button.buttonContainer__button.linkButton.linkButton--small.linkButton--blue type="submit" следующий шаг
 
 
 

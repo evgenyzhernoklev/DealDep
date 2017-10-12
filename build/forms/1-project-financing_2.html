@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0" name="viewport" />
+    <title>Forms - project financing step 2</title>
+    <meta content="" name="description" />
+    <link href="../css/app.css" media="all" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="header header--border">
+      <div class="headerIn">
+        <div class="contentIn">
+          <a class="header__logo icon icon--logo" href="/"></a>
+          <h1 class="header__title">
+            Новая договоренность
+          </h1>
+          <a class="header__close icon icon--close" href="#"></a>
+        </div>
+      </div>
+    </div>
+    <section class="addProjectSection">
+      <div class="contentIn">
+        <div class="addProject">
+          <div class="addProjectAbout">
+            <div class="addProjectAbout__title">
+              Финансирование проекта
+            </div>
+            <div class="addProjectAbout__info">
+              Кто инвестирует в проект, какие суммы и на каких условиях будет производится перечисление средств
+            </div>
+          </div>
+          <div class="addProjectSteps cols">
+            <div class="addProjectStep col--2 is-active">
+              <span class="addProjectStep__number">1</span>
+              <p class="addProjectStep__info">
+                Этапы финансирования
+              </p>
+            </div>
+            <div class="addProjectStep col--2 is-current">
+              <span class="addProjectStep__number">2</span>
+              <p class="addProjectStep__info">
+                Иные договоренности
+              </p>
+            </div>
+          </div>
+        </div>
+        <form class="form form--content">
+          <div class="formIn">
+            <div class="formContent">
+              <div class="formBlock formBlock--aside">
+                <div class="formBlock__title">
+                  Добавить принципы непредвиденного финансирования?
+                </div>
+                <div class="formBlockIn">
+                  <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" name="unpredictable_funding" type="radio" value="" /><span class="fieldWrapper__checkInfo">Нет</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" data-target="unpredictable_funding" name="unpredictable_funding" type="radio" value="" /><span class="fieldWrapper__checkInfo">Да</span><span class="fieldWrapper__radioIcon"></span></label>
+                </div>
+              </div>
+              <div class="formblock-toggle-hidden" data-target="unpredictable_funding">
+                <div class="formBlock formBlock--aside">
+                  <div class="formBlock__title">
+                    Принципы непредвиденного финансирования<i class="formBlockTooltipWrapper icon icon--question">
+                      <div class="formBlockTooltip">
+                        <p class="triangleShadow triangleShadow--bottom">
+                          <span class="triangleShadow__helper"></span>
+                        </p>
+                        Понятие политического конфликта традиционно ограничивает системный постиндустриализм, говорится в докладе ОБСЕ. Наконец, субъект политического процесса традиционно интегрирует марксизм. Харизматическое лидерство верифицирует феномен толпы, на что указывают и многие другие факторы.
+                      </div>
+                    </i>
+                  </div>
+                  <div class="formBlockIn">
+                    <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" name="unpredictable_funding_principles" type="radio" value="" /><span class="fieldWrapper__checkInfo">Финансирование проекта осуществляется участниками пропорционально долям</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" data-target="unpredictable_funding_principles" name="unpredictable_funding_principles" type="radio" value="" /><span class="fieldWrapper__checkInfo">Иной порядок</span><span class="fieldWrapper__radioIcon"></span></label>
+                  </div>
+                </div>
+                <div class="formBlock formBlock--aside formblock-toggle-hidden" data-target="unpredictable_funding_principles">
+                  <div class="formBlock__title formBlock__title--indentTop">
+                    Введите иной порядок<i class="formBlockTooltipWrapper icon icon--question">
+                      <div class="formBlockTooltip">
+                        <p class="triangleShadow triangleShadow--bottom">
+                          <span class="triangleShadow__helper"></span>
+                        </p>
+                        Понятие политического конфликта традиционно ограничивает системный постиндустриализм, говорится в докладе ОБСЕ. Наконец, субъект политического процесса традиционно интегрирует марксизм. Харизматическое лидерство верифицирует феномен толпы, на что указывают и многие другие факторы.
+                      </div>
+                    </i>
+                  </div>
+                  <div class="formBlockIn">
+                    <label class="fieldWrapper"><input class="fieldWrapper__input" name="" placeholder="Введите порядок непредвиденного финансирования" type="text" /></label>
+                  </div>
+                </div>
+              </div>
+              <div class="formBlock formBlock--aside">
+                <div class="formBlock__title">
+                  Добавить иные договоренности в отношении финансирования?
+                </div>
+                <div class="formBlockIn">
+                  <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" name="other_financing_arrangements" type="radio" value="" /><span class="fieldWrapper__checkInfo">Нет</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" data-target="other_financing_arrangements" name="other_financing_arrangements" type="radio" value="" /><span class="fieldWrapper__checkInfo">Да</span><span class="fieldWrapper__radioIcon"></span></label>
+                </div>
+              </div>
+              <div class="formBlock formBlock--aside formblock-toggle-hidden" data-target="other_financing_arrangements">
+                <div class="formBlock__title formBlock__title--indentTop">
+                  Иные договоренности в отношении финансирования
+                </div>
+                <div class="formBlockIn">
+                  <label class="fieldWrapper"><textarea class="fieldWrapper__input" name="" placeholder="Введите иные договоренности"></textarea></label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="buttonContainer buttonContainer--center">
+            <button class="buttonContainer__button linkButton linkButton--small" type="button">назад</button><button class="buttonContainer__button linkButton linkButton--small linkButton--blue" type="submit">сохранить</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+  <script src="../js/app.js"></script>
+</html>

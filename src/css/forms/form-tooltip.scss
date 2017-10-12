@@ -6,6 +6,8 @@
   border: 1px solid $blue;
   background-color: $white;
   border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
   transition: background-color $transition-normal, background-image $transition-normal;
 
   &:hover {
@@ -27,6 +29,7 @@
   margin-bottom: 15px;
   padding: 10px 15px;
   width: 350px;
+  font: 14px/20px $circe-regular;
   color: $black;
   background: $white;
   box-shadow: 0 0 14px 0 rgba(0,77,255,0.10);

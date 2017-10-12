@@ -1,0 +1,108 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta http-equiv="X-UA-Compatible" content="IE=edge"
+    meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0"
+    title Forms - project financing step 2
+    meta name="description" content=""
+    link rel="stylesheet" media="all" href="../css/app.css"
+  body
+
+    .header.header--border
+      .headerIn
+        .contentIn
+          a.header__logo.icon.icon--logo href="/"
+          h1.header__title Новая договоренность
+          a.header__close.icon.icon--close href="#"
+
+    section.addProjectSection
+      .contentIn
+
+        .addProject
+          .addProjectAbout
+            .addProjectAbout__title Финансирование проекта
+            .addProjectAbout__info
+              | Кто инвестирует в проект, какие суммы и на каких условиях
+              |  будет производится перечисление средств
+          .addProjectSteps.cols
+            .addProjectStep.col--2.is-active
+              span.addProjectStep__number 1
+              p.addProjectStep__info Этапы финансирования
+            .addProjectStep.col--2.is-current
+              span.addProjectStep__number 2
+              p.addProjectStep__info Иные договоренности
+
+        form.form.form--content
+          .formIn
+            .formContent
+              .formBlock.formBlock--aside
+                .formBlock__title Добавить принципы непредвиденного финансирования?
+                .formBlockIn
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input.formblock-toggle-link type="radio" name="unpredictable_funding" value=""
+                    span.fieldWrapper__checkInfo Нет
+                    span.fieldWrapper__radioIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input.formblock-toggle-link data-target="unpredictable_funding" type="radio" name="unpredictable_funding" value=""
+                    span.fieldWrapper__checkInfo Да
+                    span.fieldWrapper__radioIcon
+
+              .formblock-toggle-hidden data-target="unpredictable_funding"
+                .formBlock.formBlock--aside
+                  .formBlock__title
+                    | Принципы непредвиденного финансирования
+                    i.formBlockTooltipWrapper.icon.icon--question
+                      .formBlockTooltip
+                        p.triangleShadow.triangleShadow--bottom
+                          span.triangleShadow__helper
+                        | Понятие политического конфликта традиционно ограничивает системный постиндустриализм, говорится в докладе ОБСЕ. Наконец, субъект политического процесса традиционно интегрирует марксизм. Харизматическое лидерство верифицирует феномен толпы, на что указывают и многие другие факторы.
+                  .formBlockIn
+                    label.fieldWrapper.fieldWrapper--check
+                      input.fieldWrapper__input.formblock-toggle-link type="radio" name="unpredictable_funding_principles" value=""
+                      span.fieldWrapper__checkInfo Финансирование проекта осуществляется участниками пропорционально долям
+                      span.fieldWrapper__radioIcon
+                    label.fieldWrapper.fieldWrapper--check
+                      input.fieldWrapper__input.formblock-toggle-link data-target="unpredictable_funding_principles" type="radio" name="unpredictable_funding_principles" value=""
+                      span.fieldWrapper__checkInfo Иной порядок
+                      span.fieldWrapper__radioIcon
+
+                .formBlock.formBlock--aside.formblock-toggle-hidden data-target="unpredictable_funding_principles"
+                  .formBlock__title.formBlock__title--indentTop
+                    | Введите иной порядок
+                    i.formBlockTooltipWrapper.icon.icon--question
+                      .formBlockTooltip
+                        p.triangleShadow.triangleShadow--bottom
+                          span.triangleShadow__helper
+                        | Понятие политического конфликта традиционно ограничивает системный постиндустриализм, говорится в докладе ОБСЕ. Наконец, субъект политического процесса традиционно интегрирует марксизм. Харизматическое лидерство верифицирует феномен толпы, на что указывают и многие другие факторы.
+                  .formBlockIn
+                    label.fieldWrapper
+                      input.fieldWrapper__input type="text" name="" placeholder="Введите порядок непредвиденного финансирования"
+
+              .formBlock.formBlock--aside
+                .formBlock__title Добавить иные договоренности в отношении финансирования?
+                .formBlockIn
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input.formblock-toggle-link type="radio" name="other_financing_arrangements" value=""
+                    span.fieldWrapper__checkInfo Нет
+                    span.fieldWrapper__radioIcon
+                  label.fieldWrapper.fieldWrapper--check
+                    input.fieldWrapper__input.formblock-toggle-link data-target="other_financing_arrangements" type="radio" name="other_financing_arrangements" value=""
+                    span.fieldWrapper__checkInfo Да
+                    span.fieldWrapper__radioIcon
+
+              .formBlock.formBlock--aside.formblock-toggle-hidden data-target="other_financing_arrangements"
+                .formBlock__title.formBlock__title--indentTop Иные договоренности в отношении финансирования
+                .formBlockIn
+                  label.fieldWrapper
+                    textarea.fieldWrapper__input name="" placeholder="Введите иные договоренности"
+
+
+
+          .buttonContainer.buttonContainer--center
+            button.buttonContainer__button.linkButton.linkButton--small type="button" назад
+            button.buttonContainer__button.linkButton.linkButton--small.linkButton--blue type="submit" сохранить
+
+
+
+  script src="../js/app.js"
