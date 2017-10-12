@@ -22,11 +22,16 @@ PieChart.prototype.init = function () {
     ]);
 
     var options = {
+      chartArea: {
+        width: '100%',
+        height: '100%'
+      },
       colors: ['#2196F3', '#CDDC39', '#673AB7', '#4CAF50', '#FF8F00'],
       fontSize: 16,
       fontName: 'Circe-Regular',
       legend: {
-        alignment: 'center'
+        alignment: 'center',
+        position: 'none'
       },
       pieSliceText: 'none',
       tooltip: {
