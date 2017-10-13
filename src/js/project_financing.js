@@ -10,6 +10,7 @@ var ProjectFinancing = function() {
 ProjectFinancing.prototype.init = function() {
   this.body.on('click', '.financing-participants-update', this.updatePersonsEntity.bind(this));
   this.body.on('click', '.financing-participants-edit', this.editPersonsEntity.bind(this));
+  this.body.on('click', '.financing-add-step', this.addStep.bind(this));
 };
 
 ProjectFinancing.prototype.updatePersonsEntity = function(e) {
@@ -21,6 +22,7 @@ ProjectFinancing.prototype.updatePersonsEntity = function(e) {
   $container.addClass('is-ok');
   $container.find('.formSwitch, .buttonContainer').stop().slideUp(300);
   $container.find('.formHidden, .editButton').stop().slideDown(300);
+  $container.siblings('.financing-next-step').stop().slideDown(300);
 };
 
 ProjectFinancing.prototype.editPersonsEntity = function(e) {
@@ -28,8 +30,19 @@ ProjectFinancing.prototype.editPersonsEntity = function(e) {
   var $target = $(e.target),
       $container = $target.closest('.financing-participants-clone');
 
+  this.submitButton.prop('disabled', 'true');
+  $container.removeClass('is-ok');
   $container.find('.formSwitch, .buttonContainer').stop().slideDown(300);
   $container.find('.formHidden, .editButton').stop().slideUp(300);
+  $container.siblings('.financing-next-step').stop().slideUp(300);
+};
+
+ProjectFinancing.prototype.addStep = function(e) {
+  e.preventDefault();
+  var $clone = this.personsEntityClone.clone(),
+      $last = $('.financing-participants-clone').last();
+
+  $clone.hide().insertAfter($last).slideDown(300);
 };
 
 

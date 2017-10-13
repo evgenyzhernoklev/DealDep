@@ -27,8 +27,9 @@
 
 
 .editButton {
+  height: 50px;
   padding: 0 25px;
-  font: 10px/50px $circe-bold;
+  font: 10px/52px $circe-bold;
   text-align: center;
   text-transform: uppercase;
   color: $black;
@@ -39,6 +40,7 @@
 
   .icon {
     margin-right: 12px;
+    vertical-align: text-top;
   }
 
   &:hover {
@@ -48,5 +50,10 @@
   .formContent & {
     display: none;
     margin: 0 -25px -18px;
+  }
+
+  &.editButton--add {
+    display: block;
+    margin-top: 29px;
   }
 }

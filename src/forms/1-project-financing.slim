@@ -36,7 +36,7 @@ html
         form.form.form--content
           .formIn.financing-participants-clone
             .formContent
-              .formTitle Участники финансирования
+              .formTitle.formTitle--big Участники финансирования
               .formInfo Выберите кто будет инвестировать из участников проекта
 
               .formSwitch.tab-container
@@ -769,14 +769,13 @@ html
                 span.editButton__icon.icon.icon--edit_black
                 | редактировать этап
 
-
-
-
-          /
-          .formIn
+          .formIn.hidden.financing-next-step
             .formContent
-              .formTitle Добавить второй этап финансирования?
+              .formTitle.formTitle--big Добавить второй этап финансирования?
               .formInfo Вы можете добавить следующий этап финансирования, по аналогии с первым.
+              .editButton.editButton--add.financing-add-step
+                span.editButton__icon.icon.icon--add
+                | добавить еще этап
 
           .buttonContainer.buttonContainer--center
             button.buttonContainer__button.linkButton.linkButton--small type="button" отменить
