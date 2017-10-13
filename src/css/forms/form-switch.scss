@@ -23,3 +23,30 @@
   padding: 18px 30px 17px;
   font: 16px/24px $circe-bold;
 }
+
+
+
+.editButton {
+  padding: 0 25px;
+  font: 10px/50px $circe-bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: $black;
+  border-top: 1px solid $gray;
+  background-color: $white;
+  cursor: pointer;
+  transition: background-color $transition-normal;
+
+  .icon {
+    margin-right: 12px;
+  }
+
+  &:hover {
+    background-color: $white-light;
+  }
+
+  .formContent & {
+    display: none;
+    margin: 0 -25px -18px;
+  }
+}

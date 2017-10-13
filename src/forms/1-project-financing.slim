@@ -34,7 +34,7 @@ html
               p.addProjectStep__info Иные договоренности
 
         form.form.form--content
-          .formIn
+          .formIn.financing-participants-clone
             .formContent
               .formTitle Участники финансирования
               .formInfo Выберите кто будет инвестировать из участников проекта
@@ -150,7 +150,6 @@ html
                           span.fieldWrapper__checkInfo Целевой
                           span.fieldWrapper__radioIcon
 
-
                     .formBlock.formBlock--aside.formblock-toggle-hidden data-target="loan_type"
                       .formBlock__title.formBlock__title--indentTop Укажите цель займа
                       .formBlockIn
@@ -169,17 +168,619 @@ html
                           span.fieldWrapper__checkInfo Невозможна
                           span.fieldWrapper__radioIcon
 
+              .formSwitch.tab-container
+                .personEntityTabsWrapper.tab-link-container.slide
+                  a.personEntityTabsWrapper__link.personEntityTabsWrapper__link--helper.tab-link href="#"
+                  a.personEntityTabsWrapper__link.tab-link.is-active data-container-class="slide" href="#"
+                .formSwitch__title Путин Владимир
+                .tab-content
+                  .formBlock.formBlock--aside
+                    .formBlock__title Нужно ли выполнить условия для начала финансирования?
+                    .formBlockIn
+                      label.fieldWrapper.fieldWrapper--check
+                        input.fieldWrapper__input.formblock-toggle-link type="radio" name="financing_conditions2" value=""
+                        span.fieldWrapper__checkInfo Не нужно
+                        span.fieldWrapper__radioIcon
+                      label.fieldWrapper.fieldWrapper--check
+                        input.fieldWrapper__input.formblock-toggle-link data-target="start_financing_conditions2" type="radio" name="financing_conditions2" value=""
+                        span.fieldWrapper__checkInfo Нужно
+                        span.fieldWrapper__radioIcon
+
+                  .formblock-toggle-hidden data-target="start_financing_conditions2"
+                    .formBlock.formBlock--aside.pattern-field data-field="start_financing_conditions2"
+                      .formBlock__title.formBlock__title--indentTop Условия начала финансирования
+                      .formBlockIn
+                        label.fieldWrapper
+                          input.fieldWrapper__input type="text" name="" placeholder="Введите условие начала финансирования"
+                    .formBlock.formBlock--aside
+                      .formBlockIn
+                        a.linkButton.linkButton--icon.add-field data-field="start_financing_conditions2" href="#"
+                          | добавить еще условие
+                          span.linkButton__icon.icon.icon--add
+
+                  .formBlock.formBlock--aside
+                    .formBlock__title.formBlock__title--indentTop Сумма и валюта финансирования
+                    .formBlockIn
+                      .formBlockWrapper.formBlockWrapper--select
+                        .formBlock.formBlock--2
+                          label.fieldWrapper
+                            input.fieldWrapper__input type="number" name="" placeholder="Введите сумму"
+                        .formBlock.formBlock--2
+                					label.fieldWrapper
+                						select.fieldWrapper__select.form-select placeholder="Выберите валюту"
+                							option value="" Выберите валюту
+                							option value="1" selected="selected" Рублей
+                							option value="2" Юаней
+                							option value="3" Евро
+
+                  .formBlock.formBlock--aside
+                    .formBlock__title Порядок внесения денежных средств
+                    .formBlockIn
+                      label.fieldWrapper.fieldWrapper--check
+                        input.fieldWrapper__input.formblock-toggle-link type="radio" name="depositing_procedure2" value=""
+                        span.fieldWrapper__checkInfo Единовременно
+                        span.fieldWrapper__radioIcon
+                      label.fieldWrapper.fieldWrapper--check
+                        input.fieldWrapper__input.formblock-toggle-link data-target="tranche_sum_date2" type="radio" name="depositing_procedure2" value=""
+                        span.fieldWrapper__checkInfo Траншами
+                        span.fieldWrapper__radioIcon
+
+                  .formblock-toggle-hidden data-target="tranche_sum_date2"
+                    .formBlock.formBlock--aside.pattern-field data-field="tranche_sum_date2"
+                      .formBlock__title.formBlock__title--indentTop Выберите суммы и даты траншей
+                      .formBlockIn
+                        .formBlockWrapper
+                          .formBlock.formBlock--2
+                            label.fieldWrapper
+                              input.fieldWrapper__input type="number" name="" placeholder="Сумма транша"
+                          .formBlock.formBlock--2
+                            label.fieldWrapper
+                              input.fieldWrapper__input.field-date type="text" name="" placeholder="Дата транша"
+                              span.fieldWrapper__icon.icon.icon--calendar
+                    .formBlock.formBlock--aside
+                      .formBlockIn
+                        a.linkButton.linkButton--icon.add-field data-field="tranche_sum_date2" href="#"
+                          | добавить еще транш
+                          span.linkButton__icon.icon.icon--add
+
+                  .formBlock.formBlock--aside
+                    .formBlock__title Форма финансирования
+                    .formBlockIn
+                      label.fieldWrapper.fieldWrapper--check
+                        input.fieldWrapper__input.formblock-toggle-link type="radio" name="financing_form2" value=""
+                        span.fieldWrapper__checkInfo В капитал (cash-in)
+                        span.fieldWrapper__radioIcon
+                      label.fieldWrapper.fieldWrapper--check
+                        input.fieldWrapper__input.formblock-toggle-link data-target="financing_form2" type="radio" name="financing_form2" value=""
+                        span.fieldWrapper__checkInfo Заемное финансирование
+                        span.fieldWrapper__radioIcon
+
+                  .formblock-toggle-hidden data-target="financing_form2"
+                    .formBlock.formBlock--aside
+                      .formBlock__title Выберите процентную ставку<br/>и срок займа
+                      .formBlockIn
+                        .formBlockWrapper
+                          .formBlock.formBlock--2
+                            label.fieldWrapper
+                              input.fieldWrapper__input type="number" name="" placeholder="Процентная ставка"
+                          .formBlock.formBlock--2
+                            label.fieldWrapper
+                              input.fieldWrapper__input type="text" name="" placeholder="Срок займа"
+
+                    .formBlock.formBlock--aside
+                      .formBlock__title Вид займа
+                      .formBlockIn
+                        label.fieldWrapper.fieldWrapper--check
+                          input.fieldWrapper__input.formblock-toggle-link type="radio" name="loan_type2" value=""
+                          span.fieldWrapper__checkInfo Нецелевой
+                          span.fieldWrapper__radioIcon
+                        label.fieldWrapper.fieldWrapper--check
+                          input.fieldWrapper__input.formblock-toggle-link data-target="loan_type2" type="radio" name="loan_type2" value=""
+                          span.fieldWrapper__checkInfo Целевой
+                          span.fieldWrapper__radioIcon
+
+                    .formBlock.formBlock--aside.formblock-toggle-hidden data-target="loan_type2"
+                      .formBlock__title.formBlock__title--indentTop Укажите цель займа
+                      .formBlockIn
+                        label.fieldWrapper
+                          input.fieldWrapper__input type="text" name="" placeholder="Введите цель займа"
+
+                    .formBlock.formBlock--aside
+                      .formBlock__title Возможна конвертация в доли/акции проекта?
+                      .formBlockIn
+                        label.fieldWrapper.fieldWrapper--check
+                          input.fieldWrapper__input type="radio" name="project_conversion2" value=""
+                          span.fieldWrapper__checkInfo Возможна
+                          span.fieldWrapper__radioIcon
+                        label.fieldWrapper.fieldWrapper--check
+                          input.fieldWrapper__input type="radio" name="project_conversion2" value=""
+                          span.fieldWrapper__checkInfo Невозможна
+                          span.fieldWrapper__radioIcon
+
+              .formSwitch.tab-container
+                .personEntityTabsWrapper.tab-link-container.slide
+                  a.personEntityTabsWrapper__link.personEntityTabsWrapper__link--helper.tab-link href="#"
+                  a.personEntityTabsWrapper__link.tab-link.is-active data-container-class="slide" href="#"
+                .formSwitch__title Шойгу Сергей
+                .tab-content
+                  .formBlock.formBlock--aside
+                    .formBlock__title Нужно ли выполнить условия для начала финансирования?
+                    .formBlockIn
+                      label.fieldWrapper.fieldWrapper--check
+                        input.fieldWrapper__input.formblock-toggle-link type="radio" name="financing_conditions3" value=""
+                        span.fieldWrapper__checkInfo Не нужно
+                        span.fieldWrapper__radioIcon
+                      label.fieldWrapper.fieldWrapper--check
+                        input.fieldWrapper__input.formblock-toggle-link data-target="start_financing_conditions3" type="radio" name="financing_conditions3" value=""
+                        span.fieldWrapper__checkInfo Нужно
+                        span.fieldWrapper__radioIcon
+
+                  .formblock-toggle-hidden data-target="start_financing_conditions3"
+                    .formBlock.formBlock--aside.pattern-field data-field="start_financing_conditions3"
+                      .formBlock__title.formBlock__title--indentTop Условия начала финансирования
+                      .formBlockIn
+                        label.fieldWrapper
+                          input.fieldWrapper__input type="text" name="" placeholder="Введите условие начала финансирования"
+                    .formBlock.formBlock--aside
+                      .formBlockIn
+                        a.linkButton.linkButton--icon.add-field data-field="start_financing_conditions3" href="#"
+                          | добавить еще условие
+                          span.linkButton__icon.icon.icon--add
+
+                  .formBlock.formBlock--aside
+                    .formBlock__title.formBlock__title--indentTop Сумма и валюта финансирования
+                    .formBlockIn
+                      .formBlockWrapper.formBlockWrapper--select
+                        .formBlock.formBlock--2
+                          label.fieldWrapper
+                            input.fieldWrapper__input type="number" name="" placeholder="Введите сумму"
+                        .formBlock.formBlock--2
+                					label.fieldWrapper
+                						select.fieldWrapper__select.form-select placeholder="Выберите валюту"
+                							option value="" Выберите валюту
+                							option value="1" selected="selected" Рублей
+                							option value="2" Юаней
+                							option value="3" Евро
+
+                  .formBlock.formBlock--aside
+                    .formBlock__title Порядок внесения денежных средств
+                    .formBlockIn
+                      label.fieldWrapper.fieldWrapper--check
+                        input.fieldWrapper__input.formblock-toggle-link type="radio" name="depositing_procedure3" value=""
+                        span.fieldWrapper__checkInfo Единовременно
+                        span.fieldWrapper__radioIcon
+                      label.fieldWrapper.fieldWrapper--check
+                        input.fieldWrapper__input.formblock-toggle-link data-target="tranche_sum_date3" type="radio" name="depositing_procedure3" value=""
+                        span.fieldWrapper__checkInfo Траншами
+                        span.fieldWrapper__radioIcon
+
+                  .formblock-toggle-hidden data-target="tranche_sum_date3"
+                    .formBlock.formBlock--aside.pattern-field data-field="tranche_sum_date3"
+                      .formBlock__title.formBlock__title--indentTop Выберите суммы и даты траншей
+                      .formBlockIn
+                        .formBlockWrapper
+                          .formBlock.formBlock--2
+                            label.fieldWrapper
+                              input.fieldWrapper__input type="number" name="" placeholder="Сумма транша"
+                          .formBlock.formBlock--2
+                            label.fieldWrapper
+                              input.fieldWrapper__input.field-date type="text" name="" placeholder="Дата транша"
+                              span.fieldWrapper__icon.icon.icon--calendar
+                    .formBlock.formBlock--aside
+                      .formBlockIn
+                        a.linkButton.linkButton--icon.add-field data-field="tranche_sum_date3" href="#"
+                          | добавить еще транш
+                          span.linkButton__icon.icon.icon--add
+
+                  .formBlock.formBlock--aside
+                    .formBlock__title Форма финансирования
+                    .formBlockIn
+                      label.fieldWrapper.fieldWrapper--check
+                        input.fieldWrapper__input.formblock-toggle-link type="radio" name="financing_form3" value=""
+                        span.fieldWrapper__checkInfo В капитал (cash-in)
+                        span.fieldWrapper__radioIcon
+                      label.fieldWrapper.fieldWrapper--check
+                        input.fieldWrapper__input.formblock-toggle-link data-target="financing_form3" type="radio" name="financing_form3" value=""
+                        span.fieldWrapper__checkInfo Заемное финансирование
+                        span.fieldWrapper__radioIcon
+
+                  .formblock-toggle-hidden data-target="financing_form3"
+                    .formBlock.formBlock--aside
+                      .formBlock__title Выберите процентную ставку<br/>и срок займа
+                      .formBlockIn
+                        .formBlockWrapper
+                          .formBlock.formBlock--2
+                            label.fieldWrapper
+                              input.fieldWrapper__input type="number" name="" placeholder="Процентная ставка"
+                          .formBlock.formBlock--2
+                            label.fieldWrapper
+                              input.fieldWrapper__input type="text" name="" placeholder="Срок займа"
+
+                    .formBlock.formBlock--aside
+                      .formBlock__title Вид займа
+                      .formBlockIn
+                        label.fieldWrapper.fieldWrapper--check
+                          input.fieldWrapper__input.formblock-toggle-link type="radio" name="loan_type3" value=""
+                          span.fieldWrapper__checkInfo Нецелевой
+                          span.fieldWrapper__radioIcon
+                        label.fieldWrapper.fieldWrapper--check
+                          input.fieldWrapper__input.formblock-toggle-link data-target="loan_type3" type="radio" name="loan_type3" value=""
+                          span.fieldWrapper__checkInfo Целевой
+                          span.fieldWrapper__radioIcon
+
+                    .formBlock.formBlock--aside.formblock-toggle-hidden data-target="loan_type3"
+                      .formBlock__title.formBlock__title--indentTop Укажите цель займа
+                      .formBlockIn
+                        label.fieldWrapper
+                          input.fieldWrapper__input type="text" name="" placeholder="Введите цель займа"
+
+                    .formBlock.formBlock--aside
+                      .formBlock__title Возможна конвертация в доли/акции проекта?
+                      .formBlockIn
+                        label.fieldWrapper.fieldWrapper--check
+                          input.fieldWrapper__input type="radio" name="project_conversion3" value=""
+                          span.fieldWrapper__checkInfo Возможна
+                          span.fieldWrapper__radioIcon
+                        label.fieldWrapper.fieldWrapper--check
+                          input.fieldWrapper__input type="radio" name="project_conversion3" value=""
+                          span.fieldWrapper__checkInfo Невозможна
+                          span.fieldWrapper__radioIcon
+
+              .formSwitch.tab-container
+                .personEntityTabsWrapper.tab-link-container.slide
+                  a.personEntityTabsWrapper__link.personEntityTabsWrapper__link--helper.tab-link href="#"
+                  a.personEntityTabsWrapper__link.tab-link.is-active data-container-class="slide" href="#"
+                .formSwitch__title Ардинцев Иван
+                .tab-content
+                  .formBlock.formBlock--aside
+                    .formBlock__title Нужно ли выполнить условия для начала финансирования?
+                    .formBlockIn
+                      label.fieldWrapper.fieldWrapper--check
+                        input.fieldWrapper__input.formblock-toggle-link type="radio" name="financing_conditions4" value=""
+                        span.fieldWrapper__checkInfo Не нужно
+                        span.fieldWrapper__radioIcon
+                      label.fieldWrapper.fieldWrapper--check
+                        input.fieldWrapper__input.formblock-toggle-link data-target="start_financing_conditions4" type="radio" name="financing_conditions4" value=""
+                        span.fieldWrapper__checkInfo Нужно
+                        span.fieldWrapper__radioIcon
+
+                  .formblock-toggle-hidden data-target="start_financing_conditions4"
+                    .formBlock.formBlock--aside.pattern-field data-field="start_financing_conditions4"
+                      .formBlock__title.formBlock__title--indentTop Условия начала финансирования
+                      .formBlockIn
+                        label.fieldWrapper
+                          input.fieldWrapper__input type="text" name="" placeholder="Введите условие начала финансирования"
+                    .formBlock.formBlock--aside
+                      .formBlockIn
+                        a.linkButton.linkButton--icon.add-field data-field="start_financing_conditions4" href="#"
+                          | добавить еще условие
+                          span.linkButton__icon.icon.icon--add
+
+                  .formBlock.formBlock--aside
+                    .formBlock__title.formBlock__title--indentTop Сумма и валюта финансирования
+                    .formBlockIn
+                      .formBlockWrapper.formBlockWrapper--select
+                        .formBlock.formBlock--2
+                          label.fieldWrapper
+                            input.fieldWrapper__input type="number" name="" placeholder="Введите сумму"
+                        .formBlock.formBlock--2
+                					label.fieldWrapper
+                						select.fieldWrapper__select.form-select placeholder="Выберите валюту"
+                							option value="" Выберите валюту
+                							option value="1" selected="selected" Рублей
+                							option value="2" Юаней
+                							option value="3" Евро
+
+                  .formBlock.formBlock--aside
+                    .formBlock__title Порядок внесения денежных средств
+                    .formBlockIn
+                      label.fieldWrapper.fieldWrapper--check
+                        input.fieldWrapper__input.formblock-toggle-link type="radio" name="depositing_procedure4" value=""
+                        span.fieldWrapper__checkInfo Единовременно
+                        span.fieldWrapper__radioIcon
+                      label.fieldWrapper.fieldWrapper--check
+                        input.fieldWrapper__input.formblock-toggle-link data-target="tranche_sum_date4" type="radio" name="depositing_procedure4" value=""
+                        span.fieldWrapper__checkInfo Траншами
+                        span.fieldWrapper__radioIcon
+
+                  .formblock-toggle-hidden data-target="tranche_sum_date4"
+                    .formBlock.formBlock--aside.pattern-field data-field="tranche_sum_date4"
+                      .formBlock__title.formBlock__title--indentTop Выберите суммы и даты траншей
+                      .formBlockIn
+                        .formBlockWrapper
+                          .formBlock.formBlock--2
+                            label.fieldWrapper
+                              input.fieldWrapper__input type="number" name="" placeholder="Сумма транша"
+                          .formBlock.formBlock--2
+                            label.fieldWrapper
+                              input.fieldWrapper__input.field-date type="text" name="" placeholder="Дата транша"
+                              span.fieldWrapper__icon.icon.icon--calendar
+                    .formBlock.formBlock--aside
+                      .formBlockIn
+                        a.linkButton.linkButton--icon.add-field data-field="tranche_sum_date4" href="#"
+                          | добавить еще транш
+                          span.linkButton__icon.icon.icon--add
+
+                  .formBlock.formBlock--aside
+                    .formBlock__title Форма финансирования
+                    .formBlockIn
+                      label.fieldWrapper.fieldWrapper--check
+                        input.fieldWrapper__input.formblock-toggle-link type="radio" name="financing_form4" value=""
+                        span.fieldWrapper__checkInfo В капитал (cash-in)
+                        span.fieldWrapper__radioIcon
+                      label.fieldWrapper.fieldWrapper--check
+                        input.fieldWrapper__input.formblock-toggle-link data-target="financing_form4" type="radio" name="financing_form4" value=""
+                        span.fieldWrapper__checkInfo Заемное финансирование
+                        span.fieldWrapper__radioIcon
+
+                  .formblock-toggle-hidden data-target="financing_form4"
+                    .formBlock.formBlock--aside
+                      .formBlock__title Выберите процентную ставку<br/>и срок займа
+                      .formBlockIn
+                        .formBlockWrapper
+                          .formBlock.formBlock--2
+                            label.fieldWrapper
+                              input.fieldWrapper__input type="number" name="" placeholder="Процентная ставка"
+                          .formBlock.formBlock--2
+                            label.fieldWrapper
+                              input.fieldWrapper__input type="text" name="" placeholder="Срок займа"
+
+                    .formBlock.formBlock--aside
+                      .formBlock__title Вид займа
+                      .formBlockIn
+                        label.fieldWrapper.fieldWrapper--check
+                          input.fieldWrapper__input.formblock-toggle-link type="radio" name="loan_type4" value=""
+                          span.fieldWrapper__checkInfo Нецелевой
+                          span.fieldWrapper__radioIcon
+                        label.fieldWrapper.fieldWrapper--check
+                          input.fieldWrapper__input.formblock-toggle-link data-target="loan_type4" type="radio" name="loan_type4" value=""
+                          span.fieldWrapper__checkInfo Целевой
+                          span.fieldWrapper__radioIcon
+
+                    .formBlock.formBlock--aside.formblock-toggle-hidden data-target="loan_type4"
+                      .formBlock__title.formBlock__title--indentTop Укажите цель займа
+                      .formBlockIn
+                        label.fieldWrapper
+                          input.fieldWrapper__input type="text" name="" placeholder="Введите цель займа"
+
+                    .formBlock.formBlock--aside
+                      .formBlock__title Возможна конвертация в доли/акции проекта?
+                      .formBlockIn
+                        label.fieldWrapper.fieldWrapper--check
+                          input.fieldWrapper__input type="radio" name="project_conversion4" value=""
+                          span.fieldWrapper__checkInfo Возможна
+                          span.fieldWrapper__radioIcon
+                        label.fieldWrapper.fieldWrapper--check
+                          input.fieldWrapper__input type="radio" name="project_conversion4" value=""
+                          span.fieldWrapper__checkInfo Невозможна
+                          span.fieldWrapper__radioIcon
+
+              .formSwitch.tab-container
+                .personEntityTabsWrapper.tab-link-container.slide
+                  a.personEntityTabsWrapper__link.personEntityTabsWrapper__link--helper.tab-link href="#"
+                  a.personEntityTabsWrapper__link.tab-link.is-active data-container-class="slide" href="#"
+                .formSwitch__title Медведев Дмитрий
+                .tab-content
+                  .formBlock.formBlock--aside
+                    .formBlock__title Нужно ли выполнить условия для начала финансирования?
+                    .formBlockIn
+                      label.fieldWrapper.fieldWrapper--check
+                        input.fieldWrapper__input.formblock-toggle-link type="radio" name="financing_conditions5" value=""
+                        span.fieldWrapper__checkInfo Не нужно
+                        span.fieldWrapper__radioIcon
+                      label.fieldWrapper.fieldWrapper--check
+                        input.fieldWrapper__input.formblock-toggle-link data-target="start_financing_conditions5" type="radio" name="financing_conditions5" value=""
+                        span.fieldWrapper__checkInfo Нужно
+                        span.fieldWrapper__radioIcon
+
+                  .formblock-toggle-hidden data-target="start_financing_conditions5"
+                    .formBlock.formBlock--aside.pattern-field data-field="start_financing_conditions5"
+                      .formBlock__title.formBlock__title--indentTop Условия начала финансирования
+                      .formBlockIn
+                        label.fieldWrapper
+                          input.fieldWrapper__input type="text" name="" placeholder="Введите условие начала финансирования"
+                    .formBlock.formBlock--aside
+                      .formBlockIn
+                        a.linkButton.linkButton--icon.add-field data-field="start_financing_conditions5" href="#"
+                          | добавить еще условие
+                          span.linkButton__icon.icon.icon--add
+
+                  .formBlock.formBlock--aside
+                    .formBlock__title.formBlock__title--indentTop Сумма и валюта финансирования
+                    .formBlockIn
+                      .formBlockWrapper.formBlockWrapper--select
+                        .formBlock.formBlock--2
+                          label.fieldWrapper
+                            input.fieldWrapper__input type="number" name="" placeholder="Введите сумму"
+                        .formBlock.formBlock--2
+                					label.fieldWrapper
+                						select.fieldWrapper__select.form-select placeholder="Выберите валюту"
+                							option value="" Выберите валюту
+                							option value="1" selected="selected" Рублей
+                							option value="2" Юаней
+                							option value="3" Евро
+
+                  .formBlock.formBlock--aside
+                    .formBlock__title Порядок внесения денежных средств
+                    .formBlockIn
+                      label.fieldWrapper.fieldWrapper--check
+                        input.fieldWrapper__input.formblock-toggle-link type="radio" name="depositing_procedure5" value=""
+                        span.fieldWrapper__checkInfo Единовременно
+                        span.fieldWrapper__radioIcon
+                      label.fieldWrapper.fieldWrapper--check
+                        input.fieldWrapper__input.formblock-toggle-link data-target="tranche_sum_date5" type="radio" name="depositing_procedure5" value=""
+                        span.fieldWrapper__checkInfo Траншами
+                        span.fieldWrapper__radioIcon
+
+                  .formblock-toggle-hidden data-target="tranche_sum_date5"
+                    .formBlock.formBlock--aside.pattern-field data-field="tranche_sum_date5"
+                      .formBlock__title.formBlock__title--indentTop Выберите суммы и даты траншей
+                      .formBlockIn
+                        .formBlockWrapper
+                          .formBlock.formBlock--2
+                            label.fieldWrapper
+                              input.fieldWrapper__input type="number" name="" placeholder="Сумма транша"
+                          .formBlock.formBlock--2
+                            label.fieldWrapper
+                              input.fieldWrapper__input.field-date type="text" name="" placeholder="Дата транша"
+                              span.fieldWrapper__icon.icon.icon--calendar
+                    .formBlock.formBlock--aside
+                      .formBlockIn
+                        a.linkButton.linkButton--icon.add-field data-field="tranche_sum_date5" href="#"
+                          | добавить еще транш
+                          span.linkButton__icon.icon.icon--add
+
+                  .formBlock.formBlock--aside
+                    .formBlock__title Форма финансирования
+                    .formBlockIn
+                      label.fieldWrapper.fieldWrapper--check
+                        input.fieldWrapper__input.formblock-toggle-link type="radio" name="financing_form5" value=""
+                        span.fieldWrapper__checkInfo В капитал (cash-in)
+                        span.fieldWrapper__radioIcon
+                      label.fieldWrapper.fieldWrapper--check
+                        input.fieldWrapper__input.formblock-toggle-link data-target="financing_form5" type="radio" name="financing_form5" value=""
+                        span.fieldWrapper__checkInfo Заемное финансирование
+                        span.fieldWrapper__radioIcon
+
+                  .formblock-toggle-hidden data-target="financing_form5"
+                    .formBlock.formBlock--aside
+                      .formBlock__title Выберите процентную ставку<br/>и срок займа
+                      .formBlockIn
+                        .formBlockWrapper
+                          .formBlock.formBlock--2
+                            label.fieldWrapper
+                              input.fieldWrapper__input type="number" name="" placeholder="Процентная ставка"
+                          .formBlock.formBlock--2
+                            label.fieldWrapper
+                              input.fieldWrapper__input type="text" name="" placeholder="Срок займа"
+
+                    .formBlock.formBlock--aside
+                      .formBlock__title Вид займа
+                      .formBlockIn
+                        label.fieldWrapper.fieldWrapper--check
+                          input.fieldWrapper__input.formblock-toggle-link type="radio" name="loan_type5" value=""
+                          span.fieldWrapper__checkInfo Нецелевой
+                          span.fieldWrapper__radioIcon
+                        label.fieldWrapper.fieldWrapper--check
+                          input.fieldWrapper__input.formblock-toggle-link data-target="loan_type5" type="radio" name="loan_type5" value=""
+                          span.fieldWrapper__checkInfo Целевой
+                          span.fieldWrapper__radioIcon
+
+                    .formBlock.formBlock--aside.formblock-toggle-hidden data-target="loan_type5"
+                      .formBlock__title.formBlock__title--indentTop Укажите цель займа
+                      .formBlockIn
+                        label.fieldWrapper
+                          input.fieldWrapper__input type="text" name="" placeholder="Введите цель займа"
+
+                    .formBlock.formBlock--aside
+                      .formBlock__title Возможна конвертация в доли/акции проекта?
+                      .formBlockIn
+                        label.fieldWrapper.fieldWrapper--check
+                          input.fieldWrapper__input type="radio" name="project_conversion5" value=""
+                          span.fieldWrapper__checkInfo Возможна
+                          span.fieldWrapper__radioIcon
+                        label.fieldWrapper.fieldWrapper--check
+                          input.fieldWrapper__input type="radio" name="project_conversion5" value=""
+                          span.fieldWrapper__checkInfo Невозможна
+                          span.fieldWrapper__radioIcon
+
+              .buttonContainer.buttonContainer--line
+                button.buttonContainer__button.linkButton.linkButton--small.linkButton--blue.financing-participants-update type="button" сохранить
+                button.buttonContainer__button.linkButton.linkButton--small type="button" сбросить форму
+
+              .formHidden
+                .formBlock.formBlock--aside
+                  .formBlock__title Меняется ли распределение долей после финансирования?
+                  .formBlockIn
+                    label.fieldWrapper.fieldWrapper--check
+                      input.fieldWrapper__input.formblock-toggle-link type="radio" name="change_shares_distribution" value=""
+                      span.fieldWrapper__checkInfo Не меняется
+                      span.fieldWrapper__radioIcon
+                    label.fieldWrapper.fieldWrapper--check
+                      input.fieldWrapper__input.formblock-toggle-link data-target="change_shares_distribution" type="radio" name="change_shares_distribution" value=""
+                      span.fieldWrapper__checkInfo Меняется
+                      span.fieldWrapper__radioIcon
+                .formblock-toggle-hidden data-target="change_shares_distribution"
+                  .formBlock.formBlock--aside
+                    .formBlock__title Выберите изменение долей
+                    .formBlockIn
+                      .share
+                        .formTitle Павел Гужиков
+                        .formBlock.formBlock--slider
+                          label.fieldWrapper
+                            input.fieldWrapper__input.fieldWrapper__input--slider type="number" name="" placeholder="0" value="20"
+                            span.fieldWrapper__dimension %
+                          .formSlider
+                        .shareLock.slider-lock-toggle
+                          .shareTip
+                            span.shareTip__info Зафиксировать долю
+                            p.triangleShadow
+                              span.triangleShadow__helper
+                      .share
+                        .formTitle Иван Ардинцев
+                        .formBlock.formBlock--slider
+                          label.fieldWrapper
+                            input.fieldWrapper__input.fieldWrapper__input--slider type="number" name="" placeholder="0" value="20"
+                            span.fieldWrapper__dimension %
+                          .formSlider
+                        .shareLock.slider-lock-toggle
+                          .shareTip
+                            span.shareTip__info Зафиксировать долю
+                            p.triangleShadow
+                              span.triangleShadow__helper
+                      .share
+                        .formTitle Владимир Путин
+                        .formBlock.formBlock--slider
+                          label.fieldWrapper
+                            input.fieldWrapper__input.fieldWrapper__input--slider type="number" name="" placeholder="0" value="20"
+                            span.fieldWrapper__dimension %
+                          .formSlider
+                        .shareLock.slider-lock-toggle
+                          .shareTip
+                            span.shareTip__info Зафиксировать долю
+                            p.triangleShadow
+                              span.triangleShadow__helper
+                      .share
+                        .formTitle Дмитрий Медведев
+                        .formBlock.formBlock--slider
+                          label.fieldWrapper
+                            input.fieldWrapper__input.fieldWrapper__input--slider type="number" name="" placeholder="0" value="20"
+                            span.fieldWrapper__dimension %
+                          .formSlider
+                        .shareLock.slider-lock-toggle
+                          .shareTip
+                            span.shareTip__info Зафиксировать долю
+                            p.triangleShadow
+                              span.triangleShadow__helper
+                      .share
+                        .formTitle Сергей Шойгу
+                        .formBlock.formBlock--slider
+                          label.fieldWrapper
+                            input.fieldWrapper__input.fieldWrapper__input--slider type="number" name="" placeholder="0" value="20"
+                            span.fieldWrapper__dimension %
+                          .formSlider
+                        .shareLock.slider-lock-toggle
+                          .shareTip
+                            span.shareTip__info Зафиксировать долю
+                            p.triangleShadow
+                              span.triangleShadow__helper
+
+              .editButton.financing-participants-edit
+                span.editButton__icon.icon.icon--edit_black
+                | редактировать этап
 
 
 
 
-
-
-
+          /
+          .formIn
+            .formContent
+              .formTitle Добавить второй этап финансирования?
+              .formInfo Вы можете добавить следующий этап финансирования, по аналогии с первым.
 
           .buttonContainer.buttonContainer--center
             button.buttonContainer__button.linkButton.linkButton--small type="button" отменить
-            button.buttonContainer__button.linkButton.linkButton--small.linkButton--blue type="submit" следующий шаг
+            button.buttonContainer__button.linkButton.linkButton--small.linkButton--blue.financing-submit disabled="disabled" type="submit" следующий шаг
 
 
 

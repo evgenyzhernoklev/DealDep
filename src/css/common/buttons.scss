@@ -11,10 +11,15 @@
   cursor: pointer;
   border: 1px solid #D2D2D2;
   border-radius: 100px;
-  transition: color $transition-normal, background-color $transition-normal, border-color $transition-normal;
+  transition: color $transition-normal, background-color $transition-normal, border-color $transition-normal, opacity $transition-normal;
 
   &:hover {
     background-color: $white-light;
+  }
+
+  &[disabled] {
+    cursor: default;
+    opacity: 0.5;
   }
 }
 
@@ -30,6 +35,11 @@
   &:hover {
     background-color: #487fea;
     border-color: #487fea;
+  }
+
+  &[disabled] {
+    background-color: $blue;
+    border-color: $blue;
   }
 }
 

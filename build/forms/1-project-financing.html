@@ -47,7 +47,7 @@
           </div>
         </div>
         <form class="form form--content">
-          <div class="formIn">
+          <div class="formIn financing-participants-clone">
             <div class="formContent">
               <div class="formTitle">
                 Участники финансирования
@@ -195,10 +195,690 @@
                   </div>
                 </div>
               </div>
+              <div class="formSwitch tab-container">
+                <div class="personEntityTabsWrapper tab-link-container slide">
+                  <a class="personEntityTabsWrapper__link personEntityTabsWrapper__link--helper tab-link" href="#"></a><a class="personEntityTabsWrapper__link tab-link is-active" data-container-class="slide" href="#"></a>
+                </div>
+                <div class="formSwitch__title">
+                  Путин Владимир
+                </div>
+                <div class="tab-content">
+                  <div class="formBlock formBlock--aside">
+                    <div class="formBlock__title">
+                      Нужно ли выполнить условия для начала финансирования?
+                    </div>
+                    <div class="formBlockIn">
+                      <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" name="financing_conditions2" type="radio" value="" /><span class="fieldWrapper__checkInfo">Не нужно</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" data-target="start_financing_conditions2" name="financing_conditions2" type="radio" value="" /><span class="fieldWrapper__checkInfo">Нужно</span><span class="fieldWrapper__radioIcon"></span></label>
+                    </div>
+                  </div>
+                  <div class="formblock-toggle-hidden" data-target="start_financing_conditions2">
+                    <div class="formBlock formBlock--aside pattern-field" data-field="start_financing_conditions2">
+                      <div class="formBlock__title formBlock__title--indentTop">
+                        Условия начала финансирования
+                      </div>
+                      <div class="formBlockIn">
+                        <label class="fieldWrapper"><input class="fieldWrapper__input" name="" placeholder="Введите условие начала финансирования" type="text" /></label>
+                      </div>
+                    </div>
+                    <div class="formBlock formBlock--aside">
+                      <div class="formBlockIn">
+                        <a class="linkButton linkButton--icon add-field" data-field="start_financing_conditions2" href="#">добавить еще условие<span class="linkButton__icon icon icon--add"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="formBlock formBlock--aside">
+                    <div class="formBlock__title formBlock__title--indentTop">
+                      Сумма и валюта финансирования
+                    </div>
+                    <div class="formBlockIn">
+                      <div class="formBlockWrapper formBlockWrapper--select">
+                        <div class="formBlock formBlock--2">
+                          <label class="fieldWrapper"><input class="fieldWrapper__input" name="" placeholder="Введите сумму" type="number" /></label>
+                        </div>
+                        <div class="formBlock formBlock--2">
+                          <label class="fieldWrapper"><select class="fieldWrapper__select form-select" placeholder="Выберите валюту">
+                              <option value="">
+                                Выберите валюту
+                              </option>
+                              <option selected="selected" value="1">
+                                Рублей
+                              </option>
+                              <option value="2">
+                                Юаней
+                              </option>
+                              <option value="3">
+                                Евро
+                              </option>
+                            </select></label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="formBlock formBlock--aside">
+                    <div class="formBlock__title">
+                      Порядок внесения денежных средств
+                    </div>
+                    <div class="formBlockIn">
+                      <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" name="depositing_procedure2" type="radio" value="" /><span class="fieldWrapper__checkInfo">Единовременно</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" data-target="tranche_sum_date2" name="depositing_procedure2" type="radio" value="" /><span class="fieldWrapper__checkInfo">Траншами</span><span class="fieldWrapper__radioIcon"></span></label>
+                    </div>
+                  </div>
+                  <div class="formblock-toggle-hidden" data-target="tranche_sum_date2">
+                    <div class="formBlock formBlock--aside pattern-field" data-field="tranche_sum_date2">
+                      <div class="formBlock__title formBlock__title--indentTop">
+                        Выберите суммы и даты траншей
+                      </div>
+                      <div class="formBlockIn">
+                        <div class="formBlockWrapper">
+                          <div class="formBlock formBlock--2">
+                            <label class="fieldWrapper"><input class="fieldWrapper__input" name="" placeholder="Сумма транша" type="number" /></label>
+                          </div>
+                          <div class="formBlock formBlock--2">
+                            <label class="fieldWrapper"><input class="fieldWrapper__input field-date" name="" placeholder="Дата транша" type="text" /><span class="fieldWrapper__icon icon icon--calendar"></span></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="formBlock formBlock--aside">
+                      <div class="formBlockIn">
+                        <a class="linkButton linkButton--icon add-field" data-field="tranche_sum_date2" href="#">добавить еще транш<span class="linkButton__icon icon icon--add"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="formBlock formBlock--aside">
+                    <div class="formBlock__title">
+                      Форма финансирования
+                    </div>
+                    <div class="formBlockIn">
+                      <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" name="financing_form2" type="radio" value="" /><span class="fieldWrapper__checkInfo">В капитал (cash-in)</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" data-target="financing_form2" name="financing_form2" type="radio" value="" /><span class="fieldWrapper__checkInfo">Заемное финансирование</span><span class="fieldWrapper__radioIcon"></span></label>
+                    </div>
+                  </div>
+                  <div class="formblock-toggle-hidden" data-target="financing_form2">
+                    <div class="formBlock formBlock--aside">
+                      <div class="formBlock__title">
+                        Выберите процентную ставку<br/>и срок займа
+                      </div>
+                      <div class="formBlockIn">
+                        <div class="formBlockWrapper">
+                          <div class="formBlock formBlock--2">
+                            <label class="fieldWrapper"><input class="fieldWrapper__input" name="" placeholder="Процентная ставка" type="number" /></label>
+                          </div>
+                          <div class="formBlock formBlock--2">
+                            <label class="fieldWrapper"><input class="fieldWrapper__input" name="" placeholder="Срок займа" type="text" /></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="formBlock formBlock--aside">
+                      <div class="formBlock__title">
+                        Вид займа
+                      </div>
+                      <div class="formBlockIn">
+                        <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" name="loan_type2" type="radio" value="" /><span class="fieldWrapper__checkInfo">Нецелевой</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" data-target="loan_type2" name="loan_type2" type="radio" value="" /><span class="fieldWrapper__checkInfo">Целевой</span><span class="fieldWrapper__radioIcon"></span></label>
+                      </div>
+                    </div>
+                    <div class="formBlock formBlock--aside formblock-toggle-hidden" data-target="loan_type2">
+                      <div class="formBlock__title formBlock__title--indentTop">
+                        Укажите цель займа
+                      </div>
+                      <div class="formBlockIn">
+                        <label class="fieldWrapper"><input class="fieldWrapper__input" name="" placeholder="Введите цель займа" type="text" /></label>
+                      </div>
+                    </div>
+                    <div class="formBlock formBlock--aside">
+                      <div class="formBlock__title">
+                        Возможна конвертация в доли/акции проекта?
+                      </div>
+                      <div class="formBlockIn">
+                        <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="project_conversion2" type="radio" value="" /><span class="fieldWrapper__checkInfo">Возможна</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="project_conversion2" type="radio" value="" /><span class="fieldWrapper__checkInfo">Невозможна</span><span class="fieldWrapper__radioIcon"></span></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="formSwitch tab-container">
+                <div class="personEntityTabsWrapper tab-link-container slide">
+                  <a class="personEntityTabsWrapper__link personEntityTabsWrapper__link--helper tab-link" href="#"></a><a class="personEntityTabsWrapper__link tab-link is-active" data-container-class="slide" href="#"></a>
+                </div>
+                <div class="formSwitch__title">
+                  Шойгу Сергей
+                </div>
+                <div class="tab-content">
+                  <div class="formBlock formBlock--aside">
+                    <div class="formBlock__title">
+                      Нужно ли выполнить условия для начала финансирования?
+                    </div>
+                    <div class="formBlockIn">
+                      <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" name="financing_conditions3" type="radio" value="" /><span class="fieldWrapper__checkInfo">Не нужно</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" data-target="start_financing_conditions3" name="financing_conditions3" type="radio" value="" /><span class="fieldWrapper__checkInfo">Нужно</span><span class="fieldWrapper__radioIcon"></span></label>
+                    </div>
+                  </div>
+                  <div class="formblock-toggle-hidden" data-target="start_financing_conditions3">
+                    <div class="formBlock formBlock--aside pattern-field" data-field="start_financing_conditions3">
+                      <div class="formBlock__title formBlock__title--indentTop">
+                        Условия начала финансирования
+                      </div>
+                      <div class="formBlockIn">
+                        <label class="fieldWrapper"><input class="fieldWrapper__input" name="" placeholder="Введите условие начала финансирования" type="text" /></label>
+                      </div>
+                    </div>
+                    <div class="formBlock formBlock--aside">
+                      <div class="formBlockIn">
+                        <a class="linkButton linkButton--icon add-field" data-field="start_financing_conditions3" href="#">добавить еще условие<span class="linkButton__icon icon icon--add"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="formBlock formBlock--aside">
+                    <div class="formBlock__title formBlock__title--indentTop">
+                      Сумма и валюта финансирования
+                    </div>
+                    <div class="formBlockIn">
+                      <div class="formBlockWrapper formBlockWrapper--select">
+                        <div class="formBlock formBlock--2">
+                          <label class="fieldWrapper"><input class="fieldWrapper__input" name="" placeholder="Введите сумму" type="number" /></label>
+                        </div>
+                        <div class="formBlock formBlock--2">
+                          <label class="fieldWrapper"><select class="fieldWrapper__select form-select" placeholder="Выберите валюту">
+                              <option value="">
+                                Выберите валюту
+                              </option>
+                              <option selected="selected" value="1">
+                                Рублей
+                              </option>
+                              <option value="2">
+                                Юаней
+                              </option>
+                              <option value="3">
+                                Евро
+                              </option>
+                            </select></label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="formBlock formBlock--aside">
+                    <div class="formBlock__title">
+                      Порядок внесения денежных средств
+                    </div>
+                    <div class="formBlockIn">
+                      <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" name="depositing_procedure3" type="radio" value="" /><span class="fieldWrapper__checkInfo">Единовременно</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" data-target="tranche_sum_date3" name="depositing_procedure3" type="radio" value="" /><span class="fieldWrapper__checkInfo">Траншами</span><span class="fieldWrapper__radioIcon"></span></label>
+                    </div>
+                  </div>
+                  <div class="formblock-toggle-hidden" data-target="tranche_sum_date3">
+                    <div class="formBlock formBlock--aside pattern-field" data-field="tranche_sum_date3">
+                      <div class="formBlock__title formBlock__title--indentTop">
+                        Выберите суммы и даты траншей
+                      </div>
+                      <div class="formBlockIn">
+                        <div class="formBlockWrapper">
+                          <div class="formBlock formBlock--2">
+                            <label class="fieldWrapper"><input class="fieldWrapper__input" name="" placeholder="Сумма транша" type="number" /></label>
+                          </div>
+                          <div class="formBlock formBlock--2">
+                            <label class="fieldWrapper"><input class="fieldWrapper__input field-date" name="" placeholder="Дата транша" type="text" /><span class="fieldWrapper__icon icon icon--calendar"></span></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="formBlock formBlock--aside">
+                      <div class="formBlockIn">
+                        <a class="linkButton linkButton--icon add-field" data-field="tranche_sum_date3" href="#">добавить еще транш<span class="linkButton__icon icon icon--add"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="formBlock formBlock--aside">
+                    <div class="formBlock__title">
+                      Форма финансирования
+                    </div>
+                    <div class="formBlockIn">
+                      <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" name="financing_form3" type="radio" value="" /><span class="fieldWrapper__checkInfo">В капитал (cash-in)</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" data-target="financing_form3" name="financing_form3" type="radio" value="" /><span class="fieldWrapper__checkInfo">Заемное финансирование</span><span class="fieldWrapper__radioIcon"></span></label>
+                    </div>
+                  </div>
+                  <div class="formblock-toggle-hidden" data-target="financing_form3">
+                    <div class="formBlock formBlock--aside">
+                      <div class="formBlock__title">
+                        Выберите процентную ставку<br/>и срок займа
+                      </div>
+                      <div class="formBlockIn">
+                        <div class="formBlockWrapper">
+                          <div class="formBlock formBlock--2">
+                            <label class="fieldWrapper"><input class="fieldWrapper__input" name="" placeholder="Процентная ставка" type="number" /></label>
+                          </div>
+                          <div class="formBlock formBlock--2">
+                            <label class="fieldWrapper"><input class="fieldWrapper__input" name="" placeholder="Срок займа" type="text" /></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="formBlock formBlock--aside">
+                      <div class="formBlock__title">
+                        Вид займа
+                      </div>
+                      <div class="formBlockIn">
+                        <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" name="loan_type3" type="radio" value="" /><span class="fieldWrapper__checkInfo">Нецелевой</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" data-target="loan_type3" name="loan_type3" type="radio" value="" /><span class="fieldWrapper__checkInfo">Целевой</span><span class="fieldWrapper__radioIcon"></span></label>
+                      </div>
+                    </div>
+                    <div class="formBlock formBlock--aside formblock-toggle-hidden" data-target="loan_type3">
+                      <div class="formBlock__title formBlock__title--indentTop">
+                        Укажите цель займа
+                      </div>
+                      <div class="formBlockIn">
+                        <label class="fieldWrapper"><input class="fieldWrapper__input" name="" placeholder="Введите цель займа" type="text" /></label>
+                      </div>
+                    </div>
+                    <div class="formBlock formBlock--aside">
+                      <div class="formBlock__title">
+                        Возможна конвертация в доли/акции проекта?
+                      </div>
+                      <div class="formBlockIn">
+                        <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="project_conversion3" type="radio" value="" /><span class="fieldWrapper__checkInfo">Возможна</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="project_conversion3" type="radio" value="" /><span class="fieldWrapper__checkInfo">Невозможна</span><span class="fieldWrapper__radioIcon"></span></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="formSwitch tab-container">
+                <div class="personEntityTabsWrapper tab-link-container slide">
+                  <a class="personEntityTabsWrapper__link personEntityTabsWrapper__link--helper tab-link" href="#"></a><a class="personEntityTabsWrapper__link tab-link is-active" data-container-class="slide" href="#"></a>
+                </div>
+                <div class="formSwitch__title">
+                  Ардинцев Иван
+                </div>
+                <div class="tab-content">
+                  <div class="formBlock formBlock--aside">
+                    <div class="formBlock__title">
+                      Нужно ли выполнить условия для начала финансирования?
+                    </div>
+                    <div class="formBlockIn">
+                      <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" name="financing_conditions4" type="radio" value="" /><span class="fieldWrapper__checkInfo">Не нужно</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" data-target="start_financing_conditions4" name="financing_conditions4" type="radio" value="" /><span class="fieldWrapper__checkInfo">Нужно</span><span class="fieldWrapper__radioIcon"></span></label>
+                    </div>
+                  </div>
+                  <div class="formblock-toggle-hidden" data-target="start_financing_conditions4">
+                    <div class="formBlock formBlock--aside pattern-field" data-field="start_financing_conditions4">
+                      <div class="formBlock__title formBlock__title--indentTop">
+                        Условия начала финансирования
+                      </div>
+                      <div class="formBlockIn">
+                        <label class="fieldWrapper"><input class="fieldWrapper__input" name="" placeholder="Введите условие начала финансирования" type="text" /></label>
+                      </div>
+                    </div>
+                    <div class="formBlock formBlock--aside">
+                      <div class="formBlockIn">
+                        <a class="linkButton linkButton--icon add-field" data-field="start_financing_conditions4" href="#">добавить еще условие<span class="linkButton__icon icon icon--add"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="formBlock formBlock--aside">
+                    <div class="formBlock__title formBlock__title--indentTop">
+                      Сумма и валюта финансирования
+                    </div>
+                    <div class="formBlockIn">
+                      <div class="formBlockWrapper formBlockWrapper--select">
+                        <div class="formBlock formBlock--2">
+                          <label class="fieldWrapper"><input class="fieldWrapper__input" name="" placeholder="Введите сумму" type="number" /></label>
+                        </div>
+                        <div class="formBlock formBlock--2">
+                          <label class="fieldWrapper"><select class="fieldWrapper__select form-select" placeholder="Выберите валюту">
+                              <option value="">
+                                Выберите валюту
+                              </option>
+                              <option selected="selected" value="1">
+                                Рублей
+                              </option>
+                              <option value="2">
+                                Юаней
+                              </option>
+                              <option value="3">
+                                Евро
+                              </option>
+                            </select></label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="formBlock formBlock--aside">
+                    <div class="formBlock__title">
+                      Порядок внесения денежных средств
+                    </div>
+                    <div class="formBlockIn">
+                      <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" name="depositing_procedure4" type="radio" value="" /><span class="fieldWrapper__checkInfo">Единовременно</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" data-target="tranche_sum_date4" name="depositing_procedure4" type="radio" value="" /><span class="fieldWrapper__checkInfo">Траншами</span><span class="fieldWrapper__radioIcon"></span></label>
+                    </div>
+                  </div>
+                  <div class="formblock-toggle-hidden" data-target="tranche_sum_date4">
+                    <div class="formBlock formBlock--aside pattern-field" data-field="tranche_sum_date4">
+                      <div class="formBlock__title formBlock__title--indentTop">
+                        Выберите суммы и даты траншей
+                      </div>
+                      <div class="formBlockIn">
+                        <div class="formBlockWrapper">
+                          <div class="formBlock formBlock--2">
+                            <label class="fieldWrapper"><input class="fieldWrapper__input" name="" placeholder="Сумма транша" type="number" /></label>
+                          </div>
+                          <div class="formBlock formBlock--2">
+                            <label class="fieldWrapper"><input class="fieldWrapper__input field-date" name="" placeholder="Дата транша" type="text" /><span class="fieldWrapper__icon icon icon--calendar"></span></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="formBlock formBlock--aside">
+                      <div class="formBlockIn">
+                        <a class="linkButton linkButton--icon add-field" data-field="tranche_sum_date4" href="#">добавить еще транш<span class="linkButton__icon icon icon--add"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="formBlock formBlock--aside">
+                    <div class="formBlock__title">
+                      Форма финансирования
+                    </div>
+                    <div class="formBlockIn">
+                      <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" name="financing_form4" type="radio" value="" /><span class="fieldWrapper__checkInfo">В капитал (cash-in)</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" data-target="financing_form4" name="financing_form4" type="radio" value="" /><span class="fieldWrapper__checkInfo">Заемное финансирование</span><span class="fieldWrapper__radioIcon"></span></label>
+                    </div>
+                  </div>
+                  <div class="formblock-toggle-hidden" data-target="financing_form4">
+                    <div class="formBlock formBlock--aside">
+                      <div class="formBlock__title">
+                        Выберите процентную ставку<br/>и срок займа
+                      </div>
+                      <div class="formBlockIn">
+                        <div class="formBlockWrapper">
+                          <div class="formBlock formBlock--2">
+                            <label class="fieldWrapper"><input class="fieldWrapper__input" name="" placeholder="Процентная ставка" type="number" /></label>
+                          </div>
+                          <div class="formBlock formBlock--2">
+                            <label class="fieldWrapper"><input class="fieldWrapper__input" name="" placeholder="Срок займа" type="text" /></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="formBlock formBlock--aside">
+                      <div class="formBlock__title">
+                        Вид займа
+                      </div>
+                      <div class="formBlockIn">
+                        <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" name="loan_type4" type="radio" value="" /><span class="fieldWrapper__checkInfo">Нецелевой</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" data-target="loan_type4" name="loan_type4" type="radio" value="" /><span class="fieldWrapper__checkInfo">Целевой</span><span class="fieldWrapper__radioIcon"></span></label>
+                      </div>
+                    </div>
+                    <div class="formBlock formBlock--aside formblock-toggle-hidden" data-target="loan_type4">
+                      <div class="formBlock__title formBlock__title--indentTop">
+                        Укажите цель займа
+                      </div>
+                      <div class="formBlockIn">
+                        <label class="fieldWrapper"><input class="fieldWrapper__input" name="" placeholder="Введите цель займа" type="text" /></label>
+                      </div>
+                    </div>
+                    <div class="formBlock formBlock--aside">
+                      <div class="formBlock__title">
+                        Возможна конвертация в доли/акции проекта?
+                      </div>
+                      <div class="formBlockIn">
+                        <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="project_conversion4" type="radio" value="" /><span class="fieldWrapper__checkInfo">Возможна</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="project_conversion4" type="radio" value="" /><span class="fieldWrapper__checkInfo">Невозможна</span><span class="fieldWrapper__radioIcon"></span></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="formSwitch tab-container">
+                <div class="personEntityTabsWrapper tab-link-container slide">
+                  <a class="personEntityTabsWrapper__link personEntityTabsWrapper__link--helper tab-link" href="#"></a><a class="personEntityTabsWrapper__link tab-link is-active" data-container-class="slide" href="#"></a>
+                </div>
+                <div class="formSwitch__title">
+                  Медведев Дмитрий
+                </div>
+                <div class="tab-content">
+                  <div class="formBlock formBlock--aside">
+                    <div class="formBlock__title">
+                      Нужно ли выполнить условия для начала финансирования?
+                    </div>
+                    <div class="formBlockIn">
+                      <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" name="financing_conditions5" type="radio" value="" /><span class="fieldWrapper__checkInfo">Не нужно</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" data-target="start_financing_conditions5" name="financing_conditions5" type="radio" value="" /><span class="fieldWrapper__checkInfo">Нужно</span><span class="fieldWrapper__radioIcon"></span></label>
+                    </div>
+                  </div>
+                  <div class="formblock-toggle-hidden" data-target="start_financing_conditions5">
+                    <div class="formBlock formBlock--aside pattern-field" data-field="start_financing_conditions5">
+                      <div class="formBlock__title formBlock__title--indentTop">
+                        Условия начала финансирования
+                      </div>
+                      <div class="formBlockIn">
+                        <label class="fieldWrapper"><input class="fieldWrapper__input" name="" placeholder="Введите условие начала финансирования" type="text" /></label>
+                      </div>
+                    </div>
+                    <div class="formBlock formBlock--aside">
+                      <div class="formBlockIn">
+                        <a class="linkButton linkButton--icon add-field" data-field="start_financing_conditions5" href="#">добавить еще условие<span class="linkButton__icon icon icon--add"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="formBlock formBlock--aside">
+                    <div class="formBlock__title formBlock__title--indentTop">
+                      Сумма и валюта финансирования
+                    </div>
+                    <div class="formBlockIn">
+                      <div class="formBlockWrapper formBlockWrapper--select">
+                        <div class="formBlock formBlock--2">
+                          <label class="fieldWrapper"><input class="fieldWrapper__input" name="" placeholder="Введите сумму" type="number" /></label>
+                        </div>
+                        <div class="formBlock formBlock--2">
+                          <label class="fieldWrapper"><select class="fieldWrapper__select form-select" placeholder="Выберите валюту">
+                              <option value="">
+                                Выберите валюту
+                              </option>
+                              <option selected="selected" value="1">
+                                Рублей
+                              </option>
+                              <option value="2">
+                                Юаней
+                              </option>
+                              <option value="3">
+                                Евро
+                              </option>
+                            </select></label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="formBlock formBlock--aside">
+                    <div class="formBlock__title">
+                      Порядок внесения денежных средств
+                    </div>
+                    <div class="formBlockIn">
+                      <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" name="depositing_procedure5" type="radio" value="" /><span class="fieldWrapper__checkInfo">Единовременно</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" data-target="tranche_sum_date5" name="depositing_procedure5" type="radio" value="" /><span class="fieldWrapper__checkInfo">Траншами</span><span class="fieldWrapper__radioIcon"></span></label>
+                    </div>
+                  </div>
+                  <div class="formblock-toggle-hidden" data-target="tranche_sum_date5">
+                    <div class="formBlock formBlock--aside pattern-field" data-field="tranche_sum_date5">
+                      <div class="formBlock__title formBlock__title--indentTop">
+                        Выберите суммы и даты траншей
+                      </div>
+                      <div class="formBlockIn">
+                        <div class="formBlockWrapper">
+                          <div class="formBlock formBlock--2">
+                            <label class="fieldWrapper"><input class="fieldWrapper__input" name="" placeholder="Сумма транша" type="number" /></label>
+                          </div>
+                          <div class="formBlock formBlock--2">
+                            <label class="fieldWrapper"><input class="fieldWrapper__input field-date" name="" placeholder="Дата транша" type="text" /><span class="fieldWrapper__icon icon icon--calendar"></span></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="formBlock formBlock--aside">
+                      <div class="formBlockIn">
+                        <a class="linkButton linkButton--icon add-field" data-field="tranche_sum_date5" href="#">добавить еще транш<span class="linkButton__icon icon icon--add"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="formBlock formBlock--aside">
+                    <div class="formBlock__title">
+                      Форма финансирования
+                    </div>
+                    <div class="formBlockIn">
+                      <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" name="financing_form5" type="radio" value="" /><span class="fieldWrapper__checkInfo">В капитал (cash-in)</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" data-target="financing_form5" name="financing_form5" type="radio" value="" /><span class="fieldWrapper__checkInfo">Заемное финансирование</span><span class="fieldWrapper__radioIcon"></span></label>
+                    </div>
+                  </div>
+                  <div class="formblock-toggle-hidden" data-target="financing_form5">
+                    <div class="formBlock formBlock--aside">
+                      <div class="formBlock__title">
+                        Выберите процентную ставку<br/>и срок займа
+                      </div>
+                      <div class="formBlockIn">
+                        <div class="formBlockWrapper">
+                          <div class="formBlock formBlock--2">
+                            <label class="fieldWrapper"><input class="fieldWrapper__input" name="" placeholder="Процентная ставка" type="number" /></label>
+                          </div>
+                          <div class="formBlock formBlock--2">
+                            <label class="fieldWrapper"><input class="fieldWrapper__input" name="" placeholder="Срок займа" type="text" /></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="formBlock formBlock--aside">
+                      <div class="formBlock__title">
+                        Вид займа
+                      </div>
+                      <div class="formBlockIn">
+                        <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" name="loan_type5" type="radio" value="" /><span class="fieldWrapper__checkInfo">Нецелевой</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" data-target="loan_type5" name="loan_type5" type="radio" value="" /><span class="fieldWrapper__checkInfo">Целевой</span><span class="fieldWrapper__radioIcon"></span></label>
+                      </div>
+                    </div>
+                    <div class="formBlock formBlock--aside formblock-toggle-hidden" data-target="loan_type5">
+                      <div class="formBlock__title formBlock__title--indentTop">
+                        Укажите цель займа
+                      </div>
+                      <div class="formBlockIn">
+                        <label class="fieldWrapper"><input class="fieldWrapper__input" name="" placeholder="Введите цель займа" type="text" /></label>
+                      </div>
+                    </div>
+                    <div class="formBlock formBlock--aside">
+                      <div class="formBlock__title">
+                        Возможна конвертация в доли/акции проекта?
+                      </div>
+                      <div class="formBlockIn">
+                        <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="project_conversion5" type="radio" value="" /><span class="fieldWrapper__checkInfo">Возможна</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input" name="project_conversion5" type="radio" value="" /><span class="fieldWrapper__checkInfo">Невозможна</span><span class="fieldWrapper__radioIcon"></span></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="buttonContainer buttonContainer--line">
+                <button class="buttonContainer__button linkButton linkButton--small linkButton--blue financing-participants-update" type="button">сохранить</button><button class="buttonContainer__button linkButton linkButton--small" type="button">сбросить форму</button>
+              </div>
+              <div class="formHidden">
+                <div class="formBlock formBlock--aside">
+                  <div class="formBlock__title">
+                    Меняется ли распределение долей после финансирования?
+                  </div>
+                  <div class="formBlockIn">
+                    <label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" name="change_shares_distribution" type="radio" value="" /><span class="fieldWrapper__checkInfo">Не меняется</span><span class="fieldWrapper__radioIcon"></span></label><label class="fieldWrapper fieldWrapper--check"><input class="fieldWrapper__input formblock-toggle-link" data-target="change_shares_distribution" name="change_shares_distribution" type="radio" value="" /><span class="fieldWrapper__checkInfo">Меняется</span><span class="fieldWrapper__radioIcon"></span></label>
+                  </div>
+                </div>
+                <div class="formblock-toggle-hidden" data-target="change_shares_distribution">
+                  <div class="formBlock formBlock--aside">
+                    <div class="formBlock__title">
+                      Выберите изменение долей
+                    </div>
+                    <div class="formBlockIn">
+                      <div class="share">
+                        <div class="formTitle">
+                          Павел Гужиков
+                        </div>
+                        <div class="formBlock formBlock--slider">
+                          <label class="fieldWrapper"><input class="fieldWrapper__input fieldWrapper__input--slider" name="" placeholder="0" type="number" value="20" /><span class="fieldWrapper__dimension">%</span></label>
+                          <div class="formSlider"></div>
+                        </div>
+                        <div class="shareLock slider-lock-toggle">
+                          <div class="shareTip">
+                            <span class="shareTip__info">Зафиксировать долю</span>
+                            <p class="triangleShadow">
+                              <span class="triangleShadow__helper"></span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="share">
+                        <div class="formTitle">
+                          Иван Ардинцев
+                        </div>
+                        <div class="formBlock formBlock--slider">
+                          <label class="fieldWrapper"><input class="fieldWrapper__input fieldWrapper__input--slider" name="" placeholder="0" type="number" value="20" /><span class="fieldWrapper__dimension">%</span></label>
+                          <div class="formSlider"></div>
+                        </div>
+                        <div class="shareLock slider-lock-toggle">
+                          <div class="shareTip">
+                            <span class="shareTip__info">Зафиксировать долю</span>
+                            <p class="triangleShadow">
+                              <span class="triangleShadow__helper"></span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="share">
+                        <div class="formTitle">
+                          Владимир Путин
+                        </div>
+                        <div class="formBlock formBlock--slider">
+                          <label class="fieldWrapper"><input class="fieldWrapper__input fieldWrapper__input--slider" name="" placeholder="0" type="number" value="20" /><span class="fieldWrapper__dimension">%</span></label>
+                          <div class="formSlider"></div>
+                        </div>
+                        <div class="shareLock slider-lock-toggle">
+                          <div class="shareTip">
+                            <span class="shareTip__info">Зафиксировать долю</span>
+                            <p class="triangleShadow">
+                              <span class="triangleShadow__helper"></span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="share">
+                        <div class="formTitle">
+                          Дмитрий Медведев
+                        </div>
+                        <div class="formBlock formBlock--slider">
+                          <label class="fieldWrapper"><input class="fieldWrapper__input fieldWrapper__input--slider" name="" placeholder="0" type="number" value="20" /><span class="fieldWrapper__dimension">%</span></label>
+                          <div class="formSlider"></div>
+                        </div>
+                        <div class="shareLock slider-lock-toggle">
+                          <div class="shareTip">
+                            <span class="shareTip__info">Зафиксировать долю</span>
+                            <p class="triangleShadow">
+                              <span class="triangleShadow__helper"></span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="share">
+                        <div class="formTitle">
+                          Сергей Шойгу
+                        </div>
+                        <div class="formBlock formBlock--slider">
+                          <label class="fieldWrapper"><input class="fieldWrapper__input fieldWrapper__input--slider" name="" placeholder="0" type="number" value="20" /><span class="fieldWrapper__dimension">%</span></label>
+                          <div class="formSlider"></div>
+                        </div>
+                        <div class="shareLock slider-lock-toggle">
+                          <div class="shareTip">
+                            <span class="shareTip__info">Зафиксировать долю</span>
+                            <p class="triangleShadow">
+                              <span class="triangleShadow__helper"></span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="editButton financing-participants-edit">
+                <span class="editButton__icon icon icon--edit_black"></span>редактировать этап
+              </div>
+            </div>
+          </div>
+          <div class="formIn">
+            <div class="formContent">
+              <div class="formTitle">
+                Добавить второй этап финансирования?
+              </div>
+              <div class="formInfo">
+                Вы можете добавить следующий этап финансирования, по аналогии с первым.
+              </div>
             </div>
           </div>
           <div class="buttonContainer buttonContainer--center">
-            <button class="buttonContainer__button linkButton linkButton--small" type="button">отменить</button><button class="buttonContainer__button linkButton linkButton--small linkButton--blue" type="submit">следующий шаг</button>
+            <button class="buttonContainer__button linkButton linkButton--small" type="button">отменить</button><button class="buttonContainer__button linkButton linkButton--small linkButton--blue financing-submit" disabled="disabled" type="submit">следующий шаг</button>
           </div>
         </form>
       </div>

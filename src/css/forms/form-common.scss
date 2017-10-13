@@ -8,10 +8,38 @@
 }
 
 .formIn {
+  position: relative;
   margin: 0 0 35px;
   background: $white;
   box-shadow: 0 2px 20px 0 rgba(0,77,255,0.08);
   border-radius: 5px;
+
+  &:before {
+    content: '';
+    opacity: 0;
+    transition: opacity $transition-normal;
+  }
+
+  &.is-ok {
+    &:before {
+      content: '';
+      opacity: 1;
+      position: absolute;
+      top: 40px;
+      right: 40px;
+      @include background-image(ok_green, 44px, 44px);
+    }
+  }
+}
+
+.formHidden {
+  display: none;
+
+  .formContent & {
+    margin: 0 -25px;
+    padding: 22px 25px 0;
+    border-top: 1px solid $gray;
+  }
 }
 
 .formContent {

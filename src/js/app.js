@@ -25,6 +25,7 @@
 
 //= ./piechart.js
 //= ./project_add.js
+//= ./project_financing.js
 //= ./arrangement.js
 //= ./viewer.js
 

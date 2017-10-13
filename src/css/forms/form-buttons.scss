@@ -32,6 +32,18 @@
   text-align: center;
 }
 
+.buttonContainer--line {
+  margin: 15px 0 12px;
+
+  .buttonContainer__button {
+    margin-right: 11px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
 .buttonContainer__button {
   margin-top: 15px;
 
