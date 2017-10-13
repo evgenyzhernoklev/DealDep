@@ -162,6 +162,19 @@
   cursor: pointer;
 }
 
+.fieldWrapper__toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  @include background-image(eye_closed, 22px, 15px);
+  transition: background-image $transition-fast;
+
+  &.is-visible {
+    @include background-image(eye, 22px, 15px);
+  }
+}
+
 .fieldWrapper__input {
   width: 100%;
   height: 45px;

@@ -20,6 +20,7 @@ Forms.prototype.init = function () {
   $('.quantity-add').on('click', this.quantityAdd);
   $('.field-quantity').on('input', this.checkQuantityField);
   $('.add-field').on('click', this.duplicateField.bind(this));
+  $('.toggle-password-field').on('click', this.togglePasswordField);
 };
 
 Forms.prototype.initSelect = function () {
@@ -373,4 +374,19 @@ Forms.prototype.duplicateField = function (e) {
 
   $clone.find('input, textarea').val('');
   $clone.hide().insertAfter($patternsCommon.last()).slideDown(300);
+};
+
+
+Forms.prototype.togglePasswordField = function (e) {
+  e.preventDefault();
+  var $container = $(this).closest('.fieldWrapper'),
+      $containerInput = $container.find('.fieldWrapper__input');
+
+  if ($(this).hasClass('is-visible')) {
+    $(this).removeClass('is-visible');
+    $containerInput.attr('type', 'password');
+  } else {
+    $(this).addClass('is-visible');
+    $containerInput.attr('type', 'text');
+  }
 };
