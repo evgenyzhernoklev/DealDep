@@ -277,21 +277,13 @@
 
 
 .submenu {
+  display: flex;
+  justify-content: space-between;
   position: absolute;
   top: 13px;
   right: 20px;
   width: 400px;
-  text-align: justify;
   line-height: 0;
-
-  &:after {
-    content: '';
-    display: inline-block;
-    width: 100%;
-    height: 0px;
-    visibility: hidden;
-    overflow: hidden;
-  }
 }
 
 .submenuItem {
