@@ -64,3 +64,18 @@
   color: #6D6D6D;
   text-align: center;
 }
+
+@media ($mobile) {
+  .buttonContainer--link {
+    padding-right: 0;
+    text-align: center;
+
+    .buttonContainer__button {
+      margin-bottom: 33px;
+    }
+
+    .buttonContainer__link {
+      position: static;
+    }
+  }
+}

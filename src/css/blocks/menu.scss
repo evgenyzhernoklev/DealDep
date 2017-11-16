@@ -58,6 +58,20 @@
   cursor: pointer;
 }
 
+@media ($mobile) {
+  .header {
+    min-width: 320px;
+  }
+
+  .header__logo {
+    display: none;
+  }
+
+  .header__title {
+    font-size: 18px;
+  }
+}
+
 
 
 // main menu

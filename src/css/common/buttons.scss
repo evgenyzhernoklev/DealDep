@@ -93,6 +93,13 @@
   }
 }
 
+@media ($mobile) {
+  .linkButton {
+    height: 45px;
+    line-height: 47px;
+  }
+}
+
 
 
 // icons

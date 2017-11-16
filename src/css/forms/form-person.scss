@@ -48,3 +48,30 @@
   top: 0;
   left: 0;
 }
+
+@media ($mobile) {
+  .formPersonInfo {
+    margin: 22px 0 20px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .formPersonInfo__avatar {
+    position: static;
+  }
+
+  .formPersonInfoAbout {
+    padding-top: 18px;
+  }
+
+  .formPersonInfoAbout__social {
+    top: -22px;
+    left: 50%;
+    width: 26px;
+    height: 26px;
+    margin-left: -13px;
+    background-color: $white;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+    border-radius: 50%;
+  }
+}
