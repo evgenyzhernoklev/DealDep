@@ -22,6 +22,7 @@
 //= ./lib/forms.js
 //= ./lib/tooltip.js
 //= ./lib/popups.js
+//= ./lib/menu.js
 
 //= ./piechart.js
 //= ./project_add.js

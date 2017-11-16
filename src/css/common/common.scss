@@ -12,6 +12,10 @@ body {
   &.with-note {
     padding-bottom: 78px;
   }
+
+  &.menu-opened {
+    overflow: hidden;
+  }
 }
 
 a {
