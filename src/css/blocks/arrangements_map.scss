@@ -14,6 +14,12 @@
   opacity: 0.7;
 }
 
+@media ($mobile) {
+  .contentWrapperBlured__overlay {
+    display: none;
+  }
+}
+
 
 
 // header
@@ -36,6 +42,14 @@
   font-size: 16px;
   line-height: 1.5;
   text-align: right;
+}
+
+@media ($mobile) {
+  .arrangementHeader {
+    .contentWrapperBlured & {
+      display: none;
+    }
+  }
 }
 
 
@@ -135,6 +149,14 @@
 
 .arrangement {
   margin-bottom: 18px;
+}
+
+@media ($mobile) {
+  .arrangementsWrapper {
+    .contentWrapperBlured & {
+      display: none;
+    }
+  }
 }
 
 

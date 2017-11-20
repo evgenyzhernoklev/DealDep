@@ -31,3 +31,15 @@
   width: auto;
   margin: 2px 0 30px;
 }
+
+@media ($mobile) {
+  .bubble {
+    .contentWrapperBlured & {
+      position: static;
+      width: auto;
+      background-color: transparent;
+      box-shadow: none;
+      transform: none;
+    }
+  }
+}

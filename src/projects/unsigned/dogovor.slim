@@ -12,8 +12,11 @@ html
     .header
       .headerIn
         .contentIn
-          a.header__logo.icon.icon--logo href="/"
-          .menu
+          a.header__logo.header__logo--mobile.icon.icon--logo href="/"
+          .hamburger.hamburger-spin
+            .hamburger-box
+              .hamburger-inner
+          nav.menu
             a.menu__link.is-active href="#" Мои проекты
             a.menu__link href="#" Мой профиль
           .logined
@@ -26,7 +29,7 @@ html
         .contentIn
           .submenuTitle
             .submenuTitle__imgWrapper.imgWrapper
-              span.icon.icon--test
+              span.submenuTitle__icon.icon.icon--test
             h1.submenuTitle__title.titleMain Дилдеп Технолоджис
             p.submenuTitle__info Не подписано
           ul.submenu
