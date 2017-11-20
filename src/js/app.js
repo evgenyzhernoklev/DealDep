@@ -24,6 +24,7 @@
 //= ./lib/popups.js
 //= ./lib/menu.js
 
+//= ./account.js
 //= ./piechart.js
 //= ./project_add.js
 //= ./project_financing.js
