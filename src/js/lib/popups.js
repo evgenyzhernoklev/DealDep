@@ -23,8 +23,12 @@ Popups.prototype.openPopup = function(e) {
     opacity: 0.8,
     follow: [true, false],
     closeClass: closeEl,
+    onOpen: function() {
+      self.body.addClass('popup-opened');
+    },
     onClose: function() {
       self.bPopupOpened = '';
+      self.body.removeClass('popup-opened');
     }
   });
 };

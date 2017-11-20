@@ -54,6 +54,12 @@ a {
 }
 
 @media ($mobile) {
+  body {
+    &.popup-opened {
+      overflow: hidden;
+    }
+  }
+
   .forDesktop {
     display: none;
   }

@@ -23,3 +23,9 @@
   font-size: 16px;
   line-height: 20px;
 }
+
+@media ($mobile) {
+  .signatureList {
+    padding: 10px 35px 2px;
+  }
+}
