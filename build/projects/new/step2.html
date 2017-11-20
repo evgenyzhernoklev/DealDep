@@ -9,11 +9,11 @@
     <link href="../../css/app.css" media="all" rel="stylesheet" />
   </head>
   <body>
-    <div class="header header--border">
+    <div class="header header--border header--shadow">
       <div class="headerIn">
         <div class="contentIn">
           <a class="header__logo icon icon--logo" href="/"></a>
-          <h1 class="header__title">
+          <h1 class="header__title header__title--left">
             Создание нового проекта
           </h1>
           <a class="header__close icon icon--close" href="#"></a>
@@ -25,13 +25,13 @@
         <div class="addProject">
           <div class="addProjectSteps cols">
             <div class="addProjectStep col--2 is-active">
-              <span class="addProjectStep__number">1</span>
+              <span class="addProjectStep__number">1</span><span class="addProjectStep__info addProjectStep__info--mobile">Участники</span>
               <p class="addProjectStep__info">
                 Название и участники
               </p>
             </div>
             <div class="addProjectStep col--2 is-current">
-              <span class="addProjectStep__number">2</span>
+              <span class="addProjectStep__number">2</span><span class="addProjectStep__info addProjectStep__info--mobile">Доли</span>
               <p class="addProjectStep__info">
                 Распределение долей
               </p>
@@ -41,12 +41,15 @@
             <div class="addProjectAbout__title">
               Распределение долей
             </div>
-            <div class="addProjectAbout__info">
+            <div class="addProjectAbout__info info-link-target">
               Здесь еще нужно будет дописать текст о том, как работает фиксация роли и зачем она вообще нужна.
+              <p class="addProjectHide forMobile">
+                <a class="addProjectHide__link info-link-hide" href="#">СКРЫТЬ ПОДСКАЗКУ</a>
+              </p>
             </div>
           </div>
         </div>
-        <form class="form form--content">
+        <form class="form form--content form--adaptive">
           <div class="formIn">
             <div class="shareWrapper">
               <div class="share">

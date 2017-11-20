@@ -1,6 +1,7 @@
 .addProjectSection {
   padding: 35px 0 50px;
   background-color: $white;
+  overflow: hidden;
 }
 
 
@@ -66,6 +67,10 @@
       color: $white;
       background-color: $violet;
       border: 2px solid $violet;
+    }
+
+    .addProjectStep__info {
+      color: $black;
     }
   }
 }
@@ -172,10 +177,6 @@
     margin: 17px -20px 0;
     padding: 0 20px;
     border-bottom: 1px solid $gray;
-  }
-
-  .addProjectAbout__hide {
-
   }
 }
 
@@ -450,6 +451,35 @@
   }
 }
 
+@media ($mobile) {
+  .shareWrapper {
+    margin: 0 0 30px;
+    padding: 17px 20px 30px;
+    border-bottom: 1px solid $gray;
+  }
+
+  .share {
+    height: auto;
+    margin-bottom: 9px;
+
+    .formTitle {
+      float: none;
+      width: 100%;
+      margin-bottom: 4px;
+    }
+
+    .formBlock--slider {
+      float: none;
+      width: 100%;
+    }
+  }
+
+  .shareLock {
+    top: auto;
+    bottom: 0;
+  }
+}
+
 
 
 // lock
@@ -501,4 +531,10 @@
   border-radius: 3px;
   @include hide();
   transition: opacity $transition-normal, visibility $transition-normal, margin-left $transition-normal .3s;
+}
+
+@media ($tablet) {
+  .shareTip {
+    display: none;
+  }
 }

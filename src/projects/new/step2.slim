@@ -9,11 +9,11 @@ html
     link rel="stylesheet" media="all" href="../../css/app.css"
   body
 
-    .header.header--border
+    .header.header--border.header--shadow
       .headerIn
         .contentIn
           a.header__logo.icon.icon--logo href="/"
-          h1.header__title Создание нового проекта
+          h1.header__title.header__title--left Создание нового проекта
           a.header__close.icon.icon--close href="#"
 
     section.addProjectSection
@@ -23,17 +23,21 @@ html
           .addProjectSteps.cols
             .addProjectStep.col--2.is-active
               span.addProjectStep__number 1
+              span.addProjectStep__info.addProjectStep__info--mobile Участники
               p.addProjectStep__info Название и участники
             .addProjectStep.col--2.is-current
               span.addProjectStep__number 2
+              span.addProjectStep__info.addProjectStep__info--mobile Доли
               p.addProjectStep__info Распределение долей
           .addProjectAbout
             .addProjectAbout__title Распределение долей
-            .addProjectAbout__info
+            .addProjectAbout__info.info-link-target
               | Здесь еще нужно будет дописать текст о том,
               |  как работает фиксация роли и зачем она вообще нужна.
+              p.addProjectHide.forMobile
+                a.addProjectHide__link.info-link-hide href="#" СКРЫТЬ ПОДСКАЗКУ
 
-        form.form.form--content
+        form.form.form--content.form--adaptive
           .formIn
             .shareWrapper
               .share
