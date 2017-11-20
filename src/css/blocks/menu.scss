@@ -63,6 +63,19 @@
 @media ($mobile) {
   .header {
     min-width: 320px;
+
+    &.header--shadow {
+      border: 0;
+      box-shadow: 0 2px 20px 0 rgba(0,77,255,.1);
+    }
+  }
+
+  .headerIn {
+    &:first-child {
+      .header__title--left {
+        text-align: left;
+      }
+    }
   }
 
   .header__logo {

@@ -232,3 +232,45 @@ textarea.fieldWrapper__input {
   float: left;
   padding-right: 20px;
 }
+
+
+
+// adaptive form
+@media ($mobile) {
+  .form--adaptive {
+    margin: 0 -20px;
+
+    .formIn {
+      margin-bottom: 20px;
+      box-shadow: none;
+    }
+
+    .formContent {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .formBlock--2,
+    .formBlock--4 {
+      float: none;
+      width: 100%;
+    }
+
+    .personButton {
+      border-bottom: 1px solid $gray;
+    }
+
+    .buttonContainer {
+      padding: 0 20px;
+    }
+
+    .buttonContainer__button {
+      width: 100%;
+      margin: 0 0 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
