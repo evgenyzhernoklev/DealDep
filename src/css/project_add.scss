@@ -10,7 +10,11 @@
 
 @media ($mobile) {
   .addProjectSection {
-    padding: 35px 0 20px;
+    padding: 5px 0 20px;
+  }
+
+  .addProject {
+    margin: 0;
   }
 }
 
@@ -86,6 +90,51 @@
   color: #A4A4A4;
 }
 
+.addProjectStep__info--mobile {
+  display: none;
+}
+
+@media ($mobile) {
+  .addProjectSteps {
+    margin: 0 -20px;
+    padding: 13px 20px 4px;
+    border-bottom: 1px solid $gray;
+  }
+
+  .addProjectStep {
+    text-align: left;
+
+    &:before {
+      display: none;
+    }
+
+    &.is-current {
+      .addProjectStep__number {
+        color: $black;
+        border-width: 1px;
+      }
+    }
+  }
+
+  .addProjectStep__number {
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    border-width: 1px;
+    color: #A4A4A4;
+  }
+
+  .addProjectStep__info {
+    display: none;
+  }
+
+  .addProjectStep__info--mobile {
+    display: inline-block;
+    margin-left: 12px;
+    line-height: 26px;
+  }
+}
+
 
 
 // project about info
@@ -104,6 +153,30 @@
   margin: 0 auto;
   font-size: 14px;
   color: #797979;
+}
+
+.addProjectHide {
+  margin: 11px 0 17px;
+  text-align: center;
+}
+
+.addProjectHide__link {
+  display: inline-block;
+  font: 10px/18px $circe-bold;
+  color: #4072D3;
+  cursor: pointer;
+}
+
+@media ($mobile) {
+  .addProjectAbout {
+    margin: 17px -20px 0;
+    padding: 0 20px;
+    border-bottom: 1px solid $gray;
+  }
+
+  .addProjectAbout__hide {
+
+  }
 }
 
 

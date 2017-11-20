@@ -23,17 +23,20 @@ html
           .addProjectSteps.cols
             .addProjectStep.col--2.is-current
               span.addProjectStep__number 1
+              span.addProjectStep__info.addProjectStep__info--mobile Участники
               p.addProjectStep__info Название и участники
             .addProjectStep.col--2
               span.addProjectStep__number 2
+              span.addProjectStep__info.addProjectStep__info--mobile Доли
               p.addProjectStep__info Распределение долей
           .addProjectAbout
             .addProjectAbout__title Название и участники
-            .addProjectAbout__info
+            .addProjectAbout__info.info-link-target
               | Укажите название и всех участников проекта,
               |  выбрав их долю, вклад и обязательно email,
               |  на него мы пришлем приглашение для участия в проекте.
-
+              p.addProjectHide.forMobile
+                a.addProjectHide__link.info-link-hide href="#" СКРЫТЬ ПОДСКАЗКУ
         form.form.form--content.form--adaptive
           .formIn
             .formContent

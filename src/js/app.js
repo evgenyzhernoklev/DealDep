@@ -40,4 +40,9 @@ $(document).ready(function() {
     e.preventDefault();
     $('body').removeClass('first-enter');
   });
+
+  $('.info-link-hide').on('click', function(e) {
+    e.preventDefault();
+    $(this).closest('.info-link-target').slideUp();
+  });
 });
