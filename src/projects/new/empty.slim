@@ -9,7 +9,7 @@ html
     link rel="stylesheet" media="all" href="../../css/app.css"
   body.first-enter
 
-    .overlayBg
+    .overlayBg.forDesktop
       .contentIn
         .overlayBgInfo
           span.overlayBgInfo__create.header__linkCreate.linkButton.linkButton--blue.first-enter-close Создать проект
@@ -20,7 +20,11 @@ html
       .headerIn
         .contentIn
           a.header__logo.icon.icon--logo href="/"
-          .menu
+          .header__title.forMobile Мои проекты
+          .hamburger.hamburger-spin
+            .hamburger-box
+              .hamburger-inner
+          nav.menu
             a.menu__link.is-active href="#" Мои проекты
             a.menu__link href="#" Мой профиль
           .logined
@@ -29,7 +33,7 @@ html
               img.loginedUser__avatar src="../../img/avatars/avatar_pavel.png"
             a.notices href="#"
               span.notices__bell.icon.icon--bell
-      .headerIn
+      .headerIn.forDesktop
         .contentIn
           h1.header__title Мои проекты
           a.header__linkCreate.linkButton.linkButton--blue href="/projects/new/step1.html" Создать проект
@@ -41,7 +45,7 @@ html
             .empty__imgWrapper.imgWrapper
               img.imgWrapper__img src="../../img/icons/svg/docs.svg"
             .empty__info Здесь будут Ваши проекты, но пока здесь пусто
-
+            a.empty__link.header__linkCreate.linkButton.linkButton--blue href="/projects/new/step1.html" Создать проект
 
 
   script src="../../js/app.js"

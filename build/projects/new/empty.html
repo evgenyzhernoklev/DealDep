@@ -9,7 +9,7 @@
     <link href="../../css/app.css" media="all" rel="stylesheet" />
   </head>
   <body class="first-enter">
-    <div class="overlayBg">
+    <div class="overlayBg forDesktop">
       <div class="contentIn">
         <div class="overlayBgInfo">
           <span class="overlayBgInfo__create header__linkCreate linkButton linkButton--blue first-enter-close">Создать проект</span>
@@ -24,9 +24,17 @@
       <div class="headerIn">
         <div class="contentIn">
           <a class="header__logo icon icon--logo" href="/"></a>
-          <div class="menu">
-            <a class="menu__link is-active" href="#">Мои проекты</a><a class="menu__link" href="#">Мой профиль</a>
+          <div class="header__title forMobile">
+            Мои проекты
           </div>
+          <div class="hamburger hamburger-spin">
+            <div class="hamburger-box">
+              <div class="hamburger-inner"></div>
+            </div>
+          </div>
+          <nav class="menu">
+            <a class="menu__link is-active" href="#">Мои проекты</a><a class="menu__link" href="#">Мой профиль</a>
+          </nav>
           <div class="logined">
             <div class="loginedUser">
               <span class="loginedUser__name">Гужиков П. А.</span><img class="loginedUser__avatar" src="../../img/avatars/avatar_pavel.png" />
@@ -35,7 +43,7 @@
           </div>
         </div>
       </div>
-      <div class="headerIn">
+      <div class="headerIn forDesktop">
         <div class="contentIn">
           <h1 class="header__title">
             Мои проекты
@@ -54,6 +62,7 @@
             <div class="empty__info">
               Здесь будут Ваши проекты, но пока здесь пусто
             </div>
+            <a class="empty__link header__linkCreate linkButton linkButton--blue" href="/projects/new/step1.html">Создать проект</a>
           </div>
         </div>
       </div>

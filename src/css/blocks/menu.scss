@@ -19,11 +19,13 @@
 }
 
 .headerIn {
+  position: relative;
   height: 72px;
   padding: 15px 0;
   border-top: 1px solid $gray;
 
   &:first-child {
+    z-index: 1;
     border-top: 0;
 
     .header__title {

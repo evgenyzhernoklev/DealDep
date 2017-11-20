@@ -32,4 +32,24 @@
 .empty__link {
   width: auto;
   margin-top: 36px;
+
+  &.header__linkCreate {
+    display: none;
+    position: static;
+    padding: 0 35px;
+  }
+}
+
+@media ($mobile) {
+  .empty {
+    min-height: 450px;
+  }
+
+  .empty__link {
+    margin-top: 24px;
+
+    &.header__linkCreate {
+      display: inline-block;
+    }
+  }
 }

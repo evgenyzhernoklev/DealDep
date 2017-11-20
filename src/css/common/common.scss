@@ -102,6 +102,12 @@ a {
   padding: 0 20px;
 }
 
+@media ($mobile) {
+  .contentWrapper {
+    padding-top: 0;
+  }
+}
+
 
 
 .imgWrapper {
