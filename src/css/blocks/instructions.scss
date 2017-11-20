@@ -1,4 +1,5 @@
 .instructions {
+  position: relative;
   padding: 9px 20px 10px;
   background: $white;
   border: 1px dashed #D1D5DC;
@@ -6,9 +7,10 @@
   @include clearfix();
 
   .buttonContainer {
+    position: absolute;
+    top: 11px;
+    left: 20px;
     width: 400px;
-    margin-top: 22px;
-    float: left;
     white-space: nowrap;
   }
 
@@ -30,6 +32,29 @@
   margin: 20px 0 20px 410px;
   font-size: 14px;
   line-height: 22px;
+}
+
+@media ($mobile) {
+  .instructions {
+    padding: 9px 20px 0;
+
+    .buttonContainer {
+      position: static;
+      width: auto;
+      white-space: normal;
+    }
+
+    .linkButton {
+      width: 100%;
+      margin: 0 0 20px;
+      padding: 0 30px;
+    }
+  }
+
+  .instructions__info {
+    margin: 13px 0 18px;
+    text-align: center;
+  }
 }
 
 

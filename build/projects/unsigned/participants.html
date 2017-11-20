@@ -12,10 +12,15 @@
     <div class="header">
       <div class="headerIn">
         <div class="contentIn">
-          <a class="header__logo icon icon--logo" href="/"></a>
-          <div class="menu">
-            <a class="menu__link is-active" href="#">Мои проекты</a><a class="menu__link" href="#">Мой профиль</a>
+          <a class="header__logo header__logo--mobile icon icon--logo" href="/"></a>
+          <div class="hamburger hamburger-spin">
+            <div class="hamburger-box">
+              <div class="hamburger-inner"></div>
+            </div>
           </div>
+          <nav class="menu">
+            <a class="menu__link is-active" href="#">Мои проекты</a><a class="menu__link" href="#">Мой профиль</a>
+          </nav>
           <div class="logined">
             <div class="loginedUser">
               <span class="loginedUser__name">Гужиков П. А.</span><img class="loginedUser__avatar" src="../../img/avatars/avatar_pavel.png" />
@@ -28,7 +33,7 @@
         <div class="contentIn">
           <div class="submenuTitle">
             <div class="submenuTitle__imgWrapper imgWrapper">
-              <span class="icon icon--test"></span>
+              <span class="submenuTitle__icon icon icon--test"></span>
             </div>
             <h1 class="submenuTitle__title titleMain">
               Мои проекты
@@ -55,11 +60,11 @@
       <div class="projectInfo bgWhite">
         <div class="contentIn">
           <div class="instructions">
-            <div class="buttonContainer">
-              <a class="linkButton linkButton--blue linkButton--icon popup-open" data-popup="send-for-signature" href="#">отправить на подпись<span class="linkButton__icon icon icon--sign"></span></a><a class="linkButton linkButton--icon" href="#">редактировать<span class="linkButton__icon icon icon--edit_black"></span></a>
-            </div>
             <div class="instructions__info">
               Теперь, когда проект создан, Вам нужно подписать его у всех участников. Пока проект не подписан, его можно отредактировать
+            </div>
+            <div class="buttonContainer">
+              <a class="linkButton linkButton--blue linkButton--icon popup-open" data-popup="send-for-signature" href="#">отправить на подпись<span class="linkButton__icon icon icon--sign"></span></a><a class="linkButton linkButton--icon" href="#">редактировать<span class="linkButton__icon icon icon--edit_black"></span></a>
             </div>
           </div>
         </div>
