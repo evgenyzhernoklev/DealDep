@@ -50,6 +50,10 @@
       display: none;
     }
   }
+
+  .arrangementHeader__info {
+    display: none;
+  }
 }
 
 
@@ -77,6 +81,12 @@
 
   &.is-active {
     background-color: $green;
+  }
+}
+
+@media ($mobile) {
+  .arrangementProgress {
+    display: none;
   }
 }
 

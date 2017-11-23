@@ -5,7 +5,11 @@
 
 @media ($mobile) {
   .projectInfo {
-    padding: 52px 0 20px;
+    padding: 52px 0 0;
+
+    .subtitleMain {
+      display: none;
+    }
   }
 }
 

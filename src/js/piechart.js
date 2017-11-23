@@ -78,4 +78,21 @@ $(document).ready(function() {
   if ($('#piechart').length) {
     new PieChart('piechart');
   }
+
+  var $slider;
+
+  $(window).on('load resize', function () {
+    if ((viewportSize.getWidth() <= 767) && !$slider) {
+      $slider = $('.pieLegend').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false,
+        infinite: true
+      });
+    } else if ((viewportSize.getWidth() > 767) && $slider) {
+      $slider.slick('unslick');
+      $slider = '';
+    }
+  });
 });

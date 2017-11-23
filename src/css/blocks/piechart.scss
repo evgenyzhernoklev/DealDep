@@ -1,5 +1,6 @@
 .pieChartWrapper {
   margin-top: 40px;
+  white-space: nowrap;
 }
 
 #piechart {
@@ -10,6 +11,12 @@
 
   svg {
     overflow: visible!important;
+    width: 100%!important;
+  }
+
+  & > div > div {
+    width: 100%!important;
+    text-align: center;
   }
 }
 
@@ -58,4 +65,46 @@
 .piePerson__info {
   font: 14px/19px $circe-regular;
   color: #737373;
+}
+
+@media ($mobile) {
+  .pieChartWrapper {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .piePersonIn {
+    padding: 11px 15px 10px;
+    border: 1px solid #D1D5DC;
+    border-radius: 5px;
+  }
+
+  .pieLegend {
+    display: block;
+    margin: 20px -20px 0 -8px;
+    @include flex-basis(100%);
+
+    .slick-list {
+      padding-right: 35%;
+      padding-bottom: 20px;
+    }
+
+    .slick-slide {
+      margin: 0 8px;
+    }
+  }
+
+  .piePerson__percentage {
+    position: static;
+    display: block;
+  }
+
+  .piePerson__name {
+    font-size: 14px;
+  }
+
+  .piePerson__info {
+    font-size: 12px;
+    line-height: 17px;
+  }
 }

@@ -25,6 +25,24 @@
   flex-wrap: nowrap;
 }
 
+@media ($mobile) {
+  .note {
+    background-color: transparent;
+
+    &.note--black {
+      background-color: transparent;
+    }
+
+    &.note--yellow {
+      background-color: transparent;
+    }
+  }
+
+  .noteInfo {
+    display: none;
+  }
+}
+
 
 
 // info
@@ -105,6 +123,19 @@
 
   .icon--signed {
     @include background-image(ok_white, 13px, 13px);
+  }
+}
+
+@media ($mobile) {
+  .noteButtonsWrapper {
+    @include flex-basis(100%);
+    justify-content: center;
+  }
+
+  .noteButtonsWrapper__button {
+    &.linkButton--violet {
+      box-shadow: 0 4px 10px 0 rgba(194,95,189,0.60);
+    }
   }
 }
 
