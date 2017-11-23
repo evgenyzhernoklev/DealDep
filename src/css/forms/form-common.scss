@@ -30,7 +30,25 @@
       @include background-image(ok_green, 44px, 44px);
     }
   }
+
+  .popup & {
+    box-shadow: none;
+  }
 }
+
+@media ($mobile) {
+  .formIn {
+    .popup & {
+      padding: 0 20px;
+
+      .buttonContainer {
+        padding: 0;
+      }
+    }
+  }
+}
+
+
 
 .formHidden {
   display: none;
@@ -271,6 +289,10 @@ textarea.fieldWrapper__input {
       &:last-child {
         margin-bottom: 0;
       }
+    }
+
+    .linkButton--small {
+      width: 100%;
     }
   }
 }

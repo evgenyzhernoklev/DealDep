@@ -53,6 +53,10 @@
   .entityHeader {
     padding: 4px 15px 8px;
   }
+
+  .entityHeader__company {
+    margin-top: 12px;
+  }
 }
 
 
@@ -133,6 +137,7 @@
   .personData__title {
     width: auto;
     float: none;
+    margin-bottom: 10px;
     line-height: 20px;
   }
 
@@ -215,6 +220,18 @@
   }
 }
 
+@media ($tablet) {
+  .popupData {
+    .personDataCols {
+      margin-left: 0;
+
+      .colFlex--2 {
+        @include flex-basis(100%);
+      }
+    }
+  }
+}
+
 
 
 // catalog history
@@ -279,6 +296,7 @@
     }
 
     .personData__title {
+      margin-bottom: 0;
       line-height: 20px;
     }
 

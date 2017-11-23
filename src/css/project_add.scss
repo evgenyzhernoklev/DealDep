@@ -323,6 +323,14 @@
   }
 }
 
+@media ($mobile) {
+  .personEntityTabs {
+    display: block;
+    float: none;
+    margin-top: 5px;
+  }
+}
+
 
 
 // attention
