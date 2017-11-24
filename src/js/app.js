@@ -23,6 +23,7 @@
 //= ./lib/tooltip.js
 //= ./lib/popups.js
 //= ./lib/menu.js
+//= ./lib/sliding.js
 
 //= ./account.js
 //= ./piechart.js

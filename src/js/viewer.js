@@ -24,6 +24,9 @@ Viewer.prototype.initClasses = function () {
   $('nav.menu').each(function() {
     new Menu(this);
   });
+  $('.slide-container').each(function() {
+    new Sliding(this);
+  });
 };
 
 Viewer.prototype.initFunctions = function () {
