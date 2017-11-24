@@ -34,6 +34,9 @@
 
 @media ($mobile) {
   .bubble {
+    padding-left: 20px;
+    padding-right: 20px;
+
     .contentWrapperBlured & {
       position: static;
       width: auto;
@@ -41,5 +44,10 @@
       box-shadow: none;
       transform: none;
     }
+  }
+
+  .bubble__title {
+    font-size: 16px;
+    line-height: 26px;
   }
 }

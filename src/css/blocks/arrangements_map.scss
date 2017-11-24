@@ -1,6 +1,7 @@
 // blur
 .contentWrapperBlured {
   position: relative;
+  min-width: 320px;
 }
 
 .contentWrapperBlured__overlay {
@@ -237,6 +238,10 @@
     .contentWrapperBlured & {
       display: none;
     }
+  }
+
+  .arrangementCols {
+    margin-bottom: 0;
   }
 }
 
