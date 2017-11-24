@@ -45,6 +45,8 @@
   }
 
   &.is-active {
+    border-color: $white;
+    
     &:before {
       transform: rotate(270deg);
     }

@@ -40,8 +40,8 @@ html
             li.submenuItem
               a.submenuItem__link href="/projects/onsign/suspended.html" Юрлица
 
-    .contentWrapperTop
-      .projectInfo.bgWhite
+    .contentWrapperTop.slide-container
+      .projectInfo.bgWhite.slide-content
         .contentIn
           .instructions.instructions--right.instructions--invitation
             .buttonContainer
@@ -54,6 +54,35 @@ html
             .instructions__info
               | Если вы согласны с распределением ролей в проекте,<br>
               | нажмите Согласен или откажитесь, нажатием Не согласен.
+          .pieChartWrapper.colsFlex
+            #piechart
+            .pieLegend.colsFlex
+              .piePerson.colFlex--2
+                .piePersonIn.popup-open data-popup="popup-guzhikov"
+                  span.piePerson__percentage style="color: #2196F3;" 40%
+                  p.piePerson__name Гужиков Павел
+                  p.piePerson__info Компентенции
+              .piePerson.colFlex--2
+                .piePersonIn.is-disabled
+                  span.piePerson__percentage style="color: #4CAF50;" 10%
+                  p.piePerson__name Медведев Дмитрий
+                  p.piePerson__info Связи
+              .piePerson.colFlex--2
+                .piePersonIn
+                  span.piePerson__percentage style="color: #CDDC39;" 30%
+                  p.piePerson__name Ардинцев Иван
+                  p.piePerson__info Финансы
+              .piePerson.colFlex--2
+                .piePersonIn
+                  span.piePerson__percentage style="color: #FF8F00;" 5%
+                  p.piePerson__name Шойгу Сергей
+                  p.piePerson__info Компетенции
+              .piePerson.colFlex--2
+                .piePersonIn
+                  span.piePerson__percentage style="color: #673AB7;" 15%
+                  p.piePerson__name Путин Владимир
+                  p.piePerson__info Финансы
+      .slide-link.forMobile data-show="Показать доли участников" data-hide="свернуть блок" свернуть блок
 
     .contentWrapperBlured
       .contentWrapperBlured__overlay
@@ -182,4 +211,5 @@ html
 
 
 
+  script src="https://www.gstatic.com/charts/loader.js"
   script src="../../js/app.js"

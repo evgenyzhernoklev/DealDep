@@ -56,8 +56,8 @@
         </div>
       </div>
     </div>
-    <div class="contentWrapperTop">
-      <div class="projectInfo bgWhite">
+    <div class="contentWrapperTop slide-container">
+      <div class="projectInfo bgWhite slide-content">
         <div class="contentIn">
           <div class="instructions instructions--right instructions--invitation">
             <div class="buttonContainer">
@@ -67,7 +67,70 @@
               Если вы согласны с распределением ролей в проекте,<br>нажмите Согласен или откажитесь, нажатием Не согласен.
             </div>
           </div>
+          <div class="pieChartWrapper colsFlex">
+            <div id="piechart"></div>
+            <div class="pieLegend colsFlex">
+              <div class="piePerson colFlex--2">
+                <div class="piePersonIn popup-open" data-popup="popup-guzhikov">
+                  <span class="piePerson__percentage" style="color: #2196F3;">40%</span>
+                  <p class="piePerson__name">
+                    Гужиков Павел
+                  </p>
+                  <p class="piePerson__info">
+                    Компентенции
+                  </p>
+                </div>
+              </div>
+              <div class="piePerson colFlex--2">
+                <div class="piePersonIn is-disabled">
+                  <span class="piePerson__percentage" style="color: #4CAF50;">10%</span>
+                  <p class="piePerson__name">
+                    Медведев Дмитрий
+                  </p>
+                  <p class="piePerson__info">
+                    Связи
+                  </p>
+                </div>
+              </div>
+              <div class="piePerson colFlex--2">
+                <div class="piePersonIn">
+                  <span class="piePerson__percentage" style="color: #CDDC39;">30%</span>
+                  <p class="piePerson__name">
+                    Ардинцев Иван
+                  </p>
+                  <p class="piePerson__info">
+                    Финансы
+                  </p>
+                </div>
+              </div>
+              <div class="piePerson colFlex--2">
+                <div class="piePersonIn">
+                  <span class="piePerson__percentage" style="color: #FF8F00;">5%</span>
+                  <p class="piePerson__name">
+                    Шойгу Сергей
+                  </p>
+                  <p class="piePerson__info">
+                    Компетенции
+                  </p>
+                </div>
+              </div>
+              <div class="piePerson colFlex--2">
+                <div class="piePersonIn">
+                  <span class="piePerson__percentage" style="color: #673AB7;">15%</span>
+                  <p class="piePerson__name">
+                    Путин Владимир
+                  </p>
+                  <p class="piePerson__info">
+                    Финансы
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="slide-link forMobile" data-hide="свернуть блок" data-show="Показать доли участников">
+        свернуть блок
       </div>
     </div>
     <div class="contentWrapperBlured">
@@ -242,5 +305,6 @@
       </div>
     </form>
   </div>
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
   <script src="../../js/app.js"></script>
 </html>

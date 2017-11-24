@@ -105,7 +105,77 @@
         </div>
       </div>
     </div>
-    <div class="contentWrapperTop">
+    <div class="contentWrapperTop slide-container">
+      <div class="projectInfo bgWhite slide-content">
+        <div class="contentIn">
+          <div class="subtitleMain">
+            Распределение долей<a class="subtitleMain__button linkButton linkButton--blue linkButton--icon" href="#">изменить участников<span class="linkButton__icon icon icon--docs_add_white"></span></a>
+          </div>
+          <div class="pieChartWrapper colsFlex">
+            <div id="piechart"></div>
+            <div class="pieLegend colsFlex">
+              <div class="piePerson colFlex--2">
+                <div class="piePersonIn popup-open" data-popup="popup-guzhikov">
+                  <span class="piePerson__percentage" style="color: #2196F3;">40%</span>
+                  <p class="piePerson__name">
+                    Гужиков Павел
+                  </p>
+                  <p class="piePerson__info">
+                    Компентенции
+                  </p>
+                </div>
+              </div>
+              <div class="piePerson colFlex--2">
+                <div class="piePersonIn is-disabled">
+                  <span class="piePerson__percentage" style="color: #4CAF50;">10%</span>
+                  <p class="piePerson__name">
+                    Медведев Дмитрий
+                  </p>
+                  <p class="piePerson__info">
+                    Связи
+                  </p>
+                </div>
+              </div>
+              <div class="piePerson colFlex--2">
+                <div class="piePersonIn">
+                  <span class="piePerson__percentage" style="color: #CDDC39;">30%</span>
+                  <p class="piePerson__name">
+                    Ардинцев Иван
+                  </p>
+                  <p class="piePerson__info">
+                    Финансы
+                  </p>
+                </div>
+              </div>
+              <div class="piePerson colFlex--2">
+                <div class="piePersonIn">
+                  <span class="piePerson__percentage" style="color: #FF8F00;">5%</span>
+                  <p class="piePerson__name">
+                    Шойгу Сергей
+                  </p>
+                  <p class="piePerson__info">
+                    Компетенции
+                  </p>
+                </div>
+              </div>
+              <div class="piePerson colFlex--2">
+                <div class="piePersonIn">
+                  <span class="piePerson__percentage" style="color: #673AB7;">15%</span>
+                  <p class="piePerson__name">
+                    Путин Владимир
+                  </p>
+                  <p class="piePerson__info">
+                    Финансы
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-link forMobile" data-hide="свернуть блок" data-show="Показать доли участников">
+        свернуть блок
+      </div>
       <div class="contentIn">
         <div class="arrangementHeader">
           <div class="arrangementHeader__title">
@@ -143,14 +213,17 @@
         </div>
       </div>
     </div>
-    <div class="arrangementsWrapper">
+    <div class="arrangementsWrapper arrangement-container">
       <div class="contentIn">
-        <div class="arrangementTabsWrapper">
-          <span class="arrangementTabsWrapper__tab">Финансирование</span><span class="arrangementTabsWrapper__tab">Управление</span><span class="arrangementTabsWrapper__tab">Планирование</span><span class="arrangementTabsWrapper__tab">Контроль</span><span class="arrangementTabsWrapper__tab">Изменение долей</span>
+        <div class="arrangementTabsWrapper tooltip-container">
+          <span class="arrangementTabsWrapper__info tooltip-link">Все области</span>
+          <div class="arrangementTabsWrapperIn tooltip-content tooltip-content-mobile">
+            <span class="arrangementTabsWrapper__tab arrangement-tab" data-arrangement="0">Финансирование</span><span class="arrangementTabsWrapper__tab arrangement-tab" data-arrangement="1">Управление</span><span class="arrangementTabsWrapper__tab arrangement-tab" data-arrangement="2">Планирование</span><span class="arrangementTabsWrapper__tab arrangement-tab" data-arrangement="3">Контроль</span><span class="arrangementTabsWrapper__tab arrangement-tab" data-arrangement="4">Изменение долей</span>
+          </div>
         </div>
         <div class="arrangementCols colsFlex">
           <div class="arrangement colFlex--4">
-            <div class="arrangement__in colFlexIn is-colored is-green">
+            <div class="arrangement__in colFlexIn is-colored is-green" data-arrangement="0">
               <div class="arrangementInfo">
                 Финансирование проекта<br>участниками
               </div>
@@ -320,5 +393,6 @@
       </form>
     </div>
   </body>
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
   <script src="../../js/app.js"></script>
 </html>
