@@ -142,12 +142,14 @@ html
 
     .arrangementsWrapper.arrangement-container
       .contentIn
-        .arrangementTabsWrapper
-          span.arrangementTabsWrapper__tab.arrangement-tab data-arrangement='0' Финансирование
-          span.arrangementTabsWrapper__tab.arrangement-tab data-arrangement='1' Управление
-          span.arrangementTabsWrapper__tab.arrangement-tab data-arrangement='2' Планирование
-          span.arrangementTabsWrapper__tab.arrangement-tab data-arrangement='3' Контроль
-          span.arrangementTabsWrapper__tab.arrangement-tab data-arrangement='4' Изменение долей
+        .arrangementTabsWrapper.tooltip-container
+          span.arrangementTabsWrapper__info.tooltip-link Все области
+          .arrangementTabsWrapperIn.tooltip-content.tooltip-content-mobile
+            span.arrangementTabsWrapper__tab.arrangement-tab data-arrangement='0' Финансирование
+            span.arrangementTabsWrapper__tab.arrangement-tab data-arrangement='1' Управление
+            span.arrangementTabsWrapper__tab.arrangement-tab data-arrangement='2' Планирование
+            span.arrangementTabsWrapper__tab.arrangement-tab data-arrangement='3' Контроль
+            span.arrangementTabsWrapper__tab.arrangement-tab data-arrangement='4' Изменение долей
         .arrangementCols.colsFlex
           .arrangement.colFlex--4
             .arrangement__in.colFlexIn.arrangement-content.is-colored.is-green data-arrangement='0'

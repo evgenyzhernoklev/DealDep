@@ -3,6 +3,8 @@ var Arrangement = function(container) {
   this.content = this.container.find('.arrangement-content');
   this.tabs = this.container.find('.arrangement-tab');
 
+  this.WIDTH_MOBILE = 767;
+
   this.init();
 };
 
@@ -15,16 +17,23 @@ Arrangement.prototype.init = function () {
 
 Arrangement.prototype.switchTabs = function(e) {
   var $target = $(e.target),
-      arrangementGroup = $target.data('arrangement');
+      arrangementGroup = $target.data('arrangement'),
+      $link = this.container.find('.tooltip-link');
 
   if (!$target.hasClass('is-active')) {
     this.tabs.removeClass('is-active');
     $target.addClass('is-active');
     this.cleanContent();
     this.switchContent(arrangementGroup);
+    $link.text($target.text());
   } else {
     this.tabs.removeClass('is-active');
     this.cleanContent();
+    $link.text('Все области');
+  }
+
+  if (viewportSize.getWidth() <= this.WIDTH_MOBILE) {
+    $link.trigger('click');
   }
 };
 
