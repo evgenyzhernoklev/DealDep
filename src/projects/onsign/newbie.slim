@@ -43,7 +43,10 @@ html
     .contentWrapperTop.slide-container
       .projectInfo.bgWhite.slide-content
         .contentIn
-          .instructions.instructions--right.instructions--invitation
+          .instructions.instructions--invitation
+            .instructions__info
+              | Если вы согласны с распределением ролей в проекте,<br>
+              | нажмите Согласен или откажитесь, нажатием Не согласен.
             .buttonContainer
               a.linkButton.linkButton--green.linkButton--icon.popup-open data-popup="send-for-signature" href="#"
                 | я согласен
@@ -51,9 +54,6 @@ html
               a.linkButton.linkButton--red.linkButton--icon.popup-open data-popup="popup-disagree" href="#"
                 | я не согласен
                 span.linkButton__icon.icon.icon--cross_circle_white
-            .instructions__info
-              | Если вы согласны с распределением ролей в проекте,<br>
-              | нажмите Согласен или откажитесь, нажатием Не согласен.
           .pieChartWrapper.colsFlex
             #piechart
             .pieLegend.colsFlex

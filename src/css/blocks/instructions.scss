@@ -10,9 +10,11 @@
   .buttonContainer {
     position: absolute;
     top: 11px;
-    left: 20px;
-    width: 400px;
+    right: 20px;
+    width: 350px;
+    padding-right: 20px;
     white-space: nowrap;
+    text-align: right;
   }
 
   .linkButton {
@@ -30,7 +32,7 @@
 }
 
 .instructions__info {
-  margin: 20px 0 20px 410px;
+  margin: 20px 350px 20px 15px;
   font-size: 14px;
   line-height: 22px;
 }
@@ -42,35 +44,43 @@
     .buttonContainer {
       position: static;
       width: auto;
+      padding: 0 0 8px;
       white-space: normal;
     }
 
     .linkButton {
       width: 100%;
-      margin: 0 0 20px;
+      margin: 0 0 12px;
       padding: 0 30px;
     }
-  }
 
-  .instructions__info {
-    margin: 13px 0 18px;
-    text-align: center;
+    .instructions__info {
+      margin: 13px 0 18px;
+      text-align: center;
+    }
   }
 }
 
 
 
-// right
-.instructions--right {
+// to left
+.instructions--left {
   .instructions__info {
-    margin: 20px 350px 20px 15px;
+    margin-left: 565px;
+    margin-right: 0;
   }
 
   .buttonContainer {
-    width: 350px;
-    padding-right: 20px;
-    float: right;
-    text-align: right;
+    right: auto;
+    left: 30px;
+  }
+}
+
+@media ($mobile) {
+  .instructions--left {
+    .instructions__info {
+      margin-left: 0;
+    }
   }
 }
 
@@ -100,4 +110,22 @@
   display: inline-block;
   font-size: 14px;
   font-family: $circe-bold;
+}
+
+@media ($mobile) {
+  .instructionsParticipants {
+    width: auto;
+    padding: 0;
+    float: none;
+    text-align: center;
+  }
+
+  .instructionsParticipants__circles {
+    margin: 0;
+    line-height: 60px;
+  }
+
+  .instructionsParticipants__title {
+    display: block;
+  }
 }

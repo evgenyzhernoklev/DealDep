@@ -91,6 +91,10 @@
   @include background-image(basket_remove, 11px, 13px);
 }
 
+.icon--basket_black {
+  @include background-image(basket_black, 11px, 13px);
+}
+
 .icon--briefcase_white {
   @include background-image(briefcase_white, 14px, 13px);
 }
