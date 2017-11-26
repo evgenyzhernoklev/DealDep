@@ -1,0 +1,82 @@
+body.with-form {
+  min-width: 920px;
+
+  .header {
+    min-width: 920px;
+  }
+
+  .header__title {
+    font-size: 24px;
+  }
+
+  .header__logo {
+    display: block;
+  }
+
+
+
+  // form title
+  .addProjectSection {
+    padding: 35px 0 50px;
+  }
+
+  .addProject {
+    margin: 0 0 36px;
+  }
+
+  .addProjectAbout {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+
+
+  // steps
+  .addProjectSteps {
+    margin: 23px auto 36px;
+    padding: 0 50px;
+    line-height: 0;
+    border: 0;
+  }
+
+  .addProjectStep {
+    text-align: center;
+
+    &:before {
+      display: inline-block;
+    }
+
+    &:last-child {
+      &:before {
+        display: none;
+      }
+    }
+
+    &.is-current {
+      .addProjectStep__number {
+        border: 2px solid #C25FBD;
+      }
+    }
+  }
+
+  .addProjectStep__number {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: $black;
+    border-width: 2px;
+  }
+
+  .addProjectStep__info {
+    display: block;
+  }
+
+
+
+  // form content
+  .linkButton {
+    height: 40px;
+    line-height: 42px;
+  }
+}
