@@ -25,7 +25,7 @@
   flex-wrap: nowrap;
 }
 
-@media ($mobile) {
+@media ($tablet) {
   .note {
     position: static;
     background-color: transparent;
@@ -45,6 +45,7 @@
   }
 
   .note__cols {
+    display: block;
     min-height: 0;
   }
 }
@@ -132,18 +133,25 @@
   }
 }
 
-@media ($mobile) {
+@media ($tablet) {
   .noteButtonsWrapper {
-    @include flex-basis(100%);
-    justify-content: center;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    z-index: 100;
+    min-width: 300px;
   }
 
   .noteButtonsWrapper__button {
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 100;
+    margin: 0 0 13px;
+    width: 100%;
+    white-space: nowrap;
+    box-shadow: 0 2px 20px 0 rgba(0,77,255,.1);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     &.linkButton--violet {
       box-shadow: 0 4px 10px 0 rgba(194,95,189,0.60);
