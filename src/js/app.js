@@ -24,6 +24,7 @@
 //= ./lib/popups.js
 //= ./lib/menu.js
 //= ./lib/sliding.js
+//= ./lib/sliders.js
 
 //= ./account.js
 //= ./piechart.js
