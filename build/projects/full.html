@@ -12,10 +12,15 @@
     <div class="header">
       <div class="headerIn">
         <div class="contentIn">
-          <a class="header__logo icon icon--logo" href="/"></a>
-          <div class="menu">
-            <a class="menu__link is-active" href="#">Мои проекты</a><a class="menu__link" href="#">Мой профиль</a>
+          <a class="header__logo header__logo--mobile icon icon--logo" href="/"></a>
+          <div class="hamburger hamburger-spin">
+            <div class="hamburger-box">
+              <div class="hamburger-inner"></div>
+            </div>
           </div>
+          <nav class="menu">
+            <a class="menu__link is-active" href="#">Мои проекты</a><a class="menu__link" href="#">Мой профиль</a>
+          </nav>
           <div class="logined">
             <div class="loginedUser">
               <span class="loginedUser__name">Гужиков П. А.</span><img class="loginedUser__avatar" src="../../img/avatars/avatar_pavel.png" />
@@ -24,7 +29,7 @@
           </div>
         </div>
       </div>
-      <div class="headerIn">
+      <div class="headerIn forDesktop">
         <div class="contentIn">
           <h1 class="header__title">
             Мои проекты <i>6</i>
@@ -36,6 +41,7 @@
     <div class="contentWrapper">
       <div class="contentIn">
         <div class="projectsList colsFlex">
+          <a class="projectsList__linkCreate linkButton linkButton--blue forMobile" href="/projects/new/step1.html">Создать проект</a>
           <div class="projectsList__col colFlex--4">
             <a class="projectItem colFlexIn" href="#">
               <div class="projectItemLabel projectItemLabel--ok">

@@ -12,8 +12,11 @@ html
     .header
       .headerIn
         .contentIn
-          a.header__logo.icon.icon--logo href="/"
-          .menu
+          a.header__logo.header__logo--mobile.icon.icon--logo href="/"
+          .hamburger.hamburger-spin
+            .hamburger-box
+              .hamburger-inner
+          nav.menu
             a.menu__link.is-active href="#" Мои проекты
             a.menu__link href="#" Мой профиль
           .logined
@@ -22,7 +25,7 @@ html
               img.loginedUser__avatar src="../../img/avatars/avatar_pavel.png"
             a.notices href="#"
               span.notices__bell.icon.icon--bell
-      .headerIn
+      .headerIn.forDesktop
         .contentIn
           h1.header__title
             | Мои проекты <i>6</i>
@@ -31,6 +34,7 @@ html
     .contentWrapper
       .contentIn
         .projectsList.colsFlex
+          a.projectsList__linkCreate.linkButton.linkButton--blue.forMobile href="/projects/new/step1.html" Создать проект
           .projectsList__col.colFlex--4
             a.projectItem.colFlexIn href="#"
               .projectItemLabel.projectItemLabel--ok
